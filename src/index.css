@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #fff8e7;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.25rem;
+  color: #555;
+}
+
+.button-group {
+  margin-top: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff9800;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background-color: #e68900;
+}
+.btn.secondary {
+  background-color: #4caf50;
+}
+.btn.secondary:hover {
+  background-color: #3e8e41;
+}
+
+.iframe-section {
+  margin: 2rem 0;
+  height: 70vh;
+}
+
+.iframe-section iframe {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+}
+
+.about, .download-section {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-top: 2rem;
+}
+
+.about h2, .download-section h2 {
+  margin-bottom: 1rem;
+}
+
+.about ul {
+  margin-top: 1rem;
+  padding-left: 1.25rem;
+}
+
+.about li {
+  margin-bottom: 0.5rem;
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #2196f3;
+}
+.download-link:hover {
+  background-color: #0d8bf2;
+}
+
+.loading-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  border: 2px dashed #aaa;
+  border-radius: 12px;
+  background-color: #fffbe6;
+  padding: 1rem;
+}
+
+.preview-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.loading-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #888;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
