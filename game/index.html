@@ -165,6 +165,12 @@ html, body, #canvas {
 								${missingFeatures.map(feature => `<li>${feature}</li>`).join('')}
 							</ul>
 							<p>Please check that the web server configuration sends the correct headers.</p>
+							<p>Current headers:</p>
+							<pre style="text-align: left; background: rgba(255,255,255,0.1); padding: 10px; border-radius: 5px;">
+								Cross-Origin-Embedder-Policy: ${document.querySelector('meta[http-equiv="Cross-Origin-Embedder-Policy"]')?.content || 'not set'}
+								Cross-Origin-Opener-Policy: ${document.querySelector('meta[http-equiv="Cross-Origin-Opener-Policy"]')?.content || 'not set'}
+								Cross-Origin-Resource-Policy: ${document.querySelector('meta[http-equiv="Cross-Origin-Resource-Policy"]')?.content || 'not set'}
+							</pre>
 						</div>
 					`;
 					return false;
