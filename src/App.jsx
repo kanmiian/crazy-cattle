@@ -1,17 +1,41 @@
 import React, { useState } from 'react'
 import './index.css'
+import About from './components/About'
 
 export default function App() {
   const [iframeLoaded, setIframeLoaded] = useState(false)
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="container">
+      <nav className="main-nav">
+        <div className="nav-content">
+          <div className="logo">🐄 Crazy Cattle 3D</div>
+          <div className="nav-links">
+            <button onClick={() => scrollToSection('game')} className="nav-link">Play Now</button>
+            <button onClick={() => scrollToSection('download')} className="nav-link">Download</button>
+            <button onClick={() => scrollToSection('what-is')} className="nav-link">What is</button>
+            <button onClick={() => scrollToSection('features')} className="nav-link">Features</button>
+            <button onClick={() => scrollToSection('how-to-play')} className="nav-link">How to Play</button>
+            <button onClick={() => scrollToSection('game-modes')} className="nav-link">Game Modes</button>
+            <button onClick={() => scrollToSection('requirements')} className="nav-link">Requirements</button>
+            <button onClick={() => scrollToSection('tips')} className="nav-link">Tips</button>
+          </div>
+        </div>
+      </nav>
+
       <header className="hero">
         <h1>🐄 Crazy Cattle 3D</h1>
         <p className="tagline">Experience the wildest cow chaos simulator online!</p>
         <div className="button-group">
-          <a href="#game" className="btn">Play Now</a>
-          <a href="#download" className="btn secondary">Download</a>
+          <button onClick={() => scrollToSection('game')} className="btn">Play Now</button>
+          <button onClick={() => scrollToSection('download')} className="btn secondary">Download</button>
         </div>
       </header>
 
@@ -33,19 +57,6 @@ export default function App() {
         ></iframe>
       </section>
 
-      <section className="about">
-        <h2>🎮 About the Game</h2>
-        <p>
-          Welcome to <strong>Crazy Cattle 3D</strong>, the ultimate chaos simulator where you take control of a wild cow and cause mayhem across the farm!
-        </p>
-        <ul>
-          <li>🚀 Fast-paced 3D cow action</li>
-          <li>🏆 Fun for all ages</li>
-          <li>🌍 Play directly in your browser</li>
-          <li>📱 Mobile-friendly & no downloads needed</li>
-        </ul>
-      </section>
-
       <section id="download" className="download-section">
         <h2>⬇️ Download Crazy Cattle 3D</h2>
         <p>This game is also available for offline play. Click below to download from itch.io:</p>
@@ -58,6 +69,14 @@ export default function App() {
           Go to Itch.io to Download
         </a>
       </section>
+
+      <main>
+        <About />
+      </main>
+
+      <footer>
+        <p>© 2024 Crazy Cattle 3D. All rights reserved.</p>
+      </footer>
     </div>
   )
 }
