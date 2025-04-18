@@ -142,6 +142,45 @@ html, body, #canvas {
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
 <link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
 
+		<script>
+			// 检查必要的功能是否可用
+			function checkRequiredFeatures() {
+				const features = {
+					'Cross-Origin Isolation': window.crossOriginIsolated,
+					'SharedArrayBuffer': typeof SharedArrayBuffer !== 'undefined'
+				};
+
+				const missingFeatures = Object.entries(features)
+					.filter(([, available]) => !available)
+					.map(([feature]) => feature);
+
+				if (missingFeatures.length > 0) {
+					console.error('Missing required features:', missingFeatures);
+					document.getElementById('status').style.visibility = 'visible';
+					document.getElementById('status').innerHTML = `
+						<div style="color: white; text-align: center; padding: 20px;">
+							<h2>Error</h2>
+							<p>The following features required to run Godot projects on the Web are missing:</p>
+							<ul style="list-style: none; padding: 0;">
+								${missingFeatures.map(feature => `<li>${feature}</li>`).join('')}
+							</ul>
+							<p>Please check that the web server configuration sends the correct headers.</p>
+						</div>
+					`;
+					return false;
+				}
+				return true;
+			}
+
+			// 页面加载完成后检查功能
+			window.addEventListener('load', () => {
+				if (!checkRequiredFeatures()) {
+					return;
+				}
+				// 继续加载游戏
+				// ... 原有的游戏加载代码 ...
+			});
+		</script>
 	</head>
 	<body>
 		<canvas id="canvas">
