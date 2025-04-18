@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [react()],
@@ -15,6 +16,15 @@ export default defineConfig({
         main: './index.html',
         game: './game/index.html',
       },
+    },
+    outDir: 'dist',
+    assetsDir: 'assets',
+    copyPublicDir: true,
+  },
+  publicDir: 'public',
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src'),
     },
   },
 })
