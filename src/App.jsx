@@ -48,7 +48,7 @@ export default function App() {
         )}
 
         <iframe
-          src="https://cattle-crazy-game.vercel.app/"
+          src="./game/index.html"
           title="Crazy Cattle 3D Game"
           allowFullScreen
           frameBorder="0"
