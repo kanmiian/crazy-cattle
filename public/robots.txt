@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://crazycattle3d.com/sitemap.xml
+Sitemap: https://cattlecrazy3d.com/sitemap.xml
 
 # Disallow admin and private areas
 Disallow: /admin/

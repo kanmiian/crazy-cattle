@@ -139,7 +139,7 @@ export default function App() {
         <a
           href="https://4nn4t4t.itch.io/crazycattle3d"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow"
           className="btn download-link"
         >
           Go to Itch.io to Download
