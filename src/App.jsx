@@ -189,7 +189,7 @@ export default function App() {
         </header>
       </div>
 
-      <Ad slot="1234567890" />
+{/*       <Ad slot="1234567890" /> */}
 
       <section id="game" className="iframe-section">
         {!iframeLoaded && (
@@ -209,7 +209,7 @@ export default function App() {
         ></iframe>
       </section>
 
-      <Ad slot="0987654321" />
+{/*       <Ad slot="0987654321" /> */}
 
       <section id="download" className="download-section">
         <h2>⬇️ Download Crazy Cattle 3D</h2>
