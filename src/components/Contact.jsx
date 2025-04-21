@@ -14,7 +14,7 @@ const Contact = () => {
             <div className="contact-method">
               <h3>Email</h3>
               <p>For general inquiries about Crazy Cattle 3D:</p>
-              <a href="mailto:support@crazycattle3d.com">contact@crazycattle3d.com</a>
+              <a href="mailto:support@crazycattle3d.com">support@crazycattle3d.com</a>
             </div>
 
             <div className="contact-method">
@@ -42,7 +42,7 @@ const Contact = () => {
         <section>
           <h2>Business Inquiries</h2>
           <p>For business opportunities and partnerships related to Crazy Cattle 3D:</p>
-          <a href="mailto:support@crazycattle3d.com">business@crazycattle3d.com</a>
+          <a href="mailto:support@crazycattle3d.com">support@crazycattle3d.com</a>
         </section>
       </div>
     </div>
