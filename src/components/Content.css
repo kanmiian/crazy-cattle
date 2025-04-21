@@ -166,67 +166,6 @@
   left: 0;
 }
 
-.about-content {
-  background: #fff;
-  border-radius: 12px;
-  padding: 2.5rem;
-  margin: 2rem 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  line-height: 1.8;
-}
-
-.about-content p {
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-  color: #444;
-}
-
-.about-content p:last-child {
-  margin-bottom: 0;
-}
-
-.cta-text {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #2c3e50;
-  text-align: center;
-  margin: 2rem 0;
-}
-
-.about-cta {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 0.8rem 2rem;
-  background: #3498db;
-  color: white;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.cta-button:hover {
-  background: #2980b9;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.cta-button.secondary {
-  background: #2ecc71;
-}
-
-.cta-button.secondary:hover {
-  background: #27ae60;
-}
-
 /* 响应式设计 */
 @media (max-width: 768px) {
   .about-section {
@@ -251,28 +190,5 @@
 
   .about-section > div {
     padding: 1.5rem;
-  }
-
-  .about-content {
-    padding: 1.5rem;
-  }
-
-  .about-content p {
-    font-size: 1rem;
-  }
-
-  .cta-text {
-    font-size: 1.2rem;
-  }
-
-  .about-cta {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cta-button {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 0.5rem;
   }
 } 

@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate, useLocation } from 'react-router-dom'
 import './index.css'
+import Content from './components/Content'
 import About from './components/About'
 import PrivacyPolicy from './components/PrivacyPolicy'
 import TermsOfService from './components/TermsOfService'
 import Contact from './components/Contact'
+import FAQ from './components/FAQ'
 import Ad from './components/Ad'
 
 const Navigation = () => {
@@ -85,6 +87,7 @@ const Footer = () => {
             <button onClick={() => scrollToSection('tips')} className="footer-link">Tips</button>
             <Link to="/about" className="footer-link">About</Link>
             <Link to="/contact" className="footer-link">Contact</Link>
+            <Link to="/faq" className="footer-link">FAQ</Link>
           </div>
         </div>
         <div className="footer-section">
@@ -225,7 +228,7 @@ export default function App() {
       </section>
 
       <main>
-        <About />
+        <Content />
       </main>
     </>
   );
@@ -240,6 +243,7 @@ export default function App() {
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/faq" element={<FAQ />} />
         </Routes>
         <Footer />
       </div>

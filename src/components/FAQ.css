@@ -1,0 +1,162 @@
+.faq-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #333;
+}
+
+.faq-page h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-size: 2.5rem;
+}
+
+.faq-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.faq-section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.faq-item {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.faq-item:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.faq-item h3 {
+  color: #3498db;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.faq-item h3:before {
+  content: "Q:";
+  margin-right: 0.5rem;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.faq-item h3:hover {
+  color: #2980b9;
+}
+
+.faq-item p {
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.faq-item p:before {
+  content: "A:";
+  position: absolute;
+  left: 0;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* 底部快速导航 */
+.faq-quick-nav {
+  margin-top: 3rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.faq-quick-nav h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.faq-quick-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.faq-quick-nav li {
+  margin: 0;
+}
+
+.faq-quick-nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #3498db;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.faq-quick-nav a:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .faq-page {
+    padding: 1rem;
+  }
+
+  .faq-page h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .faq-section {
+    padding: 1.5rem;
+  }
+
+  .faq-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .faq-item h3 {
+    font-size: 1.1rem;
+  }
+  
+  .faq-quick-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .faq-quick-nav a {
+    width: 100%;
+    text-align: center;
+  }
+} 

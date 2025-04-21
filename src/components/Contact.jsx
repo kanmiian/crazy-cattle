@@ -36,7 +36,7 @@ const Contact = () => {
         <section>
           <h2>Frequently Asked Questions</h2>
           <p>Before contacting us, you might want to check our FAQ section for quick answers to common questions about Crazy Cattle 3D.</p>
-          <a href="/#faq" className="btn">View FAQ</a>
+          <a href="/faq" className="btn">View FAQ</a>
         </section>
 
         <section>
