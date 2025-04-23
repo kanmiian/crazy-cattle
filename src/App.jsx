@@ -76,20 +76,29 @@ const Footer = () => {
           <h3>Crazy Cattle 3D</h3>
           <p>Experience the ultimate physics-based battle royale game where explosive sheep compete for survival across three unique environments. Crazy Cattle 3D offers an exciting multiplayer experience with unique gameplay mechanics.</p>
         </div>
+        
         <div className="footer-section">
           <h3>Quick Links</h3>
           <div className="footer-links">
             <button onClick={() => scrollToSection('game')} className="footer-link">Play Now</button>
-            <button onClick={() => scrollToSection('what-is')} className="footer-link">What is</button>
             <button onClick={() => scrollToSection('features')} className="footer-link">Features</button>
             <button onClick={() => scrollToSection('how-to-play')} className="footer-link">How to Play</button>
             <button onClick={() => scrollToSection('requirements')} className="footer-link">Requirements</button>
             <button onClick={() => scrollToSection('tips')} className="footer-link">Tips</button>
+          </div>
+        </div>
+
+        <div className="footer-section">
+          <h3>Site Info</h3>
+          <div className="footer-links">
+            <button onClick={() => scrollToSection('what-is')} className="footer-link">What is</button>
+            <button onClick={() => scrollToSection('how-to-play')} className="footer-link">How to Play</button>
             <Link to="/about" className="footer-link">About</Link>
             <Link to="/contact" className="footer-link">Contact</Link>
             <Link to="/faq" className="footer-link">FAQ</Link>
           </div>
         </div>
+
         <div className="footer-section">
           <h3>Friends</h3>
           <div className="footer-links">
@@ -98,6 +107,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
       <div className="footer-bottom">
         <p>© 2024 Crazy Cattle 3D. All rights reserved.</p>
         <div className="footer-legal">
@@ -109,6 +119,7 @@ const Footer = () => {
     </footer>
   );
 };
+
 
 export default function App() {
   const [iframeLoaded, setIframeLoaded] = useState(false)
@@ -182,14 +193,14 @@ export default function App() {
   const MainContent = () => (
     <>
       <div id="top">
-        <header className="hero">
-          <h1>🐄 Crazy Cattle 3D</h1>
+      <header className="hero">
+        <h1>🐄 Crazy Cattle 3D</h1>
           <p className="tagline">Experience the wildest cow chaos simulator online! Play Crazy Cattle 3D now and join the ultimate physics-based battle royale!</p>
-          <div className="button-group">
+        <div className="button-group">
             <button onClick={() => document.getElementById('game').scrollIntoView({ behavior: 'smooth' })} className="btn">Play Now</button>
             <button onClick={() => document.getElementById('download').scrollIntoView({ behavior: 'smooth' })} className="btn secondary">Download</button>
-          </div>
-        </header>
+        </div>
+      </header>
       </div>
 
 {/*       <Ad slot="1234567890" /> */}
@@ -246,7 +257,7 @@ export default function App() {
           <Route path="/faq" element={<FAQ />} />
         </Routes>
         <Footer />
-      </div>
+    </div>
     </Router>
   )
 }
