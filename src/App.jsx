@@ -390,7 +390,14 @@ export default function App() {
             <div className="game-container">
               {!iframeLoaded && (
                 <div className="loading-placeholder">
-                  <div className="loading-text">Loading Game...</div>
+                  <img 
+                    src="/images/crazycattle-preview.webp" 
+                    alt="Crazy Cattle 3D Preview" 
+                    className="preview-img"
+                  />
+                  <div className="loading-overlay">
+                    <div className="loading-text">Loading Game...</div>
+                  </div>
                 </div>
               )}
               <iframe
