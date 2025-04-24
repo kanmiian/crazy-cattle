@@ -1,12 +1,28 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, lazy, Suspense } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate, useLocation } from 'react-router-dom'
 import './index.css'
-import Content from './components/Content'
-import About from './components/About'
-import PrivacyPolicy from './components/PrivacyPolicy'
-import TermsOfService from './components/TermsOfService'
-import Contact from './components/Contact'
-import FAQ from './components/FAQ'
+
+// 懒加载组件
+const Content = lazy(() => import('./components/Content'))
+const About = lazy(() => import('./components/About'))
+const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy'))
+const TermsOfService = lazy(() => import('./components/TermsOfService'))
+const Contact = lazy(() => import('./components/Contact'))
+const FAQ = lazy(() => import('./components/FAQ'))
+
+// 加载占位符组件
+const LoadingPlaceholder = () => (
+  <div className="loading-placeholder">
+    <img 
+      src="/images/crazycattle-preview.webp" 
+      alt="Crazy Cattle 3D Preview" 
+      className="preview-img" 
+      fetchpriority="high"
+      decoding="async"
+    />
+    <p className="loading-text">Loading...</p>
+  </div>
+)
 
 const Navigation = () => {
   const navigate = useNavigate();
@@ -63,7 +79,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section">
           <h3>Crazy Cattle 3D</h3>
-          <p>Experience the ultimate physics-based battle royale game where explosive sheep compete for survival across three unique environments. Crazy Cattle 3D offers an exciting multiplayer experience with unique gameplay mechanics.</p>
+          <p>Experience the ultimate physics-based battle royale game where explosive sheep and cattle compete for survival across three unique environments. Crazy Cattle 3D offers an exciting multiplayer experience with unique gameplay mechanics, featuring both sheep and cattle characters in intense battles.</p>
         </div>
         
         <div className="footer-section">
@@ -108,35 +124,42 @@ export default function App() {
   const [iframeLoaded, setIframeLoaded] = useState(false)
 
   useEffect(() => {
-    // Add structured data
-    const structuredData = {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Crazy Cattle 3D",
-      "url": "https://crazycattle3d.com",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://crazycattle3d.com/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+    // 延迟加载结构化数据
+    const loadStructuredData = () => {
+      const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Crazy Cattle 3D - Sheep Battle Royale Game",
+        "url": "https://crazycattle3d.com",
+        "description": "Play as explosive sheep and cattle in this physics-based battle royale game. Master momentum and become the ultimate warrior in Crazy Cattle 3D.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://crazycattle3d.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      };
+
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.text = JSON.stringify(structuredData);
+      document.head.appendChild(script);
+
+      return () => {
+        document.head.removeChild(script);
+      };
     };
 
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(structuredData);
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
+    // 延迟 1 秒加载结构化数据
+    const timer = setTimeout(loadStructuredData, 1000);
+    return () => clearTimeout(timer);
   }, []);
 
   const MainContent = () => (
     <>
       <div id="top">
         <header className="hero">
-          <h1>🐄 Crazy Cattle 3D</h1>
-          <p className="tagline">Experience the wildest cow chaos simulator online! Play Crazy Cattle 3D now and join the ultimate physics-based battle royale!</p>
+          <h1>🐄 Crazy Cattle 3D - Sheep Battle Royale</h1>
+          <p className="tagline">Experience the wildest sheep and cattle chaos simulator online! Play Crazy Cattle 3D now and join the ultimate physics-based battle royale where sheep and cattle compete for survival!</p>
           <div className="button-group">
             <button onClick={() => document.getElementById('game').scrollIntoView({ behavior: 'smooth' })} className="btn">Play Now</button>
             <button onClick={() => document.getElementById('download').scrollIntoView({ behavior: 'smooth' })} className="btn secondary">Download</button>
@@ -145,16 +168,10 @@ export default function App() {
       </div>
 
       <section id="game" className="iframe-section">
-        {!iframeLoaded && (
-          <div className="loading-placeholder">
-            <img src="/images/crazycattle-preview.webp" alt="Crazy Cattle 3D Preview" className="preview-img" loading="lazy" />
-            <p className="loading-text">Loading Crazy Cattle 3D...</p>
-          </div>
-        )}
-
+        {!iframeLoaded && <LoadingPlaceholder />}
         <iframe
           src="./game/index.html"
-          title="Crazy Cattle 3D Game"
+          title="Crazy Cattle 3D - Sheep Battle Royale Game"
           allowFullScreen
           frameBorder="0"
           onLoad={() => setIframeLoaded(true)}
@@ -163,8 +180,8 @@ export default function App() {
       </section>
 
       <section id="download" className="download-section">
-        <h2>⬇️ Download Crazy Cattle 3D</h2>
-        <p>This game is also available for offline play. Click below to download Crazy Cattle 3D from itch.io:</p>
+        <h2>⬇️ Download Crazy Cattle 3D - Sheep Battle Royale</h2>
+        <p>This exciting sheep and cattle battle royale game is also available for offline play. Click below to download Crazy Cattle 3D from itch.io:</p>
         <a
           href="https://4nn4t4t.itch.io/crazycattle3d"
           target="_blank"
@@ -176,7 +193,9 @@ export default function App() {
       </section>
 
       <main>
-        <Content />
+        <Suspense fallback={<LoadingPlaceholder />}>
+          <Content />
+        </Suspense>
       </main>
     </>
   );
@@ -185,14 +204,16 @@ export default function App() {
     <Router>
       <div className="container">
         <Navigation />
-        <Routes>
-          <Route path="/" element={<MainContent />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-of-service" element={<TermsOfService />} />
-        </Routes>
+        <Suspense fallback={<LoadingPlaceholder />}>
+          <Routes>
+            <Route path="/" element={<MainContent />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
+          </Routes>
+        </Suspense>
         <Footer />
       </div>
     </Router>
