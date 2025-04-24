@@ -269,7 +269,7 @@ const scrollWorker = createWorker(() => {
 
 export default function App() {
   const [iframeLoaded, setIframeLoaded] = useState(false)
-  const [isLoading, setIsLoading] = useState(true)
+  const [showGame, setShowGame] = useState(false)
   const { observe } = useIntersectionObserver((element) => {
     element.scrollIntoView({ behavior: 'smooth' });
   }, { threshold: 0.5 });
@@ -278,7 +278,6 @@ export default function App() {
   const handleIframeLoad = useCallback(() => {
     requestAnimationFrame(() => {
       setIframeLoaded(true);
-      setIsLoading(false);
     });
   }, []);
 
@@ -362,8 +361,6 @@ export default function App() {
   }, []);
 
   const MainContent = () => {
-    const [showGame, setShowGame] = useState(false);
-
     return (
       <>
         <div id="top">
@@ -390,17 +387,25 @@ export default function App() {
               </button>
             </div>
           ) : (
-            <>
-              {isLoading && <LoadingPlaceholder />}
+            <div className="game-container">
+              {!iframeLoaded && (
+                <div className="loading-placeholder">
+                  <div className="loading-text">Loading Game...</div>
+                </div>
+              )}
               <iframe
                 src="./game/index.html"
                 title="Crazy Cattle 3D - Sheep Battle Royale Game"
                 allowFullScreen
                 frameBorder="0"
                 onLoad={handleIframeLoad}
-                style={{ display: iframeLoaded ? 'block' : 'none' }}
+                style={{ 
+                  display: 'block',
+                  opacity: iframeLoaded ? 1 : 0,
+                  transition: 'opacity 0.3s ease'
+                }}
               ></iframe>
-            </>
+            </div>
           )}
         </section>
 
