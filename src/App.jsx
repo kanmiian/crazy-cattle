@@ -1,4 +1,4 @@
-import React, { useState, useEffect, lazy, Suspense } from 'react'
+import React, { useState, useEffect, lazy, Suspense, useCallback, useMemo } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate, useLocation } from 'react-router-dom'
 import './index.css'
 
@@ -28,30 +28,49 @@ const Navigation = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const scrollToSection = (sectionId) => {
+  // 使用 useCallback 和防抖优化滚动函数
+  const scrollToSection = useCallback((sectionId) => {
     const element = document.getElementById(sectionId);
-    if (element) {
-      if (location.pathname !== '/') {
-        navigate('/');
-        setTimeout(() => element.scrollIntoView({ behavior: 'smooth' }), 100);
-      } else {
+    if (!element) return;
+
+    if (location.pathname !== '/') {
+      navigate('/');
+      // 使用 requestAnimationFrame 优化滚动
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      });
+    } else {
+      requestAnimationFrame(() => {
         element.scrollIntoView({ behavior: 'smooth' });
-      }
+      });
     }
-  };
+  }, [location.pathname, navigate]);
+
+  // 使用 useMemo 优化按钮点击处理函数
+  const handleNavClick = useMemo(() => ({
+    game: () => scrollToSection('game'),
+    download: () => scrollToSection('download'),
+    whatIs: () => scrollToSection('what-is'),
+    features: () => scrollToSection('features'),
+    howToPlay: () => scrollToSection('how-to-play'),
+    requirements: () => scrollToSection('requirements'),
+    tips: () => scrollToSection('tips')
+  }), [scrollToSection]);
 
   return (
     <nav className="main-nav">
       <div className="nav-content">
-        <Link to="/" className="logo" onClick={(e) => { e.preventDefault(); scrollToSection('top'); }}>🐄 Crazy Cattle 3D</Link>
+        <Link to="/" className="logo" onClick={(e) => { e.preventDefault(); scrollToSection('top'); }}>🐄 Crazy Cattle 3D - Sheep Battle Royale</Link>
         <div className="nav-links">
-          <button onClick={() => scrollToSection('game')} className="nav-link">Play Now</button>
-          <button onClick={() => scrollToSection('download')} className="nav-link">Download</button>
-          <button onClick={() => scrollToSection('what-is')} className="nav-link">What is</button>
-          <button onClick={() => scrollToSection('features')} className="nav-link">Features</button>
-          <button onClick={() => scrollToSection('how-to-play')} className="nav-link">How to Play</button>
-          <button onClick={() => scrollToSection('requirements')} className="nav-link">Requirements</button>
-          <button onClick={() => scrollToSection('tips')} className="nav-link">Tips</button>
+          <button onClick={handleNavClick.game} className="nav-link">Play Now</button>
+          <button onClick={handleNavClick.download} className="nav-link">Download</button>
+          <button onClick={handleNavClick.whatIs} className="nav-link">What is</button>
+          <button onClick={handleNavClick.features} className="nav-link">Features</button>
+          <button onClick={handleNavClick.howToPlay} className="nav-link">How to Play</button>
+          <button onClick={handleNavClick.requirements} className="nav-link">Requirements</button>
+          <button onClick={handleNavClick.tips} className="nav-link">Tips</button>
         </div>
       </div>
     </nav>
@@ -62,17 +81,33 @@ const Footer = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const scrollToSection = (sectionId) => {
+  // 使用 useCallback 和防抖优化滚动函数
+  const scrollToSection = useCallback((sectionId) => {
     const element = document.getElementById(sectionId);
-    if (element) {
-      if (location.pathname !== '/') {
-        navigate('/');
-        setTimeout(() => element.scrollIntoView({ behavior: 'smooth' }), 100);
-      } else {
+    if (!element) return;
+
+    if (location.pathname !== '/') {
+      navigate('/');
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      });
+    } else {
+      requestAnimationFrame(() => {
         element.scrollIntoView({ behavior: 'smooth' });
-      }
+      });
     }
-  };
+  }, [location.pathname, navigate]);
+
+  // 使用 useMemo 优化按钮点击处理函数
+  const handleFooterClick = useMemo(() => ({
+    game: () => scrollToSection('game'),
+    features: () => scrollToSection('features'),
+    howToPlay: () => scrollToSection('how-to-play'),
+    requirements: () => scrollToSection('requirements'),
+    tips: () => scrollToSection('tips')
+  }), [scrollToSection]);
 
   return (
     <footer className="footer-nav">
@@ -85,11 +120,11 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Quick Links</h3>
           <div className="footer-links">
-            <button onClick={() => scrollToSection('game')} className="footer-link">Play Now</button>
-            <button onClick={() => scrollToSection('features')} className="footer-link">Features</button>
-            <button onClick={() => scrollToSection('how-to-play')} className="footer-link">How to Play</button>
-            <button onClick={() => scrollToSection('requirements')} className="footer-link">Requirements</button>
-            <button onClick={() => scrollToSection('tips')} className="footer-link">Tips</button>
+            <button onClick={handleFooterClick.game} className="footer-link">Play Now</button>
+            <button onClick={handleFooterClick.features} className="footer-link">Features</button>
+            <button onClick={handleFooterClick.howToPlay} className="footer-link">How to Play</button>
+            <button onClick={handleFooterClick.requirements} className="footer-link">Requirements</button>
+            <button onClick={handleFooterClick.tips} className="footer-link">Tips</button>
           </div>
         </div>
 
@@ -123,6 +158,21 @@ const Footer = () => {
 export default function App() {
   const [iframeLoaded, setIframeLoaded] = useState(false)
 
+  // 使用 useCallback 优化 iframe 加载处理函数
+  const handleIframeLoad = useCallback(() => {
+    setIframeLoaded(true);
+  }, []);
+
+  // 使用 useCallback 优化滚动处理函数
+  const handleScrollToSection = useCallback((sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      requestAnimationFrame(() => {
+        element.scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+  }, []);
+
   useEffect(() => {
     // 延迟加载结构化数据
     const loadStructuredData = () => {
@@ -149,9 +199,12 @@ export default function App() {
       };
     };
 
-    // 延迟 1 秒加载结构化数据
-    const timer = setTimeout(loadStructuredData, 1000);
-    return () => clearTimeout(timer);
+    // 使用 requestIdleCallback 延迟加载结构化数据
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadStructuredData);
+    } else {
+      setTimeout(loadStructuredData, 1000);
+    }
   }, []);
 
   const MainContent = () => (
@@ -161,8 +214,8 @@ export default function App() {
           <h1>🐄 Crazy Cattle 3D - Sheep Battle Royale</h1>
           <p className="tagline">Experience the wildest sheep and cattle chaos simulator online! Play Crazy Cattle 3D now and join the ultimate physics-based battle royale where sheep and cattle compete for survival!</p>
           <div className="button-group">
-            <button onClick={() => document.getElementById('game').scrollIntoView({ behavior: 'smooth' })} className="btn">Play Now</button>
-            <button onClick={() => document.getElementById('download').scrollIntoView({ behavior: 'smooth' })} className="btn secondary">Download</button>
+            <button onClick={() => handleScrollToSection('game')} className="btn">Play Now</button>
+            <button onClick={() => handleScrollToSection('download')} className="btn secondary">Download</button>
           </div>
         </header>
       </div>
@@ -174,7 +227,7 @@ export default function App() {
           title="Crazy Cattle 3D - Sheep Battle Royale Game"
           allowFullScreen
           frameBorder="0"
-          onLoad={() => setIframeLoaded(true)}
+          onLoad={handleIframeLoad}
           style={{ display: iframeLoaded ? 'block' : 'none' }}
         ></iframe>
       </section>
