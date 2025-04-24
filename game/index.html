@@ -140,7 +140,7 @@ html, body, #canvas {
 }
 		</style>
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
-<link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
+		<link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
 
 		<script>
 			// 检查必要的功能是否可用
@@ -183,8 +183,6 @@ html, body, #canvas {
 				if (!checkRequiredFeatures()) {
 					return;
 				}
-				// 继续加载游戏
-				// ... 原有的游戏加载代码 ...
 			});
 		</script>
 	</head>
@@ -211,6 +209,7 @@ if (!window.SharedArrayBuffer) {
 </script>
 <script src="coi-serviceworker.min.js"></script>
 <script src="index.js"></script>
+<script src="optimized.js"></script>
 		<script>
 const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":39414368,"index.wasm":1650612},"focusCanvas":true,"gdextensionLibs":[]};
 const GODOT_THREADS_ENABLED = true;

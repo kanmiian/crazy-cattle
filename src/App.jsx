@@ -1,4 +1,4 @@
-import React, { useState, useEffect, lazy, Suspense, useCallback, useMemo } from 'react'
+import React, { useState, useEffect, lazy, Suspense, useCallback, useMemo, useRef } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate, useLocation } from 'react-router-dom'
 import './index.css'
 
@@ -11,58 +11,150 @@ const Contact = lazy(() => import('./components/Contact'))
 const FAQ = lazy(() => import('./components/FAQ'))
 
 // 加载占位符组件
-const LoadingPlaceholder = () => (
-  <div className="loading-placeholder">
-    <img 
-      src="/images/crazycattle-preview.webp" 
-      alt="Crazy Cattle 3D Preview" 
-      className="preview-img" 
-      fetchpriority="high"
-      decoding="async"
-    />
-    <p className="loading-text">Loading...</p>
-  </div>
-)
+const LoadingPlaceholder = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const [showPlaceholder, setShowPlaceholder] = useState(true);
+
+  useEffect(() => {
+    // 预加载图片
+    const img = new Image();
+    img.src = '/images/crazycattle-preview.webp';
+    img.onload = () => {
+      setImageLoaded(true);
+      // 延迟移除占位符，确保平滑过渡
+      setTimeout(() => setShowPlaceholder(false), 100);
+    };
+  }, []);
+
+  return (
+    <div className="loading-placeholder">
+      <div className="image-container">
+        {showPlaceholder && (
+          <div className="image-placeholder" style={{ backgroundImage: 'linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%)' }} />
+        )}
+        {imageLoaded && (
+          <img 
+            src="/images/crazycattle-preview.webp" 
+            alt="Crazy Cattle 3D Preview" 
+            className="preview-img" 
+            style={{ opacity: showPlaceholder ? 0 : 1 }}
+            loading="eager"
+            decoding="async"
+          />
+        )}
+      </div>
+      <p className="loading-text">Loading...</p>
+    </div>
+  );
+};
+
+// 使用 IntersectionObserver 优化滚动
+const useIntersectionObserver = (callback, options = {}) => {
+  const observerRef = useRef(null);
+  const elementsRef = useRef(new Map());
+
+  useEffect(() => {
+    observerRef.current = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const element = entry.target;
+          const handler = elementsRef.current.get(element);
+          if (handler) {
+            // 使用 requestAnimationFrame 优化回调执行
+            requestAnimationFrame(() => {
+              handler(element);
+            });
+          }
+        }
+      });
+    }, {
+      ...options,
+      // 使用 rootMargin 提前触发回调
+      rootMargin: '50px 0px'
+    });
+
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect();
+      }
+    };
+  }, [callback, options]);
+
+  const observe = useCallback((element, handler) => {
+    if (element && observerRef.current) {
+      elementsRef.current.set(element, handler);
+      observerRef.current.observe(element);
+    }
+  }, []);
+
+  const unobserve = useCallback((element) => {
+    if (element && observerRef.current) {
+      elementsRef.current.delete(element);
+      observerRef.current.unobserve(element);
+    }
+  }, []);
+
+  return { observe, unobserve };
+};
+
+// 使用防抖优化事件处理
+const useDebounce = (callback, delay) => {
+  const timeoutRef = useRef(null);
+
+  return useCallback((...args) => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+
+    timeoutRef.current = setTimeout(() => {
+      callback(...args);
+    }, delay);
+  }, [callback, delay]);
+};
 
 const Navigation = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const { observe } = useIntersectionObserver((element) => {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }, { threshold: 0.5 });
 
-  // 使用 useCallback 和防抖优化滚动函数
-  const scrollToSection = useCallback((sectionId) => {
+  // 使用防抖优化滚动函数
+  const debouncedScroll = useDebounce((sectionId) => {
     const element = document.getElementById(sectionId);
     if (!element) return;
 
     if (location.pathname !== '/') {
       navigate('/');
-      // 使用 requestAnimationFrame 优化滚动
       requestAnimationFrame(() => {
         setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth' });
+          observe(element, () => {
+            element.scrollIntoView({ behavior: 'smooth' });
+          });
         }, 100);
       });
     } else {
-      requestAnimationFrame(() => {
+      observe(element, () => {
         element.scrollIntoView({ behavior: 'smooth' });
       });
     }
-  }, [location.pathname, navigate]);
+  }, 100);
 
   // 使用 useMemo 优化按钮点击处理函数
   const handleNavClick = useMemo(() => ({
-    game: () => scrollToSection('game'),
-    download: () => scrollToSection('download'),
-    whatIs: () => scrollToSection('what-is'),
-    features: () => scrollToSection('features'),
-    howToPlay: () => scrollToSection('how-to-play'),
-    requirements: () => scrollToSection('requirements'),
-    tips: () => scrollToSection('tips')
-  }), [scrollToSection]);
+    game: () => debouncedScroll('game'),
+    download: () => debouncedScroll('download'),
+    whatIs: () => debouncedScroll('what-is'),
+    features: () => debouncedScroll('features'),
+    howToPlay: () => debouncedScroll('how-to-play'),
+    requirements: () => debouncedScroll('requirements'),
+    tips: () => debouncedScroll('tips')
+  }), [debouncedScroll]);
 
   return (
     <nav className="main-nav">
       <div className="nav-content">
-        <Link to="/" className="logo" onClick={(e) => { e.preventDefault(); scrollToSection('top'); }}>🐄 Crazy Cattle 3D - Sheep Battle Royale</Link>
+        <Link to="/" className="logo" onClick={(e) => { e.preventDefault(); debouncedScroll('top'); }}>🐄 Crazy Cattle 3D - Sheep Battle Royale</Link>
         <div className="nav-links">
           <button onClick={handleNavClick.game} className="nav-link">Play Now</button>
           <button onClick={handleNavClick.download} className="nav-link">Download</button>
@@ -70,7 +162,6 @@ const Navigation = () => {
           <button onClick={handleNavClick.features} className="nav-link">Features</button>
           <button onClick={handleNavClick.howToPlay} className="nav-link">How to Play</button>
           <button onClick={handleNavClick.requirements} className="nav-link">Requirements</button>
-          <button onClick={handleNavClick.tips} className="nav-link">Tips</button>
         </div>
       </div>
     </nav>
@@ -80,6 +171,9 @@ const Navigation = () => {
 const Footer = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const observer = useIntersectionObserver((element) => {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }, { threshold: 0.5 });
 
   // 使用 useCallback 和防抖优化滚动函数
   const scrollToSection = useCallback((sectionId) => {
@@ -90,15 +184,13 @@ const Footer = () => {
       navigate('/');
       requestAnimationFrame(() => {
         setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth' });
+          observer?.observe(element);
         }, 100);
       });
     } else {
-      requestAnimationFrame(() => {
-        element.scrollIntoView({ behavior: 'smooth' });
-      });
+      observer?.observe(element);
     }
-  }, [location.pathname, navigate]);
+  }, [location.pathname, navigate, observer]);
 
   // 使用 useMemo 优化按钮点击处理函数
   const handleFooterClick = useMemo(() => ({
@@ -155,22 +247,84 @@ const Footer = () => {
   );
 };
 
+// 使用 Web Worker 处理复杂计算
+const createWorker = (fn) => {
+  const blob = new Blob([`(${fn.toString()})()`], { type: 'application/javascript' });
+  return new Worker(URL.createObjectURL(blob));
+};
+
+// 使用 Web Worker 处理滚动计算
+const scrollWorker = createWorker(() => {
+  self.onmessage = (e) => {
+    const { element, options } = e.data;
+    const rect = element.getBoundingClientRect();
+    const scrollOptions = {
+      top: rect.top + window.pageYOffset,
+      left: rect.left + window.pageXOffset,
+      behavior: 'smooth'
+    };
+    self.postMessage(scrollOptions);
+  };
+});
+
 export default function App() {
   const [iframeLoaded, setIframeLoaded] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
+  const { observe } = useIntersectionObserver((element) => {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }, { threshold: 0.5 });
 
   // 使用 useCallback 优化 iframe 加载处理函数
   const handleIframeLoad = useCallback(() => {
-    setIframeLoaded(true);
+    requestAnimationFrame(() => {
+      setIframeLoaded(true);
+      setIsLoading(false);
+    });
   }, []);
 
   // 使用 useCallback 优化滚动处理函数
   const handleScrollToSection = useCallback((sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      requestAnimationFrame(() => {
+      observe(element, () => {
         element.scrollIntoView({ behavior: 'smooth' });
       });
     }
+  }, [observe]);
+
+  // 延迟加载第三方脚本
+  useEffect(() => {
+    const loadThirdPartyScripts = () => {
+      // 使用 Promise 处理脚本加载
+      const loadScript = (src, async = true) => {
+        return new Promise((resolve, reject) => {
+          const script = document.createElement('script');
+          script.src = src;
+          script.async = async;
+          script.onload = resolve;
+          script.onerror = reject;
+          document.body.appendChild(script);
+        });
+      };
+
+      // 使用 requestIdleCallback 延迟加载
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(async () => {
+          try {
+            await loadScript('https://cattle-chat.onrender.com/socket.io/socket.io.js');
+            window.CHAT_SERVER_URL = 'https://cattle-chat.onrender.com';
+            await loadScript('https://cattle-chat.onrender.com/chat-overlay-bundled.js');
+            await loadScript('https://literate-manatee.pikapod.net/script.js', false);
+          } catch (error) {
+            console.error('Failed to load third-party scripts:', error);
+          }
+        });
+      } else {
+        setTimeout(loadThirdPartyScripts, 2000);
+      }
+    };
+
+    loadThirdPartyScripts();
   }, []);
 
   useEffect(() => {
@@ -221,7 +375,7 @@ export default function App() {
       </div>
 
       <section id="game" className="iframe-section">
-        {!iframeLoaded && <LoadingPlaceholder />}
+        {isLoading && <LoadingPlaceholder />}
         <iframe
           src="./game/index.html"
           title="Crazy Cattle 3D - Sheep Battle Royale Game"
