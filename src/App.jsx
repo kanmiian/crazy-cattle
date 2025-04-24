@@ -370,6 +370,7 @@ export default function App() {
           <div className="button-group">
             <button onClick={() => handleScrollToSection('game')} className="btn">Play Now</button>
             <button onClick={() => handleScrollToSection('download')} className="btn secondary">Download</button>
+            <button onClick={() => window.open('https://ko-fi.com/ashing', '_blank')} className="btn kofi">☕️ Support on Ko-fi</button>
           </div>
         </header>
       </div>
@@ -389,14 +390,24 @@ export default function App() {
       <section id="download" className="download-section">
         <h2>⬇️ Download Crazy Cattle 3D - Sheep Battle Royale</h2>
         <p>This exciting sheep and cattle battle royale game is also available for offline play. Click below to download Crazy Cattle 3D from itch.io:</p>
-        <a
-          href="https://4nn4t4t.itch.io/crazycattle3d"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          className="btn download-link"
-        >
-          Go to Itch.io to Download
-        </a>
+        <div className="download-buttons">
+          <a
+            href="https://4nn4t4t.itch.io/crazycattle3d"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            className="btn download-link"
+          >
+            Go to Itch.io to Download
+          </a>
+          <a 
+            href="https://ko-fi.com/ashing" 
+            target="_blank" 
+            rel="noopener noreferrer nofollow" 
+            className="btn download-link"
+          >
+            ☕️ Support on Ko-fi
+          </a>
+        </div>
       </section>
 
       <main>
