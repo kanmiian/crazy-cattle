@@ -115,53 +115,36 @@ const useDebounce = (callback, delay) => {
 const Navigation = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { observe } = useIntersectionObserver((element) => {
-    element.scrollIntoView({ behavior: 'smooth' });
-  }, { threshold: 0.5 });
 
-  // 使用防抖优化滚动函数
-  const debouncedScroll = useDebounce((sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (!element) return;
-
+  const scrollToSection = (sectionId) => {
     if (location.pathname !== '/') {
       navigate('/');
-      requestAnimationFrame(() => {
-        setTimeout(() => {
-          observe(element, () => {
-            element.scrollIntoView({ behavior: 'smooth' });
-          });
-        }, 100);
-      });
+      // 等待页面加载完成后再滚动
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
     } else {
-      observe(element, () => {
+      const element = document.getElementById(sectionId);
+      if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
-      });
+      }
     }
-  }, 100);
-
-  // 使用 useMemo 优化按钮点击处理函数
-  const handleNavClick = useMemo(() => ({
-    game: () => debouncedScroll('game'),
-    download: () => debouncedScroll('download'),
-    whatIs: () => debouncedScroll('what-is'),
-    features: () => debouncedScroll('features'),
-    howToPlay: () => debouncedScroll('how-to-play'),
-    requirements: () => debouncedScroll('requirements'),
-    tips: () => debouncedScroll('tips')
-  }), [debouncedScroll]);
+  };
 
   return (
     <nav className="main-nav">
       <div className="nav-content">
-        <Link to="/" className="logo" onClick={(e) => { e.preventDefault(); debouncedScroll('top'); }}>🐄 Crazy Cattle 3D - Sheep Battle Royale</Link>
+        <Link to="/" className="logo" onClick={(e) => { e.preventDefault(); scrollToSection('top'); }}>🐄 Crazy Cattle 3D - Sheep Battle Royale</Link>
         <div className="nav-links">
-          <button onClick={handleNavClick.game} className="nav-link">Play Now</button>
-          <button onClick={handleNavClick.download} className="nav-link">Download</button>
-          <button onClick={handleNavClick.whatIs} className="nav-link">What is</button>
-          <button onClick={handleNavClick.features} className="nav-link">Features</button>
-          <button onClick={handleNavClick.howToPlay} className="nav-link">How to Play</button>
-          <button onClick={handleNavClick.requirements} className="nav-link">Requirements</button>
+          <button onClick={() => scrollToSection('game')} className="nav-link">Play Now</button>
+          <button onClick={() => scrollToSection('download')} className="nav-link">Download</button>
+          <button onClick={() => scrollToSection('what-is')} className="nav-link">What is</button>
+          <button onClick={() => scrollToSection('features')} className="nav-link">Features</button>
+          <button onClick={() => scrollToSection('how-to-play')} className="nav-link">How to Play</button>
+          <button onClick={() => scrollToSection('requirements')} className="nav-link">Requirements</button>
         </div>
       </div>
     </nav>
@@ -171,52 +154,40 @@ const Navigation = () => {
 const Footer = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const observer = useIntersectionObserver((element) => {
-    element.scrollIntoView({ behavior: 'smooth' });
-  }, { threshold: 0.5 });
 
-  // 使用 useCallback 和防抖优化滚动函数
-  const scrollToSection = useCallback((sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (!element) return;
-
+  const scrollToSection = (sectionId) => {
     if (location.pathname !== '/') {
       navigate('/');
-      requestAnimationFrame(() => {
-        setTimeout(() => {
-          observer?.observe(element);
-        }, 100);
-      });
+      // 等待页面加载完成后再滚动
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
     } else {
-      observer?.observe(element);
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
-  }, [location.pathname, navigate, observer]);
-
-  // 使用 useMemo 优化按钮点击处理函数
-  const handleFooterClick = useMemo(() => ({
-    game: () => scrollToSection('game'),
-    features: () => scrollToSection('features'),
-    howToPlay: () => scrollToSection('how-to-play'),
-    requirements: () => scrollToSection('requirements'),
-    tips: () => scrollToSection('tips')
-  }), [scrollToSection]);
+  };
 
   return (
     <footer className="footer-nav">
       <div className="footer-content">
         <div className="footer-section">
           <h3>Crazy Cattle 3D</h3>
-          <p>Experience the ultimate physics-based battle royale game where explosive sheep and cattle compete for survival across three unique environments. Crazy Cattle 3D offers an exciting multiplayer experience with unique gameplay mechanics, featuring both sheep and cattle characters in intense battles.</p>
+          <p>Experience the ultimate physics-based battle royale game where explosive sheep and cattle compete for survival across three unique environments.</p>
         </div>
 
         <div className="footer-section">
           <h3>Quick Links</h3>
           <div className="footer-links">
-            <button onClick={handleFooterClick.game} className="footer-link">Play Now</button>
-            <button onClick={handleFooterClick.features} className="footer-link">Features</button>
-            <button onClick={handleFooterClick.howToPlay} className="footer-link">How to Play</button>
-            <button onClick={handleFooterClick.requirements} className="footer-link">Requirements</button>
-            <button onClick={handleFooterClick.tips} className="footer-link">Tips</button>
+            <button onClick={() => scrollToSection('game')} className="footer-link">Play Now</button>
+            <button onClick={() => scrollToSection('features')} className="footer-link">Features</button>
+            <button onClick={() => scrollToSection('how-to-play')} className="footer-link">How to Play</button>
+            <button onClick={() => scrollToSection('requirements')} className="footer-link">Requirements</button>
           </div>
         </div>
 
@@ -228,14 +199,6 @@ const Footer = () => {
             <Link to="/faq" className="footer-link">FAQ</Link>
             <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
             <Link to="/terms-of-service" className="footer-link">Terms of Service</Link>
-          </div>
-        </div>
-
-        <div className="footer-section">
-          <h3>Friends</h3>
-          <div className="footer-links">
-            <a href="https://www.online-guitartuner.com/" target="_blank" rel="noopener noreferrer nofollow" className="footer-link">Online Guitar Tuner</a>
-            <a href="https://animalbrainrot.com/" target="_blank" rel="noopener noreferrer nofollow" className="footer-link">AI Brainrot Animals</a>
           </div>
         </div>
       </div>
@@ -266,6 +229,156 @@ const scrollWorker = createWorker(() => {
     self.postMessage(scrollOptions);
   };
 });
+
+const AppContent = () => {
+  const location = useLocation();
+  const baseUrl = 'https://crazycattle3d.com';
+
+  useEffect(() => {
+    // 移除现有的 canonical 链接
+    const existingCanonical = document.querySelector('link[rel="canonical"]');
+    if (existingCanonical) {
+      existingCanonical.remove();
+    }
+
+    // 创建新的 canonical 链接
+    const canonicalUrl = location.pathname === '/' ? baseUrl : `${baseUrl}${location.pathname}`;
+    const link = document.createElement('link');
+    link.rel = 'canonical';
+    link.href = canonicalUrl;
+    document.head.appendChild(link);
+
+    // 清理函数
+    return () => {
+      if (link.parentNode) {
+        link.parentNode.removeChild(link);
+      }
+    };
+  }, [location.pathname]);
+
+  return (
+    <>
+      <Navigation />
+      <Suspense fallback={<LoadingPlaceholder />}>
+        <Routes>
+          <Route path="/" element={<MainContent />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+        </Routes>
+      </Suspense>
+      <Footer />
+    </>
+  );
+};
+
+const MainContent = () => {
+  // 添加必要的状态变量
+  const [showGame, setShowGame] = useState(false);
+  const [iframeLoaded, setIframeLoaded] = useState(false);
+
+  // 处理 iframe 加载完成的回调
+  const handleIframeLoad = () => {
+    setIframeLoaded(true);
+  };
+
+  // 处理滚动到指定区域的函数
+  const handleScrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <>
+      <div id="top">
+        <header className="hero">
+          <h1>🐄 Crazy Cattle 3D - Sheep Battle Royale</h1>
+          <p className="tagline">Experience the wildest sheep and cattle chaos simulator online! Play Crazy Cattle 3D now and join the ultimate physics-based battle royale where sheep and cattle compete for survival!</p>
+          <div className="button-group">
+            <button onClick={() => handleScrollToSection('game')} className="btn">Play Now</button>
+            <button onClick={() => handleScrollToSection('download')} className="btn secondary">Download</button>
+            <button onClick={() => window.open('https://ko-fi.com/ashing', '_blank')} className="btn kofi">☕️ Support on Ko-fi</button>
+          </div>
+        </header>
+      </div>
+
+      <section id="game" className="iframe-section">
+        {!showGame ? (
+          <div className="game-placeholder">
+            <img
+              src="/images/crazycattle-preview.webp"
+              alt="Crazy Cattle 3D Preview"
+              className="preview-img"
+            />
+            <button onClick={() => setShowGame(true)} className="btn play-button">
+              ▶️ Play Game
+            </button>
+          </div>
+        ) : (
+          <div className="game-container">
+            {!iframeLoaded && (
+              <div className="loading-placeholder">
+                <img
+                  src="/images/crazycattle-preview.webp"
+                  alt="Crazy Cattle 3D Preview"
+                  className="preview-img"
+                />
+                <div className="loading-overlay">
+                  <div className="loading-text">Loading Game...</div>
+                </div>
+              </div>
+            )}
+            <iframe
+              src="./game/index.html"
+              title="Crazy Cattle 3D - Sheep Battle Royale Game"
+              allowFullScreen
+              frameBorder="0"
+              onLoad={handleIframeLoad}
+              style={{
+                display: 'block',
+                opacity: iframeLoaded ? 1 : 0,
+                transition: 'opacity 0.3s ease'
+              }}
+            ></iframe>
+          </div>
+        )}
+      </section>
+
+      <section id="download" className="download-section">
+        <h2>⬇️ Download Crazy Cattle 3D - Sheep Battle Royale</h2>
+        <p>This exciting sheep and cattle battle royale game is also available for offline play. Click below to download Crazy Cattle 3D from itch.io:</p>
+        <div className="download-buttons">
+        <a
+          href="https://4nn4t4t.itch.io/crazycattle3d"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          className="btn download-link"
+        >
+          Go to Itch.io to Download
+        </a>
+        <a
+          href="https://ko-fi.com/ashing"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          className="btn download-link"
+        >
+          ☕️ Support on Ko-fi
+        </a>
+      </div>
+      </section>
+
+      <main>
+        <Suspense fallback={<LoadingPlaceholder />}>
+          <Content />
+        </Suspense>
+      </main>
+    </>
+  );
+};
 
 export default function App() {
   const [iframeLoaded, setIframeLoaded] = useState(false)
@@ -360,110 +473,10 @@ export default function App() {
     }
   }, []);
 
-  const MainContent = () => {
-    return (
-      <>
-        <div id="top">
-          <header className="hero">
-            <h1>🐄 Crazy Cattle 3D - Sheep Battle Royale</h1>
-            <p className="tagline">Experience the wildest sheep and cattle chaos simulator online! Play Crazy Cattle 3D now and join the ultimate physics-based battle royale where sheep and cattle compete for survival!</p>
-            <div className="button-group">
-              <button onClick={() => handleScrollToSection('game')} className="btn">Play Now</button>
-              <button onClick={() => handleScrollToSection('download')} className="btn secondary">Download</button>
-               <button onClick={() => window.open('https://ko-fi.com/ashing', '_blank')} className="btn kofi">☕️ Support on Ko-fi</button>
-            </div>
-          </header>
-        </div>
-
-        <section id="game" className="iframe-section">
-          {!showGame ? (
-            <div className="game-placeholder">
-              <img
-                src="/images/crazycattle-preview.webp"
-                alt="Crazy Cattle 3D Preview"
-                className="preview-img"
-              />
-              <button onClick={() => setShowGame(true)} className="btn play-button">
-                ▶️ Play Game
-              </button>
-            </div>
-          ) : (
-            <div className="game-container">
-              {!iframeLoaded && (
-                <div className="loading-placeholder">
-                  <img
-                    src="/images/crazycattle-preview.webp"
-                    alt="Crazy Cattle 3D Preview"
-                    className="preview-img"
-                  />
-                  <div className="loading-overlay">
-                    <div className="loading-text">Loading Game...</div>
-                  </div>
-                </div>
-              )}
-              <iframe
-                src="./game/index.html"
-                title="Crazy Cattle 3D - Sheep Battle Royale Game"
-                allowFullScreen
-                frameBorder="0"
-                onLoad={handleIframeLoad}
-                style={{
-                  display: 'block',
-                  opacity: iframeLoaded ? 1 : 0,
-                  transition: 'opacity 0.3s ease'
-                }}
-              ></iframe>
-            </div>
-          )}
-        </section>
-
-        <section id="download" className="download-section">
-          <h2>⬇️ Download Crazy Cattle 3D - Sheep Battle Royale</h2>
-          <p>This exciting sheep and cattle battle royale game is also available for offline play. Click below to download Crazy Cattle 3D from itch.io:</p>
-          <div className="download-buttons">
-          <a
-            href="https://4nn4t4t.itch.io/crazycattle3d"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            className="btn download-link"
-          >
-            Go to Itch.io to Download
-          </a>
-          <a
-            href="https://ko-fi.com/ashing"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            className="btn download-link"
-          >
-            ☕️ Support on Ko-fi
-          </a>
-        </div>
-        </section>
-
-        <main>
-          <Suspense fallback={<LoadingPlaceholder />}>
-            <Content />
-          </Suspense>
-        </main>
-      </>
-    );
-  };
-
   return (
     <Router>
       <div className="container">
-        <Navigation />
-        <Suspense fallback={<LoadingPlaceholder />}>
-          <Routes>
-            <Route path="/" element={<MainContent />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/faq" element={<FAQ />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/terms-of-service" element={<TermsOfService />} />
-          </Routes>
-        </Suspense>
-        <Footer />
+        <AppContent />
       </div>
     </Router>
   );

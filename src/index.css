@@ -1,5 +1,11 @@
-body {
+html, body {
   margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
   font-family: 'Segoe UI', sans-serif;
   background: #f9f9f9;
   color: #333;
@@ -12,6 +18,8 @@ body {
   padding-top: 4rem;
   padding-bottom: 0;
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .hero {

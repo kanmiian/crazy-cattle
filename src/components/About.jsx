@@ -1,7 +1,22 @@
 import React from 'react';
 import './About.css';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const About = () => {
+  const navigate = useNavigate();
+
+  const handlePlayNow = () => {
+    navigate('/');
+    // 给页面一点时间加载
+    setTimeout(() => {
+      const gameSection = document.getElementById('game');
+      if (gameSection) {
+        gameSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
   return (
     <section className="about-section">
       <h2>About Crazy Cattle 3D - A Wild Physics Battle Royale Game</h2>
@@ -28,8 +43,8 @@ const About = () => {
         </p>
         
         <div className="about-cta">
-          <a href="/play" className="cta-button">Play Now</a>
-          <a href="/faq" className="cta-button secondary">View FAQ</a>
+          <button onClick={handlePlayNow} className="cta-button ">Play Now</button>
+          <Link to="/faq" className="cta-button secondary">View FAQ</Link>
         </div>
       </div>
     </section>

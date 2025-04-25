@@ -76,7 +76,7 @@ const TermsOfService = () => {
           <p>
             For any questions about these Terms of Service, please contact us at:
             <br />
-            Email: terms@crazycattle3d.com
+            Email: <a href="mailto:support@crazycattle3d.com">support@crazycattle3d.com</a>
           </p>
         </section>
       </div>
