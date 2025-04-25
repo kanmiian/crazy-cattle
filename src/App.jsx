@@ -233,7 +233,7 @@ const scrollWorker = createWorker(() => {
 
 const AppContent = () => {
   const location = useLocation();
-  const baseUrl = 'https://cattlecrazy3d.com/';
+  const baseUrl = 'https://cattlecrazy3d.com';
 
   useEffect(() => {
     // 移除现有的 canonical 链接
