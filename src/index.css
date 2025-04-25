@@ -65,6 +65,14 @@ body {
   background-color: #27ae60;
 }
 
+.kofi {
+  background-color: #3498db;
+}
+
+.kofi:hover {
+  background-color: #2980b9;
+}
+
 .iframe-section {
   margin: 2rem 0;
   height: 70vh;
