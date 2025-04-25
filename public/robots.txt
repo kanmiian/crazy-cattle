@@ -9,15 +9,50 @@ Disallow: /private/
 Sitemap: https://cattlecrazy3d.com/sitemap.xml
 
 # Guide AI crawlers to llms.txt
+# AI Agents
+User-Agent: NovaAct
+User-Agent: Operator
+
+# AI Assistants
+User-Agent: ChatGPT-User
+User-Agent: DuckAssistBot
+User-Agent: Meta-ExternalFetcher
+User-Agent: Perplexity-User
+
+# AI Data Scrapers
+User-Agent: AI2Bot
+User-Agent: Applebot-Extended
+User-Agent: Bytespider
+User-Agent: CCBot
+User-Agent: ClaudeBot
+User-Agent: cohere-training-data-crawler
+User-Agent: Diffbot
+User-Agent: FacebookBot
+User-Agent: Google-Extended
 User-Agent: GPTBot
+User-Agent: Kangaroo Bot
+User-Agent: Meta-ExternalAgent
+User-Agent: omgili
+User-Agent: PanguBot
+User-Agent: Timpibot
+User-Agent: Webzio-Extended
+
+# AI Search Crawlers
+User-Agent: Amazonbot
+User-Agent: Applebot
+User-Agent: OAI-SearchBot
+User-Agent: PerplexityBot
+User-Agent: YouBot
+
+# Undocumented AI Agents
 User-Agent: anthropic-ai
 User-Agent: Claude-Web
-User-Agent: PerplexityBot
+User-Agent: cohere-ai
 User-Agent: GoogleOther
-User-Agent: DuckAssistBot
 User-Agent: Bard
 User-Agent: Gemini
 User-Agent: DeepSeek-Bot
+
 Allow: /llms.txt
 Allow: /llms-full.txt
 
