@@ -84,6 +84,10 @@
     {
       "source": "/game/:path*",
       "destination": "/game/:path*"
+    },
+    {
+      "source": "/((?!api|game/).*)",
+      "destination": "/index.html"
     }
   ]
 } 
