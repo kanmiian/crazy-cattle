@@ -269,7 +269,7 @@ const scrollWorker = createWorker(() => {
 
 export default function App() {
   const [iframeLoaded, setIframeLoaded] = useState(false)
-  const [isLoading, setIsLoading] = useState(true)
+  const [showGame, setShowGame] = useState(false)
   const { observe } = useIntersectionObserver((element) => {
     element.scrollIntoView({ behavior: 'smooth' });
   }, { threshold: 0.5 });
@@ -278,7 +278,6 @@ export default function App() {
   const handleIframeLoad = useCallback(() => {
     requestAnimationFrame(() => {
       setIframeLoaded(true);
-      setIsLoading(false);
     });
   }, []);
 
@@ -361,51 +360,83 @@ export default function App() {
     }
   }, []);
 
-  const MainContent = () => (
-    <>
-      <div id="top">
-        <header className="hero">
-          <h1>🐄 Crazy Cattle 3D - Sheep Battle Royale</h1>
-          <p className="tagline">Experience the wildest sheep and cattle chaos simulator online! Play Crazy Cattle 3D now and join the ultimate physics-based battle royale where sheep and cattle compete for survival!</p>
-          <div className="button-group">
-            <button onClick={() => handleScrollToSection('game')} className="btn">Play Now</button>
-            <button onClick={() => handleScrollToSection('download')} className="btn secondary">Download</button>
-          </div>
-        </header>
-      </div>
+  const MainContent = () => {
+    return (
+      <>
+        <div id="top">
+          <header className="hero">
+            <h1>🐄 Crazy Cattle 3D - Sheep Battle Royale</h1>
+            <p className="tagline">Experience the wildest sheep and cattle chaos simulator online! Play Crazy Cattle 3D now and join the ultimate physics-based battle royale where sheep and cattle compete for survival!</p>
+            <div className="button-group">
+              <button onClick={() => handleScrollToSection('game')} className="btn">Play Now</button>
+              <button onClick={() => handleScrollToSection('download')} className="btn secondary">Download</button>
+            </div>
+          </header>
+        </div>
 
-      <section id="game" className="iframe-section">
-        {isLoading && <LoadingPlaceholder />}
-        <iframe
-          src="./game/index.html"
-          title="Crazy Cattle 3D - Sheep Battle Royale Game"
-          allowFullScreen
-          frameBorder="0"
-          onLoad={handleIframeLoad}
-          style={{ display: iframeLoaded ? 'block' : 'none' }}
-        ></iframe>
-      </section>
+        <section id="game" className="iframe-section">
+          {!showGame ? (
+            <div className="game-placeholder">
+              <img 
+                src="/images/crazycattle-preview.webp" 
+                alt="Crazy Cattle 3D Preview" 
+                className="preview-img"
+              />
+              <button onClick={() => setShowGame(true)} className="btn play-button">
+                ▶️ Play Game
+              </button>
+            </div>
+          ) : (
+            <div className="game-container">
+              {!iframeLoaded && (
+                <div className="loading-placeholder">
+                  <img 
+                    src="/images/crazycattle-preview.webp" 
+                    alt="Crazy Cattle 3D Preview" 
+                    className="preview-img"
+                  />
+                  <div className="loading-overlay">
+                    <div className="loading-text">Loading Game...</div>
+                  </div>
+                </div>
+              )}
+              <iframe
+                src="./game/index.html"
+                title="Crazy Cattle 3D - Sheep Battle Royale Game"
+                allowFullScreen
+                frameBorder="0"
+                onLoad={handleIframeLoad}
+                style={{ 
+                  display: 'block',
+                  opacity: iframeLoaded ? 1 : 0,
+                  transition: 'opacity 0.3s ease'
+                }}
+              ></iframe>
+            </div>
+          )}
+        </section>
 
-      <section id="download" className="download-section">
-        <h2>⬇️ Download Crazy Cattle 3D - Sheep Battle Royale</h2>
-        <p>This exciting sheep and cattle battle royale game is also available for offline play. Click below to download Crazy Cattle 3D from itch.io:</p>
-        <a
-          href="https://4nn4t4t.itch.io/crazycattle3d"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          className="btn download-link"
-        >
-          Go to Itch.io to Download
-        </a>
-      </section>
+        <section id="download" className="download-section">
+          <h2>⬇️ Download Crazy Cattle 3D - Sheep Battle Royale</h2>
+          <p>This exciting sheep and cattle battle royale game is also available for offline play. Click below to download Crazy Cattle 3D from itch.io:</p>
+          <a
+            href="https://4nn4t4t.itch.io/crazycattle3d"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            className="btn download-link"
+          >
+            Go to Itch.io to Download
+          </a>
+        </section>
 
-      <main>
-        <Suspense fallback={<LoadingPlaceholder />}>
-          <Content />
-        </Suspense>
-      </main>
-    </>
-  );
+        <main>
+          <Suspense fallback={<LoadingPlaceholder />}>
+            <Content />
+          </Suspense>
+        </main>
+      </>
+    );
+  };
 
   return (
     <Router>
