@@ -1,16 +1,35 @@
-# Allow all crawlers
+# robots.txt for cattlecrazy3d.com
+
+# SEO engine rules
 User-agent: *
 Allow: /
-
-# Sitemap location
-Sitemap: https://cattlecrazy3d.com/sitemap.xml
-
-# Disallow admin and private areas
 Disallow: /admin/
 Disallow: /private/
-Disallow: /api/
-Disallow: /_next/
-Disallow: /static/
 
-# Crawl delay
-Crawl-delay: 10 
+Sitemap: https://cattlecrazy3d.com/sitemap.xml
+
+# Guide AI crawlers to llms.txt
+User-Agent: GPTBot
+User-Agent: anthropic-ai
+User-Agent: Claude-Web
+User-Agent: PerplexityBot
+User-Agent: GoogleOther
+User-Agent: DuckAssistBot
+User-Agent: Bard
+User-Agent: Gemini
+User-Agent: DeepSeek-Bot
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# Content that AI crawlers are allowed to access
+Allow: /
+Allow: /about
+Allow: /contact
+Allow: /faq
+Allow: /privacy-policy
+Allow: /terms-of-service
+
+# Content that AI crawlers are not allowed to access
+Disallow: /admin/
+Disallow: /private/ 
+Disallow: /game/

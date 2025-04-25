@@ -1,0 +1,47 @@
+# Crazy Cattle 3D - Sheep Battle Royale
+
+> A physics-driven battle game where players control explosive sheep and cattle competing for survival across three unique environments.
+
+[Crazy Cattle 3D](https://cattlecrazy3d.com) is a fun physics simulation game, available to play online or download. In this chaotic battlefield, players will experience the thrill of sheep versus cattle herds, using physics and momentum to become the ultimate warrior. The game offers a browser-based online version and a downloadable offline version, supporting multiple platforms.
+
+## Play Now
+On our website, you can experience the complete version of Crazy Cattle 3D directly through your browser, with no download required. The game loads quickly, has simple controls, and is suitable for players of all ages. Just click the "Play Now" button to begin your battle journey.
+
+## Download Game
+If you want a smoother gaming experience, you can download the offline version of Crazy Cattle 3D from the itch.io platform. We provide multi-platform support to ensure you can enjoy the game on any device. After downloading, you'll get access to the complete game content and regular updates.
+
+## Game Features
+Crazy Cattle 3D has many unique features:
+- Physics-driven system: A realistic physics engine delivers a laugh-out-loud gaming experience
+- Diverse environments: Three unique scenes, each with different strategic challenges
+- Character diversity: Choose to play as explosive sheep or strong cattle, each with unique abilities
+- Easy to learn: A control system that's easy to pick up but difficult to master
+- Strategic depth: Requires strategic thinking and skill to become the ultimate winner
+
+## How to Play
+In Crazy Cattle 3D, you'll learn how to:
+- Control character movement and jumping
+- Use the physics system to create momentum advantages
+- Use special abilities to defeat opponents
+- Survive and fight in different terrains
+- Master timing and strategy to become the ultimate winner
+
+## System Requirements
+For the best experience, we recommend:
+- Modern web browsers (latest versions of Chrome, Firefox, Safari, or Edge)
+- Stable internet connection (for online version)
+- 2GB RAM
+- Any graphics card that supports WebGL
+
+## Support and Feedback
+We are committed to continuously improving the Crazy Cattle 3D gaming experience. If you have any questions or suggestions, please contact us through:
+- Visit our FAQ page for answers to common questions
+- Send your feedback and suggestions via our contact page
+- Support our development on Ko-fi
+
+## About the Development Team
+Crazy Cattle 3D is developed by a small independent team that loves games and physics simulation. Our goal is to create fun, easy-to-learn yet deep gaming experiences. We value player feedback and continuously update our game content.
+
+## Legal Information
+- Privacy Policy: Detailed explanation of how we collect, use, and protect user data
+- Terms of Service: Terms and conditions for using our website and game
