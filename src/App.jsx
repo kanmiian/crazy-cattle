@@ -1,6 +1,7 @@
 import React, { useState, useEffect, lazy, Suspense, useCallback, useMemo, useRef } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate, useLocation } from 'react-router-dom'
 import './index.css'
+import SEO from './components/SEO'
 
 // 懒加载组件
 const Content = lazy(() => import('./components/Content'))
@@ -232,7 +233,7 @@ const scrollWorker = createWorker(() => {
 
 const AppContent = () => {
   const location = useLocation();
-  const baseUrl = 'https://crazycattle3d.com';
+  const baseUrl = 'https://cattlecrazy3d.com/';
 
   useEffect(() => {
     // 移除现有的 canonical 链接
@@ -446,11 +447,11 @@ export default function App() {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Crazy Cattle 3D - Sheep Battle Royale Game",
-        "url": "https://crazycattle3d.com",
+        "url": "https://cattlecrazy3d.com/",
         "description": "Play as explosive sheep and cattle in this physics-based battle royale game. Master momentum and become the ultimate warrior in Crazy Cattle 3D.",
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://crazycattle3d.com/search?q={search_term_string}",
+          "target": "https://cattlecrazy3d.com/search?q={search_term_string}",
           "query-input": "required name=search_term_string"
         }
       };
@@ -475,6 +476,7 @@ export default function App() {
 
   return (
     <Router>
+      <SEO />
       <div className="container">
         <AppContent />
       </div>
