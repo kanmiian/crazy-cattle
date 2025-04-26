@@ -1,16 +1,70 @@
-# Allow all crawlers
+# robots.txt for cattlecrazy3d.com
+
+# SEO engine rules
 User-agent: *
 Allow: /
-
-# Sitemap location
-Sitemap: https://cattlecrazy3d.com/sitemap.xml
-
-# Disallow admin and private areas
 Disallow: /admin/
 Disallow: /private/
-Disallow: /api/
-Disallow: /_next/
-Disallow: /static/
 
-# Crawl delay
-Crawl-delay: 10 
+Sitemap: https://cattlecrazy3d.com/sitemap.xml
+
+# Guide AI crawlers to llms.txt
+# AI Agents
+User-Agent: NovaAct
+User-Agent: Operator
+
+# AI Assistants
+User-Agent: ChatGPT-User
+User-Agent: DuckAssistBot
+User-Agent: Meta-ExternalFetcher
+User-Agent: Perplexity-User
+
+# AI Data Scrapers
+User-Agent: AI2Bot
+User-Agent: Applebot-Extended
+User-Agent: Bytespider
+User-Agent: CCBot
+User-Agent: ClaudeBot
+User-Agent: cohere-training-data-crawler
+User-Agent: Diffbot
+User-Agent: FacebookBot
+User-Agent: Google-Extended
+User-Agent: GPTBot
+User-Agent: Kangaroo Bot
+User-Agent: Meta-ExternalAgent
+User-Agent: omgili
+User-Agent: PanguBot
+User-Agent: Timpibot
+User-Agent: Webzio-Extended
+
+# AI Search Crawlers
+User-Agent: Amazonbot
+User-Agent: Applebot
+User-Agent: OAI-SearchBot
+User-Agent: PerplexityBot
+User-Agent: YouBot
+
+# Undocumented AI Agents
+User-Agent: anthropic-ai
+User-Agent: Claude-Web
+User-Agent: cohere-ai
+User-Agent: GoogleOther
+User-Agent: Bard
+User-Agent: Gemini
+User-Agent: DeepSeek-Bot
+
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# Content that AI crawlers are allowed to access
+Allow: /
+Allow: /about
+Allow: /contact
+Allow: /faq
+Allow: /privacy-policy
+Allow: /terms-of-service
+
+# Content that AI crawlers are not allowed to access
+Disallow: /admin/
+Disallow: /private/ 
+Disallow: /game/
