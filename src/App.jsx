@@ -346,7 +346,8 @@ const MainContent = () => {
               </div>
             )}
             <iframe
-              src="./game/index.html"
+              src="https://static.cattlecrazy3d.com/game/index.html"
+              // src="./game/index.html"
               title="Crazy Cattle 3D - Sheep Battle Royale Game"
               allowFullScreen
               frameBorder="0"
@@ -434,22 +435,6 @@ export default function App() {
           document.body.appendChild(script);
         });
       };
-
-      // 使用 requestIdleCallback 延迟加载
-      if ('requestIdleCallback' in window) {
-        requestIdleCallback(async () => {
-          try {
-            await loadScript('https://cattle-chat.onrender.com/socket.io/socket.io.js');
-            window.CHAT_SERVER_URL = 'https://cattle-chat.onrender.com';
-            await loadScript('https://cattle-chat.onrender.com/chat-overlay-bundled.js');
-            await loadScript('https://literate-manatee.pikapod.net/script.js', false);
-          } catch (error) {
-            console.error('Failed to load third-party scripts:', error);
-          }
-        });
-      } else {
-        setTimeout(loadThirdPartyScripts, 2000);
-      }
     };
 
     loadThirdPartyScripts();
