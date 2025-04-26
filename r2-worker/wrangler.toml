@@ -25,6 +25,7 @@ bucket_name = "cattlecrazy3d" # *** REPLACE THIS with your actual R2 bucket name
 [vars]
 # You can define environment variables here if needed
 # EXAMPLE_VAR = "example_value"
+NODE_ENV = "development"
 
 # Deployment configuration for a specific environment (e.g., production)
 [env.production]

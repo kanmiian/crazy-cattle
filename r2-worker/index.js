@@ -21,7 +21,7 @@ export default {
 
     // Handle Preflight (OPTIONS) requests
     if (request.method === 'OPTIONS') {
-        headers.set('Access-Control-Allow-Origin', origin);
+        headers.set('Access-Control-Allow-Origin', "*");
         headers.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
         headers.set('Access-Control-Allow-Headers', 'Content-Type'); // Add any other headers needed
         headers.set('Access-Control-Max-Age', '86400'); // Cache preflight for 1 day
@@ -30,7 +30,7 @@ export default {
 
     // Handle actual GET/HEAD requests
     if (request.method === 'GET' || request.method === 'HEAD') {
-      headers.set('Access-Control-Allow-Origin', origin);
+      headers.set('Access-Control-Allow-Origin', "*");
 
       if (key === '') {
         // Optionally handle requests to the root path, e.g., return a default object or an index page

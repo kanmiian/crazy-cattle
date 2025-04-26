@@ -346,7 +346,7 @@ const MainContent = () => {
               </div>
             )}
             <iframe
-              src="https://static.cattlecrazy3d.com/game/index.html"
+              src="https://cattlecrazy3d.com/game/index.html"
               // src="./game/index.html"
               title="Crazy Cattle 3D - Sheep Battle Royale Game"
               allowFullScreen
