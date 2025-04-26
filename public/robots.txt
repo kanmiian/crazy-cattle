@@ -66,5 +66,5 @@ Allow: /terms-of-service
 
 # Content that AI crawlers are not allowed to access
 Disallow: /admin/
-Disallow: /private/ 
+Disallow: /private/
 Disallow: /game/

@@ -4,20 +4,32 @@ import './FAQ.css';
 const FAQ = () => {
   return (
     <div className="faq-page">
-      <h1>Frequently Asked Questions</h1>
+      <h1>
+        <span role="img" aria-label="question mark">❓</span>
+        Frequently Asked Questions
+      </h1>
       <div className="faq-content">
         <section className="faq-section">
           <h2>Game Basics</h2>
           <div className="faq-item">
-            <h3>What is Crazy Cattle 3D?</h3>
+            <h3>
+              <span role="img" aria-label="question">❓</span> 
+              What is Crazy Cattle 3D?
+            </h3>
             <p>Crazy Cattle 3D is a free-to-play browser-based physics battle royale game where players control cows in a chaotic arena. The game combines humor, strategy, and physics-based gameplay in a unique multiplayer experience.</p>
           </div>
           <div className="faq-item">
-            <h3>Is the game really free to play?</h3>
+            <h3>
+              <span role="img" aria-label="money">💰</span> 
+              Is the game really free to play?
+            </h3>
             <p>Yes! Crazy Cattle 3D is completely free to play. There are no hidden costs, no pay-to-win mechanics, and no advertisements. We believe in providing a pure gaming experience for all players.</p>
           </div>
           <div className="faq-item">
-            <h3>What are the system requirements?</h3>
+            <h3>
+              <span role="img" aria-label="computer">💻</span> 
+              What are the system requirements?
+            </h3>
             <p>The game is designed to run smoothly on most modern browsers. We recommend using Chrome, Firefox, or Edge with a stable internet connection. The game uses WebGL for 3D graphics, so your browser needs to support it.</p>
           </div>
         </section>
@@ -25,15 +37,24 @@ const FAQ = () => {
         <section className="faq-section">
           <h2>Gameplay</h2>
           <div className="faq-item">
-            <h3>How do I play the game?</h3>
+            <h3>
+              <span role="img" aria-label="game controller">🎮</span> 
+              How do I play the game?
+            </h3>
             <p>Use WASD or arrow keys to move your cow, and the spacebar to jump. Click to attack other players. The goal is to be the last cow standing in the arena. Each match typically lasts 3-5 minutes.</p>
           </div>
           <div className="faq-item">
-            <h3>Are there different game modes?</h3>
+            <h3>
+              <span role="img" aria-label="video game">🎲</span> 
+              Are there different game modes?
+            </h3>
             <p>Yes! We offer several game modes including Classic Battle Royale, Team Deathmatch, and special event modes that rotate weekly. Each mode offers unique gameplay experiences and rewards.</p>
           </div>
           <div className="faq-item">
-            <h3>Can I play with friends?</h3>
+            <h3>
+              <span role="img" aria-label="people">👥</span> 
+              Can I play with friends?
+            </h3>
             <p>Absolutely! You can create or join private matches with friends using the room code system. We also have a party system that allows you to queue together for public matches.</p>
           </div>
         </section>

@@ -4,10 +4,16 @@ import './TermsOfService.css';
 const TermsOfService = () => {
   return (
     <div className="legal-page">
-      <h1>Terms of Service</h1>
+      <h1>
+        <span role="img" aria-label="scroll">📜</span>
+        Terms of Service
+      </h1>
       <div className="legal-content">
         <section>
-          <h2>1. Acceptance of Terms</h2>
+          <h2>
+            <span role="img" aria-label="check mark">✅</span> 
+            1. Acceptance of Terms
+          </h2>
           <p>
             By accessing and playing Crazy Cattle 3D, you accept and agree to be bound by the terms and provision 
             of this agreement. If you do not agree to abide by the above, please do not use this game.
@@ -15,7 +21,10 @@ const TermsOfService = () => {
         </section>
 
         <section>
-          <h2>2. Game License</h2>
+          <h2>
+            <span role="img" aria-label="key">🔑</span> 
+            2. Game License
+          </h2>
           <p>
             Crazy Cattle 3D is provided for personal, non-commercial use only. You may not:
           </p>
@@ -28,7 +37,10 @@ const TermsOfService = () => {
         </section>
 
         <section>
-          <h2>3. User Conduct</h2>
+          <h2>
+            <span role="img" aria-label="people">👥</span> 
+            3. User Conduct
+          </h2>
           <p>When using Crazy Cattle 3D, you agree to:</p>
           <ul>
             <li>Play fairly and not use any cheats or exploits</li>
@@ -39,7 +51,10 @@ const TermsOfService = () => {
         </section>
 
         <section>
-          <h2>4. Intellectual Property</h2>
+          <h2>
+            <span role="img" aria-label="copyright">©️</span> 
+            4. Intellectual Property
+          </h2>
           <p>
             All content, features, and functionality of Crazy Cattle 3D, including but not limited to text, 
             graphics, logos, icons, images, and software, are owned by us and are protected by international 

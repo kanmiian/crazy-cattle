@@ -202,6 +202,15 @@ const Footer = () => {
             <Link to="/terms-of-service" className="footer-link">Terms of Service</Link>
           </div>
         </div>
+
+        <div className="footer-section">
+          <h3>Friends</h3>
+          <div className="footer-links">
+            <a href="https://www.online-guitartuner.com/" target="_blank" rel="noopener noreferrer nofollow" className="footer-link">Online Guitar Tuner</a>
+            <a href="https://animalbrainrot.com/" target="_blank" rel="noopener noreferrer nofollow" className="footer-link">AI Brainrot Animals</a>
+            <a href="https://braingames.quest/" target="_blank" rel="noopener noreferrer nofollow" className="footer-link">Brain Games</a>
+          </div>
+        </div>
       </div>
 
       <div className="footer-bottom">
@@ -297,7 +306,10 @@ const MainContent = () => {
     <>
       <div id="top">
         <header className="hero">
-          <h1>🐄 Crazy Cattle 3D - Sheep Battle Royale</h1>
+          <h1>
+            <span role="img" aria-label="cow">🐄</span> 
+            Crazy Cattle 3D - Sheep Battle Royale
+          </h1>
           <p className="tagline">Experience the wildest sheep and cattle chaos simulator online! Play Crazy Cattle 3D now and join the ultimate physics-based battle royale where sheep and cattle compete for survival!</p>
           <div className="button-group">
             <button onClick={() => handleScrollToSection('game')} className="btn">Play Now</button>
@@ -350,7 +362,10 @@ const MainContent = () => {
       </section>
 
       <section id="download" className="download-section">
-        <h2>⬇️ Download Crazy Cattle 3D - Sheep Battle Royale</h2>
+        <h2>
+          <span role="img" aria-label="download">⬇️</span> 
+          Download Crazy Cattle 3D - Sheep Battle Royale
+        </h2>
         <p>This exciting sheep and cattle battle royale game is also available for offline play. Click below to download Crazy Cattle 3D from itch.io:</p>
         <div className="download-buttons">
         <a

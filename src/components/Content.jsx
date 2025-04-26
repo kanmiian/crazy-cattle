@@ -31,10 +31,16 @@ const About = () => {
       </div>
 
       <div id="features">
-        <h3>Game Features</h3>
+        <h3>
+          <span role="img" aria-label="sparkles">✨</span> 
+          Game Features
+        </h3>
         <div className="features-grid">
           <div className="feature-card">
-            <h4>Revolutionary Physics System</h4>
+            <h4>
+              <span role="img" aria-label="atom">⚛️</span> 
+              Revolutionary Physics System
+            </h4>
             <p>
               Experience a groundbreaking physics engine designed specifically for authentic sheep movement. 
               Each collision and interaction creates unpredictable and hilarious moments as you navigate 
@@ -49,7 +55,10 @@ const About = () => {
           </div>
 
           <div className="feature-card">
-            <h4>Three Unique Environments</h4>
+            <h4>
+              <span role="img" aria-label="world map">🗺️</span> 
+              Three Unique Environments
+            </h4>
             <p>
               Battle across three meticulously crafted maps, each offering distinct gameplay experiences:
             </p>
@@ -67,7 +76,10 @@ const About = () => {
           </div>
 
           <div className="feature-card">
-            <h4>Skill-Based Combat</h4>
+            <h4>
+              <span role="img" aria-label="target">🎯</span> 
+              Skill-Based Combat
+            </h4>
             <p>
               Master the art of sheep combat through a combination of timing, strategy, and physics 
               understanding. The game rewards skill development and strategic thinking while maintaining 
@@ -91,7 +103,10 @@ const About = () => {
       </div>
 
       <div id="how-to-play">
-        <h3>How to Play</h3>
+        <h3>
+          <span role="img" aria-label="joystick">🕹️</span> 
+          How to Play
+        </h3>
         <div className="how-to-play">
           <p>
             Getting started with Crazy Cattle 3D is simple, but mastering the game requires practice and 
@@ -120,7 +135,10 @@ const About = () => {
       </div>
 
       <div id="game-modes">
-        <h3>Game Modes</h3>
+        <h3>
+          <span role="img" aria-label="game die">🎲</span> 
+          Game Modes
+        </h3>
         <div className="game-modes">
           <div className="mode-card">
             <h4>Battle Royale</h4>
@@ -161,7 +179,10 @@ const About = () => {
       </div>
 
       <div id="requirements">
-        <h3>System Requirements</h3>
+        <h3>
+          <span role="img" aria-label="gear">⚙️</span> 
+          System Requirements
+        </h3>
         <div className="requirements">
           <p>
             Crazy Cattle 3D is designed to run smoothly on most modern computers. Here are the recommended 
@@ -186,7 +207,10 @@ const About = () => {
       </div>
 
       <div id="tips">
-        <h3>Tips for Success</h3>
+        <h3>
+          <span role="img" aria-label="light bulb">💡</span> 
+          Tips for Success
+        </h3>
         <div className="tips">
           <p>
             Mastering Crazy Cattle 3D takes time and practice. Here are some tips to help you improve 

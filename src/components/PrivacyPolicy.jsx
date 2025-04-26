@@ -3,10 +3,16 @@ import React from 'react';
 const PrivacyPolicy = () => {
   return (
     <div className="legal-page">
-      <h1>Privacy Policy</h1>
+      <h1>
+        <span role="img" aria-label="shield">🛡️</span>
+        Privacy Policy
+      </h1>
       <div className="legal-content">
         <section>
-          <h2>1. Introduction</h2>
+          <h2>
+            <span role="img" aria-label="info">ℹ️</span> 
+            1. Introduction
+          </h2>
           <p>
             Welcome to Crazy Cattle 3D. We respect your privacy and are committed to protecting your personal data. 
             This privacy policy will inform you about how we look after your personal data when you visit our website 
@@ -15,7 +21,10 @@ const PrivacyPolicy = () => {
         </section>
 
         <section>
-          <h2>2. Data We Collect</h2>
+          <h2>
+            <span role="img" aria-label="database">🗄️</span> 
+            2. Data We Collect
+          </h2>
           <p>We collect and process the following data:</p>
           <ul>
             <li>Game performance data (scores, achievements)</li>
@@ -26,7 +35,10 @@ const PrivacyPolicy = () => {
         </section>
 
         <section>
-          <h2>3. How We Use Your Data</h2>
+          <h2>
+            <span role="img" aria-label="gear">⚙️</span> 
+            3. How We Use Your Data
+          </h2>
           <p>We use your data to:</p>
           <ul>
             <li>Improve game performance and user experience</li>
@@ -37,7 +49,10 @@ const PrivacyPolicy = () => {
         </section>
 
         <section>
-          <h2>4. Data Security</h2>
+          <h2>
+            <span role="img" aria-label="shield">🛡️</span> 
+            4. Data Security
+          </h2>
           <p>
             We implement appropriate security measures to protect your personal data against unauthorized access, 
             alteration, disclosure, or destruction.

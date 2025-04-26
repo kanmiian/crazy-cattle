@@ -19,7 +19,10 @@ const About = () => {
 
   return (
     <section className="about-section">
-      <h2>About Crazy Cattle 3D - A Wild Physics Battle Royale Game</h2>
+      <h1>
+        <span role="img" aria-label="cow">🐄</span> 
+        Crazy Cattle 3D - Sheep Battle Royale
+      </h1>
       
       <div className="about-content">
         <p>
