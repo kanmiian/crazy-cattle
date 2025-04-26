@@ -26,18 +26,3 @@ bucket_name = "cattlecrazy3d" # *** REPLACE THIS with your actual R2 bucket name
 # You can define environment variables here if needed
 # EXAMPLE_VAR = "example_value"
 NODE_ENV = "development"
-
-# Deployment configuration for a specific environment (e.g., production)
-[env.production]
-# Uncomment and set your account ID if not using environment variables
-# account_id = "YOUR_CLOUDFLARE_ACCOUNT_ID" # *** REPLACE THIS ***
-route = { pattern = "static.cattlecrazy3d.com/*", custom_domain = true }
-
-[[env.production.r2_buckets]]
-binding = "MY_BUCKET"
-preview_bucket_name = "cattlecrazy3d" # Optional: Needs to be unique if used
-bucket_name = "cattlecrazy3d" # *** REPLACE THIS with your actual R2 bucket name ***
-
-# If you are not using environments, you can configure the route directly:
-# account_id = "YOUR_CLOUDFLARE_ACCOUNT_ID" # *** REPLACE THIS ***
-# route = { pattern = "static.cattlecrazy3d.com/*", custom_domain = true } 
