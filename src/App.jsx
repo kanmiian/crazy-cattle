@@ -302,6 +302,11 @@ const MainContent = () => {
     }
   };
 
+  const isProduction = process.env.NODE_ENV === 'production';
+  const gameSrc = isProduction
+    ? 'https://cattlecrazy3d.com/game/index.html'
+    : './game/index.html';
+
   return (
     <>
       <div id="top">
@@ -346,8 +351,8 @@ const MainContent = () => {
               </div>
             )}
             <iframe
-              src="./game/index.html"
-              title="Crazy Cattle 3D - Sheep Battle Royale Game"
+              title="Crazy Cattle 3D"
+              src={gameSrc}
               allowFullScreen
               frameBorder="0"
               onLoad={handleIframeLoad}
@@ -434,22 +439,6 @@ export default function App() {
           document.body.appendChild(script);
         });
       };
-
-      // 使用 requestIdleCallback 延迟加载
-      if ('requestIdleCallback' in window) {
-        requestIdleCallback(async () => {
-          try {
-            await loadScript('https://cattle-chat.onrender.com/socket.io/socket.io.js');
-            window.CHAT_SERVER_URL = 'https://cattle-chat.onrender.com';
-            await loadScript('https://cattle-chat.onrender.com/chat-overlay-bundled.js');
-            await loadScript('https://literate-manatee.pikapod.net/script.js', false);
-          } catch (error) {
-            console.error('Failed to load third-party scripts:', error);
-          }
-        });
-      } else {
-        setTimeout(loadThirdPartyScripts, 2000);
-      }
     };
 
     loadThirdPartyScripts();
@@ -488,6 +477,8 @@ export default function App() {
       setTimeout(loadStructuredData, 1000);
     }
   }, []);
+
+  console.log(process.env.NODE_ENV);
 
   return (
     <Router>

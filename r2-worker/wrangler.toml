@@ -1,0 +1,28 @@
+# Top-level configuration
+name = "r2-static-assets" # Your worker's name
+main = "index.js" # The entry point for your worker
+compatibility_date = "2025-04-26" # Use a recent compatibility date
+
+# R2 Bucket binding
+# Make sure the R2 bucket "YOUR_BUCKET_NAME" exists in your account.
+[[r2_buckets]]
+binding = "MY_BUCKET" # The name of the binding in your Worker code
+preview_bucket_name = "cattlecrazy3d" # Optional: A bucket for local/preview development
+bucket_name = "cattlecrazy3d" # *** REPLACE THIS with your actual R2 bucket name ***
+
+# Environment configuration (optional, if you need different settings per environment)
+# [env.production]
+# name = "r2-static-assets-prod" # Example: Different name for production
+# route = { pattern = "static.cattlecrazy3d.com/*", custom_domain = true }
+#
+# [[env.production.r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "YOUR_PRODUCTION_BUCKET_NAME" # *** REPLACE THIS ***
+
+# Route configuration for deployment
+# This assumes you want to deploy directly to the specified route.
+# Ensure your Cloudflare account ID is set here or via environment variable CLOUDFLARE_ACCOUNT_ID
+[vars]
+# You can define environment variables here if needed
+# EXAMPLE_VAR = "example_value"
+NODE_ENV = "development"
