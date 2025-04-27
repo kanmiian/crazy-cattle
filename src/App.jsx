@@ -302,6 +302,11 @@ const MainContent = () => {
     }
   };
 
+  const isProduction = process.env.NODE_ENV === 'production';
+  const gameSrc = isProduction
+    ? 'https://cattlecrazy3d.com/game/index.html'
+    : './game/index.html';
+
   return (
     <>
       <div id="top">
@@ -346,9 +351,8 @@ const MainContent = () => {
               </div>
             )}
             <iframe
-              src="https://cattlecrazy3d.com/game/index.html"
-              // src="./game/index.html"
-              title="Crazy Cattle 3D - Sheep Battle Royale Game"
+              title="Crazy Cattle 3D"
+              src={gameSrc}
               allowFullScreen
               frameBorder="0"
               onLoad={handleIframeLoad}
@@ -473,6 +477,8 @@ export default function App() {
       setTimeout(loadStructuredData, 1000);
     }
   }, []);
+
+  console.log(process.env.NODE_ENV);
 
   return (
     <Router>
