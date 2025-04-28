@@ -137,68 +137,68 @@ const Navigation = () => {
   };
 
   const handleBookmark = () => {
-  try {
-    // IE浏览器
-    if (window.external && 'AddFavorite' in window.external) {
-      window.external.AddFavorite(window.location.href, document.title);
-      return;
-    }
+    try {
+      // IE browser
+      if (window.external && 'AddFavorite' in window.external) {
+        window.external.AddFavorite(window.location.href, document.title);
+        return;
+      }
 
-    // Firefox旧版
-    if (window.sidebar && window.sidebar.addPanel) {
-      window.sidebar.addPanel(document.title, window.location.href, "");
-      return;
-    }
+      // Firefox legacy
+      if (window.sidebar && window.sidebar.addPanel) {
+        window.sidebar.addPanel(document.title, window.location.href, "");
+        return;
+      }
 
-    // 现代浏览器（需要用户触发）
-    const shortcutHint = navigator.platform.includes('Mac')
-      ? 'Command/Cmd + D'
-      : 'Ctrl + D';
+      // Modern browsers (requires user interaction)
+      const shortcutHint = navigator.platform.includes('Mac')
+        ? 'Command/Cmd + D'
+        : 'Ctrl + D';
 
-    // 尝试通过创建悬浮元素触发（保留用户交互上下文）
-    const btn = document.createElement('button');
-    btn.style.position = 'fixed';
-    btn.style.opacity = '0';
-    btn.addEventListener('click', () => {
-      try {
-        // 创建可见的临时链接（部分浏览器需要元素在DOM中）
-        const link = document.createElement('a');
-        link.href = window.location.href;
-        link.textContent = document.title;
-        document.body.appendChild(link);
+      // Try to trigger via floating element (preserve user interaction context)
+      const btn = document.createElement('button');
+      btn.style.position = 'fixed';
+      btn.style.opacity = '0';
+      btn.addEventListener('click', () => {
+        try {
+          // Create visible temporary link (some browsers require element in DOM)
+          const link = document.createElement('a');
+          link.href = window.location.href;
+          link.textContent = document.title;
+          document.body.appendChild(link);
 
-        // 尝试触发浏览器默认行为
-        const range = document.createRange();
-        range.selectNode(link);
-        window.getSelection().removeAllRanges();
-        window.getSelection().addRange(range);
-
-        // 移除元素
-        setTimeout(() => {
-          document.body.removeChild(link);
+          // Try to trigger browser default behavior
+          const range = document.createRange();
+          range.selectNode(link);
           window.getSelection().removeAllRanges();
-        }, 100);
-      } catch (error) {
-        console.error('Bookmark fallback failed:', error);
-      }
-    });
+          window.getSelection().addRange(range);
 
-    document.body.appendChild(btn);
-    btn.click();
-    document.body.removeChild(btn);
+          // Remove element
+          setTimeout(() => {
+            document.body.removeChild(link);
+            window.getSelection().removeAllRanges();
+          }, 100);
+        } catch (error) {
+          console.error('Bookmark fallback failed:', error);
+        }
+      });
 
-        // 如果500ms后页面标题未变化（说明触发失败），显示提示
-        setTimeout(() => {
-          if (document.title === document.title) {
-            alert(`请使用浏览器快捷键 ${shortcutHint} 手动收藏本页`);
-          }
-        }, 500);
+      document.body.appendChild(btn);
+      btn.click();
+      document.body.removeChild(btn);
 
-      } catch (error) {
-        console.error('Bookmark error:', error);
-        alert('收藏失败，请使用浏览器菜单手动添加书签');
-      }
-    };
+      // If page title hasn't changed after 500ms (trigger failed), show hint
+      setTimeout(() => {
+        if (document.title === document.title) {
+          alert(`Please use browser shortcut ${shortcutHint} to bookmark this page`);
+        }
+      }, 500);
+
+    } catch (error) {
+      console.error('Bookmark error:', error);
+      alert('Failed to bookmark. Please use browser menu to add bookmark manually');
+    }
+  };
 
   return (
     <nav className="main-nav">
@@ -363,6 +363,8 @@ const MainContent = () => {
   // 添加必要的状态变量
   const [showGame, setShowGame] = useState(false);
   const [iframeLoaded, setIframeLoaded] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const gameContainerRef = useRef(null);
 
   // 处理 iframe 加载完成的回调
   const handleIframeLoad = () => {
@@ -374,6 +376,36 @@ const MainContent = () => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  // 处理网页全屏
+  const handleWebFullscreen = () => {
+    if (gameContainerRef.current) {
+      if (!isFullscreen) {
+        gameContainerRef.current.style.height = '100vh';
+        gameContainerRef.current.style.position = 'fixed';
+        gameContainerRef.current.style.top = '0';
+        gameContainerRef.current.style.left = '0';
+        gameContainerRef.current.style.zIndex = '1000';
+        setIsFullscreen(true);
+      } else {
+        gameContainerRef.current.style.height = '70vh';
+        gameContainerRef.current.style.position = 'relative';
+        gameContainerRef.current.style.top = 'auto';
+        gameContainerRef.current.style.left = 'auto';
+        gameContainerRef.current.style.zIndex = 'auto';
+        setIsFullscreen(false);
+      }
+    }
+  };
+
+  // 处理浏览器全屏
+  const handleBrowserFullscreen = () => {
+    if (!document.fullscreenElement) {
+      gameContainerRef.current?.requestFullscreen();
+    } else {
+      document.exitFullscreen();
     }
   };
 
@@ -412,7 +444,7 @@ const MainContent = () => {
             </button>
           </div>
         ) : (
-          <div className="game-container">
+          <div className="game-container" ref={gameContainerRef}>
             {!iframeLoaded && (
               <div className="loading-placeholder">
                 <img
@@ -437,6 +469,14 @@ const MainContent = () => {
                 transition: 'opacity 0.3s ease'
               }}
             ></iframe>
+            <div className="game-controls">
+              <button onClick={handleWebFullscreen} className="control-btn" title="Web Fullscreen">
+                {isFullscreen ? '⤓' : '⤢'}
+              </button>
+              <button onClick={handleBrowserFullscreen} className="control-btn" title="Browser Fullscreen">
+                ⛶
+              </button>
+            </div>
           </div>
         )}
       </section>
