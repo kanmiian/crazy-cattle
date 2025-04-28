@@ -216,16 +216,44 @@ body {
   margin: 0 auto;
   padding: 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+  color: #2c3e50;
+  transition: color 0.3s ease;
+}
+
+.logo-main {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #2c3e50;
-  text-decoration: none;
-  transition: color 0.3s ease;
+  line-height: 1.2;
+}
+
+.logo-sub {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 0.2rem;
+  margin-left: 2.5rem;
+}
+
+.nav-sub-links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid #eee;
+}
+
+.nav-sub-links .nav-link {
+  font-size: 0.9rem;
+  padding: 0.3rem 0.8rem;
+  margin: 0.2rem 0;
 }
 
 .logo:hover {
@@ -255,6 +283,32 @@ body {
   color: #3498db;
   background: rgba(52, 152, 219, 0.1);
   transform: translateY(-1px);
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+  position: relative;
+}
+
+.nav-link.bookmark-btn {
+  position: absolute;
+  right: -4.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  padding: 0.25rem 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.nav-link.bookmark-btn:hover {
+  transform: translateY(-50%) scale(1.2);
+  background: none;
 }
 
 /* 底部导航样式 */
@@ -377,6 +431,19 @@ body {
   .footer-links {
     align-items: center;
   }
+
+  .logo-main {
+    font-size: 1.2rem;
+  }
+
+  .logo-sub {
+    font-size: 0.9rem;
+  }
+
+  .nav-sub-links {
+    margin-left: 0.5rem;
+    padding-left: 0.5rem;
+  }
 }
 
 /* 平滑滚动 */
@@ -488,5 +555,247 @@ section[id] {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Cheese Chompers Page Styles */
+.cheese-chompers-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.game-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.game-description {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.game-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  margin: 2rem 0;
+  background: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.game-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.loading-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+}
+
+.loading-text {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.game-features,
+.how-to-play,
+.faq,
+.game-tips {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-features h2,
+.how-to-play h2,
+.faq h2,
+.game-tips h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.game-features ul,
+.game-tips ul {
+  list-style: none;
+  padding: 0;
+}
+
+.game-features li,
+.game-tips li {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.game-features li:before,
+.game-tips li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #666;
+}
+
+.faq-item {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+  color: #666;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .cheese-chompers-page {
+    padding: 1rem;
+  }
+
+  .game-container {
+    height: 400px;
+  }
+
+  .game-header h1 {
+    font-size: 2rem;
+  }
+
+  .game-description {
+    font-size: 1rem;
+  }
+}
+
+/* Game Preview Styles */
+.game-preview {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.play-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.game-preview:hover .preview-image {
+  transform: scale(1.05);
+}
+
+.play-button {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background: #e74c3c;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.play-button:hover {
+  background: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .game-preview {
+    height: 400px;
+  }
+
+  .play-button {
+    padding: 0.8rem 1.6rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* Navigation Styles */
+.nav-main-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-secondary-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  padding-top: 0.5rem;
+  border-top: 1px solid #eee;
+  width: 100%;
+}
+
+.nav-link.secondary {
+  color: #666;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.8rem;
+}
+
+.nav-link.secondary:hover {
+  color: #3498db;
+  background: rgba(52, 152, 219, 0.1);
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    align-items: center;
+  }
+
+  .nav-main-links {
+    justify-content: center;
+  }
+
+  .nav-secondary-links {
+    justify-content: center;
+  }
 }
 

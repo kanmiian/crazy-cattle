@@ -2,6 +2,7 @@ import React, { useState, useEffect, lazy, Suspense, useCallback, useMemo, useRe
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate, useLocation } from 'react-router-dom'
 import './index.css'
 import SEO from './components/SEO'
+import CheeseChompers from './components/CheeseChompers'
 
 // 懒加载组件
 const Content = lazy(() => import('./components/Content'))
@@ -135,17 +136,90 @@ const Navigation = () => {
     }
   };
 
+  const handleBookmark = () => {
+  try {
+    // IE浏览器
+    if (window.external && 'AddFavorite' in window.external) {
+      window.external.AddFavorite(window.location.href, document.title);
+      return;
+    }
+
+    // Firefox旧版
+    if (window.sidebar && window.sidebar.addPanel) {
+      window.sidebar.addPanel(document.title, window.location.href, "");
+      return;
+    }
+
+    // 现代浏览器（需要用户触发）
+    const shortcutHint = navigator.platform.includes('Mac')
+      ? 'Command/Cmd + D'
+      : 'Ctrl + D';
+
+    // 尝试通过创建悬浮元素触发（保留用户交互上下文）
+    const btn = document.createElement('button');
+    btn.style.position = 'fixed';
+    btn.style.opacity = '0';
+    btn.addEventListener('click', () => {
+      try {
+        // 创建可见的临时链接（部分浏览器需要元素在DOM中）
+        const link = document.createElement('a');
+        link.href = window.location.href;
+        link.textContent = document.title;
+        document.body.appendChild(link);
+
+        // 尝试触发浏览器默认行为
+        const range = document.createRange();
+        range.selectNode(link);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+
+        // 移除元素
+        setTimeout(() => {
+          document.body.removeChild(link);
+          window.getSelection().removeAllRanges();
+        }, 100);
+      } catch (error) {
+        console.error('Bookmark fallback failed:', error);
+      }
+    });
+
+    document.body.appendChild(btn);
+    btn.click();
+    document.body.removeChild(btn);
+
+        // 如果500ms后页面标题未变化（说明触发失败），显示提示
+        setTimeout(() => {
+          if (document.title === document.title) {
+            alert(`请使用浏览器快捷键 ${shortcutHint} 手动收藏本页`);
+          }
+        }, 500);
+
+      } catch (error) {
+        console.error('Bookmark error:', error);
+        alert('收藏失败，请使用浏览器菜单手动添加书签');
+      }
+    };
+
   return (
     <nav className="main-nav">
       <div className="nav-content">
-        <Link to="/" className="logo" onClick={(e) => { e.preventDefault(); scrollToSection('top'); }}>🐄 Crazy Cattle 3D - Sheep Battle Royale</Link>
-        <div className="nav-links">
-          <button onClick={() => scrollToSection('game')} className="nav-link">Play Now</button>
-          <button onClick={() => scrollToSection('download')} className="nav-link">Download</button>
-          <button onClick={() => scrollToSection('what-is')} className="nav-link">What is</button>
-          <button onClick={() => scrollToSection('features')} className="nav-link">Features</button>
-          <button onClick={() => scrollToSection('how-to-play')} className="nav-link">How to Play</button>
-          <button onClick={() => scrollToSection('requirements')} className="nav-link">Requirements</button>
+        <Link to="/" className="logo" onClick={(e) => { e.preventDefault(); scrollToSection('top'); }}>
+          <span className="logo-main">🐄 Crazy Cattle 3D</span>
+          <span className="logo-sub">- Sheep Battle Royale</span>
+        </Link>
+        <div className="nav-container">
+          <div className="nav-main-links">
+            <button onClick={() => scrollToSection('game')} className="nav-link">Play Now</button>
+            <button onClick={() => scrollToSection('download')} className="nav-link">Download</button>
+            <button onClick={() => scrollToSection('what-is')} className="nav-link">What is</button>
+            <button onClick={() => scrollToSection('features')} className="nav-link">Features</button>
+            <button onClick={() => scrollToSection('how-to-play')} className="nav-link">How to Play</button>
+            <button onClick={() => scrollToSection('requirements')} className="nav-link">Requirements</button>
+          </div>
+          <div className="nav-secondary-links">
+            <Link to="/cheese-chompers" className="nav-link secondary">Cheese Chompers</Link>
+          </div>
+          <button onClick={handleBookmark} className="nav-link bookmark-btn" title="Bookmark this page">🔖</button>
         </div>
       </div>
     </nav>
@@ -277,6 +351,7 @@ const AppContent = () => {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/cheese-chompers" element={<CheeseChompers />} />
         </Routes>
       </Suspense>
       <Footer />
