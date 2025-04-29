@@ -458,7 +458,7 @@ const MainContent = () => {
               </div>
             )}
             <iframe
-              title="Crazy Cattle 3D"
+              title="Crazy Cattle 3D - Sheep Battle Royale Game"
               src={gameSrc}
               allowFullScreen
               frameBorder="0"
@@ -592,8 +592,6 @@ export default function App() {
       setTimeout(loadStructuredData, 1000);
     }
   }, []);
-
-  console.log(process.env.NODE_ENV);
 
   return (
     <Router>

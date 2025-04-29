@@ -10,58 +10,50 @@ const SEO = ({ title, description }) => {
     switch (location.pathname) {
       case '/':
         return {
-          title: 'Crazy Cattle 3D - Sheep Battle Royale Game | Play Free Online',
-          description: 'Play Crazy Cattle 3D, the ultimate physics-based battle royale game! Control explosive sheep and cattle, master momentum, and become the last animal standing. Free to play online.',
-          keywords: 'Crazy Cattle 3D, battle royale game, sheep game, physics game, online game, free game',
+          title: 'Crazy Cattle 3D - Sheep Battle Royale Game',
+          description: 'Join the ultimate physics battle royale where explosive sheep compete for victory! Master physics mechanics, battle in chaotic arenas, and become the champion.',
           canonical: baseUrl
         };
       case '/about':
         return {
-          title: 'About Crazy Cattle 3D - The Ultimate Sheep Battle Royale Game',
-          description: 'Learn about Crazy Cattle 3D, the exciting physics-based battle royale game where sheep and cattle compete for survival. Discover the story behind this unique gaming experience.',
-          keywords: 'About Crazy Cattle 3D, game development, battle royale, sheep game, game story',
+          title: 'About Crazy Cattle 3D | Physics Battle Royale Game',
+          description: 'Discover Crazy Cattle 3D, where explosive sheep create chaos in physics-based battles. Learn about our unique game design and the team behind the mayhem!',
           canonical: `${baseUrl}/about`
         };
       case '/contact':
         return {
-          title: 'Contact Crazy Cattle 3D - Get in Touch with Our Team',
-          description: 'Contact the Crazy Cattle 3D team for support, feedback, or collaboration opportunities. We\'re here to help and would love to hear from you!',
-          keywords: 'Contact Crazy Cattle 3D, game support, feedback, collaboration',
+          title: 'Contact Us | Crazy Cattle 3D Support Team',
+          description: 'Need help with Crazy Cattle 3D? Our support team is here to assist you with technical issues, bug reports, or general inquiries. Get in touch with us today!',
           canonical: `${baseUrl}/contact`
         };
       case '/faq':
         return {
-          title: 'FAQ - Crazy Cattle 3D Game Questions & Answers',
-          description: 'Find answers to frequently asked questions about Crazy Cattle 3D. Learn about gameplay, controls, system requirements, and more to enhance your gaming experience.',
-          keywords: 'Crazy Cattle 3D FAQ, game help, gameplay guide, troubleshooting',
-          canonical: `${baseUrl}/faq`
+           title: 'FAQ | Crazy Cattle 3D Game Help & Information',
+           description: 'Get answers about Crazy Cattle 3D gameplay, controls, multiplayer features, and technical requirements. Find tips and solutions to common questions.',
+           canonical: `${baseUrl}/faq`
         };
       case '/privacy-policy':
         return {
-          title: 'Privacy Policy - Crazy Cattle 3D Game',
-          description: 'Read our privacy policy to understand how Crazy Cattle 3D collects, uses, and protects your personal information while you enjoy our battle royale game.',
-          keywords: 'Crazy Cattle 3D privacy policy, data protection, user privacy',
+          title: 'Privacy Policy | Crazy Cattle 3D Game',
+          description: 'Read how Crazy Cattle 3D protects your privacy and handles game data. Learn about our data collection practices, security measures, and your rights as a player.',
           canonical: `${baseUrl}/privacy-policy`
         };
       case '/terms-of-service':
         return {
-          title: 'Terms of Service - Crazy Cattle 3D Game',
-          description: 'Review the terms of service for Crazy Cattle 3D. Understand the rules, guidelines, and conditions for playing our battle royale game.',
-          keywords: 'Crazy Cattle 3D terms, game rules, user agreement',
+           title: 'Terms of Service | Crazy Cattle 3D Game',
+           description: 'Review Crazy Cattle 3D\'s terms of service. Understand the rules and conditions for playing our physics-based battle royale game and using our services.',
           canonical: `${baseUrl}/terms-of-service`
         };
       case '/cheese-chompers':
         return {
           title: 'Cheese Chompers - Free Online 3D Mouse Game | Collect Cheese',
           description: 'Play Cheese Chompers online! Guide your mouse through exciting 3D levels, collect cheese, and avoid obstacles in this addictive platformer game. Free to play',
-          keywords: 'Cheese Chompers, 3D platformer, mouse game, cheese collecting game, free online game',
           canonical: `${baseUrl}/cheese-chompers`
         };
       default:
         return {
           title: title || 'Crazy Cattle 3D - Sheep Battle Royale Game',
           description: description || 'Play Crazy Cattle 3D, the ultimate physics-based battle royale game! Control explosive sheep and cattle, master momentum, and become the last animal standing.',
-          keywords: 'Crazy Cattle 3D, battle royale game, sheep game, physics game',
           canonical: `${baseUrl}${location.pathname}`
         };
     }
