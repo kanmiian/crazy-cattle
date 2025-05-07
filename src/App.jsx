@@ -315,29 +315,46 @@ const scrollWorker = createWorker(() => {
 });
 
 const AppContent = () => {
-  useEffect(() => {
-    // 插入 Adsterra 广告脚本
-    const adScript = document.createElement('script');
-    adScript.async = true;
-    adScript.setAttribute('data-cfasync', 'false');
-    adScript.src = '//pl26582350.profitableratecpm.com/0a313e2db292755835f544f199abfda3/invoke.js';
-    document.body.appendChild(adScript);
+  const location = useLocation();
+  const baseUrl = 'https://cattlecrazy3d.com';
 
+  useEffect(() => {
+    // 移除现有的 canonical 链接
+    const existingCanonical = document.querySelector('link[rel="canonical"]');
+    if (existingCanonical) {
+      existingCanonical.remove();
+    }
+
+    // 创建新的 canonical 链接
+    const canonicalUrl = location.pathname === '/' ? baseUrl : `${baseUrl}${location.pathname}`;
+    const link = document.createElement('link');
+    link.rel = 'canonical';
+    link.href = canonicalUrl;
+    document.head.appendChild(link);
+
+    // 清理函数
     return () => {
-      if (adScript && adScript.parentNode) {
-        adScript.parentNode.removeChild(adScript);
+      if (link.parentNode) {
+        link.parentNode.removeChild(link);
       }
     };
-  }, []);
+  }, [location.pathname]);
 
   return (
-    <div className="app-content">
-      <SEO 
-        title="Crazy Cattle 3D - Fun and Addictive Game"
-        description="Play Crazy Cattle 3D, an exciting and addictive game with stunning graphics and engaging gameplay. Perfect for casual gamers!"
-      />
+    <>
+      <SEO />
       <Navigation />
-      <MainContent />
+      <Suspense fallback={<LoadingPlaceholder />}>
+        <Routes>
+          <Route path="/" element={<MainContent />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/cheese-chompers" element={<CheeseChompers />} />
+        </Routes>
+      </Suspense>
       <Footer />
       {/* Adsterra 广告位 */}
       <div id="container-0a313e2db292755835f544f199abfda3" style={{ margin: '20px 0', textAlign: 'center' }}></div>
@@ -346,7 +363,7 @@ const AppContent = () => {
         <span>🔖</span>
         <span>Add to Bookmarks</span>
       </div>
-    </div>
+    </>
   );
 };
 
