@@ -315,6 +315,21 @@ const scrollWorker = createWorker(() => {
 });
 
 const AppContent = () => {
+  useEffect(() => {
+    // 插入 Adsterra 广告脚本
+    const adScript = document.createElement('script');
+    adScript.async = true;
+    adScript.setAttribute('data-cfasync', 'false');
+    adScript.src = '//pl26582350.profitableratecpm.com/0a313e2db292755835f544f199abfda3/invoke.js';
+    document.body.appendChild(adScript);
+
+    return () => {
+      if (adScript && adScript.parentNode) {
+        adScript.parentNode.removeChild(adScript);
+      }
+    };
+  }, []);
+
   return (
     <div className="app-content">
       <SEO 
@@ -567,21 +582,6 @@ export default function App() {
     } else {
       setTimeout(loadStructuredData, 1000);
     }
-  }, []);
-
-  useEffect(() => {
-    // 插入 Adsterra 广告脚本
-    const adScript = document.createElement('script');
-    adScript.async = true;
-    adScript.setAttribute('data-cfasync', 'false');
-    adScript.src = '//pl26582350.profitableratecpm.com/0a313e2db292755835f544f199abfda3/invoke.js';
-    document.body.appendChild(adScript);
-
-    return () => {
-      if (adScript && adScript.parentNode) {
-        adScript.parentNode.removeChild(adScript);
-      }
-    };
   }, []);
 
   return (
