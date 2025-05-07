@@ -828,3 +828,36 @@ section[id] {
   background: rgba(255, 255, 255, 0.1);
 }
 
+/* FloatingBookmark 样式 */
+.floating-bookmark {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.floating-bookmark:hover {
+  background-color: #f0f0f0;
+}
+
+.floating-bookmark img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.floating-bookmark span {
+  font-size: 14px;
+  color: #333;
+}
+

@@ -114,6 +114,70 @@ const useDebounce = (callback, delay) => {
   }, [callback, delay]);
 };
 
+const handleBookmark = () => {
+  try {
+    // IE browser
+    if (window.external && 'AddFavorite' in window.external) {
+      window.external.AddFavorite(window.location.href, document.title);
+      return;
+    }
+
+    // Firefox legacy
+    if (window.sidebar && window.sidebar.addPanel) {
+      window.sidebar.addPanel(document.title, window.location.href, "");
+      return;
+    }
+
+    // Modern browsers (requires user interaction)
+    const shortcutHint = navigator.platform.includes('Mac')
+      ? 'Command/Cmd + D'
+      : 'Ctrl + D';
+
+    // Try to trigger via floating element (preserve user interaction context)
+    const btn = document.createElement('button');
+    btn.style.position = 'fixed';
+    btn.style.opacity = '0';
+    btn.addEventListener('click', () => {
+      try {
+        // Create visible temporary link (some browsers require element in DOM)
+        const link = document.createElement('a');
+        link.href = window.location.href;
+        link.textContent = document.title;
+        document.body.appendChild(link);
+
+        // Try to trigger browser default behavior
+        const range = document.createRange();
+        range.selectNode(link);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+
+        // Remove element
+        setTimeout(() => {
+          document.body.removeChild(link);
+          window.getSelection().removeAllRanges();
+        }, 100);
+      } catch (error) {
+        console.error('Bookmark fallback failed:', error);
+      }
+    });
+
+    document.body.appendChild(btn);
+    btn.click();
+    document.body.removeChild(btn);
+
+    // If page title hasn't changed after 500ms (trigger failed), show hint
+    setTimeout(() => {
+      if (document.title === document.title) {
+        alert(`Please use browser shortcut ${shortcutHint} to bookmark this page`);
+      }
+    }, 500);
+
+  } catch (error) {
+    console.error('Bookmark error:', error);
+    alert('Failed to bookmark. Please use browser menu to add bookmark manually');
+  }
+};
+
 const Navigation = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -133,70 +197,6 @@ const Navigation = () => {
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
-    }
-  };
-
-  const handleBookmark = () => {
-    try {
-      // IE browser
-      if (window.external && 'AddFavorite' in window.external) {
-        window.external.AddFavorite(window.location.href, document.title);
-        return;
-      }
-
-      // Firefox legacy
-      if (window.sidebar && window.sidebar.addPanel) {
-        window.sidebar.addPanel(document.title, window.location.href, "");
-        return;
-      }
-
-      // Modern browsers (requires user interaction)
-      const shortcutHint = navigator.platform.includes('Mac')
-        ? 'Command/Cmd + D'
-        : 'Ctrl + D';
-
-      // Try to trigger via floating element (preserve user interaction context)
-      const btn = document.createElement('button');
-      btn.style.position = 'fixed';
-      btn.style.opacity = '0';
-      btn.addEventListener('click', () => {
-        try {
-          // Create visible temporary link (some browsers require element in DOM)
-          const link = document.createElement('a');
-          link.href = window.location.href;
-          link.textContent = document.title;
-          document.body.appendChild(link);
-
-          // Try to trigger browser default behavior
-          const range = document.createRange();
-          range.selectNode(link);
-          window.getSelection().removeAllRanges();
-          window.getSelection().addRange(range);
-
-          // Remove element
-          setTimeout(() => {
-            document.body.removeChild(link);
-            window.getSelection().removeAllRanges();
-          }, 100);
-        } catch (error) {
-          console.error('Bookmark fallback failed:', error);
-        }
-      });
-
-      document.body.appendChild(btn);
-      btn.click();
-      document.body.removeChild(btn);
-
-      // If page title hasn't changed after 500ms (trigger failed), show hint
-      setTimeout(() => {
-        if (document.title === document.title) {
-          alert(`Please use browser shortcut ${shortcutHint} to bookmark this page`);
-        }
-      }, 500);
-
-    } catch (error) {
-      console.error('Bookmark error:', error);
-      alert('Failed to bookmark. Please use browser menu to add bookmark manually');
     }
   };
 
@@ -342,6 +342,7 @@ const AppContent = () => {
 
   return (
     <>
+      <SEO />
       <Navigation />
       <Suspense fallback={<LoadingPlaceholder />}>
         <Routes>
@@ -355,6 +356,13 @@ const AppContent = () => {
         </Routes>
       </Suspense>
       <Footer />
+      {/* Adsterra 广告位 */}
+      <div id="container-0a313e2db292755835f544f199abfda3" style={{ margin: '20px 0', textAlign: 'center' }}></div>
+      {/* 悬浮的添加收藏按钮 */}
+      <div className="floating-bookmark" onClick={handleBookmark}>
+        <span>🔖</span>
+        <span>Add to Bookmarks</span>
+      </div>
     </>
   );
 };
