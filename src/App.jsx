@@ -114,6 +114,70 @@ const useDebounce = (callback, delay) => {
   }, [callback, delay]);
 };
 
+const handleBookmark = () => {
+  try {
+    // IE browser
+    if (window.external && 'AddFavorite' in window.external) {
+      window.external.AddFavorite(window.location.href, document.title);
+      return;
+    }
+
+    // Firefox legacy
+    if (window.sidebar && window.sidebar.addPanel) {
+      window.sidebar.addPanel(document.title, window.location.href, "");
+      return;
+    }
+
+    // Modern browsers (requires user interaction)
+    const shortcutHint = navigator.platform.includes('Mac')
+      ? 'Command/Cmd + D'
+      : 'Ctrl + D';
+
+    // Try to trigger via floating element (preserve user interaction context)
+    const btn = document.createElement('button');
+    btn.style.position = 'fixed';
+    btn.style.opacity = '0';
+    btn.addEventListener('click', () => {
+      try {
+        // Create visible temporary link (some browsers require element in DOM)
+        const link = document.createElement('a');
+        link.href = window.location.href;
+        link.textContent = document.title;
+        document.body.appendChild(link);
+
+        // Try to trigger browser default behavior
+        const range = document.createRange();
+        range.selectNode(link);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+
+        // Remove element
+        setTimeout(() => {
+          document.body.removeChild(link);
+          window.getSelection().removeAllRanges();
+        }, 100);
+      } catch (error) {
+        console.error('Bookmark fallback failed:', error);
+      }
+    });
+
+    document.body.appendChild(btn);
+    btn.click();
+    document.body.removeChild(btn);
+
+    // If page title hasn't changed after 500ms (trigger failed), show hint
+    setTimeout(() => {
+      if (document.title === document.title) {
+        alert(`Please use browser shortcut ${shortcutHint} to bookmark this page`);
+      }
+    }, 500);
+
+  } catch (error) {
+    console.error('Bookmark error:', error);
+    alert('Failed to bookmark. Please use browser menu to add bookmark manually');
+  }
+};
+
 const Navigation = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -133,70 +197,6 @@ const Navigation = () => {
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
-    }
-  };
-
-  const handleBookmark = () => {
-    try {
-      // IE browser
-      if (window.external && 'AddFavorite' in window.external) {
-        window.external.AddFavorite(window.location.href, document.title);
-        return;
-      }
-
-      // Firefox legacy
-      if (window.sidebar && window.sidebar.addPanel) {
-        window.sidebar.addPanel(document.title, window.location.href, "");
-        return;
-      }
-
-      // Modern browsers (requires user interaction)
-      const shortcutHint = navigator.platform.includes('Mac')
-        ? 'Command/Cmd + D'
-        : 'Ctrl + D';
-
-      // Try to trigger via floating element (preserve user interaction context)
-      const btn = document.createElement('button');
-      btn.style.position = 'fixed';
-      btn.style.opacity = '0';
-      btn.addEventListener('click', () => {
-        try {
-          // Create visible temporary link (some browsers require element in DOM)
-          const link = document.createElement('a');
-          link.href = window.location.href;
-          link.textContent = document.title;
-          document.body.appendChild(link);
-
-          // Try to trigger browser default behavior
-          const range = document.createRange();
-          range.selectNode(link);
-          window.getSelection().removeAllRanges();
-          window.getSelection().addRange(range);
-
-          // Remove element
-          setTimeout(() => {
-            document.body.removeChild(link);
-            window.getSelection().removeAllRanges();
-          }, 100);
-        } catch (error) {
-          console.error('Bookmark fallback failed:', error);
-        }
-      });
-
-      document.body.appendChild(btn);
-      btn.click();
-      document.body.removeChild(btn);
-
-      // If page title hasn't changed after 500ms (trigger failed), show hint
-      setTimeout(() => {
-        if (document.title === document.title) {
-          alert(`Please use browser shortcut ${shortcutHint} to bookmark this page`);
-        }
-      }, 500);
-
-    } catch (error) {
-      console.error('Bookmark error:', error);
-      alert('Failed to bookmark. Please use browser menu to add bookmark manually');
     }
   };
 
@@ -315,47 +315,23 @@ const scrollWorker = createWorker(() => {
 });
 
 const AppContent = () => {
-  const location = useLocation();
-  const baseUrl = 'https://cattlecrazy3d.com';
-
-  useEffect(() => {
-    // 移除现有的 canonical 链接
-    const existingCanonical = document.querySelector('link[rel="canonical"]');
-    if (existingCanonical) {
-      existingCanonical.remove();
-    }
-
-    // 创建新的 canonical 链接
-    const canonicalUrl = location.pathname === '/' ? baseUrl : `${baseUrl}${location.pathname}`;
-    const link = document.createElement('link');
-    link.rel = 'canonical';
-    link.href = canonicalUrl;
-    document.head.appendChild(link);
-
-    // 清理函数
-    return () => {
-      if (link.parentNode) {
-        link.parentNode.removeChild(link);
-      }
-    };
-  }, [location.pathname]);
-
   return (
-    <>
+    <div className="app-content">
+      <SEO 
+        title="Crazy Cattle 3D - Fun and Addictive Game"
+        description="Play Crazy Cattle 3D, an exciting and addictive game with stunning graphics and engaging gameplay. Perfect for casual gamers!"
+      />
       <Navigation />
-      <Suspense fallback={<LoadingPlaceholder />}>
-        <Routes>
-          <Route path="/" element={<MainContent />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-of-service" element={<TermsOfService />} />
-          <Route path="/cheese-chompers" element={<CheeseChompers />} />
-        </Routes>
-      </Suspense>
+      <MainContent />
       <Footer />
-    </>
+      {/* Adsterra 广告位 */}
+      <div id="container-0a313e2db292755835f544f199abfda3" style={{ margin: '20px 0', textAlign: 'center' }}></div>
+      {/* 悬浮的添加收藏按钮 */}
+      <div className="floating-bookmark" onClick={handleBookmark}>
+        <span>🔖</span>
+        <span>Add to Bookmarks</span>
+      </div>
+    </div>
   );
 };
 
@@ -591,6 +567,21 @@ export default function App() {
     } else {
       setTimeout(loadStructuredData, 1000);
     }
+  }, []);
+
+  useEffect(() => {
+    // 插入 Adsterra 广告脚本
+    const adScript = document.createElement('script');
+    adScript.async = true;
+    adScript.setAttribute('data-cfasync', 'false');
+    adScript.src = '//pl26582350.profitableratecpm.com/0a313e2db292755835f544f199abfda3/invoke.js';
+    document.body.appendChild(adScript);
+
+    return () => {
+      if (adScript && adScript.parentNode) {
+        adScript.parentNode.removeChild(adScript);
+      }
+    };
   }, []);
 
   return (
