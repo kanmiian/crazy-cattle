@@ -749,3 +749,170 @@ section[id] {
   scroll-margin-top: 100px; /* 增加滚动边距，避免内容被导航栏遮挡 */
 }
 
+/* Cheese Chompers 页面样式 */
+.cheese-chompers-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  color: var(--text-primary);
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.game-header h1 {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.game-description {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.game-preview {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  margin: 2rem 0;
+  box-shadow: var(--shadow-lg);
+  cursor: pointer;
+}
+
+.preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.play-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.game-preview:hover .preview-image {
+  transform: scale(1.05);
+}
+
+.game-preview .play-button {
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  background: var(--accent-color);
+  border: 2px solid white;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.game-preview .play-button:hover {
+  background: var(--accent-dark);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.game-features,
+.how-to-play,
+.faq,
+.game-tips {
+  background-color: var(--background-white);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  margin: 2rem 0;
+  border: 1px solid var(--border-color);
+}
+
+.game-features h2,
+.how-to-play h2,
+.faq h2,
+.game-tips h2 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.faq-item {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: var(--background-card);
+  border-radius: var(--radius-md);
+  transition: transform 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .cheese-chompers-page {
+    padding: 0.5rem;
+  }
+  
+  .game-preview {
+    height: 300px;
+  }
+  
+  .game-header h1 {
+    font-size: 2rem;
+  }
+  
+  .game-description {
+    font-size: 1rem;
+  }
+  
+  .game-preview .play-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+.cheese-chompers-page .game-container {
+  position: relative;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.game-preview {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  margin: 2rem 0;
+  box-shadow: var(--shadow-lg);
+  cursor: pointer;
+}
+
