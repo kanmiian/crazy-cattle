@@ -47,6 +47,7 @@ body {
   padding: 1rem;
   position: relative;
   box-sizing: border-box;
+  padding-top: 4rem; /* 添加足够的顶部padding来容纳固定导航栏 */
 }
 
 /* 主标题区域 */
@@ -574,6 +575,10 @@ body {
     padding: 0.75rem;
   }
   
+  .container {
+    padding-top: 6rem; /* 在小屏幕上增加更多顶部padding，因为导航栏在小屏幕上更高 */
+  }
+  
   .nav-container {
     flex-direction: column;
     width: 100%;
@@ -741,6 +746,6 @@ li {
 
 /* 清理和增强 */
 section[id] {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 100px; /* 增加滚动边距，避免内容被导航栏遮挡 */
 }
 
