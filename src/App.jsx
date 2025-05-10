@@ -415,10 +415,10 @@ const MainContent = () => {
     }
   };
 
-  const isProduction = process.env.NODE_ENV === 'production';
-  const gameSrc = isProduction
-    ? 'https://cattlecrazy3d.com/game/index.html'
-    : './game/index.html';
+  const isProduction = process.env.NODE_ENV === 'production'
+  const gameSrc = 'https://crazycattle3d.io/game/crazycattle3d/v11/';
+//     ? 'https://cattle-crazy-game.vercel.app/'
+//     : './game/index.html';
 
   return (
     <>
@@ -468,7 +468,9 @@ const MainContent = () => {
               src={gameSrc}
               allowFullScreen
               frameBorder="0"
-              allow="cross-origin-isolated; shared-storage"
+              allow="cross-origin-isolated; shared-storage; fullscreen"
+              sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-downloads allow-presentation allow-modals"
+              referrerPolicy="origin"
               onLoad={handleIframeLoad}
               style={{
                 display: 'block',
