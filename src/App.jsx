@@ -468,6 +468,7 @@ const MainContent = () => {
               src={gameSrc}
               allowFullScreen
               frameBorder="0"
+              allow="cross-origin-isolated; shared-storage"
               onLoad={handleIframeLoad}
               style={{
                 display: 'block',
