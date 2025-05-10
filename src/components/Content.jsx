@@ -1,13 +1,14 @@
 import React from 'react';
+import './Content.css';
 import './About.css';
 
 const About = () => {
   return (
     <section className="about-section">
-      <h2>About Crazy Cattle 3D</h2>
+      <h2>📘 About Crazy Cattle 3D</h2>
       
       <div id="what-is">
-        <h3>What is Crazy Cattle 3D?</h3>
+        <h3><span role="img" aria-label="magnifying glass">🔍</span> What is Crazy Cattle 3D?</h3>
         <p>
           Crazy Cattle 3D is an exhilarating battle royale game that puts you in control of explosive sheep 
           competing for survival across three unique environments. Unlike traditional battle royale games, 
@@ -141,7 +142,7 @@ const About = () => {
         </h3>
         <div className="game-modes">
           <div className="mode-card">
-            <h4>Battle Royale</h4>
+            <h4>🏆 Battle Royale</h4>
             <p>
               Compete against other players in intense survival matches. Be the last sheep standing 
               as the play area gradually shrinks, forcing exciting confrontations.
@@ -160,7 +161,7 @@ const About = () => {
           </div>
 
           <div className="mode-card">
-            <h4>Practice Mode</h4>
+            <h4>🏋️ Practice Mode</h4>
             <p>
               Perfect your skills in a safe environment. Learn advanced techniques and master the 
               physics system without the pressure of competition.
