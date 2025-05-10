@@ -356,8 +356,6 @@ const AppContent = () => {
         </Routes>
       </Suspense>
       <Footer />
-      {/* Adsterra 广告位 */}
-      <div id="container-0a313e2db292755835f544f199abfda3" style={{ margin: '20px 0', textAlign: 'center' }}></div>
       {/* 悬浮的添加收藏按钮 */}
       <div className="floating-bookmark" onClick={handleBookmark}>
         <span>🔖</span>
