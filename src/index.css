@@ -576,18 +576,28 @@ body {
   }
   
   .container {
-    padding-top: 6rem; /* 在小屏幕上增加更多顶部padding，因为导航栏在小屏幕上更高 */
+    padding-top: 8.5rem; /* 增加顶部内边距以避免与导航栏重叠 */
+  }
+  
+  /* 在移动端隐藏从"What is"到"Requirements"的导航链接 */
+  .nav-main-links button:nth-child(3),
+  .nav-main-links button:nth-child(4),
+  .nav-main-links button:nth-child(5),
+  .nav-main-links button:nth-child(6) {
+    display: none !important;
+  }
+  
+  /* 调整移动端导航布局 */
+  .nav-main-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
   }
   
   .nav-container {
     flex-direction: column;
     width: 100%;
-  }
-  
-  .nav-main-links {
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
   }
   
   .nav-secondary-links {
@@ -746,7 +756,7 @@ li {
 
 /* 清理和增强 */
 section[id] {
-  scroll-margin-top: 100px; /* 增加滚动边距，避免内容被导航栏遮挡 */
+  scroll-margin-top: 120px; /* 增加滚动边距，避免内容被导航栏遮挡 */
 }
 
 /* Cheese Chompers 页面样式 */
