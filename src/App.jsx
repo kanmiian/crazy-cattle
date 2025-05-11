@@ -209,15 +209,15 @@ const Navigation = () => {
         </Link>
         <div className="nav-container">
           <div className="nav-main-links">
-            <button onClick={() => scrollToSection('game')} className="nav-link">Play Now</button>
-            <button onClick={() => scrollToSection('download')} className="nav-link">Download</button>
-            <button onClick={() => scrollToSection('what-is')} className="nav-link">What is</button>
-            <button onClick={() => scrollToSection('features')} className="nav-link">Features</button>
-            <button onClick={() => scrollToSection('how-to-play')} className="nav-link">How to Play</button>
-            <button onClick={() => scrollToSection('requirements')} className="nav-link">Requirements</button>
+            <button onClick={() => scrollToSection('game')} className="nav-link">🎮 Play Now</button>
+            <button onClick={() => scrollToSection('download')} className="nav-link">⬇️ Download</button>
+            <button onClick={() => scrollToSection('what-is')} className="nav-link">ℹ️ What is</button>
+            <button onClick={() => scrollToSection('features')} className="nav-link">✨ Features</button>
+            <button onClick={() => scrollToSection('how-to-play')} className="nav-link">🎯 How to Play</button>
+            <button onClick={() => scrollToSection('requirements')} className="nav-link">⚙️ Requirements</button>
           </div>
           <div className="nav-secondary-links">
-            <Link to="/cheese-chompers" className="nav-link secondary">Cheese Chompers</Link>
+            <Link to="/cheese-chompers" className="nav-link secondary">🧀 Cheese Chompers</Link>
           </div>
           <button onClick={handleBookmark} className="nav-link bookmark-btn" title="Bookmark this page">🔖</button>
         </div>
@@ -252,22 +252,22 @@ const Footer = () => {
     <footer className="footer-nav">
       <div className="footer-content">
         <div className="footer-section">
-          <h3>Crazy Cattle 3D</h3>
+          <h3>🐄 Crazy Cattle 3D</h3>
           <p>Experience the ultimate physics-based battle royale game where explosive sheep and cattle compete for survival across three unique environments.</p>
         </div>
 
         <div className="footer-section">
-          <h3>Quick Links</h3>
+          <h3>⚡ Quick Links</h3>
           <div className="footer-links">
-            <button onClick={() => scrollToSection('game')} className="footer-link">Play Now</button>
-            <button onClick={() => scrollToSection('features')} className="footer-link">Features</button>
-            <button onClick={() => scrollToSection('how-to-play')} className="footer-link">How to Play</button>
-            <button onClick={() => scrollToSection('requirements')} className="footer-link">Requirements</button>
+            <button onClick={() => scrollToSection('game')} className="footer-link">🎮 Play Now</button>
+            <button onClick={() => scrollToSection('features')} className="footer-link">✨ Features</button>
+            <button onClick={() => scrollToSection('how-to-play')} className="footer-link">🎯 How to Play</button>
+            <button onClick={() => scrollToSection('requirements')} className="footer-link">⚙️ Requirements</button>
           </div>
         </div>
 
         <div className="footer-section">
-          <h3>Info</h3>
+          <h3>ℹ️ Info</h3>
           <div className="footer-links">
             <Link to="/about" className="footer-link">About</Link>
             <Link to="/contact" className="footer-link">Contact</Link>
@@ -278,11 +278,12 @@ const Footer = () => {
         </div>
 
         <div className="footer-section">
-          <h3>Friends</h3>
+          <h3>🤝 Friends</h3>
           <div className="footer-links">
             <a href="https://www.online-guitartuner.com/" target="_blank" rel="noopener noreferrer nofollow" className="footer-link">Online Guitar Tuner</a>
             <a href="https://animalbrainrot.com/" target="_blank" rel="noopener noreferrer nofollow" className="footer-link">AI Brainrot Animals</a>
             <a href="https://braingames.quest/" target="_blank" rel="noopener noreferrer nofollow" className="footer-link">Brain Games</a>
+            <a href="https://bibleforu.info/" target="_blank" rel="noopener noreferrer nofollow" className="footer-link">Daily Bible</a>
           </div>
         </div>
       </div>
@@ -430,9 +431,15 @@ const MainContent = () => {
           </h1>
           <p className="tagline">Experience the wildest sheep and cattle chaos simulator online! Play Crazy Cattle 3D now and join the ultimate physics-based battle royale where sheep and cattle compete for survival!</p>
           <div className="button-group">
-            <button onClick={() => handleScrollToSection('game')} className="btn">Play Now</button>
-            <button onClick={() => handleScrollToSection('download')} className="btn secondary">Download</button>
-            <button onClick={() => window.open('https://ko-fi.com/ashing', '_blank')} className="btn kofi">☕️ Support on Ko-fi</button>
+            <button onClick={() => handleScrollToSection('game')} className="btn">
+              <span>🎮</span> Play Now
+            </button>
+            <button onClick={() => handleScrollToSection('download')} className="btn secondary">
+              <span>⬇️</span> Download
+            </button>
+            <button onClick={() => window.open('https://ko-fi.com/ashing', '_blank')} className="btn kofi">
+              <span>☕️</span> Support on Ko-fi
+            </button>
           </div>
         </header>
       </div>
@@ -445,8 +452,8 @@ const MainContent = () => {
               alt="Crazy Cattle 3D Preview"
               className="preview-img"
             />
-            <button onClick={() => setShowGame(true)} className="btn play-button">
-              ▶️ Play Game
+            <button onClick={() => setShowGame(true)} className="play-button">
+              <span>▶️</span> Play Game
             </button>
           </div>
         ) : (
@@ -490,6 +497,28 @@ const MainContent = () => {
         )}
       </section>
 
+      <section className="best-result-section">
+        <div className="best-result-container">
+          <div className="best-result-content">
+            <h2>🏆 Join the Champions!</h2>
+            <p>Experience the thrill of victory in Crazy Cattle 3D! Our players have achieved amazing feats - now it's your turn to make history!</p>
+            <div className="best-result-image">
+              <img
+                src="/images/best-result.png"
+                alt="Best Game Results"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div className="best-result-cta">
+              <button onClick={() => handleScrollToSection('game')} className="btn">
+                <span>🎮</span> Play Now and Beat the Record!
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="download" className="download-section">
         <h2>
           <span role="img" aria-label="download">⬇️</span> 
@@ -501,17 +530,17 @@ const MainContent = () => {
           href="https://4nn4t4t.itch.io/crazycattle3d"
           target="_blank"
           rel="noopener noreferrer nofollow"
-          className="btn download-link"
+          className="download-link"
         >
-          Go to Itch.io to Download
+          <span>🎮</span> Go to Itch.io to Download
         </a>
         <a
           href="https://ko-fi.com/ashing"
           target="_blank"
           rel="noopener noreferrer nofollow"
-          className="btn download-link"
+          className="download-link"
         >
-          ☕️ Support on Ko-fi
+          <span>☕️</span> Support on Ko-fi
         </a>
       </div>
       </section>
@@ -566,6 +595,16 @@ export default function App() {
     };
 
     loadThirdPartyScripts();
+    
+    // 加载 Inter 字体
+    const loadGoogleFonts = () => {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap';
+      document.head.appendChild(link);
+    };
+    
+    loadGoogleFonts();
   }, []);
 
   useEffect(() => {

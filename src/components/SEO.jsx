@@ -90,9 +90,6 @@ const SEO = ({ title, description }) => {
     // 更新 description
     updateMetaTag('description', seoConfig.description);
     
-    // 更新 keywords
-    updateMetaTag('keywords', seoConfig.keywords);
-    
     // 更新 canonical
     let canonical = document.querySelector('link[rel="canonical"]');
     if (!canonical) {

@@ -55,7 +55,7 @@ const CheeseChompers = () => {
               rel="noopener noreferrer"
               className="play-button"
             >
-              Play Now
+              <span>▶️</span> Play Now
             </a>
           </div>
         </div>
