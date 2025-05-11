@@ -283,6 +283,7 @@ const Footer = () => {
             <a href="https://www.online-guitartuner.com/" target="_blank" rel="noopener noreferrer nofollow" className="footer-link">Online Guitar Tuner</a>
             <a href="https://animalbrainrot.com/" target="_blank" rel="noopener noreferrer nofollow" className="footer-link">AI Brainrot Animals</a>
             <a href="https://braingames.quest/" target="_blank" rel="noopener noreferrer nofollow" className="footer-link">Brain Games</a>
+            <a href="https://bibleforu.info/" target="_blank" rel="noopener noreferrer nofollow" className="footer-link">Daily Bible</a>
           </div>
         </div>
       </div>
@@ -494,6 +495,28 @@ const MainContent = () => {
             </div>
           </div>
         )}
+      </section>
+
+      <section className="best-result-section">
+        <div className="best-result-container">
+          <div className="best-result-content">
+            <h2>🏆 Join the Champions!</h2>
+            <p>Experience the thrill of victory in Crazy Cattle 3D! Our players have achieved amazing feats - now it's your turn to make history!</p>
+            <div className="best-result-image">
+              <img
+                src="/images/best-result.png"
+                alt="Best Game Results"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div className="best-result-cta">
+              <button onClick={() => handleScrollToSection('game')} className="btn">
+                <span>🎮</span> Play Now and Beat the Record!
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="download" className="download-section">
