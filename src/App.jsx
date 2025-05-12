@@ -444,6 +444,12 @@ const MainContent = () => {
         </header>
       </div>
 
+      {/* Adsterra Native Banner */}
+      <div className="adsterra-banner">
+        <script async="async" data-cfasync="false" src="//pl26582350.profitableratecpm.com/0a313e2db292755835f544f199abfda3/invoke.js"></script>
+        <div id="container-0a313e2db292755835f544f199abfda3"></div>
+      </div>
+
       <section id="game" className="iframe-section">
         {!showGame ? (
           <div className="game-placeholder">
