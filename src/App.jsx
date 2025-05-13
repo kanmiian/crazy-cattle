@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Link, useNavigate, useLocation 
 import './index.css'
 import SEO from './components/SEO'
 import CheeseChompers from './components/CheeseChompers'
+import DoodleBaseball from './components/DoodleBaseball'
+import CrazyChicken from './components/CrazyChicken'
 
 // 懒加载组件
 const Content = lazy(() => import('./components/Content'))
@@ -181,11 +183,38 @@ const handleBookmark = () => {
 const Navigation = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isGameDrawerOpen, setIsGameDrawerOpen] = useState(false);
+  const drawerRef = useRef(null);
+
+  // 获取当前路径
+  const currentPath = location.pathname;
+
+  // 处理点击抽屉外部关闭
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // 检查点击是否在抽屉外部，且不是游戏菜单按钮
+      if (isGameDrawerOpen && 
+          !drawerRef.current?.contains(event.target) && 
+          !event.target.closest('.games-menu-btn')) {
+        setIsGameDrawerOpen(false);
+      }
+    };
+
+    if (isGameDrawerOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('touchstart', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+    };
+  }, [isGameDrawerOpen]);
 
   const scrollToSection = (sectionId) => {
     if (location.pathname !== '/') {
       navigate('/');
-      // 等待页面加载完成后再滚动
       setTimeout(() => {
         const element = document.getElementById(sectionId);
         if (element) {
@@ -198,6 +227,7 @@ const Navigation = () => {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     }
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -207,7 +237,8 @@ const Navigation = () => {
           <span className="logo-main">🐄 Crazy Cattle 3D</span>
           <span className="logo-sub">- Sheep Battle Royale</span>
         </Link>
-        <div className="nav-container">
+        
+        <div className="nav-main">
           <div className="nav-main-links">
             <button onClick={() => scrollToSection('game')} className="nav-link">🎮 Play Now</button>
             <button onClick={() => scrollToSection('download')} className="nav-link">⬇️ Download</button>
@@ -216,10 +247,93 @@ const Navigation = () => {
             <button onClick={() => scrollToSection('how-to-play')} className="nav-link">🎯 How to Play</button>
             <button onClick={() => scrollToSection('requirements')} className="nav-link">⚙️ Requirements</button>
           </div>
-          <div className="nav-secondary-links">
-            <Link to="/cheese-chompers" className="nav-link secondary">🧀 Cheese Chompers</Link>
+          
+          <button 
+            className="games-menu-btn"
+            onClick={() => setIsGameDrawerOpen(!isGameDrawerOpen)}
+            aria-label="Games menu"
+            title="Open Games Menu"
+          >
+            🎮 Games
+            <span className="tooltip">Play more!</span>
+          </button>
+        </div>
+
+        <button 
+          className="mobile-menu-btn"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          {isMobileMenuOpen ? '✕' : '☰'}
+        </button>
+      </div>
+
+      {/* 遮罩层 */}
+      {isGameDrawerOpen && (
+        <div 
+          className="drawer-overlay"
+          onClick={() => setIsGameDrawerOpen(false)}
+        />
+      )}
+
+      {/* Games Drawer */}
+      <div className={`games-drawer ${isGameDrawerOpen ? 'open' : ''}`} ref={drawerRef}>
+        <div className="games-drawer-content">
+          <div className="games-drawer-header">
+            <h3>Our Games</h3>
+            <button 
+              className="close-drawer-btn"
+              onClick={() => setIsGameDrawerOpen(false)}
+              aria-label="Close games menu"
+            >
+              ✕
+            </button>
           </div>
-          <button onClick={handleBookmark} className="nav-link bookmark-btn" title="Bookmark this page">🔖</button>
+          <div className="games-list">
+            <Link 
+              to="/cheese-chompers" 
+              className={`game-link ${currentPath === '/cheese-chompers' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🧀</span>
+              <span className="game-name">Cheese Chompers</span>
+            </Link>
+            <Link 
+              to="/doodle-baseball" 
+              className={`game-link ${currentPath === '/doodle-baseball' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">⚾</span>
+              <span className="game-name">Doodle Baseball</span>
+            </Link>
+            <Link 
+              to="/crazy-chicken" 
+              className={`game-link ${currentPath === '/crazy-chicken' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🐔</span>
+              <span className="game-name">Crazy Chicken 3D</span>
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <div className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`}>
+        <div className="mobile-menu-content">
+          <div className="mobile-nav-links">
+            <button onClick={() => scrollToSection('game')} className="mobile-nav-link">🎮 Play Now</button>
+            <button onClick={() => scrollToSection('download')} className="mobile-nav-link">⬇️ Download</button>
+            <button onClick={() => scrollToSection('what-is')} className="mobile-nav-link">ℹ️ What is</button>
+            <button onClick={() => scrollToSection('features')} className="mobile-nav-link">✨ Features</button>
+            <button onClick={() => scrollToSection('how-to-play')} className="mobile-nav-link">🎯 How to Play</button>
+            <button onClick={() => scrollToSection('requirements')} className="mobile-nav-link">⚙️ Requirements</button>
+          </div>
+          <div className="mobile-games-links">
+            <Link to="/cheese-chompers" className="mobile-nav-link">🧀 Cheese Chompers</Link>
+            <Link to="/doodle-baseball" className="mobile-nav-link">⚾ Doodle Baseball</Link>
+            <Link to="/crazy-chicken" className="mobile-nav-link">🐔 Crazy Chicken 3D</Link>
+          </div>
         </div>
       </div>
     </nav>
@@ -354,6 +468,8 @@ const AppContent = () => {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/cheese-chompers" element={<CheeseChompers />} />
+          <Route path="/doodle-baseball" element={<DoodleBaseball />} />
+          <Route path="/crazy-chicken" element={<CrazyChicken />} />
         </Routes>
       </Suspense>
       <Footer />

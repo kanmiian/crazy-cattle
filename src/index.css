@@ -347,6 +347,7 @@ body {
   text-decoration: none;
   color: var(--text-primary);
   transition: color var(--transition);
+  z-index: 1001;
 }
 
 .logo-main {
@@ -366,7 +367,7 @@ body {
   color: var(--primary-color);
 }
 
-.nav-container {
+.nav-main {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -388,6 +389,7 @@ body {
   background: transparent;
   cursor: pointer;
   transition: all var(--transition);
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -395,32 +397,276 @@ body {
   background-color: rgba(99, 102, 241, 0.05);
 }
 
-.nav-secondary-links {
+.games-menu-btn {
+  position: relative;
   display: flex;
-  gap: 0.25rem;
-  padding-left: 0.5rem;
-  border-left: 1px solid var(--border-color);
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
 }
 
-.nav-link.secondary {
-  color: var(--secondary-color);
+.games-menu-btn:hover {
+  background: #34495e;
 }
 
-.nav-link.bookmark-btn {
-  width: 2rem;
-  height: 2rem;
+.games-menu-btn .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--text-secondary);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
+.games-menu-btn:hover .tooltip,
+.games-drawer.open ~ .games-menu-btn .tooltip {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.games-menu-btn .tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid var(--text-secondary);
+}
+
+/* Games Drawer */
+.games-drawer {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100vh;
+  background: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 1001;
+  padding-top: 4rem;
+}
+
+.games-drawer.open {
+  right: 0;
+}
+
+.games-drawer-content {
+  padding: 1.5rem;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.games-drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.games-drawer-header h3 {
+  color: var(--text-primary);
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.close-drawer-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.25rem;
-  color: var(--accent-color);
-  border-radius: 50%;
-  padding: 0;
+  transition: all var(--transition);
 }
 
-.nav-link.bookmark-btn:hover {
-  background-color: rgba(249, 115, 22, 0.1);
-  color: var(--accent-dark);
+.close-drawer-btn:hover {
+  background: rgba(99, 102, 241, 0.05);
+  color: var(--primary-color);
+}
+
+.games-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.game-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: all var(--transition);
+}
+
+.game-link:hover {
+  background: rgba(99, 102, 241, 0.05);
+  color: var(--primary-color);
+}
+
+.game-link.active {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.game-link.active:hover {
+  background: rgba(99, 102, 241, 0.15);
+}
+
+.game-icon {
+  font-size: 1.25rem;
+}
+
+.game-name {
+  font-weight: 500;
+}
+
+/* 遮罩层 */
+.drawer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Mobile Menu */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  transition: right 0.3s ease;
+  z-index: 998;
+  padding-top: 4rem;
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+.mobile-menu-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mobile-nav-links,
+.mobile-games-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mobile-nav-link {
+  padding: 0.75rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--transition);
+  border-radius: var(--radius-md);
+}
+
+.mobile-nav-link:hover {
+  background: rgba(99, 102, 241, 0.05);
+  color: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
+  .nav-main-links {
+    display: none;
+  }
+  
+  .nav-main {
+    gap: 0.5rem;
+  }
+  
+  .games-menu-btn {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-content {
+    padding: 0.5rem;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+  }
+  
+  .nav-main {
+    display: none;
+  }
+  
+  .logo-main {
+    font-size: 1.25rem;
+  }
+  
+  .logo-sub {
+    font-size: 0.8rem;
+  }
+  
+  .container {
+    padding-top: 5rem;
+  }
 }
 
 /* 页脚部分 */
@@ -565,105 +811,6 @@ body {
 .floating-bookmark:hover {
   background-color: var(--accent-dark);
   transform: translateY(-3px);
-}
-
-/* 响应式设计 */
-@media (max-width: 768px) {
-  .nav-content {
-    flex-direction: column;
-    gap: 0.75rem;
-    padding: 0.75rem;
-  }
-  
-  .container {
-    padding-top: 8.5rem; /* 增加顶部内边距以避免与导航栏重叠 */
-  }
-  
-  /* 在移动端隐藏从"What is"到"Requirements"的导航链接 */
-  .nav-main-links button:nth-child(3),
-  .nav-main-links button:nth-child(4),
-  .nav-main-links button:nth-child(5),
-  .nav-main-links button:nth-child(6) {
-    display: none !important;
-  }
-  
-  /* 调整移动端导航布局 */
-  .nav-main-links {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .nav-container {
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .nav-secondary-links {
-    padding-left: 0;
-    border-left: none;
-    margin-top: 0.5rem;
-    width: 100%;
-    justify-content: center;
-  }
-  
-  .logo {
-    align-items: center;
-    margin-bottom: 0.5rem;
-  }
-  
-  .logo-main {
-    font-size: 1.25rem;
-  }
-  
-  .logo-sub {
-    font-size: 0.85rem;
-    margin-left: 0;
-  }
-  
-  .hero h1 {
-    font-size: 2rem;
-  }
-  
-  .tagline {
-    font-size: 1rem;
-  }
-  
-  .button-group {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .btn {
-    width: 100%;
-    max-width: 280px;
-  }
-  
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-  
-  .iframe-section {
-    height: 55vh;
-  }
-  
-  .floating-bookmark {
-    bottom: 1rem;
-    right: 1rem;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-  }
-  
-  .download-buttons {
-    flex-direction: column;
-  }
-  
-  .download-link {
-    width: 100%;
-    justify-content: center;
-  }
 }
 
 /* 游戏内容区域 */
@@ -1018,6 +1165,167 @@ section[id] {
   .best-result-cta .btn {
     font-size: 1.1rem;
     padding: 0.8rem 1.6rem;
+  }
+}
+
+/* Doodle Baseball Game Page Styles */
+.game-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.game-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.game-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.game-section {
+  margin: 2rem 0;
+}
+
+.game-container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  max-height: 800px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.loading-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.game-controls {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.control-btn {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.2s;
+}
+
+.control-btn:hover {
+  background: white;
+}
+
+.game-info,
+.game-tips {
+  margin: 3rem 0;
+}
+
+.game-instructions,
+.tips-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.instruction-item,
+.tip-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.instruction-item h3,
+.tip-item h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.instruction-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.instruction-item li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.instruction-item li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .game-page {
+    padding: 1rem;
+  }
+
+  .game-header h1 {
+    font-size: 2rem;
+  }
+
+  .game-container {
+    height: 50vh;
+  }
+
+  .game-instructions,
+  .tips-container {
+    grid-template-columns: 1fr;
   }
 }
 
