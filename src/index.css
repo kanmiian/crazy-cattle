@@ -1329,3 +1329,236 @@ section[id] {
   }
 }
 
+/* 游戏说明回字形布局 */
+.game-instructions {
+  margin: 3rem 0;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.instructions-header {
+  width: 250px;
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow-md);
+}
+
+.instructions-header h2 {
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.instructions-box-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  grid-template-areas:
+    "top-left top-right"
+    "bottom-left bottom-right";
+}
+
+.top-left {
+  grid-area: top-left;
+}
+
+.top-right {
+  grid-area: top-right;
+}
+
+.bottom-left {
+  grid-area: bottom-left;
+}
+
+.bottom-right {
+  grid-area: bottom-right;
+}
+
+.instruction-item {
+  padding: 1.5rem;
+  background-color: var(--background-white);
+  border-radius: var(--radius-md);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.instruction-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.instruction-item h3 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.instruction-item p {
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* 响应式调整 */
+@media (max-width: 1024px) {
+  .game-instructions {
+    flex-direction: column;
+  }
+  
+  .instructions-header {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  
+  .instructions-header h2 {
+    font-size: 1.5rem;
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .instructions-box-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "top-left"
+      "top-right"
+      "bottom-left"
+      "bottom-right";
+  }
+  
+  .instruction-item {
+    padding: 1rem;
+  }
+}
+
+/* 游戏页面通用样式 */
+.game-instructions,
+.game-features,
+.game-info,
+.learn-more {
+  margin: 3rem 0;
+  padding: 2rem;
+  background-color: var(--background-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.game-instructions h2,
+.game-features h2,
+.game-info h2,
+.learn-more h2 {
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.instructions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.instruction-item {
+  padding: 1.5rem;
+  background-color: var(--background-card);
+  border-radius: var(--radius-md);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.instruction-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.instruction-item h3 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.instruction-item p {
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.learn-more p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.learn-more a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.learn-more a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+.brainrot-description p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .instructions-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .instruction-item {
+    padding: 1rem;
+  }
+  
+  .game-instructions,
+  .game-features,
+  .game-info,
+  .learn-more {
+    padding: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  .game-instructions h2,
+  .game-features h2,
+  .game-info h2,
+  .learn-more h2 {
+    font-size: 1.5rem;
+  }
+}
+

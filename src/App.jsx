@@ -5,6 +5,7 @@ import SEO from './components/SEO'
 import CheeseChompers from './components/CheeseChompers'
 import DoodleBaseball from './components/DoodleBaseball'
 import CrazyChicken from './components/CrazyChicken'
+import ItalianBrainrot from './components/ItalianBrainrot'
 
 // 懒加载组件
 const Content = lazy(() => import('./components/Content'))
@@ -314,6 +315,14 @@ const Navigation = () => {
               <span className="game-icon">🐔</span>
               <span className="game-name">Crazy Chicken 3D</span>
             </Link>
+            <Link 
+              to="/italian-brainrot" 
+              className={`game-link ${currentPath === '/italian-brainrot' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🇮🇹</span>
+              <span className="game-name">Italian Brainrot</span>
+            </Link>
           </div>
         </div>
       </div>
@@ -333,6 +342,7 @@ const Navigation = () => {
             <Link to="/cheese-chompers" className="mobile-nav-link">🧀 Cheese Chompers</Link>
             <Link to="/doodle-baseball" className="mobile-nav-link">⚾ Doodle Baseball</Link>
             <Link to="/crazy-chicken" className="mobile-nav-link">🐔 Crazy Chicken 3D</Link>
+            <Link to="/italian-brainrot" className="mobile-nav-link">🇮🇹 Italian Brainrot</Link>
           </div>
         </div>
       </div>
@@ -470,6 +480,7 @@ const AppContent = () => {
           <Route path="/cheese-chompers" element={<CheeseChompers />} />
           <Route path="/doodle-baseball" element={<DoodleBaseball />} />
           <Route path="/crazy-chicken" element={<CrazyChicken />} />
+          <Route path="/italian-brainrot" element={<ItalianBrainrot />} />
         </Routes>
       </Suspense>
       <Footer />

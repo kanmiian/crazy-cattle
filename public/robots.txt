@@ -6,6 +6,7 @@ Allow: /
 Allow: /cheese-chompers
 Allow: /doodle-baseball
 Allow: /crazy-chicken
+Allow: /italian-brainrot
 Allow: /about
 Allow: /contact
 Allow: /faq
@@ -73,6 +74,7 @@ Allow: /contact
 Allow: /faq
 Allow: /privacy-policy
 Allow: /terms-of-service
+Allow: /italian-brainrot
 
 # Content that AI crawlers are not allowed to access
 Disallow: /admin/
