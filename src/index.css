@@ -813,6 +813,25 @@ body {
   transform: translateY(-3px);
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .floating-bookmark {
+    /* Option 1: Hide completely on mobile */
+    display: none;
+    
+    /* Option 2: Make it smaller (uncomment below and comment out display:none if you prefer this) */
+    /* bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem;
+    border-radius: 50%; */
+  }
+  
+  /* If using Option 2, hide the text and only show the icon */
+  /* .floating-bookmark span:nth-child(2) {
+    display: none;
+  } */
+}
+
 /* 游戏内容区域 */
 .about, 
 .download-section,

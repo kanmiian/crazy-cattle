@@ -82,7 +82,7 @@ const ItalianBrainrot = () => {
             )}
             <iframe
               title="Italian Brainrot Game"
-              src="https://clicker-game.com/merge-fellas-italian-brainrot/"
+              src="https://game-iframe.qizhilu.org/merge-fellas/index.html"
               allowFullScreen
               frameBorder="0"
               allow="cross-origin-isolated; shared-storage; fullscreen"
