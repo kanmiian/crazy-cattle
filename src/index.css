@@ -1581,3 +1581,63 @@ section[id] {
   }
 }
 
+/* 游戏页面布局 */
+.game-page-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.game-page-layout {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) minmax(auto, 1200px) minmax(160px, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.game-page-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.game-page-ad {
+  position: sticky;
+  top: 4rem; /* 导航栏高度 + 一些间距 */
+  height: fit-content;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.game-page-ad.left {
+  justify-self: end;
+}
+
+.game-page-ad.right {
+  justify-self: start;
+}
+
+.ad-container {
+  width: 160px;
+  min-height: 320px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 在移动设备上隐藏侧边广告 */
+@media (max-width: 1440px) {
+  .game-page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .game-page-ad {
+    display: none;
+  }
+}
+

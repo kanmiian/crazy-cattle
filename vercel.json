@@ -14,5 +14,11 @@
         { "key": "Document-Policy", "value": "js-profiling" }
       ]
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
