@@ -1,0 +1,96 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which Italian Brainrot character is known for shouting 'BOMBARDIRO!'?",
+      "image": "/images/Bombardino Crocodillo.webp",
+      "options": [
+        "Bombardiro Crocodillo",
+        "Tralalero Tralala",
+        "Piccione Macchina",
+        "Bombombini Gusini"
+      ],
+      "correctAnswer": "Bombardiro Crocodillo",
+      "explanation": "Bombardiro Crocodillo is the iconic purple crocodile known for his 'BOMBARDIRO!' catchphrase."
+    },
+    {
+      "id": 2,
+      "question": "Which character is famous for their melodic 'Tralalero Tralala' tune?",
+      "image": "/images/Tralalero Tralala.webp",
+      "options": [
+        "Piccione Macchina",
+        "Tralalero Tralala",
+        "Bombombini Gusini",
+        "Bombardiro Crocodillo"
+      ],
+      "correctAnswer": "Tralalero Tralala",
+      "explanation": "Tralalero Tralala is known for their distinctive melodic tune that has become a viral sensation."
+    },
+    {
+      "id": 3,
+      "question": "Which mechanical bird character appears in Italian Brainrot memes?",
+      "image": "/images/Piccione Macchina.webp",
+      "options": [
+        "Piccione Macchina",
+        "Bombombini Gusini",
+        "Tralalero Tralala",
+        "Bombardiro Crocodillo"
+      ],
+      "correctAnswer": "Piccione Macchina",
+      "explanation": "Piccione Macchina is the mechanical bird character that has become a popular meme in the Italian Brainrot universe."
+    },
+    {
+      "id": 4,
+      "question": "Which character is known for their explosive personality?",
+      "image": "/images/Bombombini Gusini.webp",
+      "options": [
+        "Bombombini Gusini",
+        "Piccione Macchina",
+        "Bombardiro Crocodillo",
+        "Tralalero Tralala"
+      ],
+      "correctAnswer": "Bombombini Gusini",
+      "explanation": "Bombombini Gusini is famous for their explosive personality and chaotic energy."
+    },
+    {
+      "id": 5,
+      "question": "Which character is known for their enchanting musical performance?",
+      "image": "/images/Lirilì Larilà.webp",
+      "options": [
+        "Lirilì Larilà",
+        "Bombardiro Crocodillo",
+        "Tralalero Tralala",
+        "Piccione Macchina"
+      ],
+      "correctAnswer": "Lirilì Larilà",
+      "explanation": "Lirilì Larilà is beloved for their mesmerizing musical performances and enchanting melodies that captivate audiences."
+    }
+  ],
+  "results": [
+    {
+      "score": 0,
+      "title": "Italian Brainrot Novice",
+      "description": "You're just starting your Italian Brainrot journey! Keep exploring these bizarre characters!"
+    },
+    {
+      "score": 2,
+      "title": "Italian Brainrot Apprentice",
+      "description": "You're getting familiar with the Italian Brainrot universe. There's still more to discover!"
+    },
+    {
+      "score": 3,
+      "title": "Italian Brainrot Enthusiast",
+      "description": "You know your Italian Brainrot characters well! BOMBARDIRO!"
+    },
+    {
+      "score": 4,
+      "title": "Italian Brainrot Expert",
+      "description": "You're a true Italian Brainrot connoisseur! Tralalero Tralala!"
+    },
+    {
+      "score": 5,
+      "title": "Italian Brainrot Master",
+      "description": "Perfect score! You're a master of Italian Brainrot lore! BOMBARDIRO SUPREMO!"
+    }
+  ]
+} 

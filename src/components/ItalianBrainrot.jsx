@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SEO from './SEO';
+import BrainrotQuiz from './BrainrotQuiz';
 
 const ItalianBrainrot = () => {
   const [showGame, setShowGame] = useState(false);
@@ -82,7 +83,7 @@ const ItalianBrainrot = () => {
             )}
             <iframe
               title="Italian Brainrot Game"
-              src="https://game-iframe.qizhilu.org/merge-fellas/index.html"
+              src="https://clicker-game.com/merge-fellas-italian-brainrot/"
               allowFullScreen
               frameBorder="0"
               allow="cross-origin-isolated; shared-storage; fullscreen"
@@ -145,12 +146,13 @@ const ItalianBrainrot = () => {
           </div>
         </div>
       </div>
-      
-      <div className="learn-more">
-        <h2>Discover More About Italian Brainrot</h2>
-        <p>Want to explore the full universe of Italian Brainrot characters beyond the game? Visit <a href="https://animalbrainrot.com/" target="_blank" rel="noopener noreferrer">AI Brainrot Animals</a> to discover all 40+ Italian Brainrot species, hear their authentic sounds, and learn about the bizarre lore behind each character. From Bombardiro Crocodillo to Tralalero Tralala, dive deeper into the cultural phenomenon that's taking the internet by storm!</p>
-      </div>
 
+      <div className="quiz-section">
+        <h2>Test Your Italian Brainrot Knowledge!</h2>
+        <p className="quiz-intro">Think you're a true Italian Brainrot connoisseur? Take this quiz to test your knowledge of these bizarre and beloved characters! Can you identify all the iconic Italian Brainrot personalities?</p>
+        <BrainrotQuiz />
+      </div>
+      
       <div className="game-features">
         <h2>Italian Brainrot Game Features</h2>
         <div className="instructions-grid">
@@ -173,6 +175,10 @@ const ItalianBrainrot = () => {
         </div>
       </div>
 
+      <div className="learn-more">
+        <h2>Discover More About Italian Brainrot</h2>
+        <p>Want to explore the full universe of Italian Brainrot characters beyond the game? Visit <a href="https://animalbrainrot.com/" target="_blank" rel="noopener noreferrer">AI Brainrot Animals</a> to discover all 40+ Italian Brainrot species, hear their authentic sounds, and learn about the bizarre lore behind each character. From Bombardiro Crocodillo to Tralalero Tralala, dive deeper into the cultural phenomenon that's taking the internet by storm!</p>
+      </div>
     </div>
   );
 };
