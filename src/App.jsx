@@ -6,6 +6,7 @@ import CheeseChompers from './components/CheeseChompers'
 import DoodleBaseball from './components/DoodleBaseball'
 import CrazyChicken from './components/CrazyChicken'
 import ItalianBrainrot from './components/ItalianBrainrot'
+import ItalianBrainrotClicker2 from './components/ItalianBrainrotClicker2'
 import NutsAndBolts from './components/NutsAndBolts'
 
 // 懒加载组件
@@ -325,6 +326,14 @@ const Navigation = () => {
               <span className="game-name">Italian Brainrot</span>
             </Link>
             <Link 
+              to="/italian-brainrot-clicker-2" 
+              className={`game-link ${currentPath === '/italian-brainrot-clicker-2' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🇮🇹</span>
+              <span className="game-name">Italian Brainrot Clicker 2</span>
+            </Link>
+            <Link 
               to="/nuts-and-bolts" 
               className={`game-link ${currentPath === '/nuts-and-bolts' ? 'active' : ''}`}
               onClick={() => setIsGameDrawerOpen(false)}
@@ -352,6 +361,7 @@ const Navigation = () => {
             <Link to="/doodle-baseball" className="mobile-nav-link">⚾ Doodle Baseball</Link>
             <Link to="/crazy-chicken" className="mobile-nav-link">🐔 Crazy Chicken 3D</Link>
             <Link to="/italian-brainrot" className="mobile-nav-link">🇮🇹 Italian Brainrot</Link>
+            <Link to="/italian-brainrot-clicker-2" className="mobile-nav-link">🇮🇹 Italian Brainrot Clicker 2</Link>
             <Link to="/nuts-and-bolts" className="mobile-nav-link">🔩 Nuts and Bolts</Link>
           </div>
         </div>
@@ -491,6 +501,7 @@ const AppContent = () => {
           <Route path="/doodle-baseball" element={<DoodleBaseball />} />
           <Route path="/crazy-chicken" element={<CrazyChicken />} />
           <Route path="/italian-brainrot" element={<ItalianBrainrot />} />
+          <Route path="/italian-brainrot-clicker-2" element={<ItalianBrainrotClicker2 />} />
           <Route path="/nuts-and-bolts" element={<NutsAndBolts />} />
         </Routes>
       </Suspense>
