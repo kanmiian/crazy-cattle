@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import SEO from './SEO';
 
 const ItalianBrainrotClicker2 = () => {
@@ -6,6 +6,13 @@ const ItalianBrainrotClicker2 = () => {
   const [iframeLoaded, setIframeLoaded] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const gameContainerRef = useRef(null);
+  const previewImageRef = useRef(null);
+
+  // Preload game image
+  useEffect(() => {
+    const img = new Image();
+    img.src = "/images/italian-brainrot-click2.png";
+  }, []);
 
   const handleIframeLoad = () => {
     setIframeLoaded(true);
@@ -57,9 +64,12 @@ const ItalianBrainrotClicker2 = () => {
           {!showGame ? (
             <div className="game-placeholder">
               <img
+                ref={previewImageRef}
                 src="/images/italian-brainrot-click2.png"
                 alt="Italian Brainrot Clicker 2 Preview"
                 className="preview-img"
+                loading="eager"
+                fetchpriority="high"
               />
               <button onClick={() => setShowGame(true)} className="play-button">
                 <span>▶️</span> Play Italian Brainrot Clicker 2
@@ -73,6 +83,7 @@ const ItalianBrainrotClicker2 = () => {
                     src="/images/italian-brainrot-click2.png"
                     alt="Italian Brainrot Clicker 2 Preview"
                     className="preview-img"
+                    loading="eager"
                   />
                   <div className="loading-overlay">
                     <div className="loading-text">Loading Game...</div>
@@ -88,6 +99,7 @@ const ItalianBrainrotClicker2 = () => {
                 sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-downloads allow-presentation allow-modals"
                 referrerPolicy="origin"
                 onLoad={handleIframeLoad}
+                loading="lazy"
                 style={{
                   display: 'block',
                   opacity: iframeLoaded ? 1 : 0,
@@ -105,7 +117,6 @@ const ItalianBrainrotClicker2 = () => {
             </div>
           )}
         </section>
-
 
         <section className="game-description">
           <div className="description-content">
