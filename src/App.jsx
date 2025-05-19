@@ -428,6 +428,7 @@ const Footer = () => {
             <a href="https://animalbrainrot.com/" target="_blank" rel="noopener noreferrer nofollow" className="footer-link">AI Brainrot Animals</a>
             <a href="https://braingames.quest/" target="_blank" rel="noopener noreferrer nofollow" className="footer-link">Brain Games</a>
             <a href="https://bibleforu.info/" target="_blank" rel="noopener noreferrer nofollow" className="footer-link">Daily Bible</a>
+            <a href="https://artiverse.app/ai/fluxproweb-com-image-to-prompt/" target="_blank" rel="noopener noreferrer nofollow" className="footer-link" title="Free Image to Prompt AI">Free Image to Prompt AI</a>
           </div>
         </div>
       </div>
