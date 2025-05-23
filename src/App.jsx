@@ -8,6 +8,7 @@ import CrazyChicken from './components/CrazyChicken'
 import ItalianBrainrot from './components/ItalianBrainrot'
 import ItalianBrainrotClicker2 from './components/ItalianBrainrotClicker2'
 import NutsAndBolts from './components/NutsAndBolts'
+import CrazyMouseBattle from './components/CrazyMouseBattle'
 
 // 懒加载组件
 const Content = lazy(() => import('./components/Content'))
@@ -318,6 +319,14 @@ const Navigation = () => {
               <span className="game-name">Crazy Chicken 3D</span>
             </Link>
             <Link 
+              to="/crazy-mouse-battle" 
+              className={`game-link ${currentPath === '/crazy-mouse-battle' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🐭</span>
+              <span className="game-name">Crazy Mouse Battle</span>
+            </Link>
+            <Link 
               to="/italian-brainrot" 
               className={`game-link ${currentPath === '/italian-brainrot' ? 'active' : ''}`}
               onClick={() => setIsGameDrawerOpen(false)}
@@ -360,6 +369,7 @@ const Navigation = () => {
             <Link to="/cheese-chompers" className="mobile-nav-link">🧀 Cheese Chompers</Link>
             <Link to="/doodle-baseball" className="mobile-nav-link">⚾ Doodle Baseball</Link>
             <Link to="/crazy-chicken" className="mobile-nav-link">🐔 Crazy Chicken 3D</Link>
+            <Link to="/crazy-mouse-battle" className="mobile-nav-link">🐭 Crazy Mouse Battle</Link>
             <Link to="/italian-brainrot" className="mobile-nav-link">🇮🇹 Italian Brainrot</Link>
             <Link to="/italian-brainrot-clicker-2" className="mobile-nav-link">🇮🇹 Italian Brainrot Clicker 2</Link>
             <Link to="/nuts-and-bolts" className="mobile-nav-link">🔩 Nuts and Bolts</Link>
@@ -501,6 +511,7 @@ const AppContent = () => {
           <Route path="/cheese-chompers" element={<CheeseChompers />} />
           <Route path="/doodle-baseball" element={<DoodleBaseball />} />
           <Route path="/crazy-chicken" element={<CrazyChicken />} />
+          <Route path="/crazy-mouse-battle" element={<CrazyMouseBattle />} />
           <Route path="/italian-brainrot" element={<ItalianBrainrot />} />
           <Route path="/italian-brainrot-clicker-2" element={<ItalianBrainrotClicker2 />} />
           <Route path="/nuts-and-bolts" element={<NutsAndBolts />} />
