@@ -9,6 +9,7 @@ import ItalianBrainrot from './components/ItalianBrainrot'
 import ItalianBrainrotClicker2 from './components/ItalianBrainrotClicker2'
 import NutsAndBolts from './components/NutsAndBolts'
 import CrazyMouseBattle from './components/CrazyMouseBattle'
+import ColdplayCanoodle from './components/ColdplayCanoodle'
 
 // 懒加载组件
 const Content = lazy(() => import('./components/Content'))
@@ -350,6 +351,14 @@ const Navigation = () => {
               <span className="game-icon">🔩</span>
               <span className="game-name">Nuts and Bolts</span>
             </Link>
+            <Link 
+              to="/coldplay-canoodle" 
+              className={`game-link ${currentPath === '/coldplay-canoodle' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">💋</span>
+              <span className="game-name">Coldplay Canoodle</span>
+            </Link>
           </div>
         </div>
       </div>
@@ -373,6 +382,7 @@ const Navigation = () => {
             <Link to="/italian-brainrot" className="mobile-nav-link">🇮🇹 Italian Brainrot</Link>
             <Link to="/italian-brainrot-clicker-2" className="mobile-nav-link">🇮🇹 Italian Brainrot Clicker 2</Link>
             <Link to="/nuts-and-bolts" className="mobile-nav-link">🔩 Nuts and Bolts</Link>
+            <Link to="/coldplay-canoodle" className="mobile-nav-link">💋 Coldplay Canoodle</Link>
           </div>
         </div>
       </div>
@@ -515,6 +525,7 @@ const AppContent = () => {
           <Route path="/italian-brainrot" element={<ItalianBrainrot />} />
           <Route path="/italian-brainrot-clicker-2" element={<ItalianBrainrotClicker2 />} />
           <Route path="/nuts-and-bolts" element={<NutsAndBolts />} />
+          <Route path="/coldplay-canoodle" element={<ColdplayCanoodle />} />
         </Routes>
       </Suspense>
       <Footer />
