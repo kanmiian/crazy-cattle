@@ -6,7 +6,12 @@ Allow: /
 Allow: /cheese-chompers
 Allow: /doodle-baseball
 Allow: /crazy-chicken
+Allow: /crazy-mouse-battle
 Allow: /italian-brainrot
+Allow: /italian-brainrot-clicker-2
+Allow: /nuts-and-bolts
+Allow: /coldplay-canoodle
+Allow: /chiikawa-puzzle
 Allow: /about
 Allow: /contact
 Allow: /faq
