@@ -1,0 +1,291 @@
+/* --- General Page Styles --- */
+.game-page {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  background-color: #f0f2f5;
+}
+
+.game-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.game-description-header {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+  opacity: 0.9;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn.primary {
+  background-color: #007bff;
+  color: white;
+}
+.btn.primary:hover {
+  background-color: #0056b3;
+}
+
+.btn.secondary {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.btn.secondary:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* --- Game Section --- */
+.game-section {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.game-placeholder {
+  max-width: 960px;
+  width: 100%;
+}
+
+.preview-container {
+  position: relative;
+  cursor: pointer;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.preview-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.preview-container:hover .preview-img {
+  transform: scale(1.05);
+}
+
+.preview-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.preview-container:hover .preview-overlay {
+  background: rgba(0,0,0,0.6);
+}
+
+.play-hint {
+  color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.play-icon {
+  font-size: 3rem;
+  display: block;
+}
+
+.play-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+/* --- SEO Content Section --- */
+.seo-content-section {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.seo-content-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.seo-content-section h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.seo-content-section p, .seo-content-section li {
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #555;
+}
+
+.seo-content-section ol {
+  padding-left: 20px;
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+}
+.faq-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Rarity Grid & Cards */
+.rarity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.rarity-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid #e9ecef;
+}
+
+/* --- Characters Modal --- */
+.characters-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.characters-modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: modal-fade-in 0.3s ease-out;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #eee;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.characters-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.character-item {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.character-item h3 {
+  margin-bottom: 0.5rem;
+}
+.character-item p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.75rem;
+}
+
+@keyframes modal-fade-in {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* --- Rarity Badges (Used in Modal and SEO section) --- */
+.rarity-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+.rarity-badge.common { background-color: #74b9ff; }
+.rarity-badge.mythic { background-color: #e17055; }
+.rarity-badge.brainrot-god { background-color: #6c5ce7; }
+.rarity-badge.secret { background-color: #00b894; }
+.rarity-badge.og { background-color: #2d3436; }
+
+
+/* --- Popup Modal --- */
+.popup-modal-overlay {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2000;
+}
+.popup-modal-content {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: modal-fade-in 0.3s ease-out;
+}
+.popup-modal-content h3 {
+  margin-top: 0;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  .characters-list { grid-template-columns: 1fr; }
+  .rarity-grid { grid-template-columns: 1fr; }
+}

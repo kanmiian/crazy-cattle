@@ -1902,3 +1902,395 @@ section[id] {
   }
 }
 
+/* Iframe 错误页面样式 */
+.iframe-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  background: var(--background-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  min-height: 400px;
+}
+
+.iframe-error .preview-img {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius-md);
+}
+
+.iframe-error .error-content h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.iframe-error .error-content p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.iframe-error .btn.play-direct {
+  background: var(--primary-color);
+  color: white;
+  margin-bottom: 1rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.iframe-error .btn.play-direct:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.iframe-error .btn.secondary {
+  background: var(--background-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.iframe-error .btn.secondary:hover {
+  background: var(--border-color);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .iframe-error {
+    padding: 1rem;
+    min-height: 300px;
+  }
+  
+  .iframe-error .preview-img {
+    max-width: 150px;
+  }
+  
+  .iframe-error .error-content h3 {
+    font-size: 1.25rem;
+  }
+  
+  .iframe-error .btn.play-direct {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* 游戏预览容器样式 */
+.preview-container {
+  position: relative;
+  cursor: pointer;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.preview-container:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-lg);
+}
+
+.preview-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.preview-container:hover .preview-overlay {
+  opacity: 1;
+}
+
+.play-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  text-align: center;
+}
+
+.play-icon {
+  font-size: 3rem;
+  animation: pulse 2s infinite;
+}
+
+.play-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+/* 游戏选项模态框样式 */
+.play-options-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.play-options {
+  background: var(--background-white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.play-options h3 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.play-options .play-button {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.close-options {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: var(--transition);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-options:hover {
+  background: var(--background-card);
+  color: var(--text-primary);
+}
+
+.play-button.primary {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.play-button.primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.play-button.secondary {
+  background: var(--background-card);
+  color: var(--text-primary);
+  border: 2px solid var(--border-color);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.play-button.secondary:hover {
+  background: var(--border-color);
+  transform: translateY(-1px);
+}
+
+.play-info {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--background-card);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--primary-color);
+}
+
+.play-info p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Popup 模态框样式 */
+.popup-modal {
+  max-width: 500px;
+  width: 90%;
+}
+
+.popup-content {
+  text-align: center;
+  padding: 1rem;
+}
+
+.popup-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.popup-content h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.popup-content p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.popup-tips {
+  background: var(--background-card);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.popup-tips h4 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.popup-tips ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.popup-tips li {
+  margin-bottom: 0.5rem;
+}
+
+.popup-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.popup-actions .btn {
+  min-width: 120px;
+}
+
+@media (max-width: 768px) {
+  .preview-container:hover {
+    transform: none;
+  }
+  
+  .preview-overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .play-icon {
+    font-size: 2.5rem;
+  }
+  
+  .play-text {
+    font-size: 1rem;
+  }
+  
+  .play-options-modal {
+    padding: 0.5rem;
+  }
+  
+  .play-options {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+  
+  .play-options h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .play-button.primary,
+  .play-button.secondary {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  
+  .close-options {
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 35px;
+    height: 35px;
+    font-size: 1.25rem;
+  }
+  
+  .popup-modal {
+    width: 95%;
+    margin: 1rem;
+  }
+  
+  .popup-actions {
+    flex-direction: column;
+  }
+  
+  .popup-actions .btn {
+    width: 100%;
+  }
+}
+

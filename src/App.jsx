@@ -11,6 +11,7 @@ import NutsAndBolts from './components/NutsAndBolts'
 import CrazyMouseBattle from './components/CrazyMouseBattle'
 import ColdplayCanoodle from './components/ColdplayCanoodle'
 import ChiikawaPuzzle from './components/ChiikawaPuzzle'
+import StealABrainrot from './components/StealABrainrot'
 
 // 懒加载组件
 const Content = lazy(() => import('./components/Content'))
@@ -297,6 +298,14 @@ const Navigation = () => {
           </div>
           <div className="games-list">
             <Link 
+              to="/steal-a-brainrot" 
+              className={`game-link ${currentPath === '/steal-a-brainrot' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🧠</span>
+              <span className="game-name">Steal a Brainrot</span>
+            </Link>
+            <Link 
               to="/cheese-chompers" 
               className={`game-link ${currentPath === '/cheese-chompers' ? 'active' : ''}`}
               onClick={() => setIsGameDrawerOpen(false)}
@@ -384,6 +393,7 @@ const Navigation = () => {
             <button onClick={() => scrollToSection('requirements')} className="mobile-nav-link">⚙️ Requirements</button>
           </div>
           <div className="mobile-games-links">
+            <Link to="/steal-a-brainrot" className="mobile-nav-link">🧠 Steal a Brainrot</Link>
             <Link to="/cheese-chompers" className="mobile-nav-link">🧀 Cheese Chompers</Link>
             <Link to="/doodle-baseball" className="mobile-nav-link">⚾ Doodle Baseball</Link>
             <Link to="/crazy-chicken" className="mobile-nav-link">🐔 Crazy Chicken 3D</Link>
@@ -537,6 +547,7 @@ const AppContent = () => {
           <Route path="/nuts-and-bolts" element={<NutsAndBolts />} />
           <Route path="/coldplay-canoodle" element={<ColdplayCanoodle />} />
           <Route path="/chiikawa-puzzle" element={<ChiikawaPuzzle />} />
+          <Route path="/steal-a-brainrot" element={<StealABrainrot />} />
         </Routes>
       </Suspense>
       <Footer />
