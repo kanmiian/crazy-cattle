@@ -44,6 +44,12 @@ const SEO = ({ title, description }) => {
            description: 'Review Crazy Cattle 3D\'s terms of service. Understand the rules and conditions for playing our physics-based battle royale game and using our services.',
           canonical: `${baseUrl}/terms-of-service`
         };
+      case '/lovemoney':
+        return {
+          title: 'LoveMoney - Free Online Money Game | Play LoveMoney Online',
+          description: 'Play LoveMoney online for free! Experience the ultimate online money game where you collect, manage, and grow your virtual wealth. Play LoveMoney completely free - no download required!',
+          canonical: `${baseUrl}/lovemoney`
+        };
       case '/cheese-chompers':
         return {
           title: 'Cheese Chompers - Free Online 3D Mouse Game | Collect Cheese',
