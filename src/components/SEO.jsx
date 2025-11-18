@@ -50,6 +50,12 @@ const SEO = ({ title, description }) => {
           description: 'Play LoveMoney online for free! Experience the ultimate online money game where you collect, manage, and grow your virtual wealth. Play LoveMoney completely free - no download required!',
           canonical: `${baseUrl}/lovemoney`
         };
+      case '/clues-by-sam':
+        return {
+          title: 'Clues by Sam - Free Daily Logic Puzzle Game | Play Online',
+          description: 'Play Clues by Sam online for free! Solve daily logic puzzles where you figure out who is criminal and who is innocent. New puzzle every day at midnight New York time. Play Clues by Sam completely free - no download required!',
+          canonical: `${baseUrl}/clues-by-sam`
+        };
       case '/cheese-chompers':
         return {
           title: 'Cheese Chompers - Free Online 3D Mouse Game | Collect Cheese',

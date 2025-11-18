@@ -13,6 +13,7 @@ import ColdplayCanoodle from './components/ColdplayCanoodle'
 import ChiikawaPuzzle from './components/ChiikawaPuzzle'
 import StealABrainrot from './components/StealABrainrot'
 import LoveMoney from './components/LoveMoney'
+import CluesBySam from './components/CluesBySam'
 
 // 懒加载组件
 const Content = lazy(() => import('./components/Content'))
@@ -299,6 +300,14 @@ const Navigation = () => {
           </div>
           <div className="games-list">
             <Link 
+              to="/clues-by-sam" 
+              className={`game-link ${currentPath === '/clues-by-sam' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🔍</span>
+              <span className="game-name">Clues by Sam</span>
+            </Link>
+            <Link 
               to="/lovemoney" 
               className={`game-link ${currentPath === '/lovemoney' ? 'active' : ''}`}
               onClick={() => setIsGameDrawerOpen(false)}
@@ -402,6 +411,7 @@ const Navigation = () => {
             <button onClick={() => scrollToSection('requirements')} className="mobile-nav-link">⚙️ Requirements</button>
           </div>
           <div className="mobile-games-links">
+            <Link to="/clues-by-sam" className="mobile-nav-link">🔍 Clues by Sam</Link>
             <Link to="/lovemoney" className="mobile-nav-link">💰 LoveMoney</Link>
             <Link to="/steal-a-brainrot" className="mobile-nav-link">🧠 Steal a Brainrot</Link>
             <Link to="/cheese-chompers" className="mobile-nav-link">🧀 Cheese Chompers</Link>
@@ -559,6 +569,7 @@ const AppContent = () => {
           <Route path="/chiikawa-puzzle" element={<ChiikawaPuzzle />} />
           <Route path="/steal-a-brainrot" element={<StealABrainrot />} />
           <Route path="/lovemoney" element={<LoveMoney />} />
+          <Route path="/clues-by-sam" element={<CluesBySam />} />
         </Routes>
       </Suspense>
       <Footer />

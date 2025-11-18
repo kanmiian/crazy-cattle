@@ -1357,6 +1357,123 @@ section[id] {
   }
 }
 
+/* Clues by Sam 特定样式 - 竖屏游戏优化 */
+.clues-by-sam-page {
+  max-width: 100%;
+}
+
+.clues-by-sam-page .game-section {
+  margin: 1rem 0;
+}
+
+.clues-by-sam-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  border-radius: 0;
+}
+
+.clues-by-sam-container iframe {
+  width: 100% !important;
+  border-radius: 0;
+}
+
+/* PC端：让游戏容器和preview一样大 */
+@media (min-width: 769px) {
+  .clues-by-sam-page .game-section {
+    margin: 2rem 0;
+  }
+
+  .clues-by-sam-page .game-placeholder {
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+  }
+
+  .clues-by-sam-page .preview-container {
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+  }
+
+  .clues-by-sam-page .preview-img {
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    object-fit: contain;
+  }
+
+  .clues-by-sam-container {
+    width: 100%;
+    max-width: 100%;
+    height: 600px;
+    min-height: 600px;
+    margin: 0 auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+  }
+
+  .clues-by-sam-container iframe {
+    width: 100% !important;
+    height: 600px !important;
+    min-height: 600px;
+    border-radius: var(--radius-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  /* 移动端：让游戏占满屏幕 */
+  .clues-by-sam-page {
+    padding: 0;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  /* 确保容器在移动端也占满宽度 */
+  body:has(.clues-by-sam-page) .container,
+  .container.clues-by-sam-wrapper {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .clues-by-sam-page .game-header {
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+
+  .clues-by-sam-page .game-section {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .clues-by-sam-container {
+    width: 100vw;
+    max-width: 100vw;
+    height: 85vh !important;
+    min-height: 600px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .clues-by-sam-container iframe {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 600px;
+    border-radius: 0;
+  }
+
+  .clues-by-sam-page .seo-content-section {
+    padding: 1rem;
+    max-width: 100%;
+  }
+}
+
 /* 游戏说明回字形布局 */
 .game-instructions {
   margin: 3rem 0;
