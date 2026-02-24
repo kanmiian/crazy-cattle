@@ -14,6 +14,7 @@ import ChiikawaPuzzle from './components/ChiikawaPuzzle'
 import StealABrainrot from './components/StealABrainrot'
 import LoveMoney from './components/LoveMoney'
 import CluesBySam from './components/CluesBySam'
+import CrazyCattle3DMobile from './components/CrazyCattle3DMobile'
 
 // 懒加载组件
 const Content = lazy(() => import('./components/Content'))
@@ -300,6 +301,14 @@ const Navigation = () => {
           </div>
           <div className="games-list">
             <Link 
+              to="/crazy-cattle-3d-mobile" 
+              className={`game-link ${currentPath === '/crazy-cattle-3d-mobile' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🐄</span>
+              <span className="game-name">Crazy Cattle 3D Mobile</span>
+            </Link>
+            <Link 
               to="/clues-by-sam" 
               className={`game-link ${currentPath === '/clues-by-sam' ? 'active' : ''}`}
               onClick={() => setIsGameDrawerOpen(false)}
@@ -411,6 +420,7 @@ const Navigation = () => {
             <button onClick={() => scrollToSection('requirements')} className="mobile-nav-link">⚙️ Requirements</button>
           </div>
           <div className="mobile-games-links">
+            <Link to="/crazy-cattle-3d-mobile" className="mobile-nav-link">🐄 Crazy Cattle 3D Mobile</Link>
             <Link to="/clues-by-sam" className="mobile-nav-link">🔍 Clues by Sam</Link>
             <Link to="/lovemoney" className="mobile-nav-link">💰 LoveMoney</Link>
             <Link to="/steal-a-brainrot" className="mobile-nav-link">🧠 Steal a Brainrot</Link>
@@ -570,6 +580,7 @@ const AppContent = () => {
           <Route path="/steal-a-brainrot" element={<StealABrainrot />} />
           <Route path="/lovemoney" element={<LoveMoney />} />
           <Route path="/clues-by-sam" element={<CluesBySam />} />
+          <Route path="/crazy-cattle-3d-mobile" element={<CrazyCattle3DMobile />} />
         </Routes>
       </Suspense>
       <Footer />

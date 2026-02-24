@@ -62,6 +62,12 @@ const SEO = ({ title, description }) => {
           description: 'Play Cheese Chompers online! Guide your mouse through exciting 3D levels, collect cheese, and avoid obstacles in this addictive platformer game. Free to play',
           canonical: `${baseUrl}/cheese-chompers`
         };
+      case '/crazy-cattle-3d-mobile':
+        return {
+          title: 'Crazy Cattle 3D Mobile - Sheep Battle Royale Mobile Game | Play Free',
+          description: 'Play Crazy Cattle 3D Mobile free! The mobile version of Crazy Cattle 3D, adapted from the PC version. Physics-based sheep and cattle battle royale for phones and tablets. No download required.',
+          canonical: `${baseUrl}/crazy-cattle-3d-mobile`
+        };
       default:
         return {
           title: title || 'Crazy Cattle 3D - Sheep Battle Royale Game',
