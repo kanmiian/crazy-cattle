@@ -2411,3 +2411,132 @@ section[id] {
   }
 }
 
+/* Build A Ring Farm page */
+.build-ring-farm-page .game-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.build-ring-farm-page .game-header h1 {
+  line-height: 1.18;
+}
+
+.build-ring-farm-preview {
+  min-height: 420px;
+}
+
+.build-ring-farm-preview .preview-container {
+  width: 100%;
+  max-height: 620px;
+  background: #0f5132;
+}
+
+.build-ring-farm-preview .preview-img {
+  width: 100%;
+  height: min(62vh, 620px);
+  object-fit: cover;
+}
+
+.build-ring-farm-container {
+  min-height: 520px;
+}
+
+.build-ring-farm-crop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.farm-tier-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.6rem;
+  margin-bottom: 0.75rem;
+  border-radius: var(--radius-sm);
+  background: rgba(16, 185, 129, 0.12);
+  color: var(--secondary-dark);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.game-overview {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.game-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--background-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.game-details-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+.game-details-table tr:last-child td {
+  border-bottom: none;
+}
+
+.game-details-table td:first-child {
+  width: 32%;
+  color: var(--text-primary);
+  background: var(--background-card);
+}
+
+.build-ring-farm-page .control-btn {
+  min-width: 2.75rem;
+  width: auto;
+  padding: 0.5rem 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .build-ring-farm-page .game-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .build-ring-farm-preview {
+    min-height: 260px;
+  }
+
+  .build-ring-farm-preview .preview-img {
+    height: 320px;
+  }
+
+  .build-ring-farm-container {
+    min-height: 420px;
+  }
+
+  .build-ring-farm-container iframe {
+    height: 62vh !important;
+    min-height: 420px;
+  }
+
+  .game-details-table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .game-details-table td:first-child {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 0.35rem;
+  }
+
+  .game-details-table td:last-child {
+    padding-top: 0.35rem;
+  }
+}
+

@@ -50,6 +50,12 @@ const SEO = ({ title, description }) => {
           description: 'Play LoveMoney online for free! Experience the ultimate online money game where you collect, manage, and grow your virtual wealth. Play LoveMoney completely free - no download required!',
           canonical: `${baseUrl}/lovemoney`
         };
+      case '/build-a-ring-farm':
+        return {
+          title: 'Build A Ring Farm - Play Online Farm Incremental Game',
+          description: 'Play Build A Ring Farm online for free. Grow crops in circular fields, unlock seeds, upgrade ring farms, and check the latest codes and seed guide.',
+          canonical: `${baseUrl}/build-a-ring-farm`
+        };
       case '/clues-by-sam':
         return {
           title: 'Clues by Sam - Free Daily Logic Puzzle Game | Play Online',
@@ -135,4 +141,4 @@ const SEO = ({ title, description }) => {
   return null;
 };
 
-export default SEO; 
+export default SEO;

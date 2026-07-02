@@ -7,6 +7,9 @@
 ## Play Now
 On our website, you can experience the complete version of Crazy Cattle 3D directly through your browser, with no download required. The game loads quickly, has simple controls, and is suitable for players of all ages. Just click the "Play Now" button to begin your battle journey.
 
+## Build A Ring Farm
+Build A Ring Farm is a browser farming incremental game page with an embedded playable web build, seed priority tips, current code status, crop upgrade strategy, and FAQ content for players searching for ring farm simulator guidance.
+
 ## Download Game
 If you want a smoother gaming experience, you can download the offline version of Crazy Cattle 3D from the itch.io platform. We provide multi-platform support to ensure you can enjoy the game on any device. After downloading, you'll get access to the complete game content and regular updates.
 

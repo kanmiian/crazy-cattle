@@ -15,6 +15,7 @@ import StealABrainrot from './components/StealABrainrot'
 import LoveMoney from './components/LoveMoney'
 import CluesBySam from './components/CluesBySam'
 import CrazyCattle3DMobile from './components/CrazyCattle3DMobile'
+import BuildARingFarm from './components/BuildARingFarm'
 
 // 懒加载组件
 const Content = lazy(() => import('./components/Content'))
@@ -300,7 +301,15 @@ const Navigation = () => {
             </button>
           </div>
           <div className="games-list">
-            <Link 
+            <Link
+              to="/build-a-ring-farm"
+              className={`game-link ${currentPath === '/build-a-ring-farm' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🌾</span>
+              <span className="game-name">Build A Ring Farm</span>
+            </Link>
+            <Link
               to="/crazy-cattle-3d-mobile" 
               className={`game-link ${currentPath === '/crazy-cattle-3d-mobile' ? 'active' : ''}`}
               onClick={() => setIsGameDrawerOpen(false)}
@@ -420,6 +429,7 @@ const Navigation = () => {
             <button onClick={() => scrollToSection('requirements')} className="mobile-nav-link">⚙️ Requirements</button>
           </div>
           <div className="mobile-games-links">
+            <Link to="/build-a-ring-farm" className="mobile-nav-link">🌾 Build A Ring Farm</Link>
             <Link to="/crazy-cattle-3d-mobile" className="mobile-nav-link">🐄 Crazy Cattle 3D Mobile</Link>
             <Link to="/clues-by-sam" className="mobile-nav-link">🔍 Clues by Sam</Link>
             <Link to="/lovemoney" className="mobile-nav-link">💰 LoveMoney</Link>
@@ -581,6 +591,7 @@ const AppContent = () => {
           <Route path="/lovemoney" element={<LoveMoney />} />
           <Route path="/clues-by-sam" element={<CluesBySam />} />
           <Route path="/crazy-cattle-3d-mobile" element={<CrazyCattle3DMobile />} />
+          <Route path="/build-a-ring-farm" element={<BuildARingFarm />} />
         </Routes>
       </Suspense>
       <Footer />

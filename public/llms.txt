@@ -7,6 +7,7 @@ Crazy Cattle 3D is a fun physics simulation game, available to play online or do
 ## Core Content
 - [Crazy Cattle 3D Home Page](https://cattlecrazy3d.com): Home Page
 - [Play Now](https://cattlecrazy3d.com/#game): Experience the complete game directly in your browser
+- [Build A Ring Farm](https://cattlecrazy3d.com/build-a-ring-farm): Play a circular farm incremental game with codes, seed tips, and upgrade guide
 - [Download Game](https://cattlecrazy3d.com/#download): Download the offline version from itch.io
 - [Game Features](https://cattlecrazy3d.com/#features): Physics-driven, multiple battle environments, unique characters, and more
 - [How to Play](https://cattlecrazy3d.com/#how-to-play): Learn how to control characters and achieve victory
