@@ -16,6 +16,10 @@ import LoveMoney from './components/LoveMoney'
 import CluesBySam from './components/CluesBySam'
 import CrazyCattle3DMobile from './components/CrazyCattle3DMobile'
 import BuildARingFarm from './components/BuildARingFarm'
+import EmojiGuessMaster from './components/EmojiGuessMaster'
+import DinoWorld from './components/DinoWorld'
+import CaptainBlast from './components/CaptainBlast'
+import { hotGameUpdates } from './data/hotGames'
 
 // 懒加载组件
 const Content = lazy(() => import('./components/Content'))
@@ -310,6 +314,30 @@ const Navigation = () => {
               <span className="game-name">Build A Ring Farm</span>
             </Link>
             <Link
+              to="/emoji-guess-master"
+              className={`game-link ${currentPath === '/emoji-guess-master' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">😀</span>
+              <span className="game-name">Emoji Guess Master</span>
+            </Link>
+            <Link
+              to="/dino-world"
+              className={`game-link ${currentPath === '/dino-world' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🦖</span>
+              <span className="game-name">Dino World</span>
+            </Link>
+            <Link
+              to="/captain-blast"
+              className={`game-link ${currentPath === '/captain-blast' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">💥</span>
+              <span className="game-name">Captain Blast</span>
+            </Link>
+            <Link
               to="/crazy-cattle-3d-mobile" 
               className={`game-link ${currentPath === '/crazy-cattle-3d-mobile' ? 'active' : ''}`}
               onClick={() => setIsGameDrawerOpen(false)}
@@ -430,6 +458,9 @@ const Navigation = () => {
           </div>
           <div className="mobile-games-links">
             <Link to="/build-a-ring-farm" className="mobile-nav-link">🌾 Build A Ring Farm</Link>
+            <Link to="/emoji-guess-master" className="mobile-nav-link">😀 Emoji Guess Master</Link>
+            <Link to="/dino-world" className="mobile-nav-link">🦖 Dino World</Link>
+            <Link to="/captain-blast" className="mobile-nav-link">💥 Captain Blast</Link>
             <Link to="/crazy-cattle-3d-mobile" className="mobile-nav-link">🐄 Crazy Cattle 3D Mobile</Link>
             <Link to="/clues-by-sam" className="mobile-nav-link">🔍 Clues by Sam</Link>
             <Link to="/lovemoney" className="mobile-nav-link">💰 LoveMoney</Link>
@@ -592,6 +623,9 @@ const AppContent = () => {
           <Route path="/clues-by-sam" element={<CluesBySam />} />
           <Route path="/crazy-cattle-3d-mobile" element={<CrazyCattle3DMobile />} />
           <Route path="/build-a-ring-farm" element={<BuildARingFarm />} />
+          <Route path="/emoji-guess-master" element={<EmojiGuessMaster />} />
+          <Route path="/dino-world" element={<DinoWorld />} />
+          <Route path="/captain-blast" element={<CaptainBlast />} />
         </Routes>
       </Suspense>
       <Footer />
@@ -681,6 +715,42 @@ const MainContent = () => {
           </div>
         </header>
       </div>
+
+      <section className="new-games-panel" aria-label="New hot game updates">
+        <div className="new-games-heading">
+          <span className="new-games-label">New Hot Games</span>
+          <h2>Fresh playable modules</h2>
+          <p>Trending mini-games added for quick play, simple guides, and recommendation traffic.</p>
+        </div>
+
+        <div className="new-games-ticker" aria-label="Latest playable game updates">
+          <div className="ticker-label">Updated</div>
+          <div className="ticker-viewport">
+            <div className="ticker-track">
+              {[...hotGameUpdates, ...hotGameUpdates].map((game, index) => (
+                <Link to={game.path} className="ticker-item" key={`${game.path}-${index}`}>
+                  <strong>{game.title}</strong>
+                  <span>{game.summary}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="new-games-grid">
+          {hotGameUpdates.map((game) => (
+            <Link to={game.path} className="new-game-card" key={game.path}>
+              <img src={game.image} alt={`${game.title} preview`} loading="lazy" decoding="async" />
+              <div className="new-game-card-body">
+                <span className="new-game-tag">{game.tag}</span>
+                <h3>{game.title}</h3>
+                <p>{game.summary}</p>
+                <strong>{game.recommendation}</strong>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
 
       {/* Adsterra Native Banner */}
       <div className="adsterra-banner">

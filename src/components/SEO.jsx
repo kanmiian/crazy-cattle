@@ -56,6 +56,24 @@ const SEO = ({ title, description }) => {
           description: 'Play Build A Ring Farm online for free. Grow crops in circular fields, unlock seeds, upgrade ring farms, and check the latest codes and seed guide.',
           canonical: `${baseUrl}/build-a-ring-farm`
         };
+      case '/emoji-guess-master':
+        return {
+          title: 'Emoji Guess Master - Play Online with Answers and Level Hints',
+          description: 'Play Emoji Guess Master online. Follow answer hints, level keywords, and quick puzzle tips for the CrazyGames game updated on July 2, 2026.',
+          canonical: `${baseUrl}/emoji-guess-master`
+        };
+      case '/dino-world':
+        return {
+          title: 'Dino World - Play Online Dinosaur Squad Game',
+          description: 'Play Dino World online. Build a dinosaur squad, upgrade ancient creatures, and follow beginner tips for the new CrazyGames dinosaur game.',
+          canonical: `${baseUrl}/dino-world`
+        };
+      case '/captain-blast':
+        return {
+          title: 'Captain Blast - Play Online with Level Tips',
+          description: 'Play Captain Blast online. Explore a level-based puzzle adventure updated June 30, 2026, with tips for obstacles, timing, and stage progression.',
+          canonical: `${baseUrl}/captain-blast`
+        };
       case '/clues-by-sam':
         return {
           title: 'Clues by Sam - Free Daily Logic Puzzle Game | Play Online',

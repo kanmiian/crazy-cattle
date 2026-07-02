@@ -8,6 +8,9 @@ Crazy Cattle 3D is a fun physics simulation game, available to play online or do
 - [Crazy Cattle 3D Home Page](https://cattlecrazy3d.com): Home Page
 - [Play Now](https://cattlecrazy3d.com/#game): Experience the complete game directly in your browser
 - [Build A Ring Farm](https://cattlecrazy3d.com/build-a-ring-farm): Play a circular farm incremental game with codes, seed tips, and upgrade guide
+- [Emoji Guess Master](https://cattlecrazy3d.com/emoji-guess-master): Play the updated emoji puzzle game with answer hints and level keyword guidance
+- [Dino World](https://cattlecrazy3d.com/dino-world): Play a new dinosaur squad game with upgrade and beginner strategy tips
+- [Captain Blast](https://cattlecrazy3d.com/captain-blast): Play a level-based puzzle adventure with obstacle timing and stage tips
 - [Download Game](https://cattlecrazy3d.com/#download): Download the offline version from itch.io
 - [Game Features](https://cattlecrazy3d.com/#features): Physics-driven, multiple battle environments, unique characters, and more
 - [How to Play](https://cattlecrazy3d.com/#how-to-play): Learn how to control characters and achieve victory

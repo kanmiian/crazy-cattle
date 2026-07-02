@@ -10,6 +10,15 @@ On our website, you can experience the complete version of Crazy Cattle 3D direc
 ## Build A Ring Farm
 Build A Ring Farm is a browser farming incremental game page with an embedded playable web build, seed priority tips, current code status, crop upgrade strategy, and FAQ content for players searching for ring farm simulator guidance.
 
+## Emoji Guess Master
+Emoji Guess Master is an updated CrazyGames emoji puzzle module with an embedded playable build, answer-hint strategy, level keyword framing, and FAQ content for players searching for emoji puzzle answers.
+
+## Dino World
+Dino World is a new CrazyGames dinosaur squad module with an embedded playable build, beginner upgrade route, squad-building recommendations, and fresh dinosaur game keyword coverage.
+
+## Captain Blast
+Captain Blast is a level-based puzzle adventure module with an embedded playable build, obstacle timing tips, stage strategy, and guide content for players searching after the June 30, 2026 update.
+
 ## Download Game
 If you want a smoother gaming experience, you can download the offline version of Crazy Cattle 3D from the itch.io platform. We provide multi-platform support to ensure you can enjoy the game on any device. After downloading, you'll get access to the complete game content and regular updates.
 
