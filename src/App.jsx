@@ -19,6 +19,8 @@ import BuildARingFarm from './components/BuildARingFarm'
 import EmojiGuessMaster from './components/EmojiGuessMaster'
 import DinoWorld from './components/DinoWorld'
 import CaptainBlast from './components/CaptainBlast'
+import GoalGang from './components/GoalGang'
+import ImagineIsland from './components/ImagineIsland'
 import { hotGameUpdates } from './data/hotGames'
 
 // 懒加载组件
@@ -306,6 +308,22 @@ const Navigation = () => {
           </div>
           <div className="games-list">
             <Link
+              to="/goal-gang"
+              className={`game-link ${currentPath === '/goal-gang' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">⚽</span>
+              <span className="game-name">Goal Gang</span>
+            </Link>
+            <Link
+              to="/imagine-island"
+              className={`game-link ${currentPath === '/imagine-island' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🏝️</span>
+              <span className="game-name">Imagine Island</span>
+            </Link>
+            <Link
               to="/build-a-ring-farm"
               className={`game-link ${currentPath === '/build-a-ring-farm' ? 'active' : ''}`}
               onClick={() => setIsGameDrawerOpen(false)}
@@ -457,6 +475,8 @@ const Navigation = () => {
             <button onClick={() => scrollToSection('requirements')} className="mobile-nav-link">⚙️ Requirements</button>
           </div>
           <div className="mobile-games-links">
+            <Link to="/goal-gang" className="mobile-nav-link">⚽ Goal Gang</Link>
+            <Link to="/imagine-island" className="mobile-nav-link">🏝️ Imagine Island</Link>
             <Link to="/build-a-ring-farm" className="mobile-nav-link">🌾 Build A Ring Farm</Link>
             <Link to="/emoji-guess-master" className="mobile-nav-link">😀 Emoji Guess Master</Link>
             <Link to="/dino-world" className="mobile-nav-link">🦖 Dino World</Link>
@@ -623,6 +643,8 @@ const AppContent = () => {
           <Route path="/clues-by-sam" element={<CluesBySam />} />
           <Route path="/crazy-cattle-3d-mobile" element={<CrazyCattle3DMobile />} />
           <Route path="/build-a-ring-farm" element={<BuildARingFarm />} />
+          <Route path="/goal-gang" element={<GoalGang />} />
+          <Route path="/imagine-island" element={<ImagineIsland />} />
           <Route path="/emoji-guess-master" element={<EmojiGuessMaster />} />
           <Route path="/dino-world" element={<DinoWorld />} />
           <Route path="/captain-blast" element={<CaptainBlast />} />

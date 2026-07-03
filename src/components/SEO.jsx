@@ -56,6 +56,18 @@ const SEO = ({ title, description }) => {
           description: 'Play Build A Ring Farm online for free. Grow crops in circular fields, unlock seeds, upgrade ring farms, and check the latest codes and seed guide.',
           canonical: `${baseUrl}/build-a-ring-farm`
         };
+      case '/goal-gang':
+        return {
+          title: 'Goal Gang - Play Online Multiplayer Soccer Game',
+          description: 'Play Goal Gang online. Join chaotic multiplayer football matches, use teamwork tips, and follow World Cup 2026 soccer keyword updates.',
+          canonical: `${baseUrl}/goal-gang`
+        };
+      case '/imagine-island':
+        return {
+          title: 'Imagine Island - Play Online Virtual Island Game',
+          description: 'Play Imagine Island online. Explore fishing, fashion, food obby runs, prop hunt, friends, and monthly event update tips.',
+          canonical: `${baseUrl}/imagine-island`
+        };
       case '/emoji-guess-master':
         return {
           title: 'Emoji Guess Master - Play Online with Answers and Level Hints',

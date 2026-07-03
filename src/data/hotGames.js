@@ -1,5 +1,21 @@
 export const hotGameUpdates = [
   {
+    title: 'Goal Gang',
+    path: '/goal-gang',
+    image: '/images/goal-gang.jpg',
+    tag: 'Updated Jul 1',
+    summary: 'Chaotic multiplayer football with World Cup 2026 keyword traffic.',
+    recommendation: 'Recommended for players who want fast online soccer, teamwork chaos, and football event searches.'
+  },
+  {
+    title: 'Imagine Island',
+    path: '/imagine-island',
+    image: '/images/imagine-island.jpg',
+    tag: 'Monthly events',
+    summary: 'Virtual island life with fishing, fashion, obby runs, prop hunt, and monthly updates.',
+    recommendation: 'Recommended for players who like social worlds, event tasks, collectibles, and light roleplay.'
+  },
+  {
     title: 'Build A Ring Farm',
     path: '/build-a-ring-farm',
     image: '/images/build-a-ring-farm.jpg',
@@ -34,6 +50,132 @@ export const hotGameUpdates = [
 ];
 
 export const hotGamePages = {
+  goalGang: {
+    slug: 'goal-gang',
+    title: 'Goal Gang',
+    path: '/goal-gang',
+    pageTitle: 'Goal Gang - Play Online Multiplayer Football',
+    seoTitle: 'Goal Gang - Play Online Multiplayer Soccer Game',
+    seoDescription: 'Play Goal Gang online. Join chaotic multiplayer football matches, use teamwork tips, and follow World Cup 2026 soccer keyword updates.',
+    keywords: 'Goal Gang, Goal Gang game, multiplayer football game, online soccer game, World Cup 2026 game, CrazyGames soccer',
+    image: '/images/goal-gang.jpg',
+    embedUrl: 'https://games.crazygames.com/en_US/goal-gang/index.html?v=2.4',
+    sourceUrl: 'https://www.crazygames.com/game/goal-gang',
+    sourceName: 'CrazyGames',
+    sourceStatus: 'CrazyGames page updated July 1, 2026',
+    trendLabel: 'World Cup 2026 soccer keyword trend',
+    playCta: 'Play Goal Gang',
+    description: 'Goal Gang is a chaotic online multiplayer football game where each player controls one footballer and teamwork decides the match until the pitch turns wild. The CrazyGames update and World Cup 2026 tags make it a strong soccer traffic page for quick play and football event searches.',
+    intro: 'Use the embedded version to jump into a match, then scan the guide below for simple positioning and teamwork rules. Goal Gang rewards players who keep shape, pass early, and react quickly when a loose ball turns into a counterattack.',
+    guideTitle: 'Goal Gang Multiplayer Football Tips',
+    guideIntro: 'The fastest way to improve is to stop chasing every ball. Hold a useful lane, cover space, and support the teammate who has the best angle to score.',
+    steps: [
+      'Pick a role at kickoff: pressure the ball, support the pass, or stay back to block counters.',
+      'Do not crowd the teammate with possession. Move into open space so a pass has value.',
+      'Use quick touches near goal instead of over-dribbling through multiple defenders.',
+      'When possession is lost, recover toward the middle first before chasing the sideline.',
+      'Watch World Cup-style spacing: one attacker wide, one central option, and one safety player behind.'
+    ],
+    recommendationCards: [
+      {
+        title: 'Best content angle',
+        text: 'World Cup 2026 soccer hooks, multiplayer tips, position guide, and quick match strategy.'
+      },
+      {
+        title: 'Why it is hot',
+        text: 'The official page shows a July 1, 2026 update and strong football tags for event traffic.'
+      },
+      {
+        title: 'Player fit',
+        text: 'Good for players who want short online soccer matches with teamwork and chaotic goals.'
+      }
+    ],
+    details: [
+      ['Game', 'Goal Gang'],
+      ['Genre', 'Multiplayer football, soccer, sports chaos'],
+      ['Official update signal', 'Updated on CrazyGames on July 1, 2026'],
+      ['Trend hook', 'World Cup 2026 soccer keyword traffic'],
+      ['Guide focus', 'Positioning, teamwork, counters, scoring routes'],
+      ['Platform', 'Browser, desktop and mobile']
+    ],
+    faqs: [
+      {
+        question: 'Can I play Goal Gang online for free?',
+        answer: 'Yes. The browser build can be started from this page, with the official CrazyGames source link available as a fallback.'
+      },
+      {
+        question: 'Is Goal Gang multiplayer?',
+        answer: 'Yes. Goal Gang is built around online multiplayer football where each player controls one footballer.'
+      },
+      {
+        question: 'Why is Goal Gang useful for World Cup traffic?',
+        answer: 'The game is a soccer multiplayer title with World Cup 2026 tagging, so it can catch football event and casual sports-game searches.'
+      }
+    ]
+  },
+  imagineIsland: {
+    slug: 'imagine-island',
+    title: 'Imagine Island',
+    path: '/imagine-island',
+    pageTitle: 'Imagine Island - Play Online Virtual Island World',
+    seoTitle: 'Imagine Island - Play Online Virtual Island Game',
+    seoDescription: 'Play Imagine Island online. Explore fishing, fashion, food obby runs, prop hunt, friends, and monthly event update tips.',
+    keywords: 'Imagine Island, Imagine Island game, virtual island game, fishing fashion obby prop hunt, CrazyGames social world',
+    image: '/images/imagine-island.jpg',
+    embedUrl: 'https://games.crazygames.com/en_US/imagine-island/index.html?v=2.4',
+    sourceUrl: 'https://www.crazygames.com/game/imagine-island',
+    sourceName: 'CrazyGames',
+    sourceStatus: 'CrazyGames page updated July 1, 2026',
+    trendLabel: 'Monthly virtual island event trend',
+    playCta: 'Play Imagine Island',
+    description: 'Imagine Island is a virtual island world with friends, fishing, fashion, food-themed obby runs, and prop hunt. Its monthly update rhythm makes it useful for event lists, new item summaries, and recurring gameplay guides.',
+    intro: 'Start by exploring the island systems one at a time instead of rushing every activity. The page below organizes the main loops so players can find events, collections, and social activities faster.',
+    guideTitle: 'Imagine Island Events and Activity Guide',
+    guideIntro: 'The best route is to treat Imagine Island as a rotating event hub: check what changed, pick one activity, then collect rewards before moving into social games.',
+    steps: [
+      'Check the current island update first so you do not miss new event items or limited tasks.',
+      'Try fishing early because collections and funny catches are easy repeat goals.',
+      'Use fashion customization to set up a recognizable look before joining social areas.',
+      'Run the food-themed obby when you want movement practice and quick challenge content.',
+      'Play prop hunt with friends after learning the map, because hiding spots matter more than speed.'
+    ],
+    recommendationCards: [
+      {
+        title: 'Best content angle',
+        text: 'Monthly update notes, event checklist, fish collection, fashion items, obby and prop hunt tips.'
+      },
+      {
+        title: 'Why it is hot',
+        text: 'The official page shows a July 1, 2026 update and describes recurring monthly additions.'
+      },
+      {
+        title: 'Player fit',
+        text: 'Good for players who like relaxed virtual worlds with many small activities and friends.'
+      }
+    ],
+    details: [
+      ['Game', 'Imagine Island'],
+      ['Genre', 'Virtual world, multiplayer, fishing, fashion, obby, prop hunt'],
+      ['Official update signal', 'Updated on CrazyGames on July 1, 2026'],
+      ['Trend hook', 'Monthly event and social-world update traffic'],
+      ['Guide focus', 'Events, activities, collections, friends, map learning'],
+      ['Platform', 'Browser, desktop and mobile']
+    ],
+    faqs: [
+      {
+        question: 'Can I play Imagine Island online here?',
+        answer: 'Yes. Click the play button to load the browser build. The official CrazyGames source link is also included as a fallback.'
+      },
+      {
+        question: 'What can you do in Imagine Island?',
+        answer: 'The official description highlights fishing, fashion, a food-themed obby, social play with friends, and prop hunt.'
+      },
+      {
+        question: 'Why does Imagine Island need an events page?',
+        answer: 'The game updates monthly with new items, events, and challenges, so players benefit from a clear rotating checklist.'
+      }
+    ]
+  },
   emojiGuessMaster: {
     slug: 'emoji-guess-master',
     title: 'Emoji Guess Master',

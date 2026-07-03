@@ -10,6 +10,12 @@ On our website, you can experience the complete version of Crazy Cattle 3D direc
 ## Build A Ring Farm
 Build A Ring Farm is a browser farming incremental game page with an embedded playable web build, seed priority tips, current code status, crop upgrade strategy, and FAQ content for players searching for ring farm simulator guidance.
 
+## Goal Gang
+Goal Gang is a multiplayer football module with an embedded playable web build, World Cup 2026 soccer keyword framing, teamwork tips, positioning notes, and quick match strategy content.
+
+## Imagine Island
+Imagine Island is a virtual island module with an embedded playable web build, monthly event checklist content, fishing and fashion notes, food obby tips, prop hunt guidance, and social-world update coverage.
+
 ## Emoji Guess Master
 Emoji Guess Master is an updated CrazyGames emoji puzzle module with an embedded playable build, answer-hint strategy, level keyword framing, and FAQ content for players searching for emoji puzzle answers.
 
