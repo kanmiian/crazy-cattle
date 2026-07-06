@@ -41,6 +41,11 @@ const HotGamePage = ({ game }) => {
     return null;
   }
 
+  const isExternalPlayOnly = game.externalPlayOnly || !game.embedUrl;
+  const playableLinks = game.playableLinks || [
+    { label: `Play ${game.title}`, url: game.sourceUrl }
+  ];
+
   const handleIframeLoad = () => {
     setIframeLoaded(true);
   };
@@ -94,7 +99,7 @@ const HotGamePage = ({ game }) => {
         </div>
         <div className="game-actions">
           <button onClick={() => setShowGame(true)} className="btn primary">
-            {game.playCta}
+            {isExternalPlayOnly ? (game.externalPlayCta || `Get ${game.title} Play Link`) : game.playCta}
           </button>
           <a href={game.sourceUrl} target="_blank" rel="noopener noreferrer nofollow" className="btn secondary">
             Open Official Source
@@ -113,9 +118,38 @@ const HotGamePage = ({ game }) => {
               />
               <div className="preview-overlay">
                 <div className="play-hint">
-                  <span className="play-icon">Play</span>
-                  <span className="play-text">Click to start {game.title}</span>
+                  <span className="play-icon">{isExternalPlayOnly ? 'Open' : 'Play'}</span>
+                  <span className="play-text">
+                    {isExternalPlayOnly ? `Click for ${game.title} play links` : `Click to start ${game.title}`}
+                  </span>
                 </div>
+              </div>
+            </div>
+          </div>
+        ) : isExternalPlayOnly ? (
+          <div className="external-play-panel">
+            <img
+              src={game.image}
+              alt={`${game.title} playable source`}
+              className="external-play-image"
+            />
+            <div className="external-play-content">
+              <h2>{game.title} Playable Links</h2>
+              <p>
+                {game.externalPlayReason || 'This game currently blocks third-party iframe play, so use a verified playable source instead.'}
+              </p>
+              <div className="external-play-actions">
+                {playableLinks.map((link) => (
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="btn primary"
+                    key={link.url}
+                  >
+                    {link.label}
+                  </a>
+                ))}
               </div>
             </div>
           </div>

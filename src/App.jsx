@@ -21,6 +21,8 @@ import DinoWorld from './components/DinoWorld'
 import CaptainBlast from './components/CaptainBlast'
 import GoalGang from './components/GoalGang'
 import ImagineIsland from './components/ImagineIsland'
+import StealBeanstalkForBrainrots from './components/StealBeanstalkForBrainrots'
+import CarsArena from './components/CarsArena'
 import { hotGameUpdates } from './data/hotGames'
 
 // 懒加载组件
@@ -308,6 +310,22 @@ const Navigation = () => {
           </div>
           <div className="games-list">
             <Link
+              to="/steal-beanstalk-for-brainrots"
+              className={`game-link ${currentPath === '/steal-beanstalk-for-brainrots' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🌱</span>
+              <span className="game-name">Steal Beanstalk for Brainrots</span>
+            </Link>
+            <Link
+              to="/cars-arena"
+              className={`game-link ${currentPath === '/cars-arena' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🏎️</span>
+              <span className="game-name">Cars Arena</span>
+            </Link>
+            <Link
               to="/goal-gang"
               className={`game-link ${currentPath === '/goal-gang' ? 'active' : ''}`}
               onClick={() => setIsGameDrawerOpen(false)}
@@ -475,6 +493,8 @@ const Navigation = () => {
             <button onClick={() => scrollToSection('requirements')} className="mobile-nav-link">⚙️ Requirements</button>
           </div>
           <div className="mobile-games-links">
+            <Link to="/steal-beanstalk-for-brainrots" className="mobile-nav-link">🌱 Steal Beanstalk for Brainrots</Link>
+            <Link to="/cars-arena" className="mobile-nav-link">🏎️ Cars Arena</Link>
             <Link to="/goal-gang" className="mobile-nav-link">⚽ Goal Gang</Link>
             <Link to="/imagine-island" className="mobile-nav-link">🏝️ Imagine Island</Link>
             <Link to="/build-a-ring-farm" className="mobile-nav-link">🌾 Build A Ring Farm</Link>
@@ -643,6 +663,8 @@ const AppContent = () => {
           <Route path="/clues-by-sam" element={<CluesBySam />} />
           <Route path="/crazy-cattle-3d-mobile" element={<CrazyCattle3DMobile />} />
           <Route path="/build-a-ring-farm" element={<BuildARingFarm />} />
+          <Route path="/steal-beanstalk-for-brainrots" element={<StealBeanstalkForBrainrots />} />
+          <Route path="/cars-arena" element={<CarsArena />} />
           <Route path="/goal-gang" element={<GoalGang />} />
           <Route path="/imagine-island" element={<ImagineIsland />} />
           <Route path="/emoji-guess-master" element={<EmojiGuessMaster />} />

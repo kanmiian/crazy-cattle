@@ -8,6 +8,8 @@ Crazy Cattle 3D is a fun physics simulation game, available to play online or do
 - [Crazy Cattle 3D Home Page](https://cattlecrazy3d.com): Home Page
 - [Play Now](https://cattlecrazy3d.com/#game): Experience the complete game directly in your browser
 - [Build A Ring Farm](https://cattlecrazy3d.com/build-a-ring-farm): Play a circular farm incremental game with codes, seed tips, and upgrade guide
+- [Steal Beanstalk for Brainrots](https://cattlecrazy3d.com/steal-beanstalk-for-brainrots): Play a Brainrot collection game with beanstalk upgrades, rare captures, and steal defense tips
+- [Cars Arena](https://cattlecrazy3d.com/cars-arena): Play a hot drifting arena game with shrinking platform survival tips
 - [Goal Gang](https://cattlecrazy3d.com/goal-gang): Play chaotic multiplayer football with World Cup 2026 soccer tips
 - [Imagine Island](https://cattlecrazy3d.com/imagine-island): Play a virtual island world with monthly events, fishing, fashion, obby, and prop hunt
 - [Emoji Guess Master](https://cattlecrazy3d.com/emoji-guess-master): Play the updated emoji puzzle game with answer hints and level keyword guidance

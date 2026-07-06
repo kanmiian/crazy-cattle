@@ -1,5 +1,21 @@
 export const hotGameUpdates = [
   {
+    title: 'Steal Beanstalk for Brainrots',
+    path: '/steal-beanstalk-for-brainrots',
+    image: '/images/steal-beanstalk-for-brainrots.jpg',
+    tag: 'New Jul 3',
+    summary: 'Brainrot collection clone with beanstalk growth, stealing risk, and rare unlocks.',
+    recommendation: 'Recommended for testing Brainrot collection traffic, farm upgrades, and steal/defense guide content.'
+  },
+  {
+    title: 'Cars Arena',
+    path: '/cars-arena',
+    image: '/images/cars-arena.jpg',
+    tag: 'Hot car arena',
+    summary: 'High-vote drifting arena game where the platform shrinks as players fight for space.',
+    recommendation: 'Recommended for players who want short car battles, drift survival, and shrinking-zone tactics.'
+  },
+  {
     title: 'Goal Gang',
     path: '/goal-gang',
     image: '/images/goal-gang.jpg',
@@ -50,6 +66,142 @@ export const hotGameUpdates = [
 ];
 
 export const hotGamePages = {
+  stealBeanstalkForBrainrots: {
+    slug: 'steal-beanstalk-for-brainrots',
+    title: 'Steal Beanstalk for Brainrots',
+    path: '/steal-beanstalk-for-brainrots',
+    pageTitle: 'Steal Beanstalk for Brainrots - Play Online Brainrot Collection Game',
+    seoTitle: 'Steal Beanstalk for Brainrots - Play Online',
+    seoDescription: 'Play Steal Beanstalk for Brainrots online. Grow your beanstalk, capture rare Brainrots, protect your collection, and follow upgrade tips.',
+    keywords: 'Steal Beanstalk for Brainrots, Brainrot game, Brainrot collection, beanstalk game, CrazyGames Brainrot',
+    image: '/images/steal-beanstalk-for-brainrots.jpg',
+    embedUrl: 'https://games.crazygames.com/en_US/steal-beanstalk-for-brainrots/index.html?v=2.4',
+    sourceUrl: 'https://www.crazygames.com/ru/game/steal-beanstalk-for-brainrots',
+    externalPlayOnly: true,
+    externalPlayCta: 'Open Playable Source',
+    externalPlayReason: 'The CrazyGames build currently shows a connection issue inside third-party iframes. Use the official playable source while we monitor for an embeddable build.',
+    playableLinks: [
+      { label: 'Play on CrazyGames', url: 'https://www.crazygames.com/ru/game/steal-beanstalk-for-brainrots' }
+    ],
+    sourceName: 'CrazyGames',
+    sourceStatus: 'New CrazyGames listing added July 3, 2026',
+    trendLabel: 'Brainrot collection clone trend',
+    playCta: 'Play Steal Beanstalk for Brainrots',
+    description: 'Steal Beanstalk for Brainrots is a new Brainrot collection game where players grow a beanstalk, capture wild Brainrots, earn cash, unlock worlds, and protect rare finds from being stolen. The fresh CrazyGames listing makes it useful for testing Brainrot collection traffic.',
+    intro: 'The page is built for players who want a quick playable version plus practical strategy. Focus on beanstalk income first, then branch into rare Brainrot collection once the upgrade loop is stable.',
+    guideTitle: 'Steal Beanstalk for Brainrots Upgrade and Collection Guide',
+    guideIntro: 'Treat the beanstalk as your income engine and Brainrots as your long-term collection value. A strong route balances cash generation, capture timing, and defense against steals.',
+    steps: [
+      'Grow the beanstalk early so cash income can pay for later upgrades.',
+      'Capture common Brainrots first to learn movement and interaction timing.',
+      'Upgrade income before chasing every rare spawn, because rare collections cost more to protect.',
+      'Watch other players near your base and move valuable Brainrots before they become easy steal targets.',
+      'Unlock new worlds only when your current beanstalk can recover the upgrade cost quickly.'
+    ],
+    recommendationCards: [
+      {
+        title: 'Best content angle',
+        text: 'Brainrot list, rare capture guide, beanstalk upgrade order, steal defense, and world unlock route.'
+      },
+      {
+        title: 'Why it is hot',
+        text: 'The official page is a new July 3, 2026 listing and sits in the Brainrot collection trend.'
+      },
+      {
+        title: 'Player fit',
+        text: 'Good for players who like collection loops, farm income, and steal-based multiplayer pressure.'
+      }
+    ],
+    details: [
+      ['Game', 'Steal Beanstalk for Brainrots'],
+      ['Genre', 'Brainrot collection, farm upgrade, stealing game'],
+      ['Official launch signal', 'CrazyGames listing added on July 3, 2026'],
+      ['Trend hook', 'Brainrot collection clone traffic'],
+      ['Guide focus', 'Beanstalk upgrades, rare captures, steal defense, world unlocks'],
+      ['Platform', 'Browser, desktop and mobile']
+    ],
+    faqs: [
+      {
+        question: 'Can I play Steal Beanstalk for Brainrots online here?',
+        answer: 'The current CrazyGames build can show a connection issue in third-party iframes, so this page opens the official playable source instead of forcing a broken embedded frame.'
+      },
+      {
+        question: 'What is the goal in Steal Beanstalk for Brainrots?',
+        answer: 'Grow your beanstalk for cash, capture wild Brainrots, unlock new worlds, and protect rare collection pieces from other players.'
+      },
+      {
+        question: 'What should I upgrade first?',
+        answer: 'Start with beanstalk income and basic capture consistency before spending heavily on rare Brainrots or new worlds.'
+      }
+    ]
+  },
+  carsArena: {
+    slug: 'cars-arena',
+    title: 'Cars Arena',
+    path: '/cars-arena',
+    pageTitle: 'Cars Arena - Play Online Drift Survival Game',
+    seoTitle: 'Cars Arena - Play Online Shrinking Platform Car Game',
+    seoDescription: 'Play Cars Arena online. Drift across a shrinking platform, fight for space, and use survival tips for this hot CrazyGames car arena game.',
+    keywords: 'Cars Arena, Cars Arena game, drift arena game, shrinking platform car game, CrazyGames car game',
+    image: '/images/cars-arena.jpg',
+    embedUrl: 'https://play.famobi.com/cars-arena',
+    sourceUrl: 'https://www.crazygames.com/game/cars-arena',
+    playableLinks: [
+      { label: 'Play Cars Arena on Famobi', url: 'https://play.famobi.com/cars-arena' },
+      { label: 'Open CrazyGames Source', url: 'https://www.crazygames.com/game/cars-arena' }
+    ],
+    sourceName: 'CrazyGames',
+    sourceStatus: 'New CrazyGames listing added June 29, 2026',
+    trendLabel: 'Hot drifting shrinking-zone gameplay',
+    playCta: 'Play Cars Arena',
+    description: 'Cars Arena is a 3D physics-based car arena game where players drift, cut tiles, and compete for safe space on a shrinking platform. Its hot desktop and mobile labels make it a good page for short-session driving traffic.',
+    intro: 'Survival depends less on top speed and more on controlled drifting. Keep a clean route, avoid panic turns, and force rivals into weak zones as the arena shrinks.',
+    guideTitle: 'Cars Arena Drift Survival Tips',
+    guideIntro: 'The best strategy is to carve safe space without trapping yourself. Drift with intention, leave escape lanes, and pressure opponents only when your own platform is stable.',
+    steps: [
+      'Start wide and read how quickly the platform breaks behind each car.',
+      'Use smooth drift arcs instead of sharp turns that burn escape space.',
+      'Avoid following another car directly because their path can remove your route.',
+      'Cut toward the center before the outer platform becomes too thin.',
+      'When only a few cars remain, drive defensively and let rivals make risky turns first.'
+    ],
+    recommendationCards: [
+      {
+        title: 'Best content angle',
+        text: 'Drift control tips, shrinking platform survival, car arena tactics, and short match strategy.'
+      },
+      {
+        title: 'Why it is hot',
+        text: 'The official page marks it as hot on desktop and mobile with strong early rating volume.'
+      },
+      {
+        title: 'Player fit',
+        text: 'Good for players who want quick car battles, physics drifting, and last-car-standing pressure.'
+      }
+    ],
+    details: [
+      ['Game', 'Cars Arena'],
+      ['Genre', 'Car arena, drift survival, shrinking platform'],
+      ['Official launch signal', 'CrazyGames listing added on June 29, 2026'],
+      ['Trend hook', 'High-vote drifting arena gameplay'],
+      ['Guide focus', 'Drift control, survival routes, shrinking-zone positioning'],
+      ['Platform', 'Browser, desktop and mobile']
+    ],
+    faqs: [
+      {
+        question: 'Can I play Cars Arena online for free?',
+        answer: 'Yes. The page now uses the verified Famobi playable build for the embedded game, with the official CrazyGames source link available as backup.'
+      },
+      {
+        question: 'What kind of game is Cars Arena?',
+        answer: 'It is a 3D car arena survival game where drifting removes parts of the platform and players compete for the remaining safe space.'
+      },
+      {
+        question: 'What is the best Cars Arena strategy?',
+        answer: 'Control your drift, avoid dead ends, keep escape lanes open, and let opponents overcommit when the arena shrinks.'
+      }
+    ]
+  },
   goalGang: {
     slug: 'goal-gang',
     title: 'Goal Gang',

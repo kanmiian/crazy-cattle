@@ -56,6 +56,18 @@ const SEO = ({ title, description }) => {
           description: 'Play Build A Ring Farm online for free. Grow crops in circular fields, unlock seeds, upgrade ring farms, and check the latest codes and seed guide.',
           canonical: `${baseUrl}/build-a-ring-farm`
         };
+      case '/steal-beanstalk-for-brainrots':
+        return {
+          title: 'Steal Beanstalk for Brainrots - Play Online',
+          description: 'Play Steal Beanstalk for Brainrots online. Grow your beanstalk, capture rare Brainrots, protect your collection, and follow upgrade tips.',
+          canonical: `${baseUrl}/steal-beanstalk-for-brainrots`
+        };
+      case '/cars-arena':
+        return {
+          title: 'Cars Arena - Play Online Shrinking Platform Car Game',
+          description: 'Play Cars Arena online. Drift across a shrinking platform, fight for space, and use survival tips for this hot CrazyGames car arena game.',
+          canonical: `${baseUrl}/cars-arena`
+        };
       case '/goal-gang':
         return {
           title: 'Goal Gang - Play Online Multiplayer Soccer Game',
