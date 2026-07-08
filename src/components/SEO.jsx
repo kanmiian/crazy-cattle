@@ -1,12 +1,23 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { hotGamePages } from '../data/hotGames';
 
-const SEO = ({ title, description }) => {
+const SEO = ({ title, description, keywords }) => {
   const location = useLocation();
   const baseUrl = 'https://cattlecrazy3d.com';
 
   // 根据路径返回对应的 SEO 配置
   const getSEOConfig = () => {
+    const hotGameConfig = Object.values(hotGamePages).find((game) => game.path === location.pathname);
+    if (hotGameConfig) {
+      return {
+        title: hotGameConfig.seoTitle,
+        description: hotGameConfig.seoDescription,
+        keywords: hotGameConfig.keywords,
+        canonical: `${baseUrl}${hotGameConfig.path}`
+      };
+    }
+
     switch (location.pathname) {
       case '/':
         return {
@@ -120,6 +131,7 @@ const SEO = ({ title, description }) => {
         return {
           title: title || 'Crazy Cattle 3D - Sheep Battle Royale Game',
           description: description || 'Play Crazy Cattle 3D, the ultimate physics-based battle royale game! Control explosive sheep and cattle, master momentum, and become the last animal standing.',
+          keywords,
           canonical: `${baseUrl}${location.pathname}`
         };
     }
@@ -155,6 +167,9 @@ const SEO = ({ title, description }) => {
 
     // 更新 description
     updateMetaTag('description', seoConfig.description);
+    if (seoConfig.keywords) {
+      updateMetaTag('keywords', seoConfig.keywords);
+    }
     
     // 更新 canonical
     let canonical = document.querySelector('link[rel="canonical"]');

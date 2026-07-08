@@ -8,7 +8,17 @@ Crazy Cattle 3D is a fun physics simulation game, available to play online or do
 - [Crazy Cattle 3D Home Page](https://cattlecrazy3d.com): Home Page
 - [Play Now](https://cattlecrazy3d.com/#game): Experience the complete game directly in your browser
 - [Build A Ring Farm](https://cattlecrazy3d.com/build-a-ring-farm): Play a circular farm incremental game with codes, seed tips, and upgrade guide
-- [Steal Beanstalk for Brainrots](https://cattlecrazy3d.com/steal-beanstalk-for-brainrots): Play a Brainrot collection game with beanstalk upgrades, rare captures, and steal defense tips
+- [Float for Brainrots](https://cattlecrazy3d.com/float-for-brainrots): Find the official playable sea Brainrot collection source with boat upgrade and shark survival tips
+- [Steal Beanstalk for Brainrots](https://cattlecrazy3d.com/steal-beanstalk-for-brainrots): Find the official playable Brainrot stealing source with beanstalk upgrades, rare captures, and steal defense tips
+- [Lucky Blocks for Brainrots](https://cattlecrazy3d.com/lucky-blocks-for-brainrots): Find the official playable lucky block Brainrot source with reward and collection guidance
+- [Slide Out](https://cattlecrazy3d.com/slide-out): Find the official playable penguin physics arena source with bumping and iceberg survival tips
+- [Vein Rush](https://cattlecrazy3d.com/vein-rush): Find the official playable voxel mining source with ore, inventory, and pickaxe upgrade tips
+- [Robby Cross the Road for Brainrot](https://cattlecrazy3d.com/robby-cross-the-road-for-brainrot): Find the official playable Brainrot road-crossing source with traffic timing tips
+- [Unscrew Drop](https://cattlecrazy3d.com/unscrew-drop): Find the official playable screw puzzle source with satisfying drop and screw order tips
+- [Ahagram](https://cattlecrazy3d.com/ahagram): Find the official playable word puzzle source with answer-friendly hint strategy
+- [Mega Hole Attack](https://cattlecrazy3d.com/mega-hole-attack): Find the official playable black-hole arcade source with weapon route and dragon boss tips
+- [Fruitix Physics Puzzle](https://cattlecrazy3d.com/fruitix-physics-puzzle): Find the official playable fruit merge puzzle source with physics placement strategy
+- [ABLOCKALYPSE](https://cattlecrazy3d.com/ablockalypse): Find the official playable block roguelite source with survival and upgrade tips
 - [Cars Arena](https://cattlecrazy3d.com/cars-arena): Play a hot drifting arena game with shrinking platform survival tips
 - [Goal Gang](https://cattlecrazy3d.com/goal-gang): Play chaotic multiplayer football with World Cup 2026 soccer tips
 - [Imagine Island](https://cattlecrazy3d.com/imagine-island): Play a virtual island world with monthly events, fishing, fashion, obby, and prop hunt

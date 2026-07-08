@@ -2637,8 +2637,17 @@ section[id] {
 }
 
 .ticker-item strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   flex-shrink: 0;
   font-size: 0.95rem;
+}
+
+.ticker-icon,
+.new-game-icon {
+  flex-shrink: 0;
+  line-height: 1;
 }
 
 .ticker-item span {
@@ -2696,6 +2705,11 @@ section[id] {
 }
 
 .new-game-card h3 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  min-width: 0;
   margin: 0;
   color: var(--text-primary);
   font-size: 1.1rem;

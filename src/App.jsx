@@ -23,7 +23,8 @@ import GoalGang from './components/GoalGang'
 import ImagineIsland from './components/ImagineIsland'
 import StealBeanstalkForBrainrots from './components/StealBeanstalkForBrainrots'
 import CarsArena from './components/CarsArena'
-import { hotGameUpdates } from './data/hotGames'
+import HotGamePage from './components/HotGamePage'
+import { hotGamePages, hotGameUpdates } from './data/hotGames'
 
 // 懒加载组件
 const Content = lazy(() => import('./components/Content'))
@@ -663,6 +664,16 @@ const AppContent = () => {
           <Route path="/clues-by-sam" element={<CluesBySam />} />
           <Route path="/crazy-cattle-3d-mobile" element={<CrazyCattle3DMobile />} />
           <Route path="/build-a-ring-farm" element={<BuildARingFarm />} />
+          <Route path="/float-for-brainrots" element={<HotGamePage game={hotGamePages.floatForBrainrots} />} />
+          <Route path="/lucky-blocks-for-brainrots" element={<HotGamePage game={hotGamePages.luckyBlocksForBrainrots} />} />
+          <Route path="/slide-out" element={<HotGamePage game={hotGamePages.slideOut} />} />
+          <Route path="/vein-rush" element={<HotGamePage game={hotGamePages.veinRush} />} />
+          <Route path="/robby-cross-the-road-for-brainrot" element={<HotGamePage game={hotGamePages.robbyCrossTheRoadForBrainrot} />} />
+          <Route path="/unscrew-drop" element={<HotGamePage game={hotGamePages.unscrewDrop} />} />
+          <Route path="/ahagram" element={<HotGamePage game={hotGamePages.ahagram} />} />
+          <Route path="/mega-hole-attack" element={<HotGamePage game={hotGamePages.megaHoleAttack} />} />
+          <Route path="/fruitix-physics-puzzle" element={<HotGamePage game={hotGamePages.fruitixPhysicsPuzzle} />} />
+          <Route path="/ablockalypse" element={<HotGamePage game={hotGamePages.ablockalypse} />} />
           <Route path="/steal-beanstalk-for-brainrots" element={<StealBeanstalkForBrainrots />} />
           <Route path="/cars-arena" element={<CarsArena />} />
           <Route path="/goal-gang" element={<GoalGang />} />
@@ -773,7 +784,10 @@ const MainContent = () => {
             <div className="ticker-track">
               {[...hotGameUpdates, ...hotGameUpdates].map((game, index) => (
                 <Link to={game.path} className="ticker-item" key={`${game.path}-${index}`}>
-                  <strong>{game.title}</strong>
+                  <strong>
+                    {game.icon && <span className="ticker-icon">{game.icon}</span>}
+                    {game.title}
+                  </strong>
                   <span>{game.summary}</span>
                 </Link>
               ))}
@@ -787,7 +801,10 @@ const MainContent = () => {
               <img src={game.image} alt={`${game.title} preview`} loading="lazy" decoding="async" />
               <div className="new-game-card-body">
                 <span className="new-game-tag">{game.tag}</span>
-                <h3>{game.title}</h3>
+                <h3>
+                  {game.icon && <span className="new-game-icon">{game.icon}</span>}
+                  {game.title}
+                </h3>
                 <p>{game.summary}</p>
                 <strong>{game.recommendation}</strong>
               </div>

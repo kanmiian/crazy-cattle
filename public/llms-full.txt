@@ -10,8 +10,38 @@ On our website, you can experience the complete version of Crazy Cattle 3D direc
 ## Build A Ring Farm
 Build A Ring Farm is a browser farming incremental game page with an embedded playable web build, seed priority tips, current code status, crop upgrade strategy, and FAQ content for players searching for ring farm simulator guidance.
 
+## Float for Brainrots
+Float for Brainrots is a sea Brainrot collection module with an official playable source link, boat upgrade guidance, shark survival notes, rare Brainrot routing, and July 2026 CrazyGames trend coverage.
+
 ## Steal Beanstalk for Brainrots
-Steal Beanstalk for Brainrots is a Brainrot collection module with an embedded playable build, beanstalk upgrade guidance, rare capture strategy, steal-defense notes, world unlock routing, and trend coverage for Brainrot clone searches.
+Steal Beanstalk for Brainrots is a Brainrot stealing and beanstalk collection module with an official playable source link, beanstalk upgrade guidance, rare capture strategy, steal-defense notes, world unlock routing, and July 7 update coverage.
+
+## Lucky Blocks for Brainrots
+Lucky Blocks for Brainrots is a reward collection module with an official playable source link, lucky block drop strategy, Brainrot reward keywords, opening order tips, and collection loop recommendations.
+
+## Slide Out
+Slide Out is a penguin physics arena module with an official playable source link, iceberg bumping tips, power and angle strategy, last-bird-standing advice, and short arcade search coverage.
+
+## Vein Rush
+Vein Rush is a voxel mining module with an official playable source link, ore value framing, inventory management notes, pickaxe upgrade order, and July 7 update keyword coverage.
+
+## Robby Cross the Road for Brainrot
+Robby Cross the Road for Brainrot is a Brainrot road-crossing module with an official playable source link, traffic timing guidance, obby-style route tips, and new CrazyGames Brainrot trend coverage.
+
+## Unscrew Drop
+Unscrew Drop is a satisfying screw puzzle module with an official playable source link, screw order tips, gravity drop explanations, compact level strategy, and short walkthrough keyword coverage.
+
+## Ahagram
+Ahagram is a word puzzle module with an official playable source link, answer-friendly hint strategy, anagram solving guidance, vowel and suffix tips, and July 7 update search coverage.
+
+## Mega Hole Attack
+Mega Hole Attack is a black-hole arcade module with an official playable source link, weapon swallowing routes, hole growth tips, dragon boss strategy, and high-click arcade keyword coverage.
+
+## Fruitix Physics Puzzle
+Fruitix Physics Puzzle is a fruit merge and physics puzzle module with an official playable source link, placement strategy, stable stack guidance, casual battle notes, and fruit merge keyword coverage.
+
+## ABLOCKALYPSE
+ABLOCKALYPSE is a block roguelite module with an official playable source link, survival upgrade tips, wave control notes, early-run strategy, and new block roguelite keyword coverage.
 
 ## Cars Arena
 Cars Arena is a hot car arena module with an embedded playable build, shrinking platform drift-survival tips, car battle strategy, and short-session driving game recommendation content.
