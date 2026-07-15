@@ -311,6 +311,70 @@ const Navigation = () => {
           </div>
           <div className="games-list">
             <Link
+              to="/merge-clash"
+              className={`game-link ${currentPath === '/merge-clash' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🧬</span>
+              <span className="game-name">Merge Clash</span>
+            </Link>
+            <Link
+              to="/catch-n-merge"
+              className={`game-link ${currentPath === '/catch-n-merge' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🧪</span>
+              <span className="game-name">Catch'N'Merge</span>
+            </Link>
+            <Link
+              to="/fishing-anomaly"
+              className={`game-link ${currentPath === '/fishing-anomaly' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🎣</span>
+              <span className="game-name">Fishing Anomaly</span>
+            </Link>
+            <Link
+              to="/brick-bounce-idle"
+              className={`game-link ${currentPath === '/brick-bounce-idle' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🧱</span>
+              <span className="game-name">Brick Bounce Idle</span>
+            </Link>
+            <Link
+              to="/iron-legion"
+              className={`game-link ${currentPath === '/iron-legion' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">⚔️</span>
+              <span className="game-name">Iron Legion</span>
+            </Link>
+            <Link
+              to="/merge-team-tactics"
+              className={`game-link ${currentPath === '/merge-team-tactics' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🧩</span>
+              <span className="game-name">Merge Team Tactics</span>
+            </Link>
+            <Link
+              to="/runic-rampage"
+              className={`game-link ${currentPath === '/runic-rampage' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🪓</span>
+              <span className="game-name">Runic Rampage</span>
+            </Link>
+            <Link
+              to="/army-base-of-america"
+              className={`game-link ${currentPath === '/army-base-of-america' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🎖️</span>
+              <span className="game-name">Army Base Of America</span>
+            </Link>
+            <Link
               to="/steal-beanstalk-for-brainrots"
               className={`game-link ${currentPath === '/steal-beanstalk-for-brainrots' ? 'active' : ''}`}
               onClick={() => setIsGameDrawerOpen(false)}
@@ -494,6 +558,14 @@ const Navigation = () => {
             <button onClick={() => scrollToSection('requirements')} className="mobile-nav-link">⚙️ Requirements</button>
           </div>
           <div className="mobile-games-links">
+            <Link to="/merge-clash" className="mobile-nav-link">🧬 Merge Clash</Link>
+            <Link to="/catch-n-merge" className="mobile-nav-link">🧪 Catch'N'Merge</Link>
+            <Link to="/fishing-anomaly" className="mobile-nav-link">🎣 Fishing Anomaly</Link>
+            <Link to="/brick-bounce-idle" className="mobile-nav-link">🧱 Brick Bounce Idle</Link>
+            <Link to="/iron-legion" className="mobile-nav-link">⚔️ Iron Legion</Link>
+            <Link to="/merge-team-tactics" className="mobile-nav-link">🧩 Merge Team Tactics</Link>
+            <Link to="/runic-rampage" className="mobile-nav-link">🪓 Runic Rampage</Link>
+            <Link to="/army-base-of-america" className="mobile-nav-link">🎖️ Army Base Of America</Link>
             <Link to="/steal-beanstalk-for-brainrots" className="mobile-nav-link">🌱 Steal Beanstalk for Brainrots</Link>
             <Link to="/cars-arena" className="mobile-nav-link">🏎️ Cars Arena</Link>
             <Link to="/goal-gang" className="mobile-nav-link">⚽ Goal Gang</Link>
@@ -664,6 +736,14 @@ const AppContent = () => {
           <Route path="/clues-by-sam" element={<CluesBySam />} />
           <Route path="/crazy-cattle-3d-mobile" element={<CrazyCattle3DMobile />} />
           <Route path="/build-a-ring-farm" element={<BuildARingFarm />} />
+          <Route path="/merge-clash" element={<HotGamePage game={hotGamePages.mergeClash} />} />
+          <Route path="/catch-n-merge" element={<HotGamePage game={hotGamePages.catchNMerge} />} />
+          <Route path="/fishing-anomaly" element={<HotGamePage game={hotGamePages.fishingAnomaly} />} />
+          <Route path="/brick-bounce-idle" element={<HotGamePage game={hotGamePages.brickBounceIdle} />} />
+          <Route path="/iron-legion" element={<HotGamePage game={hotGamePages.ironLegion} />} />
+          <Route path="/merge-team-tactics" element={<HotGamePage game={hotGamePages.mergeTeamTactics} />} />
+          <Route path="/runic-rampage" element={<HotGamePage game={hotGamePages.runicRampage} />} />
+          <Route path="/army-base-of-america" element={<HotGamePage game={hotGamePages.armyBaseOfAmerica} />} />
           <Route path="/float-for-brainrots" element={<HotGamePage game={hotGamePages.floatForBrainrots} />} />
           <Route path="/lucky-blocks-for-brainrots" element={<HotGamePage game={hotGamePages.luckyBlocksForBrainrots} />} />
           <Route path="/slide-out" element={<HotGamePage game={hotGamePages.slideOut} />} />
