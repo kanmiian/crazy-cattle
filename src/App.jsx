@@ -736,6 +736,17 @@ const AppContent = () => {
           <Route path="/clues-by-sam" element={<CluesBySam />} />
           <Route path="/crazy-cattle-3d-mobile" element={<CrazyCattle3DMobile />} />
           <Route path="/build-a-ring-farm" element={<BuildARingFarm />} />
+          <Route path="/sweetjong" element={<HotGamePage game={hotGamePages.sweetjong} />} />
+          <Route path="/pew-pew" element={<HotGamePage game={hotGamePages.pewPew} />} />
+          <Route path="/putt-day" element={<HotGamePage game={hotGamePages.puttDay} />} />
+          <Route path="/escape-from-vlogger-runaway" element={<HotGamePage game={hotGamePages.escapeFromVloggerRunaway} />} />
+          <Route path="/magnetarrow" element={<HotGamePage game={hotGamePages.magnetArrow} />} />
+          <Route path="/obby-supercar-race-on-keyboard" element={<HotGamePage game={hotGamePages.obbySupercarRaceOnKeyboard} />} />
+          <Route path="/slurp" element={<HotGamePage game={hotGamePages.slurp} />} />
+          <Route path="/need-for-sheep-idle-clicker" element={<HotGamePage game={hotGamePages.needForSheepIdleClicker} />} />
+          <Route path="/help-me-tricky-puzzle-games" element={<HotGamePage game={hotGamePages.helpMeTrickyPuzzleGames} />} />
+          <Route path="/base-defence" element={<HotGamePage game={hotGamePages.baseDefence} />} />
+          <Route path="/cosplay-classified" element={<HotGamePage game={hotGamePages.cosplayClassified} />} />
           <Route path="/merge-clash" element={<HotGamePage game={hotGamePages.mergeClash} />} />
           <Route path="/catch-n-merge" element={<HotGamePage game={hotGamePages.catchNMerge} />} />
           <Route path="/fishing-anomaly" element={<HotGamePage game={hotGamePages.fishingAnomaly} />} />

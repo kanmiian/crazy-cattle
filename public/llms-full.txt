@@ -10,6 +10,39 @@ On our website, you can experience the complete version of Crazy Cattle 3D direc
 ## Build A Ring Farm
 Build A Ring Farm is a browser farming incremental game page with an embedded playable web build, seed priority tips, current code status, crop upgrade strategy, and FAQ content for players searching for ring farm simulator guidance.
 
+## Sweetjong
+Sweetjong is a sweet mahjong match-three module with an official CrazyGames source link, limited tray strategy, layered tile guidance, frozen sweet rules, booster timing, and level-help keyword coverage.
+
+## Pew Pew
+Pew Pew is an auto-fire airplane arcade module with an official CrazyGames source link, movement and power-up guidance, enemy wave positioning, boss survival tips, and short-form gameplay framing.
+
+## putt.day
+putt.day is a daily-friendly 3D mini-golf module with an official CrazyGames source link, 30-hole coverage, aim and power guidance, hazard planning, hole-in-one routes, score challenges, and Endless mode tips.
+
+## Escape from Vlogger: Runaway
+Escape from Vlogger: Runaway is a stealth horror module with an official CrazyGames source link, room and lock puzzle guidance, item-location framing, patrol and hiding tips, chase recovery, and no-save session planning.
+
+## MagnetArrow
+MagnetArrow is a magnetic arcade upgrade module with an official CrazyGames source link, shard route guidance, timed energy strategy, mission and skin coverage, daily rewards, credits, and reset timing.
+
+## Obby: Supercar Race on Keyboard
+Obby: Supercar Race on Keyboard is a high-rated car obby module with an official CrazyGames source link, garage collection, speed upgrades, track obstacles, victory farming, area unlocks, rare cars, and rebirth guidance.
+
+## Slurp
+Slurp is a fruit slime juice simulator module with an official CrazyGames source link, production and machine upgrades, hybrid slime discovery, golden shiny hunting, delivery automation, and biome progression.
+
+## Need for Sheep: Idle Clicker
+Need for Sheep: Idle Clicker is a sheep farm incremental module with an official CrazyGames source link, active and idle income guidance, rare sheep unlocks, fence and flip upgrades, lightning boosts, offline rewards, quests, and prestige timing.
+
+## Help Me: Tricky Puzzle Games
+Help Me: Tricky Puzzle Games is a short brain teaser module with an official CrazyGames source link, prompt-reading strategy, green-target interactions, spoiler-light hints, level answers, and rescue solution coverage.
+
+## Base Defence
+Base Defence is a zombie merge strategy module with an official CrazyGames source link, hero placement guidance, troop merge order, lane coverage, upgrade decisions, and wave survival tips using both defence and defense keyword variants.
+
+## Cosplay Classified
+Cosplay Classified is a Newgrounds fixed-shooter module with an official Ruffle play link, left-click and Space controls, rapid-fire aiming guidance, score-run framing, creator context, and Summer Game Jam 2026 discovery terms.
+
 ## Merge Clash
 Merge Clash is a merge battle module with an official CrazyGames playable source link, elemental hero merge guidance, dungeon wave tips, chest reward priorities, and July 14, 2026 new-list coverage.
 

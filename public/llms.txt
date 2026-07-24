@@ -8,6 +8,17 @@ Crazy Cattle 3D is a fun physics simulation game, available to play online or do
 - [Crazy Cattle 3D Home Page](https://cattlecrazy3d.com): Home Page
 - [Play Now](https://cattlecrazy3d.com/#game): Experience the complete game directly in your browser
 - [Build A Ring Farm](https://cattlecrazy3d.com/build-a-ring-farm): Play a circular farm incremental game with codes, seed tips, and upgrade guide
+- [Sweetjong](https://cattlecrazy3d.com/sweetjong): Find the official sweet mahjong source with tray strategy, frozen tile rules, boosters, and match-three tips
+- [Pew Pew](https://cattlecrazy3d.com/pew-pew): Find the official airplane arcade source with power-up routes, enemy wave positioning, and boss survival tips
+- [putt.day](https://cattlecrazy3d.com/putt-day): Find the official daily mini-golf source with aim, power, hazard, hole-in-one, and Endless mode guidance
+- [Escape from Vlogger: Runaway](https://cattlecrazy3d.com/escape-from-vlogger-runaway): Find the official stealth horror source with item, room puzzle, hiding place, patrol, and escape guidance
+- [MagnetArrow](https://cattlecrazy3d.com/magnetarrow): Find the official magnetic arcade source with shard routes, energy upgrades, missions, daily rewards, and reset tips
+- [Obby: Supercar Race on Keyboard](https://cattlecrazy3d.com/obby-supercar-race-on-keyboard): Find the official car obby source with garage unlocks, speed upgrades, track help, victories, and rebirth guidance
+- [Slurp](https://cattlecrazy3d.com/slurp): Find the official fruit slime simulator source with juice machines, hybrid recipes, shiny slimes, automation, and biome tips
+- [Need for Sheep: Idle Clicker](https://cattlecrazy3d.com/need-for-sheep-idle-clicker): Find the official sheep clicker source with flock upgrades, rare unlocks, offline income, boosts, and prestige timing
+- [Help Me: Tricky Puzzle Games](https://cattlecrazy3d.com/help-me-tricky-puzzle-games): Find the official brain teaser source with green-target interactions, level hints, answers, and rescue solutions
+- [Base Defence](https://cattlecrazy3d.com/base-defence): Find the official zombie strategy source with hero placement, troop merges, lane coverage, and wave survival tips
+- [Cosplay Classified](https://cattlecrazy3d.com/cosplay-classified): Find the official Newgrounds Flash shooter with controls, fixed-view aiming tips, game-jam context, and creator credits
 - [Merge Clash](https://cattlecrazy3d.com/merge-clash): Find the official playable merge battle source with hero merge, dungeon route, and chest reward tips
 - [Catch'N'Merge](https://cattlecrazy3d.com/catch-n-merge): Find the official playable catch-and-merge source with creature collection, flask overflow, and boulder avoidance tips
 - [Fishing Anomaly](https://cattlecrazy3d.com/fishing-anomaly): Find the official playable anomaly fishing source with mutant fish, artifact, and safe route guidance
