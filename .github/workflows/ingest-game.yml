@@ -1,0 +1,104 @@
+name: Ingest game from Feishu
+
+on:
+  repository_dispatch:
+    types: [feishu_game_submission]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: feishu-game-${{ github.event.client_payload.message_id || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out the default branch
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate game content
+        run: node scripts/ingest-game.mjs --event "$GITHUB_EVENT_PATH"
+
+      - name: Validate generated content and build
+        run: npm run build
+
+      - name: Read ingestion result
+        id: result
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs = require('node:fs');
+          const result = JSON.parse(fs.readFileSync('.game-ingest-result.json', 'utf8'));
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `changed=${result.changed}\n`);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `branch=bot/game/${result.branchSuffix}\n`);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `pr_title=${result.prTitle}\n`);
+          NODE
+
+      - name: Check for an existing idempotent branch
+        if: steps.result.outputs.changed == 'true'
+        id: branch
+        env:
+          BRANCH: ${{ steps.result.outputs.branch }}
+        shell: bash
+        run: |
+          if git ls-remote --exit-code --heads origin "$BRANCH" > /dev/null; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push bot branch
+        if: steps.result.outputs.changed == 'true' && steps.branch.outputs.exists != 'true'
+        env:
+          BRANCH: ${{ steps.result.outputs.branch }}
+          PR_TITLE: ${{ steps.result.outputs.pr_title }}
+        shell: bash
+        run: |
+          git config user.name "crazy-cattle-content-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add src/content/games public/images public/sitemap.xml public/llms.txt public/llms-full.txt
+          git commit -m "$PR_TITLE"
+          git push origin "HEAD:$BRANCH"
+
+      - name: Create pull request
+        if: steps.result.outputs.changed == 'true'
+        id: pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ steps.result.outputs.branch }}
+          PR_TITLE: ${{ steps.result.outputs.pr_title }}
+          BASE_BRANCH: ${{ github.event.repository.default_branch }}
+        shell: bash
+        run: |
+          PR_URL=$(gh pr list --head "$BRANCH" --state open --json url --jq '.[0].url')
+          if [ -z "$PR_URL" ]; then
+            PR_URL=$(gh pr create --base "$BASE_BRANCH" --head "$BRANCH" --title "$PR_TITLE" --body-file .game-ingest-pr.md)
+          fi
+          echo "url=$PR_URL" >> "$GITHUB_OUTPUT"
+
+      - name: Report result to Feishu
+        if: always()
+        env:
+          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+          PR_URL: ${{ steps.pr.outputs.url }}
+          WORKFLOW_STATUS: ${{ job.status }}
+        run: node scripts/notify-feishu.mjs --event "$GITHUB_EVENT_PATH" --status "$WORKFLOW_STATUS" --pr-url "$PR_URL"

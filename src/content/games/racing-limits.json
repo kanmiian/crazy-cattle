@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "key": "racingLimits",
+  "pageType": "hot-game",
+  "slug": "racing-limits",
+  "title": "Racing Limits",
+  "path": "/racing-limits",
+  "pageTitle": "Racing Limits - Play Traffic Racing Game Online",
+  "seoTitle": "Racing Limits - Play Online, Controls, and Car Tips",
+  "seoDescription": "Play Racing Limits through the official source. Overtake city and highway traffic, use nitro and manual gears, change cameras, upgrade cars, and master four modes.",
+  "keywords": "Racing Limits, Racing Limits game, Racing Limits online, Racing Limits controls, Racing Limits cars, traffic racing game, highway racing game, car overtaking game, manual gear racing, nitro racing game, one way traffic race, two way traffic game",
+  "image": "/images/racing-limits.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/racing-limits",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "CrazyGames release updated July 20, 2026 by Valvolex",
+  "trendLabel": "High-vote traffic racing update trend",
+  "playCta": "Play Racing Limits",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Racing Limits on CrazyGames",
+      "url": "https://www.crazygames.com/game/racing-limits"
+    }
+  ],
+  "description": "Racing Limits is a high-speed city and highway traffic racer with career-style progression, infinite driving, against-time challenges, and free mode. Choose one-way or two-way traffic, race in morning, sunset, or night conditions, change camera angles, use nitro and manual gears, then customize and upgrade cars for new events.",
+  "intro": "The page focuses on practical Racing Limits searches: keyboard controls, safe overtaking, one-way versus two-way traffic, camera choice, nitro timing, manual shifting, event progress, and which upgrade solves the current speed or handling problem.",
+  "guideTitle": "Racing Limits Controls, Overtaking, Nitro, and Upgrade Guide",
+  "guideIntro": "Fast runs come from reading traffic before committing. Use a camera that exposes the next lane, save nitro for an open section, and make one decisive steering input instead of correcting repeatedly between cars.",
+  "steps": [
+    "Accelerate with the Up arrow, slow with the Down arrow, and steer with the Left and Right arrows.",
+    "Choose one-way traffic to learn speed and lane timing, then use two-way traffic when you can read closing gaps earlier.",
+    "Press C to test camera views and keep the angle that gives the clearest view of nearby cars and the next overtaking lane.",
+    "Use F for nitro only when the road ahead is open enough to benefit from the extra speed, and use E for the horn when traffic awareness matters.",
+    "In manual mode, use W to gear up and D to gear down, then spend upgrades on the performance limit that is blocking the next event."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Controls, best camera, one-way and two-way strategies, nitro use, manual shifting, car upgrades, and event progression."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The July update refreshed a top-rated CrazyGames racing page with more than half a million votes and durable car-search demand."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who enjoy fast traffic weaving, realistic-feeling physics, multiple viewpoints, manual control, car upgrades, and repeat events."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Racing Limits"
+    ],
+    [
+      "Genre",
+      "Traffic racing, highway driving, car upgrade game"
+    ],
+    [
+      "Official signal",
+      "CrazyGames shows a July 20, 2026 update, a 9.1 rating from 560,434 votes, Valvolex development, Unity 6, and top-rated desktop/mobile labels during July 27 verification"
+    ],
+    [
+      "Trend hook",
+      "Strong half-million vote base plus July update, cars, traffic, highway, overtaking, nitro, camera, manual gear, and event searches"
+    ],
+    [
+      "Guide focus",
+      "Traffic overtaking, four modes, road direction, time of day, camera views, nitro, horn, manual gears, car upgrades"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Racing Limits online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Racing Limits about?",
+      "answer": "Overtake vehicles in city and highway traffic, complete four types of driving challenge, upgrade cars, and manage speed across changing road conditions."
+    },
+    {
+      "question": "What should I focus on first in Racing Limits?",
+      "answer": "Prioritize visibility and lane planning, use nitro only on open road, and select upgrades based on whether speed, acceleration, or control is limiting the next run."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 1,
+    "tag": "Updated Jul 20",
+    "summary": "High-vote traffic racer with four modes, one-way or two-way roads, three times of day, upgrades, and nitro.",
+    "recommendation": "Recommended for car upgrades, traffic overtaking, camera settings, manual gears, nitro timing, and event guides."
+  },
+  "indexing": {
+    "order": 15,
+    "lastmod": "2026-07-27",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 11,
+    "description": "Find the official traffic racer with overtaking, camera, nitro, manual gear, car upgrade, road direction, and event tips",
+    "fullSummary": "Racing Limits is a high-vote traffic racing module with official CrazyGames play access, city and highway overtaking, four modes, one-way and two-way roads, three times of day, camera selection, nitro, manual gears, car upgrades, and July 2026 update coverage."
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "key": "fruitixPhysicsPuzzle",
+  "pageType": "hot-game",
+  "slug": "fruitix-physics-puzzle",
+  "title": "Fruitix Physics Puzzle",
+  "path": "/fruitix-physics-puzzle",
+  "pageTitle": "Fruitix Physics Puzzle - Play Online Fruit Merge Game",
+  "seoTitle": "Fruitix Physics Puzzle - Play Online Fruit Battle Puzzle",
+  "seoDescription": "Play Fruitix Physics Puzzle online. Merge fruits, use physics placement, win light battles, and follow casual puzzle strategy tips.",
+  "keywords": "Fruitix Physics Puzzle, Fruitix game, fruit merge puzzle, physics puzzle game, fruit battle game, CrazyGames puzzle",
+  "image": "/images/fruitix-physics-puzzle.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/fruitix-physics-puzzle",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "CrazyGames listing added June 18, 2026 and updated June 29, 2026",
+  "trendLabel": "Fruit merge physics puzzle trend",
+  "playCta": "Play Fruitix Physics Puzzle",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Fruitix Physics Puzzle on CrazyGames",
+      "url": "https://www.crazygames.com/game/fruitix-physics-puzzle"
+    }
+  ],
+  "description": "Fruitix Physics Puzzle combines fruit merging, physics placement, and light battle tension into a casual puzzle loop with clear search hooks around fruit strategy.",
+  "intro": "The page can catch fruit merge, physics puzzle, and battle-puzzle keywords while offering simple placement guidance.",
+  "guideTitle": "Fruitix Physics Puzzle Merge and Placement Guide",
+  "guideIntro": "Good placement matters as much as matching fruit. Stable stacks create better merges and avoid wasting space.",
+  "steps": [
+    "Place larger fruits where they can stay stable.",
+    "Keep matching fruits close enough to merge without blocking future drops.",
+    "Avoid creating tall unstable stacks early.",
+    "Use open space to set up chain merges instead of forcing every match immediately.",
+    "Watch opponent or battle pressure before taking a risky placement."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Fruit merge tips, placement strategy, physics puzzle routes, and casual battle notes."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The official page has moderate early vote traction with a familiar merge-puzzle keyword base."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like casual puzzle strategy, fruit merging, and low-pressure physics challenges."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Fruitix Physics Puzzle"
+    ],
+    [
+      "Genre",
+      "Fruit merge, physics puzzle, casual battle puzzle"
+    ],
+    [
+      "Official signal",
+      "CrazyGames listing has nearly 200 votes during verification"
+    ],
+    [
+      "Trend hook",
+      "Fruit merge searches plus light physics battle gameplay"
+    ],
+    [
+      "Guide focus",
+      "Fruit placement, merge setup, board stability, battle timing"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Fruitix Physics Puzzle online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Fruitix Physics Puzzle about?",
+      "answer": "Merge fruits through careful physics placement and use stable setups to win light puzzle battles."
+    },
+    {
+      "question": "What should I focus on first in Fruitix Physics Puzzle?",
+      "answer": "Keep the board stable, set up future merges, and avoid tall stacks that collapse at the wrong time."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 32,
+    "icon": "🍉",
+    "tag": "Physics puzzle",
+    "summary": "Fruit merging and physics puzzle battles with light strategy and near-200 vote traction.",
+    "recommendation": "Recommended for fruit merge keywords, physics puzzle tips, and casual battle-puzzle searches."
+  },
+  "indexing": {
+    "order": 46,
+    "lastmod": "2026-07-08",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 42,
+    "description": "Find the official playable fruit merge puzzle source with physics placement strategy",
+    "fullSummary": "Fruitix Physics Puzzle is a fruit merge and physics puzzle module with an official playable source link, placement strategy, stable stack guidance, casual battle notes, and fruit merge keyword coverage."
+  }
+}

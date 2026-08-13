@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "key": "obbySupercarRaceOnKeyboard",
+  "pageType": "hot-game",
+  "slug": "obby-supercar-race-on-keyboard",
+  "title": "Obby: Supercar Race on Keyboard",
+  "path": "/obby-supercar-race-on-keyboard",
+  "pageTitle": "Obby: Supercar Race on Keyboard - Play Online",
+  "seoTitle": "Obby: Supercar Race on Keyboard - Cars and Rebirth",
+  "seoDescription": "Play Obby: Supercar Race on Keyboard through the official source. Collect cars, gain speed, clear obstacle tracks, earn victories, unlock areas, and rebirth.",
+  "keywords": "Obby Supercar Race on Keyboard, Supercar Race on Keyboard, car obby game, supercar garage game, speed race obby, car unlock guide, track obstacle game, rebirth car game, CrazyGames supercar race",
+  "image": "/images/obby-supercar-race-on-keyboard.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/obby-supercar-race-on-keyboard",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "Published on CrazyGames July 22, 2026 by Serbull",
+  "trendLabel": "High-rated garage and supercar obby trend",
+  "playCta": "Play Obby: Supercar Race on Keyboard",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Obby: Supercar Race on Keyboard on CrazyGames",
+      "url": "https://www.crazygames.com/game/obby-supercar-race-on-keyboard"
+    }
+  ],
+  "description": "Obby: Supercar Race on Keyboard is a colorful speed and collection game where every new car increases performance. Complete obstacle tracks, earn victories, open new areas, collect rare supercars, buy boosts, and use Rebirth for permanent bonuses.",
+  "intro": "The strongest search angles are the garage and progression systems: how to unlock cars, gain enough speed for later tracks, clear dangerous obstacles, spend victories, and choose the right moment to rebirth.",
+  "guideTitle": "Obby Supercar Garage, Speed Upgrade, and Rebirth Guide",
+  "guideIntro": "Track progress is tied to speed. Build a garage strong enough for the next obstacle route, then use victories and permanent bonuses to avoid stalling in later areas.",
+  "steps": [
+    "Collect available cars because each garage addition increases the speed used on obstacle tracks.",
+    "Clear early stages consistently to earn victories and unlock areas with stronger progression rewards.",
+    "Use WASD or arrow keys to steer, Space to jump, and camera zoom to read hazards ahead.",
+    "Take boosts and rare supercars when they solve the current speed requirement instead of buying blindly.",
+    "Use Rebirth after the permanent bonus will recover lost progress quickly and open the next speed tier."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Car list, fastest unlocks, track walkthroughs, garage upgrades, victory farming, and rebirth timing."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The listing reached more than two thousand votes with a high rating and combines strong car, garage, race, and obby keywords."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who enjoy vehicle collecting, visible speed growth, obstacle courses, rare unlocks, and repeat progression."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Obby: Supercar Race on Keyboard"
+    ],
+    [
+      "Genre",
+      "Car obby, supercar collection, speed race, incremental arcade"
+    ],
+    [
+      "Official signal",
+      "CrazyGames published the game July 22, 2026; it held a 9.2 rating from 2,020 votes during July 24 verification"
+    ],
+    [
+      "Trend hook",
+      "High vote volume plus garage, car unlock, obstacle track, speed boost, victory, and rebirth searches"
+    ],
+    [
+      "Guide focus",
+      "Garage collection, car speed, obstacle tracks, victories, new areas, boosts, rare cars, rebirth"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Obby: Supercar Race on Keyboard online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Obby: Supercar Race on Keyboard about?",
+      "answer": "Collect faster cars, complete obstacle tracks, earn victories, open new areas, and use Rebirth to build permanent speed."
+    },
+    {
+      "question": "What should I focus on first in Obby: Supercar Race on Keyboard?",
+      "answer": "Match garage growth to the next track requirement, farm a stage you can clear reliably, and rebirth only when recovery will be fast."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 9,
+    "tag": "High-rated car obby",
+    "summary": "High-rated supercar speed obby with garage collection, track obstacles, boosts, and rebirths.",
+    "recommendation": "Recommended for car unlocks, garage progression, track guides, speed upgrades, and rebirth tips."
+  },
+  "indexing": {
+    "order": 23,
+    "lastmod": "2026-07-24",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 19,
+    "description": "Find the official car obby source with garage unlocks, speed upgrades, track help, victories, and rebirth guidance",
+    "fullSummary": "Obby: Supercar Race on Keyboard is a high-rated car obby module with an official CrazyGames source link, garage collection, speed upgrades, track obstacles, victory farming, area unlocks, rare cars, and rebirth guidance."
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "key": "ahagram",
+  "pageType": "hot-game",
+  "slug": "ahagram",
+  "title": "Ahagram",
+  "path": "/ahagram",
+  "pageTitle": "Ahagram - Play Online Word Puzzle",
+  "seoTitle": "Ahagram - Play Online Word Puzzle with Hints",
+  "seoDescription": "Play Ahagram online. Solve fresh word puzzles, use clue-thinking tips, and follow answer-friendly keyword guidance after the July 7 CrazyGames update.",
+  "keywords": "Ahagram, Ahagram game, Ahagram answers, word puzzle game, anagram puzzle, CrazyGames word game",
+  "image": "/images/ahagram.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/ahagram",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "CrazyGames listing added July 3, 2026 and updated July 7, 2026",
+  "trendLabel": "Word puzzle answer trend",
+  "playCta": "Play Ahagram",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Ahagram on CrazyGames",
+      "url": "https://www.crazygames.com/game/ahagram"
+    }
+  ],
+  "description": "Ahagram is a fresh word puzzle page that fits answer and hint searches, especially after the July 7 CrazyGames update brought new attention to the title.",
+  "intro": "The strongest SEO angle is not just play intent; it is Ahagram answers, hints, word routes, and repeatable clue-solving patterns.",
+  "guideTitle": "Ahagram Word Puzzle Hints and Strategy",
+  "guideIntro": "A reliable solve route starts by identifying word length, vowel placement, and common endings before guessing whole answers.",
+  "steps": [
+    "Separate vowels and consonants before attempting the final word.",
+    "Look for common endings such as ing, ed, er, or tion when the letter count fits.",
+    "Try short root words first, then expand them with prefixes or suffixes.",
+    "Use clue context to avoid wasting guesses on valid but irrelevant words.",
+    "Save direct answer checks for puzzles where multiple words fit the same letters."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Answer hints, word pattern guide, vowel strategy, and daily clue posts."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The official page is a new updated word puzzle with visible early votes."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like calm thinking games, anagrams, and quick vocabulary challenges."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Ahagram"
+    ],
+    [
+      "Genre",
+      "Word puzzle, anagram, clue-solving game"
+    ],
+    [
+      "Official signal",
+      "CrazyGames listing added July 3, 2026 and updated July 7, 2026"
+    ],
+    [
+      "Trend hook",
+      "Fresh word puzzle page with answer and hint search potential"
+    ],
+    [
+      "Guide focus",
+      "Anagram solving, answer hints, clue reading, word patterns"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Ahagram online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Ahagram about?",
+      "answer": "Solve word puzzles by rearranging and interpreting letters, then use clue logic to narrow possible answers."
+    },
+    {
+      "question": "What should I focus on first in Ahagram?",
+      "answer": "Start with vowels, common endings, and word length before committing to a full answer."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 30,
+    "icon": "🔤",
+    "tag": "Updated Jul 7",
+    "summary": "Fresh word puzzle page with new votes and answer-friendly keyword structure.",
+    "recommendation": "Recommended for word puzzle answers, clue solving, daily hint terms, and level-search content."
+  },
+  "indexing": {
+    "order": 44,
+    "lastmod": "2026-07-08",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 40,
+    "description": "Find the official playable word puzzle source with answer-friendly hint strategy",
+    "fullSummary": "Ahagram is a word puzzle module with an official playable source link, answer-friendly hint strategy, anagram solving guidance, vowel and suffix tips, and July 7 update search coverage."
+  }
+}

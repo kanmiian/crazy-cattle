@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "key": "pewPew",
+  "pageType": "hot-game",
+  "slug": "pew-pew",
+  "title": "Pew Pew",
+  "path": "/pew-pew",
+  "pageTitle": "Pew Pew - Play Online Arcade Airplane Game",
+  "seoTitle": "Pew Pew - Play Online Airplane Survival Arcade",
+  "seoDescription": "Play Pew Pew through the official source. Dodge enemy waves, collect power-ups, survive boss attacks, and follow quick airplane arcade tips.",
+  "keywords": "Pew Pew, Pew Pew game, Pew Pew airplane game, arcade plane game, auto shoot game, airplane survival, boss dodge game, power-up shooter, CrazyGames Pew Pew",
+  "image": "/images/pew-pew.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/pew-pew-cec",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "Published on CrazyGames July 21, 2026 by BlackMoon Design",
+  "trendLabel": "New auto-fire airplane arcade trend",
+  "playCta": "Play Pew Pew",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Pew Pew on CrazyGames",
+      "url": "https://www.crazygames.com/game/pew-pew-cec"
+    }
+  ],
+  "description": "Pew Pew is a fast airplane arcade game where the plane fires automatically while the player dodges danger, collects power-ups, destroys enemy waves, and survives increasingly difficult bosses.",
+  "intro": "Because shooting is automatic, the useful skill is movement. The guide focuses on safe lanes, power-up collection, wave positioning, and keeping enough screen space to react to bosses.",
+  "guideTitle": "Pew Pew Power-Up, Wave, and Boss Survival Guide",
+  "guideIntro": "Damage comes automatically; survival does not. Smooth movement and early positioning are more reliable than chasing every enemy or pickup.",
+  "steps": [
+    "Use WASD, arrow keys, or the mouse to make small controlled movements around incoming attacks.",
+    "Stay near an open escape lane instead of drifting into a corner during dense waves.",
+    "Collect power-ups when the route is safe, but do not cross a dangerous pattern for one pickup.",
+    "Move before tougher enemies crowd the screen so automatic fire has time to clear them.",
+    "During boss fights, learn the attack rhythm first and deal damage while following the safest gap."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Boss clips, wave survival routes, power-up priorities, high-score runs, and short gameplay videos."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The new arcade listing has a one-sentence gameplay hook and readable action that works well in short-form video."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who want instant controls, automatic shooting, quick restarts, and increasingly difficult air battles."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Pew Pew"
+    ],
+    [
+      "Genre",
+      "Arcade airplane shooter, auto-fire survival, boss game"
+    ],
+    [
+      "Official signal",
+      "CrazyGames published the game July 21, 2026; it had an 8.4 rating from 113 votes during July 24 verification"
+    ],
+    [
+      "Trend hook",
+      "Short memorable title plus airplane shooter, auto-fire, enemy wave, power-up, and boss keywords"
+    ],
+    [
+      "Guide focus",
+      "Movement controls, power-up routes, enemy waves, boss patterns, survival time"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Pew Pew online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Pew Pew about?",
+      "answer": "Move an auto-firing plane through enemy waves, collect power-ups, defeat tougher targets, and survive for as long as possible."
+    },
+    {
+      "question": "What should I focus on first in Pew Pew?",
+      "answer": "Prioritize open movement space over pickups. Controlled dodging keeps the automatic weapon firing longer and produces better runs."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 5,
+    "tag": "Priority / New arcade",
+    "summary": "Fast auto-fire airplane survival game built around power-ups, enemy waves, and boss dodging.",
+    "recommendation": "Recommended for arcade flight traffic, boss survival tips, power-up guides, and short video content."
+  },
+  "indexing": {
+    "order": 19,
+    "lastmod": "2026-07-24",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 15,
+    "description": "Find the official airplane arcade source with power-up routes, enemy wave positioning, and boss survival tips",
+    "fullSummary": "Pew Pew is an auto-fire airplane arcade module with an official CrazyGames source link, movement and power-up guidance, enemy wave positioning, boss survival tips, and short-form gameplay framing."
+  }
+}

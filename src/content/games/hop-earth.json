@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "key": "hopEarth",
+  "pageType": "hot-game",
+  "slug": "hop-earth",
+  "title": "Hop Earth",
+  "path": "/hop-earth",
+  "pageTitle": "Hop Earth - Drive Real-World Roads in Your Browser",
+  "seoTitle": "Hop Earth Game - Play Online, Controls, and Route Guide",
+  "seoDescription": "Open the official Hop Earth game, drive real-world roads from map data, create custom races, learn the controls, and solve common loading issues.",
+  "keywords": "Hop Earth, Hop.Earth, Hop Earth game, Hop Earth online, play Hop Earth, Hop Earth controls, Hop Earth map game, real world driving game, OpenStreetMap driving game, drive anywhere game, browser driving game, custom race game",
+  "image": "/images/hop-earth-official.png",
+  "imageCredit": "Official Hop.Earth page preview",
+  "embedUrl": null,
+  "sourceUrl": "https://hop.earth/",
+  "sourceName": "Hop.Earth",
+  "sourceStatus": "Official Hop.Earth browser game verified August 13, 2026",
+  "trendLabel": "Viral real-world browser driving game",
+  "playCta": "Play Hop Earth",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Play on Official Hop.Earth",
+  "externalPlayReason": "Hop.Earth runs its map streaming, account, race, and multiplayer systems on the official application. Open the official site for the complete game instead of a limited third-party frame.",
+  "playableLinks": [
+    {
+      "label": "Play Hop Earth on the Official Site",
+      "url": "https://hop.earth/"
+    }
+  ],
+  "description": "Hop.Earth is a free browser driving game that turns real road networks into explorable 3D routes. Pick locations around the world, drive generated roads and terrain, create point-to-point races, compare top and average speeds, and share routes with other players without installing a conventional game client.",
+  "intro": "The viral pitch is simple: choose a place on Earth and drive there. The experience uses real-world road and elevation data rather than Google Street View, then builds a playable 3D route around your car. This guide explains what Hop Earth is, how to reach the official game, what to expect before loading a route, and how to get a cleaner first drive.",
+  "guideTitle": "Hop Earth Controls, Custom Races, and Real-World Route Guide",
+  "guideIntro": "Start with a short route in an area that has clear, connected roads. Let the terrain and road data finish loading before accelerating hard, learn the control overlay on the official site, and treat the map as generated game geometry rather than a turn-by-turn navigation service.",
+  "steps": [
+    "Open the official Hop.Earth site in a modern desktop browser and allow the initial game assets to finish loading.",
+    "Create an account or sign in when the official application asks for one; account and multiplayer data stay on Hop.Earth.",
+    "Choose a familiar area and make the first route short, with connected main roads rather than tiny paths or very long cross-country endpoints.",
+    "Review the official on-screen control guide before starting, then use gradual steering and braking while the generated road and terrain settle into view.",
+    "Create or join a race after free driving feels stable, compare top speed and average speed, and share only routes that load and connect cleanly."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Drive real road networks",
+      "text": "Hop.Earth converts map and elevation data into 3D roads, so familiar places become explorable driving routes rather than static map images."
+    },
+    {
+      "title": "Build and share races",
+      "text": "Point-to-point routes can become community races with distance, creator, top-speed, average-speed, and recent-run information."
+    },
+    {
+      "title": "No large download",
+      "text": "The game streams through a browser. A desktop browser, steady connection, and hardware acceleration give the best chance of a smooth first session."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Hop.Earth (also searched as Hop Earth)"
+    ],
+    [
+      "Genre",
+      "Open-world driving, real-world map exploration, custom racing"
+    ],
+    [
+      "World data",
+      "Real road networks and elevation data rendered as generated 3D game geometry"
+    ],
+    [
+      "Main modes",
+      "Free exploration, route creation, shared point-to-point races, speed comparison"
+    ],
+    [
+      "Best setup",
+      "Modern desktop browser, hardware acceleration, keyboard, and a stable broadband connection"
+    ],
+    [
+      "Account",
+      "The official application currently presents sign-up and sign-in for player and race features"
+    ],
+    [
+      "Platform",
+      "Web browser; desktop is recommended for driving controls and map rendering"
+    ],
+    [
+      "Official source",
+      "hop.earth"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "What is the Hop Earth game?",
+      "answer": "Hop.Earth is a browser driving game that generates playable 3D roads and terrain from real-world map data. You can explore locations, create routes, and run shared races."
+    },
+    {
+      "question": "Is Hop Earth the same as Google Maps driving?",
+      "answer": "No. Hop.Earth is commonly described that way in short videos, but it is a game that renders road-network and elevation data as 3D geometry. It is not Google Street View and should not be treated as a navigation tool."
+    },
+    {
+      "question": "Can I play Hop Earth for free?",
+      "answer": "The official site currently presents Hop.Earth as a browser game with no conventional game download. Open the official site to see the current account and access options."
+    },
+    {
+      "question": "Why does Hop Earth take time to load?",
+      "answer": "The browser must load the game engine and stream map-related assets. Use a modern desktop browser, enable hardware acceleration, keep the first route short, and close heavy background tabs if performance is poor."
+    },
+    {
+      "question": "Why is a road missing or shaped differently from real life?",
+      "answer": "The world is generated from available map and terrain data. Data coverage, road tags, elevation detail, and the game's renderer can all affect the final route, so it will not perfectly reproduce every street."
+    },
+    {
+      "question": "Can Hop Earth run on mobile?",
+      "answer": "The site may open on a phone, but the 3D renderer and keyboard-style driving controls make a modern desktop browser the more practical choice."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": -1,
+    "icon": "🌍",
+    "tag": "Viral Now",
+    "summary": "Drive real-world roads, explore generated terrain, and create custom browser races anywhere on the map.",
+    "recommendation": "Hot pick for Hop Earth searches, real-world driving, map exploration, custom routes, multiplayer races, and loading help."
+  },
+  "indexing": {
+    "order": 60,
+    "lastmod": "2026-08-13",
+    "changefreq": "daily",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 50,
+    "description": "Open the official real-world browser driving game and learn route creation, races, controls, and loading tips",
+    "fullSummary": "Hop Earth is a guide and official play gateway for Hop.Earth, the viral browser driving game that turns real road networks and elevation data into explorable 3D routes. It covers official access, account expectations, short-route setup, map-generation limits, custom races, speed comparison, browser performance, and common loading questions."
+  }
+}

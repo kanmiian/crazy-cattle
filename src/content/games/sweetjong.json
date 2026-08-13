@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "key": "sweetjong",
+  "pageType": "hot-game",
+  "slug": "sweetjong",
+  "title": "Sweetjong",
+  "path": "/sweetjong",
+  "pageTitle": "Sweetjong - Play Online Sweet Mahjong Match 3",
+  "seoTitle": "Sweetjong - Play Online Mahjong Match 3 Puzzle",
+  "seoDescription": "Play Sweetjong through the official source. Match three cakes, manage limited tray slots, clear layered tiles, unlock frozen sweets, and use puzzle tips.",
+  "keywords": "Sweetjong, Sweetjong game, Sweetjong puzzle, Sweetjong tips, sweet mahjong, mahjong match 3, triple tile game, cake matching game, tray puzzle, frozen tile puzzle",
+  "image": "/images/sweetjong.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/sweetjong",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "Published on CrazyGames July 22, 2026 by Vkusnyatina",
+  "trendLabel": "High-rated sweet mahjong match-3 trend",
+  "playCta": "Play Sweetjong",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Sweetjong on CrazyGames",
+      "url": "https://www.crazygames.com/game/sweetjong"
+    }
+  ],
+  "description": "Sweetjong is a sweet mahjong match-3 puzzle where cakes and desserts move from a layered board into a limited tray. Match three identical sweets, reveal blocked tiles, clear frozen pieces, and finish each layout before the tray fills.",
+  "intro": "This guide covers the repeatable Sweetjong decisions behind every level: choosing exposed tiles, preserving tray space, setting up triples, and deciding when a booster is worth using.",
+  "guideTitle": "Sweetjong Tips, Tray Strategy, and Frozen Tile Guide",
+  "guideIntro": "The board is won through tray control. A tempting tile is only useful when it completes a triple or reveals a stronger move without filling the final open slots.",
+  "steps": [
+    "Tap exposed sweets first and check which useful tiles will be uncovered underneath.",
+    "Keep identical cakes grouped in the tray so a third tile clears all three immediately.",
+    "Avoid collecting too many unmatched types because a full tray ends the round.",
+    "Clear upper layers to expose hidden combinations before committing to isolated tiles.",
+    "Build matches to release frozen sweets, and save boosters for boards with no safe natural move."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Sweetjong level help, tray recovery, frozen tile rules, booster timing, and match-three strategy."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The new listing opened with a strong rating and a clear puzzle loop that supports answer and level-help content."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who enjoy tile sorting, layered mahjong boards, limited-space decisions, and short puzzle levels."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Sweetjong"
+    ],
+    [
+      "Genre",
+      "Sweet mahjong, match 3, triple tile puzzle"
+    ],
+    [
+      "Official signal",
+      "CrazyGames published the game July 22, 2026; it held a 9.1 rating from 82 votes during July 24 verification"
+    ],
+    [
+      "Trend hook",
+      "Distinctive Sweetjong title plus sweet mahjong, match-three, tray, cake, and frozen tile searches"
+    ],
+    [
+      "Guide focus",
+      "Tray management, exposed tiles, triple matching, frozen sweets, boosters, level tips"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Sweetjong online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Sweetjong about?",
+      "answer": "Move exposed dessert tiles into the tray, match triples to remove them, and clear the whole board without filling every tray slot."
+    },
+    {
+      "question": "What should I focus on first in Sweetjong?",
+      "answer": "Protect tray space first. Prefer moves that finish a triple or expose several new tiles over isolated sweets with no near-term match."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 4,
+    "tag": "Priority / New Jul 22",
+    "summary": "High-rated sweet mahjong match-3 puzzle with limited tray space and layered tile boards.",
+    "recommendation": "Recommended for Sweetjong tips, tray strategy, frozen tile help, and match-three puzzle searches."
+  },
+  "indexing": {
+    "order": 18,
+    "lastmod": "2026-07-24",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 14,
+    "description": "Find the official sweet mahjong source with tray strategy, frozen tile rules, boosters, and match-three tips",
+    "fullSummary": "Sweetjong is a sweet mahjong match-three module with an official CrazyGames source link, limited tray strategy, layered tile guidance, frozen sweet rules, booster timing, and level-help keyword coverage."
+  }
+}

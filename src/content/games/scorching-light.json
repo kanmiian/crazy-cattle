@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "key": "scorchingLight",
+  "pageType": "hot-game",
+  "slug": "scorching-light",
+  "title": "Scorching Light",
+  "path": "/scorching-light",
+  "pageTitle": "Scorching Light - Play Game Boy Horror Platformer",
+  "seoTitle": "Scorching Light - Play the Game Boy Horror Game",
+  "seoDescription": "Play Scorching Light on Newgrounds. Avoid deadly light, blend into the environment, read the hidden-eye indicator, and finish the short Game Boy horror platformer.",
+  "keywords": "Scorching Light, Scorching Light game, Scorching Light walkthrough, Game Boy horror game, Game Boy platformer, GB Studio horror, retro horror game, light enemy puzzle, hidden environment game, pixel art puzzle platformer, Summer Game Jam 2026",
+  "image": "/images/scorching-light.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.newgrounds.com/portal/view/1042733",
+  "sourceName": "Newgrounds",
+  "sourceStatus": "Uploaded to Newgrounds July 19, 2026 by pasquiindustry",
+  "trendLabel": "Featured Game Boy horror platformer trend",
+  "playCta": "Play Scorching Light",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "Scorching Light is an original Game Boy game presented through Newgrounds' HTML5 player and the Binjgb emulator. Open the official release so the emulator, creator notes, soundtrack link, score, and current reviews load together.",
+  "playableLinks": [
+    {
+      "label": "Play Scorching Light on Newgrounds",
+      "url": "https://www.newgrounds.com/portal/view/1042733"
+    }
+  ],
+  "description": "Scorching Light is a 10-15 minute horror-action-puzzle platformer made as a real Game Boy game with GB Studio. Light enemies, glowing items, and luminous liquid are lethal, so the protagonist must blend into the environment, watch the hidden-status eye, and move through the nightmare without touching the light.",
+  "intro": "The page targets the questions this compact game creates: what counts as light, how hiding works, how to find the obscured protagonist, the keyboard and controller mapping, and how to approach a short no-light route without losing track of the character.",
+  "guideTitle": "Scorching Light Walkthrough, Hiding, and Controls Guide",
+  "guideIntro": "Treat every bright object as a hazard until proven otherwise. Progress comes from reading safe dark space, blending into matching scenery, and using the eye indicator instead of relying only on the character sprite.",
+  "steps": [
+    "Move and climb with WASD or the arrow keys, or use the directional pad on a Game Boy, Xbox, or PlayStation controller.",
+    "Avoid light enemies, glowing items, and luminous liquid because every source of light can kill the protagonist.",
+    "Blend into the environment when light enemies approach and check the eye at the bottom of the screen to confirm that you are hidden.",
+    "Press Shift on keyboard, Select on Game Boy, or View on Xbox to show a temporary character outline when the protagonist disappears into the scenery.",
+    "Jump with Z, J, or Space on keyboard, or the A button on Game Boy and Xbox, and plan the landing so it stays outside the next light zone."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "10-15 minute walkthrough, light hazard explanations, hiding demonstrations, ending discussion, retro controls, and Game Boy development context."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The Newgrounds feature and new comments give a second discovery window to a visually distinctive Game Boy horror concept with a clear one-rule hook."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who enjoy short retro horror, authentic Game Boy projects, environmental hiding, pixel-art puzzles, and compact game-jam stories."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Scorching Light"
+    ],
+    [
+      "Genre",
+      "Game Boy horror, action puzzle platformer, retro game"
+    ],
+    [
+      "Official signal",
+      "Newgrounds shows a July 19, 2026 upload, a 3.64/5 score from 73 votes, GB Studio production, and Summer Game Jam 2026 participation during July 27 verification"
+    ],
+    [
+      "Trend hook",
+      "Front-page recommendation and fresh comments plus Game Boy, horror, hidden, light, platformer, pixel art, and walkthrough searches"
+    ],
+    [
+      "Guide focus",
+      "Deadly light rules, environment blending, hidden-eye indicator, character outline, jumps, controls, short completion route"
+    ],
+    [
+      "Platform",
+      "Web browser on desktop; keyboard and controller support"
+    ],
+    [
+      "Embed status",
+      "Official Newgrounds Binjgb player recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Scorching Light online here?",
+      "answer": "This page opens the official Newgrounds release, where the original Game Boy build runs in the Binjgb emulator with its controls, creator notes, voting, and comments."
+    },
+    {
+      "question": "What is Scorching Light about?",
+      "answer": "Find the light world while paradoxically avoiding every deadly source of light and hiding from enemies by blending into the environment."
+    },
+    {
+      "question": "What should I focus on first in Scorching Light?",
+      "answer": "Watch the bottom-screen eye to confirm concealment, use the temporary outline when the character is hard to see, and plan every jump around dark landing space."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 3,
+    "tag": "Priority / Game Boy horror",
+    "summary": "Short Game Boy horror platformer about hiding in the environment and surviving deadly sources of light.",
+    "recommendation": "Recommended for Scorching Light guides, light-enemy puzzles, hidden routes, controls, and retro horror searches."
+  },
+  "indexing": {
+    "order": 17,
+    "lastmod": "2026-07-27",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 13,
+    "description": "Find the official Game Boy horror source with deadly-light rules, environment hiding, outline controls, platforming, and short walkthrough tips",
+    "fullSummary": "Scorching Light is a short Game Boy horror platformer module with official Newgrounds and Binjgb play access, deadly-light rules, environment blending, hidden-eye guidance, character-outline controls, retro platforming tips, and Summer Game Jam 2026 context."
+  }
+}

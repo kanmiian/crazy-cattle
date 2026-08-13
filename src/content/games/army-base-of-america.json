@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "key": "armyBaseOfAmerica",
+  "pageType": "hot-game",
+  "slug": "army-base-of-america",
+  "title": "Army Base Of America",
+  "path": "/army-base-of-america",
+  "pageTitle": "Army Base Of America - Play Online Military Tycoon",
+  "seoTitle": "Army Base Of America - Play Online Base Management Game",
+  "seoDescription": "Play Army Base Of America through official sources. Train soldiers, expand the base, manage resources, and follow fast-start tycoon tips after the July update.",
+  "keywords": "Army Base Of America, Army Base Of America game, military tycoon game, army base management, soldier training game, CrazyGames army game",
+  "image": "/images/army-base-of-america.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/army-base-of-america",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "CrazyGames page updated July 6, 2026",
+  "trendLabel": "Military base tycoon update trend",
+  "playCta": "Play Army Base Of America",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Army Base Of America on CrazyGames",
+      "url": "https://www.crazygames.com/game/army-base-of-america"
+    },
+    {
+      "label": "Open Google Play listing",
+      "url": "https://play.google.com/store/apps/details?id=com.nitrodog.armyofamerica&pcampaignid=web_share"
+    }
+  ],
+  "description": "Army Base Of America is a military tycoon and base-management game about training soldiers, upgrading troops, expanding camp facilities, and capturing enemy territory.",
+  "intro": "This module fits players looking for Army Base Of America play links, fast progression routes, soldier upgrades, resource priorities, and military tycoon tips.",
+  "guideTitle": "Army Base Of America Fast-Start Base Guide",
+  "guideIntro": "The cleanest route is to stabilize resource income first, then train soldiers and expand into combat only when the base can fund upgrades consistently.",
+  "steps": [
+    "Learn movement and resource pickup paths before rushing every battle.",
+    "Upgrade training capacity so soldier production does not stall.",
+    "Improve troop stats when enemy fights start taking too long.",
+    "Expand camp buildings in the order that increases repeatable income and army strength.",
+    "Capture territory after your current base can replace losses quickly."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Fast-start route, upgrade order, resource guide, soldier training tips, and territory checklist."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The official page combines fresh July update timing with broad tycoon, army, and base-management search terms."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like incremental base growth, light war management, and steady upgrade loops."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Army Base Of America"
+    ],
+    [
+      "Genre",
+      "Military tycoon, base management, soldier training, simulation"
+    ],
+    [
+      "Official signal",
+      "CrazyGames page shows Unity 6, July 6, 2026 update, 9.1 rating, and Google Play availability during verification"
+    ],
+    [
+      "Trend hook",
+      "Army base, tycoon, war, and simulation keywords after a July update"
+    ],
+    [
+      "Guide focus",
+      "Resource flow, soldier training, camp expansion, troop upgrades, territory capture"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Army Base Of America online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Army Base Of America about?",
+      "answer": "Build and expand a military camp, train soldiers, improve troop power, and capture territory through strategic battles."
+    },
+    {
+      "question": "What should I focus on first in Army Base Of America?",
+      "answer": "Invest in repeatable resource flow and training capacity before pushing expensive combat expansion."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 22,
+    "icon": "🎖️",
+    "tag": "Updated Jul 6",
+    "summary": "Army base management game with training, expansion, and quick progression guide potential.",
+    "recommendation": "Recommended for base management keywords, army upgrade routes, and fast-start walkthroughs."
+  },
+  "indexing": {
+    "order": 36,
+    "lastmod": "2026-07-09",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 32,
+    "description": "Find official playable and Google Play links with soldier training, base expansion, and fast-start tycoon tips",
+    "fullSummary": "Army Base Of America is a military tycoon module with official CrazyGames and Google Play links, soldier training guidance, base expansion order, resource flow notes, troop upgrade strategy, and July 6, 2026 update coverage."
+  }
+}

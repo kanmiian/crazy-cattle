@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "key": "slurp",
+  "pageType": "hot-game",
+  "slug": "slurp",
+  "title": "Slurp",
+  "path": "/slurp",
+  "pageTitle": "Slurp - Play Fruit Slime Juice Empire Online",
+  "seoTitle": "Slurp - Play Fruit Slime Juice Tycoon Online",
+  "seoDescription": "Play Slurp through the official source. Crush fruit slimes, bottle juice, sell drinks, unlock machines and biomes, blend hybrids, and find shiny slimes.",
+  "keywords": "Slurp, Slurp game, fruit slime game, juice empire game, slime juice tycoon, Slurp hybrids, golden shiny slime, slime blender, juice machine upgrades, Slurp biomes",
+  "image": "/images/slurp.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/slurp",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "Published on CrazyGames July 23, 2026",
+  "trendLabel": "New-and-hot fruit slime juice simulator trend",
+  "playCta": "Play Slurp",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Slurp on CrazyGames",
+      "url": "https://www.crazygames.com/game/slurp"
+    }
+  ],
+  "description": "Slurp is a fruit slime business simulator where players crush colorful slimes for juice, press drops into bottles, sell drinks, and reinvest the profit. New species, automatic machines, hybrid recipes, shiny slimes, delivery help, and beach, forest, ice, and volcano biomes expand the stand.",
+  "intro": "The page is structured for progression questions: the first profitable upgrades, efficient machine routes, biome unlocks, hybrid slime recipes, golden shiny finds, and when automation becomes more valuable than manual collection.",
+  "guideTitle": "Slurp Upgrade, Hybrid Slime, and Juice Empire Guide",
+  "guideIntro": "A smooth production loop is more useful than one expensive unlock. Keep slimes, machines, bottles, sales, and upgrades moving in a short repeatable route.",
+  "steps": [
+    "Walk into fruit slimes to crush them and collect their juice drops.",
+    "Use the machines to press juice into bottles, then take finished products to the sales counter.",
+    "Step on glowing purchase tiles to improve production and expand the stand with profitable upgrades.",
+    "Unlock new slime species and biomes once the current area produces enough cash without long delays.",
+    "Use the blender for rare hybrids, watch for golden shiny slimes, and add automation or delivery when manual work becomes the bottleneck."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Best upgrades, hybrid recipes, shiny slime hunting, machine order, biome costs, and juice profit routes."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The title appeared in both new and hot discovery surfaces with a visually clear slime-to-juice tycoon loop."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like cute creature collection, hands-on production, automation, business growth, and rare variants."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Slurp"
+    ],
+    [
+      "Genre",
+      "Fruit slime simulator, juice tycoon, business upgrade game"
+    ],
+    [
+      "Official signal",
+      "CrazyGames published the game July 23, 2026; it had an 8.3 rating from 122 votes during July 24 verification"
+    ],
+    [
+      "Trend hook",
+      "New-and-hot visibility plus Slurp, fruit slime, juice, hybrid, shiny, machine, and biome keywords"
+    ],
+    [
+      "Guide focus",
+      "Juice production, machine upgrades, sales, slime species, hybrids, shiny slimes, automation, biomes"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Slurp online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Slurp about?",
+      "answer": "Turn fruit slimes into bottled juice, sell products, expand the stand, unlock biomes, create hybrids, and automate the business."
+    },
+    {
+      "question": "What should I focus on first in Slurp?",
+      "answer": "Keep the whole production chain balanced and upgrade whichever step is causing juice, bottles, or customers to wait."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 10,
+    "tag": "Priority / Hot and new",
+    "summary": "Fruit slime juice simulator with machines, hybrid slimes, new biomes, and business upgrades.",
+    "recommendation": "Recommended for slime lists, juice empire upgrades, hybrid recipes, shiny finds, and tycoon guides."
+  },
+  "indexing": {
+    "order": 24,
+    "lastmod": "2026-07-24",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 20,
+    "description": "Find the official fruit slime simulator source with juice machines, hybrid recipes, shiny slimes, automation, and biome tips",
+    "fullSummary": "Slurp is a fruit slime juice simulator module with an official CrazyGames source link, production and machine upgrades, hybrid slime discovery, golden shiny hunting, delivery automation, and biome progression."
+  }
+}

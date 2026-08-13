@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "key": "runicRampage",
+  "pageType": "hot-game",
+  "slug": "runic-rampage",
+  "title": "Runic Rampage",
+  "path": "/runic-rampage",
+  "pageTitle": "Runic Rampage - Play Online Action RPG",
+  "seoTitle": "Runic Rampage - Play Online Hack and Slash RPG",
+  "seoDescription": "Play Runic Rampage through official sources. Use combo, spell, boss, and rune-fragment tips for the July CrazyGames action RPG update.",
+  "keywords": "Runic Rampage, Runic Rampage game, action RPG browser game, hack and slash RPG, CrazyGames Runic Rampage, Steam action RPG",
+  "image": "/images/runic-rampage.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/runic-rampage",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "CrazyGames page updated July 6, 2026",
+  "trendLabel": "Browser and Steam action RPG update trend",
+  "playCta": "Play Runic Rampage",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Runic Rampage on CrazyGames",
+      "url": "https://www.crazygames.com/game/runic-rampage"
+    },
+    {
+      "label": "Open Steam listing",
+      "url": "https://store.steampowered.com/app/615010/Runic_Rampage__Action_RPG/"
+    },
+    {
+      "label": "Open App Store listing",
+      "url": "https://apps.apple.com/de/app/runic-rampage/id1267492435"
+    }
+  ],
+  "description": "Runic Rampage is a hack-and-slash action RPG where Grimbard fights through deserts, forests, caves, and frozen fortresses to recover legendary rune stone fragments.",
+  "intro": "This page is aimed at players searching for Runic Rampage play links, combo controls, boss help, rune progression, and browser-to-Steam discovery.",
+  "guideTitle": "Runic Rampage Combo and Rune Fragment Guide",
+  "guideIntro": "Runic Rampage rewards controlled aggression. Use basic attacks to open space, dash before enemies surround you, and save spells for dense groups or boss windows.",
+  "steps": [
+    "Practice movement and primary attack timing before relying on heavy combos.",
+    "Use dash to reposition instead of spending it only as an attack.",
+    "Pick up spells when available and save them for clustered enemies or boss pressure.",
+    "Watch boss patterns for the recovery window after their strongest attack.",
+    "Track rune-fragment progress so each run pushes the main quest forward."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Combo list, boss tips, spell usage, rune fragment route, and Steam/browser comparison."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The July update, Steam presence, and fantasy action-RPG tags give it broader discovery potential than a single browser listing."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who want melee combat, boss fights, progression, and classic hack-and-slash pacing."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Runic Rampage"
+    ],
+    [
+      "Genre",
+      "Action RPG, hack and slash, dungeon combat, fantasy adventure"
+    ],
+    [
+      "Official signal",
+      "CrazyGames page shows Playades, Unity 6, July 6, 2026 update, App Store, and Steam availability during verification"
+    ],
+    [
+      "Trend hook",
+      "Action RPG title with browser, mobile, and Steam cross-platform signals"
+    ],
+    [
+      "Guide focus",
+      "Combos, spells, boss timing, rune fragments, movement control"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Runic Rampage online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Runic Rampage about?",
+      "answer": "Fight as Grimbard, defeat monsters and bosses, collect rune stone fragments, and uncover the kingdom story."
+    },
+    {
+      "question": "What should I focus on first in Runic Rampage?",
+      "answer": "Stay mobile, use dash as a safety tool, and reserve spells for moments where they prevent damage or end a crowded fight."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 21,
+    "icon": "🪓",
+    "tag": "Action RPG",
+    "summary": "Browser and Steam action RPG with rune combat, dungeon fights, and update momentum.",
+    "recommendation": "Recommended for action RPG searches, rune build content, and Steam/browser cross-traffic."
+  },
+  "indexing": {
+    "order": 35,
+    "lastmod": "2026-07-09",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 31,
+    "description": "Find official CrazyGames, Steam, and App Store links with combo, spell, boss, and rune-fragment guidance",
+    "fullSummary": "Runic Rampage is an action RPG module with official CrazyGames, Steam, and App Store links, hack-and-slash combo tips, dash and spell usage guidance, boss timing notes, rune-fragment routing, and browser-to-Steam discovery coverage."
+  }
+}

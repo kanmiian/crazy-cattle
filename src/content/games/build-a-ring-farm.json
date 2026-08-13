@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "key": "buildARingFarmLegacy",
+  "pageType": "legacy",
+  "routeComponent": "BuildARingFarm",
+  "slug": "build-a-ring-farm",
+  "title": "Build A Ring Farm",
+  "path": "/build-a-ring-farm",
+  "image": "/images/build-a-ring-farm.jpg",
+  "featured": {
+    "enabled": true,
+    "order": 37,
+    "icon": "🌾",
+    "tag": "Farm incremental",
+    "summary": "Circular farm upgrades, seed priority, and code-search traffic.",
+    "recommendation": "Recommended for players who like idle farming, steady upgrades, and quick progression routes."
+  },
+  "indexing": {
+    "order": 13,
+    "lastmod": "2026-07-02",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 9,
+    "description": "Play a circular farm incremental game with codes, seed tips, and upgrade guide",
+    "fullSummary": "Build A Ring Farm is a browser farming incremental game page with an embedded playable web build, seed priority tips, current code status, crop upgrade strategy, and FAQ content for players searching for ring farm simulator guidance."
+  }
+}

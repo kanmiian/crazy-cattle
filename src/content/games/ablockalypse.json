@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "key": "ablockalypse",
+  "pageType": "hot-game",
+  "slug": "ablockalypse",
+  "title": "ABLOCKALYPSE",
+  "path": "/ablockalypse",
+  "pageTitle": "ABLOCKALYPSE - Play Online Block Roguelite",
+  "seoTitle": "ABLOCKALYPSE - Play Online Brick Roguelite Game",
+  "seoDescription": "Play ABLOCKALYPSE online. Survive block waves, build upgrades, and follow early roguelite tips for this new CrazyGames page.",
+  "keywords": "ABLOCKALYPSE, ABLOCKALYPSE game, block roguelite, brick survival game, CrazyGames new block game",
+  "image": "/images/ablockalypse.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/ablockalypse",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "New CrazyGames listing added July 7, 2026",
+  "trendLabel": "Block roguelite early-index trend",
+  "playCta": "Play ABLOCKALYPSE",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play ABLOCKALYPSE on CrazyGames",
+      "url": "https://www.crazygames.com/game/ablockalypse"
+    }
+  ],
+  "description": "ABLOCKALYPSE is a new block roguelite page with a simple survival hook: manage brick-like threats, pick useful upgrades, and scale through escalating pressure.",
+  "intro": "Even with lower early votes, the title has clear long-tail value because ABLOCKALYPSE is distinctive and the block roguelite angle is easy to explain.",
+  "guideTitle": "ABLOCKALYPSE Upgrade and Survival Guide",
+  "guideIntro": "The safest early route is to choose upgrades that keep you alive long enough to scale damage and control the block waves.",
+  "steps": [
+    "Prioritize survival upgrades until enemy pressure becomes predictable.",
+    "Add damage only when waves take too long to clear.",
+    "Keep movement space open instead of getting trapped by block clusters.",
+    "Choose upgrades that work together rather than isolated bonuses.",
+    "Treat each failed run as information about the next upgrade priority."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Upgrade tier notes, survival tips, block wave strategy, and early indexing pages."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The official page has low votes but carries a clean new-page gameplay hook and hot labels."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like roguelite upgrades, survival pressure, and simple block combat loops."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "ABLOCKALYPSE"
+    ],
+    [
+      "Genre",
+      "Block roguelite, brick survival, upgrade game"
+    ],
+    [
+      "Official signal",
+      "CrazyGames listing added on July 7, 2026 with new and hot labels during verification"
+    ],
+    [
+      "Trend hook",
+      "Distinctive title plus block survival and roguelite keywords"
+    ],
+    [
+      "Guide focus",
+      "Upgrade choices, survival routing, wave control, early run strategy"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play ABLOCKALYPSE online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is ABLOCKALYPSE about?",
+      "answer": "Survive escalating block threats, choose upgrades, and push further through repeatable roguelite runs."
+    },
+    {
+      "question": "What should I focus on first in ABLOCKALYPSE?",
+      "answer": "Take survival upgrades first, then add damage once you can consistently avoid being trapped."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 33,
+    "icon": "🧱",
+    "tag": "Block roguelite",
+    "summary": "New brick roguelite page with low votes but a clear block survival gameplay hook.",
+    "recommendation": "Recommended for roguelite block keywords, upgrade path pages, and early-indexing tests."
+  },
+  "indexing": {
+    "order": 47,
+    "lastmod": "2026-07-08",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 43,
+    "description": "Find the official playable block roguelite source with survival and upgrade tips",
+    "fullSummary": "ABLOCKALYPSE is a block roguelite module with an official playable source link, survival upgrade tips, wave control notes, early-run strategy, and new block roguelite keyword coverage."
+  }
+}

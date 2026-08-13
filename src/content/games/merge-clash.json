@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "key": "mergeClash",
+  "pageType": "hot-game",
+  "slug": "merge-clash",
+  "title": "Merge Clash",
+  "path": "/merge-clash",
+  "pageTitle": "Merge Clash - Play Online Merge Battle Game",
+  "seoTitle": "Merge Clash - Play Online Merge Hero Battle Game",
+  "seoDescription": "Play Merge Clash through the official CrazyGames source. Merge elemental heroes, build a dungeon team, open treasure chests, and follow beginner battle tips.",
+  "keywords": "Merge Clash, Merge Clash game, merge battle game, elemental heroes, dungeon merge game, CrazyGames Merge Clash",
+  "image": "/images/merge-clash.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/merge-clash",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "CrazyGames new listing added July 14, 2026",
+  "trendLabel": "New merge battle ranking trend",
+  "playCta": "Play Merge Clash",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Merge Clash on CrazyGames",
+      "url": "https://www.crazygames.com/game/merge-clash"
+    }
+  ],
+  "description": "Merge Clash is a merge battle game where players combine cute elemental heroes, unlock stronger characters, defeat dungeon monsters, and collect rewards from treasure chests.",
+  "intro": "This page targets players searching for Merge Clash play links, hero merge routes, early dungeon strategy, and quick content around the new CrazyGames listing.",
+  "guideTitle": "Merge Clash Hero Merge and Dungeon Guide",
+  "guideIntro": "The strongest route is to merge with a purpose. Build a stable team first, then combine heroes when the new unit helps clear the next dungeon wave faster.",
+  "steps": [
+    "Start by filling enough team slots so monsters cannot overwhelm one hero.",
+    "Merge duplicate heroes when the upgraded unit improves your current battle lane.",
+    "Collect chest rewards between fights and spend them on the weakest part of the team.",
+    "Balance attack speed and durability instead of chasing only the highest merge tier.",
+    "Replay early dungeon waves when the next hero upgrade is close."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Beginner merge route, best early heroes, chest reward priorities, and dungeon wave tips."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The title entered the new list with a very high early rating, matching user-provided 33 votes at 9.7."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like quick upgrades, visible power jumps, and casual merge-battle loops."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Merge Clash"
+    ],
+    [
+      "Genre",
+      "Merge battle, clicker, casual dungeon strategy"
+    ],
+    [
+      "Official signal",
+      "CrazyGames page shows a July 14, 2026 new label, TapRush Studio, Unity 6, 9.7 rating, and 33 votes during verification"
+    ],
+    [
+      "Trend hook",
+      "New榜靠前 plus clear merge, hero, dungeon, and upgrade keywords"
+    ],
+    [
+      "Guide focus",
+      "Hero merge timing, dungeon wave clearing, chest rewards, team balance, upgrade order"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Merge Clash online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Merge Clash about?",
+      "answer": "Merge heroes into stronger forms, build a team, defeat dungeon monsters, and collect treasure rewards."
+    },
+    {
+      "question": "What should I focus on first in Merge Clash?",
+      "answer": "Keep enough active heroes on the field first, then merge when the upgraded unit solves the next wave faster."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 15,
+    "icon": "🧬",
+    "tag": "New Jul 14",
+    "summary": "New CrazyGames merge battle title with 9.7 rating from the first 33 votes.",
+    "recommendation": "Recommended for merge battle traffic, elemental hero upgrades, dungeon routes, and short guide content."
+  },
+  "indexing": {
+    "order": 29,
+    "lastmod": "2026-07-14",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 25,
+    "description": "Find the official playable merge battle source with hero merge, dungeon route, and chest reward tips",
+    "fullSummary": "Merge Clash is a merge battle module with an official CrazyGames playable source link, elemental hero merge guidance, dungeon wave tips, chest reward priorities, and July 14, 2026 new-list coverage."
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "key": "robbyCrossTheRoadForBrainrot",
+  "pageType": "hot-game",
+  "slug": "robby-cross-the-road-for-brainrot",
+  "title": "Robby Cross the Road for Brainrot",
+  "path": "/robby-cross-the-road-for-brainrot",
+  "pageTitle": "Robby Cross the Road for Brainrot - Play Online",
+  "seoTitle": "Robby Cross the Road for Brainrot - Play Online Brainrot Obby",
+  "seoDescription": "Play Robby Cross the Road for Brainrot online. Cross roads, dodge traffic, build Brainrot progress, and follow timing tips for the CrazyGames new release.",
+  "keywords": "Robby Cross the Road for Brainrot, Robby Brainrot game, cross the road Brainrot, Brainrot obby, CrazyGames Brainrot",
+  "image": "/images/robby-cross-the-road-for-brainrot.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/robby-cross-the-road-for-brainrot",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "New CrazyGames listing added July 7, 2026",
+  "trendLabel": "Cross-road Brainrot obby trend",
+  "playCta": "Play Robby Cross the Road for Brainrot",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Robby Cross the Road for Brainrot on CrazyGames",
+      "url": "https://www.crazygames.com/game/robby-cross-the-road-for-brainrot"
+    }
+  ],
+  "description": "Robby Cross the Road for Brainrot brings Brainrot meme traffic into a road-crossing and obby-style loop where timing, safe lanes, and progression choices matter.",
+  "intro": "The page targets new-game discovery, Brainrot obby searches, and players who need simple timing tips before crossing dense traffic lanes.",
+  "guideTitle": "Robby Cross the Road for Brainrot Timing Guide",
+  "guideIntro": "Treat every road as a rhythm puzzle. Wait for a clean lane, move decisively, and avoid stopping in exposed positions.",
+  "steps": [
+    "Watch the first traffic cycle before crossing.",
+    "Move lane by lane instead of sprinting blindly through the full road.",
+    "Use safe gaps to reset your camera and next move.",
+    "Avoid chasing rewards when the next lane is already closing.",
+    "Upgrade progression only after the crossing route feels consistent."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Road crossing guide, timing tips, safe lane route, and Brainrot progression notes."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The official page is a July 7 new CrazyGames release riding the cross-site Brainrot trend."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like timing challenges, meme-themed obbies, and short progression routes."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Robby Cross the Road for Brainrot"
+    ],
+    [
+      "Genre",
+      "Brainrot obby, road crossing, timing challenge"
+    ],
+    [
+      "Official signal",
+      "CrazyGames listing added on July 7, 2026 with hot-mobile and new labels"
+    ],
+    [
+      "Trend hook",
+      "Fresh Brainrot cross-road searches and Roblox-style obby intent"
+    ],
+    [
+      "Guide focus",
+      "Traffic timing, lane safety, obby progression, Brainrot unlocks"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Robby Cross the Road for Brainrot online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Robby Cross the Road for Brainrot about?",
+      "answer": "Cross dangerous roads, avoid traffic, and advance through Brainrot-themed progression challenges."
+    },
+    {
+      "question": "What should I focus on first in Robby Cross the Road for Brainrot?",
+      "answer": "Watch traffic rhythm first, cross in short controlled moves, and do not stop in lanes with limited escape space."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 28,
+    "icon": "🚦",
+    "tag": "New Brainrot",
+    "summary": "Cross-road Brainrot tycoon/obby game with traffic timing and cross-site meme spread.",
+    "recommendation": "Recommended for Brainrot obby traffic, road-crossing tips, and Roblox-style search intent."
+  },
+  "indexing": {
+    "order": 42,
+    "lastmod": "2026-07-08",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 38,
+    "description": "Find the official playable Brainrot road-crossing source with traffic timing tips",
+    "fullSummary": "Robby Cross the Road for Brainrot is a Brainrot road-crossing module with an official playable source link, traffic timing guidance, obby-style route tips, and new CrazyGames Brainrot trend coverage."
+  }
+}

@@ -28,7 +28,20 @@ const HotGamePage = ({ game }) => {
         price: '0',
         priceCurrency: 'USD',
         availability: 'https://schema.org/InStock'
-      }
+      },
+      ...(game.faqs?.length ? {
+        subjectOf: {
+          '@type': 'FAQPage',
+          mainEntity: game.faqs.map((faq) => ({
+            '@type': 'Question',
+            name: faq.question,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: faq.answer
+            }
+          }))
+        }
+      } : {})
     });
     document.head.appendChild(script);
 
@@ -128,11 +141,16 @@ const HotGamePage = ({ game }) => {
           </div>
         ) : isExternalPlayOnly ? (
           <div className="external-play-panel">
-            <img
-              src={game.image}
-              alt={`${game.title} playable source`}
-              className="external-play-image"
-            />
+            <div className="external-play-media">
+              <img
+                src={game.image}
+                alt={`${game.title} playable source`}
+                className="external-play-image"
+              />
+              {game.imageCredit && (
+                <p className="external-play-credit">{game.imageCredit}</p>
+              )}
+            </div>
             <div className="external-play-content">
               <h2>{game.title} Playable Links</h2>
               <p>

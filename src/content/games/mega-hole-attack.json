@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "key": "megaHoleAttack",
+  "pageType": "hot-game",
+  "slug": "mega-hole-attack",
+  "title": "Mega Hole Attack",
+  "path": "/mega-hole-attack",
+  "pageTitle": "Mega Hole Attack - Play Online Black Hole Arcade Game",
+  "seoTitle": "Mega Hole Attack - Play Online Weapon Swallowing Game",
+  "seoDescription": "Play Mega Hole Attack online. Swallow weapons with a growing black hole, power up for dragon fights, and follow arcade upgrade tips.",
+  "keywords": "Mega Hole Attack, black hole game, weapon swallowing game, dragon boss game, arcade upgrade game, CrazyGames arcade",
+  "image": "/images/mega-hole-attack.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/mega-hole-attack",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "New CrazyGames listing added July 7, 2026",
+  "trendLabel": "Black-hole weapon arcade trend",
+  "playCta": "Play Mega Hole Attack",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Mega Hole Attack on CrazyGames",
+      "url": "https://www.crazygames.com/game/mega-hole-attack"
+    }
+  ],
+  "description": "Mega Hole Attack is a black-hole arcade game where you absorb weapons, grow stronger, and turn collected power into dragon boss damage.",
+  "intro": "The title is easy to package for search because the core hook is direct: swallow weapons, grow the hole, and attack a dragon.",
+  "guideTitle": "Mega Hole Attack Weapon Collection Guide",
+  "guideIntro": "Good runs depend on swallowing the highest-value weapon clusters before the attack phase begins.",
+  "steps": [
+    "Start with small weapon groups to grow the hole safely.",
+    "Move toward dense clusters once the hole size can absorb them quickly.",
+    "Avoid wasting time on isolated low-value items late in the run.",
+    "Use route planning so the final seconds collect the strongest weapons.",
+    "Convert the best collection run into dragon damage during the attack phase."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Weapon value routes, black-hole growth tips, dragon boss strategy, and arcade headlines."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The official page is a new release with a simple high-click gameplay hook."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like fast arcade growth, collection routes, and boss payoff moments."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Mega Hole Attack"
+    ],
+    [
+      "Genre",
+      "Black hole arcade, weapon collection, boss attack"
+    ],
+    [
+      "Official signal",
+      "CrazyGames listing added on July 7, 2026"
+    ],
+    [
+      "Trend hook",
+      "Black-hole swallowing gameplay plus dragon boss title hook"
+    ],
+    [
+      "Guide focus",
+      "Weapon routing, hole growth, boss damage, upgrade timing"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Mega Hole Attack online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Mega Hole Attack about?",
+      "answer": "Control a growing black hole, swallow weapons, then use collected power to attack a dragon boss."
+    },
+    {
+      "question": "What should I focus on first in Mega Hole Attack?",
+      "answer": "Grow with easy clusters first, then spend most of the run collecting dense high-value weapons."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 31,
+    "icon": "🕳️",
+    "tag": "New arcade",
+    "summary": "Black-hole arcade game where players swallow weapons, scale up, and attack dragons.",
+    "recommendation": "Recommended for black hole game titles, weapon-collect loops, dragon boss tips, and arcade hooks."
+  },
+  "indexing": {
+    "order": 45,
+    "lastmod": "2026-07-08",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 41,
+    "description": "Find the official playable black-hole arcade source with weapon route and dragon boss tips",
+    "fullSummary": "Mega Hole Attack is a black-hole arcade module with an official playable source link, weapon swallowing routes, hole growth tips, dragon boss strategy, and high-click arcade keyword coverage."
+  }
+}

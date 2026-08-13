@@ -10,6 +10,18 @@ On our website, you can experience the complete version of Crazy Cattle 3D direc
 ## Build A Ring Farm
 Build A Ring Farm is a browser farming incremental game page with an embedded playable web build, seed priority tips, current code status, crop upgrade strategy, and FAQ content for players searching for ring farm simulator guidance.
 
+## BuildNow GG
+BuildNow GG is an established third-person build-and-shoot module with official CrazyGames play access, construction and edit controls, weapon roles, aim training, Freebuild, V-Arena, BoxFight, Zone Wars, private parties, and July 2026 update coverage.
+
+## Racing Limits
+Racing Limits is a high-vote traffic racing module with official CrazyGames play access, city and highway overtaking, four modes, one-way and two-way roads, three times of day, camera selection, nitro, manual gears, car upgrades, and July 2026 update coverage.
+
+## HoodKill
+HoodKill is a Newgrounds puzzle-stealth-action module with official HTML5 play access, mask scouting, patrol reading, locked-room isolation, lantern setup, shotgun timing, noise response, reload recovery, and Global Game Jam 2026 context.
+
+## Scorching Light
+Scorching Light is a short Game Boy horror platformer module with official Newgrounds and Binjgb play access, deadly-light rules, environment blending, hidden-eye guidance, character-outline controls, retro platforming tips, and Summer Game Jam 2026 context.
+
 ## Sweetjong
 Sweetjong is a sweet mahjong match-three module with an official CrazyGames source link, limited tray strategy, layered tile guidance, frozen sweet rules, booster timing, and level-help keyword coverage.
 
@@ -117,6 +129,9 @@ Dino World is a new CrazyGames dinosaur squad module with an embedded playable b
 
 ## Captain Blast
 Captain Blast is a level-based puzzle adventure module with an embedded playable build, obstacle timing tips, stage strategy, and guide content for players searching after the June 30, 2026 update.
+
+## Hop Earth
+Hop Earth is a guide and official play gateway for Hop.Earth, the viral browser driving game that turns real road networks and elevation data into explorable 3D routes. It covers official access, account expectations, short-route setup, map-generation limits, custom races, speed comparison, browser performance, and common loading questions.
 
 ## Download Game
 If you want a smoother gaming experience, you can download the offline version of Crazy Cattle 3D from the itch.io platform. We provide multi-platform support to ensure you can enjoy the game on any device. After downloading, you'll get access to the complete game content and regular updates.

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "key": "needForSheepIdleClicker",
+  "pageType": "hot-game",
+  "slug": "need-for-sheep-idle-clicker",
+  "title": "Need for Sheep: Idle Clicker",
+  "path": "/need-for-sheep-idle-clicker",
+  "pageTitle": "Need for Sheep: Idle Clicker - Play Online",
+  "seoTitle": "Need for Sheep: Idle Clicker - Upgrades and Prestige",
+  "seoDescription": "Play Need for Sheep: Idle Clicker through the official source. Earn coins, unlock rare sheep, improve flips and fences, use boosts, collect offline income, and prestige.",
+  "keywords": "Need for Sheep Idle Clicker, Need for Sheep game, sheep clicker game, idle sheep farm, rare sheep unlocks, golden sheep, diamond sheep, offline income game, sheep prestige, idle clicker upgrades",
+  "image": "/images/need-for-sheep-idle-clicker.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/need-for-sheep-idle-clicker",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "Published on CrazyGames July 23, 2026",
+  "trendLabel": "New-and-hot sheep idle clicker trend",
+  "playCta": "Play Need for Sheep: Idle Clicker",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Need for Sheep: Idle Clicker on CrazyGames",
+      "url": "https://www.crazygames.com/game/need-for-sheep-idle-clicker"
+    }
+  ],
+  "description": "Need for Sheep: Idle Clicker is a casual farm incremental where taps, running sheep, fence jumps, and flips earn coins. Buy and upgrade rare sheep, improve click profit and flip chance, use lightning boosts, collect offline income, finish daily quests, and prestige into colorful new farms.",
+  "intro": "This guide separates early active clicking from later idle income so players can choose upgrades that keep working. It also covers rare sheep, boosts, offline earnings, and the point where prestige gives a better return than saving on the current farm.",
+  "guideTitle": "Need for Sheep Upgrade Order, Rare Sheep, and Prestige Guide",
+  "guideIntro": "Early coins come from active input, but long-term growth comes from the flock. Move from click value into sheep production, boosts, offline income, and prestige as each system becomes available.",
+  "steps": [
+    "Tap to build the first coin reserve, then buy sheep so income no longer depends only on clicking.",
+    "Upgrade the flock while balancing fence length, click profit, flip chance, and other farm bonuses.",
+    "Use lightning boosts when several sheep can benefit from the temporary speed increase.",
+    "Claim offline income and daily quest rewards before making the next expensive purchase.",
+    "Prestige into a new farm when its large bonus will rebuild current progress faster than another local upgrade."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Best upgrades, sheep unlock list, golden and diamond sheep, offline income, quest rewards, and prestige timing."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The title crossed new and hot discovery lists with an immediately understandable clicker and sheep collection theme."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like active tapping, idle returns, funny collection tiers, daily rewards, and repeated prestige growth."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Need for Sheep: Idle Clicker"
+    ],
+    [
+      "Genre",
+      "Idle clicker, sheep farm, incremental collection game"
+    ],
+    [
+      "Official signal",
+      "CrazyGames published the game July 23, 2026; it had an 8.2 rating from 142 votes during July 24 verification"
+    ],
+    [
+      "Trend hook",
+      "New-and-hot crossover plus sheep clicker, rare flock, offline income, lightning, upgrade, and prestige terms"
+    ],
+    [
+      "Guide focus",
+      "Coin income, sheep upgrades, rare sheep, fence and flip bonuses, lightning, offline income, prestige"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Need for Sheep: Idle Clicker online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Need for Sheep: Idle Clicker about?",
+      "answer": "Build a profitable flock, unlock rare sheep, improve farm systems, earn while offline, and prestige for larger permanent bonuses."
+    },
+    {
+      "question": "What should I focus on first in Need for Sheep: Idle Clicker?",
+      "answer": "Use clicks to start, shift spending into flock income, and prestige when the permanent multiplier shortens the next full progression cycle."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 11,
+    "tag": "Priority / Idle clicker",
+    "summary": "Sheep farm clicker with rare flocks, offline income, lightning boosts, and prestige bonuses.",
+    "recommendation": "Recommended for idle earnings, sheep unlocks, upgrade priorities, prestige timing, and farm keywords."
+  },
+  "indexing": {
+    "order": 25,
+    "lastmod": "2026-07-24",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 21,
+    "description": "Find the official sheep clicker source with flock upgrades, rare unlocks, offline income, boosts, and prestige timing",
+    "fullSummary": "Need for Sheep: Idle Clicker is a sheep farm incremental module with an official CrazyGames source link, active and idle income guidance, rare sheep unlocks, fence and flip upgrades, lightning boosts, offline rewards, quests, and prestige timing."
+  }
+}

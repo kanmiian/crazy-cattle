@@ -1,0 +1,25 @@
+name = "crazy-cattle-feishu-ingest"
+main = "src/index.mjs"
+compatibility_date = "2026-07-27"
+
+[vars]
+GITHUB_OWNER = "kanmiian"
+GITHUB_REPO = "crazy-cattle"
+GITHUB_EVENT_TYPE = "feishu_game_submission"
+REQUIRE_ENCRYPTION = "true"
+REPLAY_TTL_SECONDS = "86400"
+
+[[kv_namespaces]]
+binding = "FEISHU_EVENTS"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+[[queues.producers]]
+binding = "GAME_INGEST_QUEUE"
+queue = "crazy-cattle-game-ingest"
+
+[[queues.consumers]]
+queue = "crazy-cattle-game-ingest"
+max_batch_size = 10
+max_batch_timeout = 5
+max_retries = 5
+dead_letter_queue = "crazy-cattle-game-ingest-dlq"

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "key": "captainBlast",
+  "pageType": "hot-game",
+  "slug": "captain-blast",
+  "title": "Captain Blast",
+  "path": "/captain-blast",
+  "pageTitle": "Captain Blast - Play Online Level Puzzle Game",
+  "seoTitle": "Captain Blast - Play Online with Level Tips",
+  "seoDescription": "Play Captain Blast online. Explore a level-based puzzle adventure updated June 30, 2026, with tips for obstacles, timing, and stage progression.",
+  "keywords": "Captain Blast, Captain Blast levels, Captain Blast game, puzzle adventure game, CrazyGames updated puzzle",
+  "image": "/images/captain-blast.jpg",
+  "embedUrl": "https://games.crazygames.com/en_US/captain-blast/index.html",
+  "sourceUrl": "https://www.crazygames.com/game/captain-blast",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "CrazyGames page updated June 30, 2026",
+  "trendLabel": "Level guide trend after update",
+  "playCta": "Play Captain Blast",
+  "description": "Captain Blast is a puzzle adventure with thousands of compact levels, obstacle timing, and color-based challenge design. The June 30 update makes it a strong candidate for level guide pages and quick stage recommendations.",
+  "intro": "Because Captain Blast is level-driven, players usually search when a specific stage blocks progress. This page starts with a playable frame and gives evergreen tactics that apply across early and mid-game levels.",
+  "guideTitle": "Captain Blast Level Tips and Stage Strategy",
+  "guideIntro": "The safest route is to study the obstacle pattern first, make one clean move at a time, and avoid spending power or boosts before the level objective is clear.",
+  "steps": [
+    "Pause for a moment at the start of each level and identify the obstacle that can fail the run.",
+    "Clear blockers before chasing score or bonus pieces.",
+    "Use timing windows instead of rushing repeated taps.",
+    "If a level repeats the same pattern, memorize the first three moves and keep them consistent.",
+    "Save any limited helper for levels where the final obstacle is the only real bottleneck."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Level tips, obstacle explanations, and stage-by-stage search pages."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The official page was updated June 30, 2026 and describes 4,800 designed levels."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like short puzzle stages and steady challenge escalation."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Captain Blast"
+    ],
+    [
+      "Genre",
+      "Puzzle adventure, level game, timing challenge"
+    ],
+    [
+      "Official update signal",
+      "Updated on CrazyGames on June 30, 2026"
+    ],
+    [
+      "Guide focus",
+      "Level tips, blockers, obstacle timing, stage route"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Source",
+      "CrazyGames playable web build"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Captain Blast online here?",
+      "answer": "Yes. Click the play button to load the browser build. The direct CrazyGames source link is also included as a fallback."
+    },
+    {
+      "question": "How many levels does Captain Blast have?",
+      "answer": "The official CrazyGames description highlights 4,800 designed levels, which makes level guide content a natural fit."
+    },
+    {
+      "question": "What is the best Captain Blast strategy?",
+      "answer": "Read the obstacle pattern first, remove blockers, then use timing windows. Rushing usually wastes moves on later levels."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 40,
+    "icon": "💥",
+    "tag": "Updated Jun 30",
+    "summary": "A level-based puzzle adventure with 4,800 stages and strong guide potential.",
+    "recommendation": "Recommended for players who want short puzzle levels, obstacle timing, and level tips."
+  },
+  "indexing": {
+    "order": 53,
+    "lastmod": "2026-07-02",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 49,
+    "description": "Play a level-based puzzle adventure with obstacle timing and stage tips",
+    "fullSummary": "Captain Blast is a level-based puzzle adventure module with an embedded playable build, obstacle timing tips, stage strategy, and guide content for players searching after the June 30, 2026 update."
+  }
+}

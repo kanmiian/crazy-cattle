@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "key": "puttDay",
+  "pageType": "hot-game",
+  "slug": "putt-day",
+  "title": "putt.day",
+  "path": "/putt-day",
+  "pageTitle": "putt.day - Play Daily 3D Mini Golf Online",
+  "seoTitle": "putt.day - Play Daily Mini Golf and Endless Mode",
+  "seoDescription": "Play putt.day through the official source. Aim one putt at a time across 30 holes, master ramps and windmills, chase holes-in-one, and improve scores.",
+  "keywords": "putt.day, putt day game, daily mini golf, online mini golf, 3D putting game, hole in one game, mini golf daily challenge, endless mini golf, putt day tips",
+  "image": "/images/putt-day.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/putt-day",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "Published on CrazyGames July 22, 2026",
+  "trendLabel": "Daily mini golf and one-putt challenge trend",
+  "playCta": "Play putt.day",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play putt.day on CrazyGames",
+      "url": "https://www.crazygames.com/game/putt-day"
+    }
+  ],
+  "description": "putt.day is a relaxing 3D mini-golf game with 30 handcrafted holes and an Endless mode. Drag back from the ball, judge direction and power, navigate ramps, windmills, water, loops, and bumpers, then chase a better score or a hole-in-one.",
+  "intro": "The daily-friendly format is ideal for repeat score challenges. This page covers aim, power control, camera use, hazard planning, and when restarting a hole is the fastest way to improve.",
+  "guideTitle": "putt.day Hole-in-One, Aim, and Power Guide",
+  "guideIntro": "A clean putt begins with a complete read of the hole. Use the overview camera to find the safest line, then set only enough power to reach the intended landing zone.",
+  "steps": [
+    "Switch to Overview to inspect ramps, water, moving windmills, loops, and bumper angles.",
+    "Drag back from the ball to set both direction and power, then release to take the shot.",
+    "Aim for a safe landing area when a direct line to the cup crosses a major hazard.",
+    "Use Follow view to judge the result and remember how the same power behaves on that surface.",
+    "Restart quickly when testing a hole-in-one line, then use Endless mode to extend a strong run."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Daily score posts, hole-in-one routes, individual hole guides, hazard clips, and endless-run challenges."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The daily challenge concept supports repeat visits while handcrafted holes create durable guide and score content."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like calm precision games, score optimization, repeat attempts, and compact daily challenges."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "putt.day"
+    ],
+    [
+      "Genre",
+      "3D mini golf, daily challenge, sports game"
+    ],
+    [
+      "Official signal",
+      "CrazyGames published the game July 22, 2026; it had an 8.1 rating from 223 votes during July 24 verification"
+    ],
+    [
+      "Trend hook",
+      "Brandable putt.day domain-style title plus daily golf, one-putt, hole-in-one, and course searches"
+    ],
+    [
+      "Guide focus",
+      "Aim, shot power, camera views, hazard routes, 30 holes, Endless mode, best scores"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play putt.day online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is putt.day about?",
+      "answer": "Complete 30 mini-golf holes or continue in Endless mode while reducing strokes and chasing a hole-in-one on each layout."
+    },
+    {
+      "question": "What should I focus on first in putt.day?",
+      "answer": "Read the whole hole with Overview, choose a safe line, and make small power adjustments between retries instead of changing aim and strength at once."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 6,
+    "tag": "Daily mini golf",
+    "summary": "Relaxing 3D mini golf with 30 handcrafted holes, endless play, and one-putt score chasing.",
+    "recommendation": "Recommended for daily golf challenges, hole-in-one tips, course guides, and score-sharing content."
+  },
+  "indexing": {
+    "order": 20,
+    "lastmod": "2026-07-24",
+    "changefreq": "daily",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 16,
+    "description": "Find the official daily mini-golf source with aim, power, hazard, hole-in-one, and Endless mode guidance",
+    "fullSummary": "putt.day is a daily-friendly 3D mini-golf module with an official CrazyGames source link, 30-hole coverage, aim and power guidance, hazard planning, hole-in-one routes, score challenges, and Endless mode tips."
+  }
+}

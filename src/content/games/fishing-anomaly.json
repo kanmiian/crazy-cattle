@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "key": "fishingAnomaly",
+  "pageType": "hot-game",
+  "slug": "fishing-anomaly",
+  "title": "Fishing Anomaly",
+  "path": "/fishing-anomaly",
+  "pageTitle": "Fishing Anomaly - Play Online Post-Apocalyptic Fishing",
+  "seoTitle": "Fishing Anomaly - Play Online Anomaly Fishing Game",
+  "seoDescription": "Play Fishing Anomaly through the official CrazyGames source. Catch mutant fish, explore anomalies, collect artifacts, and follow post-apocalyptic fishing tips.",
+  "keywords": "Fishing Anomaly, Fishing Anomaly game, anomaly fishing game, mutant fish game, post-apocalyptic fishing, CrazyGames fishing",
+  "image": "/images/fishing-anomaly.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/fishing-anomaly",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "CrazyGames new listing added July 14, 2026",
+  "trendLabel": "Anomaly fishing adventure trend",
+  "playCta": "Play Fishing Anomaly",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Fishing Anomaly on CrazyGames",
+      "url": "https://www.crazygames.com/game/fishing-anomaly"
+    }
+  ],
+  "description": "Fishing Anomaly is a post-apocalyptic fishing simulator with radiation, mutants, strange anomalies, mysterious artifacts, and monstrous fish reshaping the fishing loop.",
+  "intro": "This page focuses on the lightweight guide space around Fishing Anomaly: safe early catches, artifact discovery, mutant fish value, and anomaly risk management.",
+  "guideTitle": "Fishing Anomaly Mutant Fish and Artifact Guide",
+  "guideIntro": "Treat each fishing spot as a risk tier. Safe catches build resources, while anomaly zones may reward artifacts or rare fish but can punish careless timing.",
+  "steps": [
+    "Start in safer water to learn bite timing and basic catch value.",
+    "Upgrade or prepare before chasing mutant fish in unstable zones.",
+    "Track which anomaly areas produce artifacts instead of moving randomly.",
+    "Keep enough resources to recover from failed rare catches.",
+    "Return to known spots when you need steady progress before a risky expedition."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Rare fish notes, artifact list, safe fishing routes, and anomaly-zone tips."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The unusual fishing-anomaly theme gives it more searchable angles than a standard fishing game."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like fishing loops, exploration, collectibles, and odd post-apocalyptic settings."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Fishing Anomaly"
+    ],
+    [
+      "Genre",
+      "Fishing simulator, adventure, anomaly exploration, collection"
+    ],
+    [
+      "Official signal",
+      "CrazyGames page shows a July 14, 2026 new label, GamePush, HTML5, 8.8 rating, and 98 votes during verification"
+    ],
+    [
+      "Trend hook",
+      "New fishing title with anomaly, mutant, artifact, and post-apocalyptic keyword hooks"
+    ],
+    [
+      "Guide focus",
+      "Fishing spots, mutant catches, anomaly risk, artifacts, early progression"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Fishing Anomaly online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Fishing Anomaly about?",
+      "answer": "Catch fish in a transformed world, discover mutant species, collect artifacts, and explore anomaly zones."
+    },
+    {
+      "question": "What should I focus on first in Fishing Anomaly?",
+      "answer": "Use safe catches to build resources first, then enter anomaly zones only when the potential reward justifies the risk."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 17,
+    "icon": "🎣",
+    "tag": "New fishing",
+    "summary": "Post-apocalyptic fishing simulator with mutants, anomalies, artifacts, and rare fish hooks.",
+    "recommendation": "Recommended for anomaly fishing traffic, artifact lists, mutant fish tips, and light walkthroughs."
+  },
+  "indexing": {
+    "order": 31,
+    "lastmod": "2026-07-14",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 27,
+    "description": "Find the official playable anomaly fishing source with mutant fish, artifact, and safe route guidance",
+    "fullSummary": "Fishing Anomaly is a post-apocalyptic fishing module with an official CrazyGames playable source link, mutant fish guidance, anomaly-zone risk notes, artifact discovery framing, and light walkthrough content."
+  }
+}

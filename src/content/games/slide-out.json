@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "key": "slideOut",
+  "pageType": "hot-game",
+  "slug": "slide-out",
+  "title": "Slide Out",
+  "path": "/slide-out",
+  "pageTitle": "Slide Out - Play Online Penguin Physics Battle",
+  "seoTitle": "Slide Out - Play Online Penguin Iceberg Arena Game",
+  "seoDescription": "Play Slide Out online. Bump penguins off a slippery iceberg, control launch power, and follow quick physics arena tips for this CrazyGames title.",
+  "keywords": "Slide Out game, Slide Out CrazyGames, penguin physics game, iceberg arena game, penguin battle game",
+  "image": "/images/slide-out.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/slide-out",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "CrazyGames listing added July 2, 2026 and updated July 6, 2026",
+  "trendLabel": "Penguin physics arena trend",
+  "playCta": "Play Slide Out",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Slide Out on CrazyGames",
+      "url": "https://www.crazygames.com/game/slide-out"
+    }
+  ],
+  "description": "Slide Out is a chaotic penguin arena game where timing, launch power, and slippery physics decide who stays on the iceberg and who gets bumped into the water.",
+  "intro": "This page is built for players searching for Slide Out play links, penguin physics tips, and fast arena strategy.",
+  "guideTitle": "Slide Out Penguin Physics Tips",
+  "guideIntro": "Winning is less about brute force and more about angle control. Small bumps can be stronger than reckless launches when the iceberg gets crowded.",
+  "steps": [
+    "Read the iceberg shape before choosing your launch angle.",
+    "Use medium power when rivals are close to the edge.",
+    "Avoid over-sliding through the center because recovery is harder on ice.",
+    "Bump from the side instead of directly chasing a stronger penguin.",
+    "Save full-power launches for clear edge shots."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Penguin physics tips, power guide, launch angles, and arena survival posts."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The official page is a new CrazyGames Originals-style arcade listing with strong early voting."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for quick-session players who like funny physics, knockback battles, and simple controls."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Slide Out"
+    ],
+    [
+      "Genre",
+      "Penguin physics, arcade arena, last-player-standing"
+    ],
+    [
+      "Official signal",
+      "CrazyGames listing added on July 2, 2026 with 9.3 rating and 500+ votes during verification"
+    ],
+    [
+      "Trend hook",
+      "Light physics battle gameplay with easy short-post appeal"
+    ],
+    [
+      "Guide focus",
+      "Launch power, bump angles, iceberg positioning, last-bird-standing tactics"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Slide Out online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Slide Out about?",
+      "answer": "Launch your penguin, bump rivals off the iceberg, and stay on the slippery platform until the end."
+    },
+    {
+      "question": "What should I focus on first in Slide Out?",
+      "answer": "Control angle before power. A clean side bump near the edge is usually better than a full-force center launch."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 26,
+    "icon": "🐧",
+    "tag": "Penguin physics",
+    "summary": "Chaotic penguin bumping arena where players slide rivals off a slippery iceberg.",
+    "recommendation": "Recommended for short physics battle posts, last-bird-standing tips, and arcade arena traffic."
+  },
+  "indexing": {
+    "order": 40,
+    "lastmod": "2026-07-08",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 36,
+    "description": "Find the official playable penguin physics arena source with bumping and iceberg survival tips",
+    "fullSummary": "Slide Out is a penguin physics arena module with an official playable source link, iceberg bumping tips, power and angle strategy, last-bird-standing advice, and short arcade search coverage."
+  }
+}

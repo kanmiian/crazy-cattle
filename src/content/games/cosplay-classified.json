@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "key": "cosplayClassified",
+  "pageType": "hot-game",
+  "slug": "cosplay-classified",
+  "title": "Cosplay Classified",
+  "path": "/cosplay-classified",
+  "pageTitle": "Cosplay Classified - Play Newgrounds Fixed Shooter",
+  "seoTitle": "Cosplay Classified - Play the Newgrounds Shooter",
+  "seoDescription": "Play Cosplay Classified on Newgrounds. Learn the left-click and Space controls, follow rapid-fire aiming tips, and discover the Summer Game Jam 2026 shooter.",
+  "keywords": "Cosplay Classified, Cosplay Classified game, Newgrounds Cosplay Classified, fixed shooter game, fixed view shooter, Flash shooter, lightgun game, left click shooter, Summer Game Jam 2026, Nabella game",
+  "image": "/images/cosplay-classified.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.newgrounds.com/portal/view/1042852",
+  "sourceName": "Newgrounds",
+  "sourceStatus": "Uploaded to Newgrounds July 19, 2026 by Nabella and collaborators",
+  "trendLabel": "Newgrounds featured fixed-shooter discovery trend",
+  "playCta": "Play Cosplay Classified",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "Cosplay Classified runs through Newgrounds' official Ruffle player. Open the verified source so the Flash build, creator credits, scores, and reviews load in their intended environment.",
+  "playableLinks": [
+    {
+      "label": "Play Cosplay Classified on Newgrounds",
+      "url": "https://www.newgrounds.com/portal/view/1042852"
+    }
+  ],
+  "description": "Cosplay Classified is a compact fixed-view Flash shooter created for Summer Game Jam 2026. It uses rapid left-click gunplay and a Space action, with distinctive character art, original sound work, and a deliberately arcade-like score-chasing format.",
+  "intro": "This page gives the project a focused discovery entry outside Newgrounds: official play access, controls, quick aiming advice, credits context, and keywords around fixed shooters, Flash games, game jams, and rapid-click arcade play.",
+  "guideTitle": "Cosplay Classified Controls and Fixed-Shooter Tips",
+  "guideIntro": "The author notes recommend fast left clicking. Keep the cursor near the active target area, fire in controlled bursts when accuracy matters, and use the Space action as the scene requests.",
+  "steps": [
+    "Allow the official Newgrounds Ruffle player a few moments to load and reload the source page if it stalls.",
+    "Use the left mouse button to shoot targets in the fixed-view scene.",
+    "Keep the pointer close to likely target entrances so large cursor movements do not waste reaction time.",
+    "Use Space for the secondary action identified by the game, and watch the scene for its timing cue.",
+    "Replay short sections to improve target recognition, click rhythm, accuracy, and score."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Control guide, short score runs, target timing, creator credits, game-jam context, and Newgrounds discovery."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "Newgrounds surfaced the game prominently and the compact comment activity gives the exact title an early discovery signal."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who enjoy short Flash arcade projects, rapid-click shooters, unusual art, original sound, and game-jam releases."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Cosplay Classified"
+    ],
+    [
+      "Genre",
+      "Action shooter, fixed shooter, Flash arcade game"
+    ],
+    [
+      "Official signal",
+      "Newgrounds shows an upload date of July 19, 2026, a 3.77/5 score from 99 votes, and Summer Game Jam 2026 tags during July 24 verification"
+    ],
+    [
+      "Trend hook",
+      "Front-page recommendation and concentrated comments plus exact-title, Newgrounds, Flash, fixed shooter, lightgun, and jam searches"
+    ],
+    [
+      "Guide focus",
+      "Left-click shooting, Space action, aiming, click rhythm, score attempts, loading through Ruffle"
+    ],
+    [
+      "Platform",
+      "Web browser on desktop via Ruffle"
+    ],
+    [
+      "Embed status",
+      "Official Newgrounds player recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Cosplay Classified online here?",
+      "answer": "This page opens the official Newgrounds release, where the Flash build runs through the site's Ruffle player together with its credits, scores, and reviews."
+    },
+    {
+      "question": "What is Cosplay Classified about?",
+      "answer": "React to targets in a fixed shooter, fire with the left mouse button, use the Space action, and improve performance across repeat runs."
+    },
+    {
+      "question": "What should I focus on first in Cosplay Classified?",
+      "answer": "Keep the cursor near the next target zone, use a consistent click rhythm, and replay enough to learn when targets enter the scene."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 14,
+    "tag": "Newgrounds featured",
+    "summary": "Fixed-view Flash shooter with fast left-click gunplay, distinctive art, and concentrated reviews.",
+    "recommendation": "Recommended for Newgrounds discovery, fixed shooter tips, score chasing, and game-jam traffic."
+  },
+  "indexing": {
+    "order": 28,
+    "lastmod": "2026-07-24",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 24,
+    "description": "Find the official Newgrounds Flash shooter with controls, fixed-view aiming tips, game-jam context, and creator credits",
+    "fullSummary": "Cosplay Classified is a Newgrounds fixed-shooter module with an official Ruffle play link, left-click and Space controls, rapid-fire aiming guidance, score-run framing, creator context, and Summer Game Jam 2026 discovery terms."
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "key": "escapeFromVloggerRunaway",
+  "pageType": "hot-game",
+  "slug": "escape-from-vlogger-runaway",
+  "title": "Escape from Vlogger: Runaway",
+  "path": "/escape-from-vlogger-runaway",
+  "pageTitle": "Escape from Vlogger: Runaway - Horror Escape Guide",
+  "seoTitle": "Escape from Vlogger: Runaway - Play and Walkthrough",
+  "seoDescription": "Play Escape from Vlogger: Runaway through the official source. Find items, solve room puzzles, hide from the vlogger, and follow stealth escape tips.",
+  "keywords": "Escape from Vlogger Runaway, Escape from the Vlogger, Escape from Vlogger game, Escape from Vlogger walkthrough, horror escape game, vlogger house puzzle, stealth survival game, item locations, escape puzzle solutions",
+  "image": "/images/escape-from-vlogger-runaway.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/escape-from-vlogger-runaway",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "Published on CrazyGames July 22, 2026 by App1",
+  "trendLabel": "High-interest stealth horror escape trend",
+  "playCta": "Play Escape from Vlogger: Runaway",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Escape from Vlogger: Runaway on CrazyGames",
+      "url": "https://www.crazygames.com/game/escape-from-vlogger-runaway"
+    }
+  ],
+  "description": "Escape from Vlogger: Runaway is an atmospheric survival horror adventure where an intruder becomes trapped in a popular vlogger's house. Explore dark rooms, find items, break locks, solve quest puzzles, use hiding places, and avoid a patrolling enemy who reacts to sound.",
+  "intro": "This guide is organized around the searches the game naturally creates: room solutions, item locations, lock puzzles, safe hiding spots, chase recovery, and the fastest route through a session that does not save after exit.",
+  "guideTitle": "Escape from Vlogger: Runaway Walkthrough and Stealth Tips",
+  "guideIntro": "Progress depends on information more than speed. Search each room methodically, remember hiding places, and observe the vlogger's patrol before making a noisy move.",
+  "steps": [
+    "Search the current room for interactable items, locks, passages, and places where you can hide.",
+    "Crouch and move quietly when the vlogger is close because sound can reveal your position.",
+    "Watch the patrol route before crossing an exposed hallway or interacting with a loud object.",
+    "Solve each room as a separate quest puzzle and keep track of where collected items can be used.",
+    "Use the hint option when truly stuck, and plan enough time to finish because progress is not saved after exiting."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Room-by-room walkthroughs, item use, puzzle answers, chase clips, endings, and no-save session planning."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The title reached high vote volume quickly and combines horror discovery with specific puzzle questions that players search for."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like tense exploration, environmental puzzles, stealth routes, chase sequences, and dark humor."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Escape from Vlogger: Runaway"
+    ],
+    [
+      "Genre",
+      "Survival horror, stealth escape, quest puzzle adventure"
+    ],
+    [
+      "Official signal",
+      "CrazyGames published the game July 22, 2026; it held a 9.0 rating from 1,213 votes during July 24 verification"
+    ],
+    [
+      "Trend hook",
+      "Strong early vote volume plus walkthrough, room puzzle, item, hiding spot, chase, and ending searches"
+    ],
+    [
+      "Guide focus",
+      "Walkthrough routes, item locations, lock puzzles, stealth, patrols, hiding places, controls"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Escape from Vlogger: Runaway online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Escape from Vlogger: Runaway about?",
+      "answer": "Uncover the vlogger's secrets, solve the house's quest puzzles, avoid capture, and find a route out alive."
+    },
+    {
+      "question": "What should I focus on first in Escape from Vlogger: Runaway?",
+      "answer": "Move quietly, learn patrol routes, and fully search one room at a time so each item and hiding place has a clear purpose."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 7,
+    "tag": "Priority / Horror escape",
+    "summary": "Popular stealth horror escape with quest puzzles, locked rooms, hiding places, and chase sequences.",
+    "recommendation": "Recommended for walkthroughs, puzzle solutions, escape routes, item locations, and horror search traffic."
+  },
+  "indexing": {
+    "order": 21,
+    "lastmod": "2026-07-24",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 17,
+    "description": "Find the official stealth horror source with item, room puzzle, hiding place, patrol, and escape guidance",
+    "fullSummary": "Escape from Vlogger: Runaway is a stealth horror module with an official CrazyGames source link, room and lock puzzle guidance, item-location framing, patrol and hiding tips, chase recovery, and no-save session planning."
+  }
+}

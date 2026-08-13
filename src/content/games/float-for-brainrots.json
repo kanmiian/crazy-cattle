@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "key": "floatForBrainrots",
+  "pageType": "hot-game",
+  "slug": "float-for-brainrots",
+  "title": "Float for Brainrots",
+  "path": "/float-for-brainrots",
+  "pageTitle": "Float for Brainrots - Play Online Sea Collection Game",
+  "seoTitle": "Float for Brainrots - Play Online Brainrot Boat Game",
+  "seoDescription": "Play Float for Brainrots online. Collect rare Brainrots at sea, unlock boats, survive shark attacks, and follow upgrade tips for the July CrazyGames release.",
+  "keywords": "Float for Brainrots, Float for Brainrots game, Brainrot boat game, sea collection game, shark survival game, CrazyGames Brainrot",
+  "image": "/images/float-for-brainrots.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/float-for-brainrots",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "New CrazyGames listing added July 6, 2026",
+  "trendLabel": "Sea Brainrot collection trend",
+  "playCta": "Play Float for Brainrots",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Float for Brainrots on CrazyGames",
+      "url": "https://www.crazygames.com/game/float-for-brainrots"
+    }
+  ],
+  "description": "Float for Brainrots is a July CrazyGames Brainrot adventure about sailing dangerous seas, collecting rare Brainrots, unlocking stronger boats, and surviving shark pressure while building a valuable collection.",
+  "intro": "This module targets players searching for Float for Brainrots play links, rare Brainrot routes, boat upgrades, and early sea-survival tips.",
+  "guideTitle": "Float for Brainrots Boat Upgrade and Collection Guide",
+  "guideIntro": "Treat your boat as the safety layer and your Brainrot collection as the scoring layer. Build enough movement and durability before chasing distant rare finds.",
+  "steps": [
+    "Start with safe nearby Brainrots so you understand collection timing.",
+    "Upgrade the boat before sailing into shark-heavy water.",
+    "Watch the sea path and avoid turning into dead zones when danger closes in.",
+    "Prioritize rare Brainrots only after your basic income loop is stable.",
+    "Return to safer water when the next upgrade cost is nearly covered."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Rare Brainrot list, boat upgrade order, shark survival route, and sea collection tips."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The official page is a July 2026 new release with fast early vote growth around the Brainrot keyword."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like collection loops, upgrade pressure, and light survival hazards."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Float for Brainrots"
+    ],
+    [
+      "Genre",
+      "Brainrot collection, boat adventure, ocean survival"
+    ],
+    [
+      "Official signal",
+      "CrazyGames listing added on July 6, 2026 with 9.2 rating and 600+ votes during verification"
+    ],
+    [
+      "Trend hook",
+      "July Brainrot collection searches plus sea survival mechanics"
+    ],
+    [
+      "Guide focus",
+      "Boat upgrades, rare Brainrot collection, shark avoidance, safe route planning"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Float for Brainrots online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Float for Brainrots about?",
+      "answer": "Sail across the ocean, collect valuable Brainrots, improve your boat, and avoid threats long enough to expand the collection."
+    },
+    {
+      "question": "What should I focus on first in Float for Brainrots?",
+      "answer": "Upgrade boat control and safety first, then push outward for rarer Brainrots once you can recover from risky trips."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 23,
+    "icon": "🌊",
+    "tag": "New Jul 6",
+    "summary": "Sea-based Brainrot collection adventure with boat unlocks, shark risk, and rare finds.",
+    "recommendation": "Recommended for Brainrot collection traffic, ocean survival searches, and boat upgrade guide content."
+  },
+  "indexing": {
+    "order": 37,
+    "lastmod": "2026-07-08",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 33,
+    "description": "Find the official playable sea Brainrot collection source with boat upgrade and shark survival tips",
+    "fullSummary": "Float for Brainrots is a sea Brainrot collection module with an official playable source link, boat upgrade guidance, shark survival notes, rare Brainrot routing, and July 2026 CrazyGames trend coverage."
+  }
+}

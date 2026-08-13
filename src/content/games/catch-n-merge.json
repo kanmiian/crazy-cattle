@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "key": "catchNMerge",
+  "pageType": "hot-game",
+  "slug": "catch-n-merge",
+  "title": "Catch'N'Merge",
+  "path": "/catch-n-merge",
+  "pageTitle": "Catch'N'Merge - Play Online Merge Collection Game",
+  "seoTitle": "Catch'N'Merge - Play Online Creature Merge Game",
+  "seoDescription": "Play Catch'N'Merge through the official CrazyGames source. Catch falling creatures, avoid flask overflow, merge collections, and follow quick arcade tips.",
+  "keywords": "Catch'N'Merge, Catch N Merge, catch-n-merge game, merge collection game, creature catching game, CrazyGames merge collect",
+  "image": "/images/catch-n-merge.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/catch-n-merge",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "CrazyGames new listing added July 14, 2026",
+  "trendLabel": "Catch and merge collection trend",
+  "playCta": "Play Catch'N'Merge",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Catch'N'Merge on CrazyGames",
+      "url": "https://www.crazygames.com/game/catch-n-merge"
+    }
+  ],
+  "description": "Catch'N'Merge is a fast arcade collection game where players survive falling boulders, capture creatures, and manage a flask before it overflows.",
+  "intro": "This module is built for short merge-collection content: what to catch first, how to avoid overflow, and how to keep the run alive when hazards speed up.",
+  "guideTitle": "Catch'N'Merge Flask and Creature Guide",
+  "guideIntro": "The best early strategy is selective catching. A full flask is dangerous, so choose valuable creatures and avoid panic movement under falling boulders.",
+  "steps": [
+    "Watch the falling pattern before committing to a side of the screen.",
+    "Catch easy creatures first so the flask fills at a controlled pace.",
+    "Avoid boulders even when a creature is nearby because one bad hit can break the route.",
+    "Leave space in the flask before the screen becomes crowded.",
+    "Merge or clear collection pressure whenever overflow becomes the biggest risk."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Short survival tips, collection priority, flask overflow guide, and catch route notes."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The title is a fresh CrazyGames new-list entry with an easy-to-explain merge collection loop."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who want quick arcade runs, simple controls, and collection pressure."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Catch'N'Merge"
+    ],
+    [
+      "Genre",
+      "Arcade, collect, merge collection, survival timing"
+    ],
+    [
+      "Official signal",
+      "CrazyGames page shows a July 14, 2026 new label, Pro Mobile, HTML5, 8.9 rating, and 27 votes during verification"
+    ],
+    [
+      "Trend hook",
+      "新榜前列 with simple catch, merge, collect, and flask keywords for short content"
+    ],
+    [
+      "Guide focus",
+      "Creature catching, flask capacity, boulder avoidance, merge timing, run survival"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Catch'N'Merge online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Catch'N'Merge about?",
+      "answer": "Catch creatures, survive falling hazards, manage flask space, and keep merging without overflowing."
+    },
+    {
+      "question": "What should I focus on first in Catch'N'Merge?",
+      "answer": "Stay selective. Avoid hazards first, catch safe creatures second, and manage flask space before chasing risky targets."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 16,
+    "icon": "🧪",
+    "tag": "New collect",
+    "summary": "Fast catch-and-merge arcade game with creature collection and flask overflow pressure.",
+    "recommendation": "Recommended for merge collection keywords, short-form tips, and quick arcade search intent."
+  },
+  "indexing": {
+    "order": 30,
+    "lastmod": "2026-07-14",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 26,
+    "description": "Find the official playable catch-and-merge source with creature collection, flask overflow, and boulder avoidance tips",
+    "fullSummary": "Catch'N'Merge is a catch-and-merge collection module with an official CrazyGames playable source link, creature catching strategy, flask overflow management, boulder avoidance tips, and short arcade content framing."
+  }
+}

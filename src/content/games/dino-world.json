@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "key": "dinoWorld",
+  "pageType": "hot-game",
+  "slug": "dino-world",
+  "title": "Dino World",
+  "path": "/dino-world",
+  "pageTitle": "Dino World - Play the New Dinosaur Squad Game",
+  "seoTitle": "Dino World - Play Online Dinosaur Squad Game",
+  "seoDescription": "Play Dino World online. Build a dinosaur squad, upgrade ancient creatures, and follow beginner tips for the new CrazyGames dinosaur game.",
+  "keywords": "Dino World, Dino World game, dinosaur game, dinosaur squad game, CrazyGames new dinosaur game",
+  "image": "/images/dino-world.jpg",
+  "embedUrl": "https://games.crazygames.com/en_US/dino-world-hso/index.html?v=2.4",
+  "sourceUrl": "https://www.crazygames.com/game/dino-world-hso",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "New CrazyGames listing added June 30, 2026",
+  "trendLabel": "New dinosaur game with early vote growth",
+  "playCta": "Play Dino World",
+  "description": "Dino World sends players back to a dinosaur era where squad building, upgrades, and PvE battles drive the loop. The game is useful for a new module page because dinosaur keywords are broad, the title is fresh, and early votes are already moving.",
+  "intro": "The key to Dino World is building a balanced roster instead of only upgrading one dinosaur. Play a few battles, watch which unit survives longest, then spend upgrades where the squad is weakest.",
+  "guideTitle": "Dino World Beginner Upgrade Guide",
+  "guideIntro": "Treat each battle as a test of your lineup. Frontline dinosaurs should survive long enough for damage units to work, while upgrades should remove the biggest failure point first.",
+  "steps": [
+    "Start by unlocking a small squad before over-investing in a single dinosaur.",
+    "Upgrade health on frontline dinosaurs if battles end before your damage units can attack.",
+    "Upgrade damage when fights time out or enemies survive with low health.",
+    "Replay early battles to understand which enemies punish weak positioning.",
+    "Spend new rewards immediately on core stats before chasing optional collection goals."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Beginner squad guide, dinosaur upgrade order, and PvE battle strategy."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The game is a new CrazyGames dinosaur listing, which gives it fresh discovery demand."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who want dinosaurs, collection growth, and short automatic battles."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Dino World"
+    ],
+    [
+      "Genre",
+      "Dinosaur squad, upgrade battle, PvE"
+    ],
+    [
+      "Official launch signal",
+      "CrazyGames listing added on June 30, 2026"
+    ],
+    [
+      "Guide focus",
+      "Squad order, upgrades, dinosaur roles, early progression"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Source",
+      "CrazyGames playable web build"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Is Dino World playable in the browser?",
+      "answer": "Yes. The page uses the browser runtime URL and includes a direct CrazyGames source link if the frame is blocked by a browser setting."
+    },
+    {
+      "question": "What should I upgrade first in Dino World?",
+      "answer": "Upgrade the stat that fixes your current loss. If dinosaurs die early, add durability. If enemies survive too long, add damage."
+    },
+    {
+      "question": "Why add Dino World now?",
+      "answer": "It is a new dinosaur mini-game with early vote activity, which makes it useful for fresh search and recommendation traffic."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 39,
+    "icon": "🦖",
+    "tag": "New dinosaur game",
+    "summary": "A new dinosaur squad game with early vote growth and simple upgrade strategy hooks.",
+    "recommendation": "Recommended for players who like dinosaurs, squad building, and light PvE battles."
+  },
+  "indexing": {
+    "order": 52,
+    "lastmod": "2026-07-02",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 48,
+    "description": "Play a new dinosaur squad game with upgrade and beginner strategy tips",
+    "fullSummary": "Dino World is a new CrazyGames dinosaur squad module with an embedded playable build, beginner upgrade route, squad-building recommendations, and fresh dinosaur game keyword coverage."
+  }
+}

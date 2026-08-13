@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { hotGamePages } from '../data/hotGames';
+import { findHotGameByPath } from '../data/gameRegistry';
 
 const SEO = ({ title, description, keywords }) => {
   const location = useLocation();
@@ -8,12 +8,13 @@ const SEO = ({ title, description, keywords }) => {
 
   // 根据路径返回对应的 SEO 配置
   const getSEOConfig = () => {
-    const hotGameConfig = Object.values(hotGamePages).find((game) => game.path === location.pathname);
+    const hotGameConfig = findHotGameByPath(location.pathname);
     if (hotGameConfig) {
       return {
         title: hotGameConfig.seoTitle,
         description: hotGameConfig.seoDescription,
         keywords: hotGameConfig.keywords,
+        image: hotGameConfig.image,
         canonical: `${baseUrl}${hotGameConfig.path}`
       };
     }
@@ -185,14 +186,14 @@ const SEO = ({ title, description, keywords }) => {
     updatePropertyMetaTag('og:url', seoConfig.canonical);
     updatePropertyMetaTag('og:title', seoConfig.title);
     updatePropertyMetaTag('og:description', seoConfig.description);
-    updatePropertyMetaTag('og:image', `${baseUrl}/images/crazycattle-preview.webp`);
+    updatePropertyMetaTag('og:image', seoConfig.image?.startsWith('http') ? seoConfig.image : `${baseUrl}${seoConfig.image || '/images/crazycattle-preview.webp'}`);
 
     // 更新 Twitter 标签
     updatePropertyMetaTag('twitter:card', 'summary_large_image');
     updatePropertyMetaTag('twitter:url', seoConfig.canonical);
     updatePropertyMetaTag('twitter:title', seoConfig.title);
     updatePropertyMetaTag('twitter:description', seoConfig.description);
-    updatePropertyMetaTag('twitter:image', `${baseUrl}/images/crazycattle-preview.webp`);
+    updatePropertyMetaTag('twitter:image', seoConfig.image?.startsWith('http') ? seoConfig.image : `${baseUrl}${seoConfig.image || '/images/crazycattle-preview.webp'}`);
   }, [location]);
 
   return null;

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "key": "hoodKill",
+  "pageType": "hot-game",
+  "slug": "hoodkill",
+  "title": "HoodKill",
+  "path": "/hoodkill",
+  "pageTitle": "HoodKill - Play Puzzle Stealth Shotgun Game",
+  "seoTitle": "HoodKill - Play the Puzzle Stealth Shooter Online",
+  "seoDescription": "Play HoodKill on Newgrounds. Scout cultist patrols behind a mask, lock doors, place lantern traps, plan isolated attacks, and manage a slow shotgun reload.",
+  "keywords": "HoodKill, Hood Kill game, HoodKill walkthrough, HoodKill controls, puzzle stealth game, stealth shooter, top down shotgun game, mask disguise game, cultist game, lantern traps, lock doors game, Global Game Jam 2026",
+  "image": "/images/hoodkill.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.newgrounds.com/portal/view/1042582",
+  "sourceName": "Newgrounds",
+  "sourceStatus": "Uploaded to Newgrounds July 18, 2026 for Global Game Jam 2026",
+  "trendLabel": "Newgrounds featured puzzle-stealth shooter trend",
+  "playCta": "Play HoodKill",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "HoodKill is hosted as an HTML5 game on Newgrounds. Open the official release so the intended game build, controls, creator credits, score, and current reviews stay together.",
+  "playableLinks": [
+    {
+      "label": "Play HoodKill on Newgrounds",
+      "url": "https://www.newgrounds.com/portal/view/1042582"
+    }
+  ],
+  "description": "HoodKill is a top-down puzzle-stealth-action game about taking revenge on hooded cultists with a shotgun and careful planning. Hide behind a mask, observe patrols, lock doors to isolate targets, move lanterns into useful positions, then reveal yourself and survive the noisy attack phase.",
+  "intro": "This guide focuses on the decisions behind a clean HoodKill route: reading patrols while disguised, controlling connected rooms, preparing traps, choosing the first target, and leaving enough time and distance for the shotgun reload.",
+  "guideTitle": "HoodKill Walkthrough, Stealth Setup, and Shotgun Guide",
+  "guideIntro": "The action phase is decided before the first shot. Use the mask phase to learn enemy movement and split the group so gunfire attracts only a manageable number of cultists from nearby rooms.",
+  "steps": [
+    "Move with WASD while masked and observe every patrol before changing the room layout.",
+    "Use E to lock doors and isolate a target without cutting off your own escape route.",
+    "Pick up or drop lanterns with right click and place them where they support the planned trap or approach.",
+    "Remove the mask only after the rooms are prepared, then aim with the mouse and fire with left click.",
+    "Expect the shotgun to reload slowly and nearby enemies to hear each blast; create distance, use locked doors, and restart with R when the setup collapses."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Room-by-room routes, stealth setup, trap placement, first-shot choices, reload recovery, and short challenge clips."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "Newgrounds returned the game to front-page attention on July 26 and the comment thread shows renewed interest in its unusual shooter-puzzle mechanics."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like deliberate stealth planning, compact top-down maps, loud consequences, and puzzle solutions built around enemy behavior."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "HoodKill"
+    ],
+    [
+      "Genre",
+      "Puzzle stealth action, top-down shooter, game jam game"
+    ],
+    [
+      "Official signal",
+      "Newgrounds shows a July 18, 2026 upload, a 3.63/5 score from 93 votes, and a second-place Global Game Jam site award during July 27 verification"
+    ],
+    [
+      "Trend hook",
+      "July 26 front-page recommendation and returning comments plus exact-title, stealth, shotgun, mask, patrol, trap, and walkthrough searches"
+    ],
+    [
+      "Guide focus",
+      "Patrol routes, mask stealth, locked doors, lantern placement, shotgun timing, noise, room isolation, controls"
+    ],
+    [
+      "Platform",
+      "Web browser on desktop"
+    ],
+    [
+      "Embed status",
+      "Official Newgrounds HTML5 player recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play HoodKill online here?",
+      "answer": "This page opens the official Newgrounds HTML5 release, where HoodKill runs with its original controls, creator credits, voting, and review thread."
+    },
+    {
+      "question": "What is HoodKill about?",
+      "answer": "Scout cultist patrols under a mask, reshape the room setup, then remove the disguise and eliminate the isolated enemies with a shotgun."
+    },
+    {
+      "question": "What should I focus on first in HoodKill?",
+      "answer": "Do most of the work while disguised. Lock doors and place lanterns first, then fire only when the resulting noise will pull a group you can handle during the slow reload."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 2,
+    "tag": "Priority / Newgrounds featured",
+    "summary": "Top-down puzzle stealth action with a mask, locked-room setups, lantern traps, and a slow-reload shotgun.",
+    "recommendation": "Recommended for HoodKill walkthroughs, patrol routes, trap setups, shotgun strategy, and game-jam discovery."
+  },
+  "indexing": {
+    "order": 16,
+    "lastmod": "2026-07-27",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 12,
+    "description": "Find the official Newgrounds puzzle-stealth shooter with patrol, mask, locked-door, lantern trap, shotgun, and noise guidance",
+    "fullSummary": "HoodKill is a Newgrounds puzzle-stealth-action module with official HTML5 play access, mask scouting, patrol reading, locked-room isolation, lantern setup, shotgun timing, noise response, reload recovery, and Global Game Jam 2026 context."
+  }
+}

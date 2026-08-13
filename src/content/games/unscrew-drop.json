@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "key": "unscrewDrop",
+  "pageType": "hot-game",
+  "slug": "unscrew-drop",
+  "title": "Unscrew Drop",
+  "path": "/unscrew-drop",
+  "pageTitle": "Unscrew Drop - Play Online Satisfying Puzzle",
+  "seoTitle": "Unscrew Drop - Play Online Screw Puzzle Game",
+  "seoDescription": "Play Unscrew Drop online. Remove screws, trigger satisfying drops, solve short physics puzzles, and follow level tips for the CrazyGames puzzle.",
+  "keywords": "Unscrew Drop, Unscrew Drop Satisfying Puzzle, screw puzzle game, unscrew puzzle, satisfying puzzle game, CrazyGames puzzle",
+  "image": "/images/unscrew-drop.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/unscrew-drop-satisfying-puzzle",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "CrazyGames listing added June 22, 2026",
+  "trendLabel": "Satisfying screw puzzle trend",
+  "playCta": "Play Unscrew Drop",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Unscrew Drop on CrazyGames",
+      "url": "https://www.crazygames.com/game/unscrew-drop-satisfying-puzzle"
+    }
+  ],
+  "description": "Unscrew Drop is a satisfying puzzle game built around removing screws in the right order so pieces fall cleanly and each compact level resolves without wasted moves.",
+  "intro": "Screw-removal puzzles are strong short-post material because players search by level, blocker, and the order of moves.",
+  "guideTitle": "Unscrew Drop Screw Order Tips",
+  "guideIntro": "The safest solve path is to identify which screw is holding the largest blocker, then free pieces without trapping the final drop.",
+  "steps": [
+    "Study which screws support the main shape before making the first move.",
+    "Remove screws that create space instead of ones that only loosen small pieces.",
+    "Watch gravity and avoid pinning a piece under another object.",
+    "If a level has multiple plates, clear the top obstruction first.",
+    "Restart quickly when the first move creates a dead drop."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Level tips, screw order notes, satisfying puzzle clips, and blocker explanations."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The official page has clear vote traction and a direct relaxing puzzle keyword hook."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like calm physics puzzles, quick levels, and satisfying object drops."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Unscrew Drop"
+    ],
+    [
+      "Genre",
+      "Screw puzzle, satisfying physics, short level puzzle"
+    ],
+    [
+      "Official signal",
+      "CrazyGames listing has 9.0 rating and 300+ votes during verification"
+    ],
+    [
+      "Trend hook",
+      "Screw puzzle and satisfying drop keywords fit short walkthrough posts"
+    ],
+    [
+      "Guide focus",
+      "Screw order, gravity drops, blocker removal, compact level tips"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Unscrew Drop online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Unscrew Drop about?",
+      "answer": "Remove screws in the correct order so objects drop, clear the board, and solve compact physics challenges."
+    },
+    {
+      "question": "What should I focus on first in Unscrew Drop?",
+      "answer": "Find load-bearing screws first, then remove blockers in an order that keeps gravity working for you."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 29,
+    "icon": "🔩",
+    "tag": "Satisfying puzzle",
+    "summary": "Short screw-removal puzzle with relaxing drop physics and quick level-tip potential.",
+    "recommendation": "Recommended for satisfying puzzle posts, screw puzzle keywords, and short walkthrough content."
+  },
+  "indexing": {
+    "order": 43,
+    "lastmod": "2026-07-08",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 39,
+    "description": "Find the official playable screw puzzle source with satisfying drop and screw order tips",
+    "fullSummary": "Unscrew Drop is a satisfying screw puzzle module with an official playable source link, screw order tips, gravity drop explanations, compact level strategy, and short walkthrough keyword coverage."
+  }
+}

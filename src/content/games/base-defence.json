@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "key": "baseDefence",
+  "pageType": "hot-game",
+  "slug": "base-defence",
+  "title": "Base Defence",
+  "path": "/base-defence",
+  "pageTitle": "Base Defence - Play Zombie Hero Merge Strategy",
+  "seoTitle": "Base Defence - Play Online Zombie Merge Defense",
+  "seoDescription": "Play Base Defence through the official source. Deploy heroes, drag and merge troops, protect the base from zombie hordes, and follow wave survival tips.",
+  "keywords": "Base Defence, Base Defence game, Base Defense game, zombie base defence, zombie base defense, hero deployment game, merge troops game, tower defense strategy, Base Defence tips, CrazyGames Base Defence",
+  "image": "/images/base-defence.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/base-defence",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "Published on CrazyGames July 23, 2026 by Atul",
+  "trendLabel": "Zombie hero merge defence trend",
+  "playCta": "Play Base Defence",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Base Defence on CrazyGames",
+      "url": "https://www.crazygames.com/game/base-defence"
+    }
+  ],
+  "description": "Base Defence is a zombie strategy game where heroes are deployed to protect a base from relentless hordes. Drag troops into position, merge matching units into stronger defenders, upgrade the line, and survive escalating waves.",
+  "intro": "The useful content centers on decisions visible in every run: where to place heroes, which troops to merge, when to keep multiple defenders, and how to respond when a new zombie wave reaches the base faster than expected.",
+  "guideTitle": "Base Defence Hero Placement, Merge, and Wave Guide",
+  "guideIntro": "A stronger unit is valuable only if the merge does not leave an important lane open. Build coverage first, then combine troops where the upgraded defender can handle the next wave.",
+  "steps": [
+    "Drag heroes into positions that cover the paths zombies use to approach the base.",
+    "Keep enough active troops on the field before merging two defenders into one stronger unit.",
+    "Merge matching troops where the upgraded hero can attack the most dangerous part of the wave.",
+    "Reposition or reinforce the side that begins leaking zombies instead of upgrading a safe lane again.",
+    "Use each failed wave to identify whether the next investment should be coverage, troop strength, or placement."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Best hero positions, merge order, wave strategy, troop combinations, and beginner survival guides."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The listing combines recognizable zombie defense searches with a simple drag-and-merge mechanic that is easy to explain."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like defensive layouts, merge upgrades, escalating waves, and short strategic adjustments."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Base Defence"
+    ],
+    [
+      "Genre",
+      "Zombie defence, hero deployment, troop merge strategy"
+    ],
+    [
+      "Official signal",
+      "CrazyGames published the game July 23, 2026; it had an 8.4 rating from 389 votes during July 24 verification"
+    ],
+    [
+      "Trend hook",
+      "Front new-list position plus base defence and base defense spelling variants, zombies, heroes, merges, and waves"
+    ],
+    [
+      "Guide focus",
+      "Hero placement, troop merging, lane coverage, zombie waves, upgrades, survival time"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Base Defence online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Base Defence about?",
+      "answer": "Deploy and merge heroes to stop zombie hordes from reaching the base for as many waves as possible."
+    },
+    {
+      "question": "What should I focus on first in Base Defence?",
+      "answer": "Maintain lane coverage before merging, then upgrade the position under the greatest pressure rather than the strongest safe lane."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 13,
+    "tag": "Zombie merge defence",
+    "summary": "Hero deployment and troop merging strategy game against relentless zombie waves.",
+    "recommendation": "Recommended for hero placement, troop merge order, wave survival, and base defense guide searches."
+  },
+  "indexing": {
+    "order": 27,
+    "lastmod": "2026-07-24",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 23,
+    "description": "Find the official zombie strategy source with hero placement, troop merges, lane coverage, and wave survival tips",
+    "fullSummary": "Base Defence is a zombie merge strategy module with an official CrazyGames source link, hero placement guidance, troop merge order, lane coverage, upgrade decisions, and wave survival tips using both defence and defense keyword variants."
+  }
+}

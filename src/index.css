@@ -2827,6 +2827,17 @@ section[id] {
   background: var(--background-card);
 }
 
+.external-play-media {
+  min-width: 0;
+}
+
+.external-play-credit {
+  margin: 0.45rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
 .external-play-content h2 {
   margin: 0 0 0.75rem;
   color: var(--text-primary);
@@ -2848,6 +2859,33 @@ section[id] {
 }
 
 @media (max-width: 768px) {
+  .hot-game-page,
+  .hot-game-header {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .hot-game-kicker,
+  .hot-game-header h1,
+  .hot-game-header .game-description-header,
+  .hot-game-meta span {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+
+  .hot-game-kicker {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hot-game-page .game-actions,
+  .hot-game-page .game-actions .btn {
+    max-width: 100%;
+  }
+
   .external-play-panel {
     grid-template-columns: 1fr;
     min-height: 0;

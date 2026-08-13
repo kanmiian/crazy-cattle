@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "key": "stealBeanstalkForBrainrots",
+  "pageType": "hot-game",
+  "slug": "steal-beanstalk-for-brainrots",
+  "title": "Steal Beanstalk for Brainrots",
+  "path": "/steal-beanstalk-for-brainrots",
+  "pageTitle": "Steal Beanstalk for Brainrots - Play Online Brainrot Collection Game",
+  "seoTitle": "Steal Beanstalk for Brainrots - Play Online Brainrot Stealing Game",
+  "seoDescription": "Play Steal Beanstalk for Brainrots online. Grow your beanstalk, capture rare Brainrots, defend steals, and follow upgrade tips after the July CrazyGames update.",
+  "keywords": "Steal Beanstalk for Brainrots, Brainrot stealing game, Brainrot collection, beanstalk upgrade game, steal Brainrots, CrazyGames Brainrot",
+  "image": "/images/steal-beanstalk-for-brainrots.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/steal-beanstalk-for-brainrots",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct Unity loader checks are not safe iframe targets. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play on CrazyGames",
+      "url": "https://www.crazygames.com/game/steal-beanstalk-for-brainrots"
+    }
+  ],
+  "sourceName": "CrazyGames",
+  "sourceStatus": "CrazyGames listing added July 3, 2026 and updated July 7, 2026",
+  "trendLabel": "Brainrot stealing and beanstalk upgrade trend",
+  "playCta": "Play Steal Beanstalk for Brainrots",
+  "description": "Steal Beanstalk for Brainrots is a new Brainrot collection game where players grow a beanstalk, capture wild Brainrots, earn cash, unlock worlds, and protect rare finds from being stolen. The fresh CrazyGames listing makes it useful for testing Brainrot collection traffic.",
+  "intro": "The page is built for players who want a quick playable version plus practical strategy. Focus on beanstalk income first, then branch into rare Brainrot collection once the upgrade loop is stable.",
+  "guideTitle": "Steal Beanstalk for Brainrots Upgrade and Collection Guide",
+  "guideIntro": "Treat the beanstalk as your income engine and Brainrots as your long-term collection value. A strong route balances cash generation, capture timing, and defense against steals.",
+  "steps": [
+    "Grow the beanstalk early so cash income can pay for later upgrades.",
+    "Capture common Brainrots first to learn movement and interaction timing.",
+    "Upgrade income before chasing every rare spawn, because rare collections cost more to protect.",
+    "Watch other players near your base and move valuable Brainrots before they become easy steal targets.",
+    "Unlock new worlds only when your current beanstalk can recover the upgrade cost quickly."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Brainrot list, rare capture guide, beanstalk upgrade order, steal defense, and world unlock route."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The official page is a July 2026 Brainrot stealing listing with strong vote volume and a July 7 update signal."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like collection loops, farm income, and steal-based multiplayer pressure."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Steal Beanstalk for Brainrots"
+    ],
+    [
+      "Genre",
+      "Brainrot collection, farm upgrade, stealing game"
+    ],
+    [
+      "Official launch signal",
+      "CrazyGames listing added on July 3, 2026 and updated July 7, 2026"
+    ],
+    [
+      "Trend hook",
+      "Brainrot stealing and beanstalk collection traffic"
+    ],
+    [
+      "Guide focus",
+      "Beanstalk upgrades, rare captures, steal defense, world unlocks"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Steal Beanstalk for Brainrots online here?",
+      "answer": "The current CrazyGames build can show a connection issue in third-party iframes, so this page opens the official playable source instead of forcing a broken embedded frame."
+    },
+    {
+      "question": "What is the goal in Steal Beanstalk for Brainrots?",
+      "answer": "Grow your beanstalk for cash, capture wild Brainrots, unlock new worlds, and protect rare collection pieces from other players."
+    },
+    {
+      "question": "What should I upgrade first?",
+      "answer": "Start with beanstalk income and basic capture consistency before spending heavily on rare Brainrots or new worlds."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 24,
+    "icon": "🌱",
+    "tag": "Updated Jul 7",
+    "summary": "High-vote Brainrot stealing game with beanstalk income, rare captures, and defense hooks.",
+    "recommendation": "Recommended for Brainrot steal keywords, beanstalk upgrade searches, and rare collection guides."
+  },
+  "indexing": {
+    "order": 38,
+    "lastmod": "2026-07-08",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 34,
+    "description": "Find the official playable Brainrot stealing source with beanstalk upgrades, rare captures, and steal defense tips",
+    "fullSummary": "Steal Beanstalk for Brainrots is a Brainrot stealing and beanstalk collection module with an official playable source link, beanstalk upgrade guidance, rare capture strategy, steal-defense notes, world unlock routing, and July 7 update coverage."
+  }
+}

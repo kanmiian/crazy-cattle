@@ -16,15 +16,8 @@ import LoveMoney from './components/LoveMoney'
 import CluesBySam from './components/CluesBySam'
 import CrazyCattle3DMobile from './components/CrazyCattle3DMobile'
 import BuildARingFarm from './components/BuildARingFarm'
-import EmojiGuessMaster from './components/EmojiGuessMaster'
-import DinoWorld from './components/DinoWorld'
-import CaptainBlast from './components/CaptainBlast'
-import GoalGang from './components/GoalGang'
-import ImagineIsland from './components/ImagineIsland'
-import StealBeanstalkForBrainrots from './components/StealBeanstalkForBrainrots'
-import CarsArena from './components/CarsArena'
 import HotGamePage from './components/HotGamePage'
-import { hotGamePages, hotGameUpdates } from './data/hotGames'
+import { hotGameRoutePages, hotGameUpdates } from './data/gameRegistry'
 
 // 懒加载组件
 const Content = lazy(() => import('./components/Content'))
@@ -736,42 +729,9 @@ const AppContent = () => {
           <Route path="/clues-by-sam" element={<CluesBySam />} />
           <Route path="/crazy-cattle-3d-mobile" element={<CrazyCattle3DMobile />} />
           <Route path="/build-a-ring-farm" element={<BuildARingFarm />} />
-          <Route path="/sweetjong" element={<HotGamePage game={hotGamePages.sweetjong} />} />
-          <Route path="/pew-pew" element={<HotGamePage game={hotGamePages.pewPew} />} />
-          <Route path="/putt-day" element={<HotGamePage game={hotGamePages.puttDay} />} />
-          <Route path="/escape-from-vlogger-runaway" element={<HotGamePage game={hotGamePages.escapeFromVloggerRunaway} />} />
-          <Route path="/magnetarrow" element={<HotGamePage game={hotGamePages.magnetArrow} />} />
-          <Route path="/obby-supercar-race-on-keyboard" element={<HotGamePage game={hotGamePages.obbySupercarRaceOnKeyboard} />} />
-          <Route path="/slurp" element={<HotGamePage game={hotGamePages.slurp} />} />
-          <Route path="/need-for-sheep-idle-clicker" element={<HotGamePage game={hotGamePages.needForSheepIdleClicker} />} />
-          <Route path="/help-me-tricky-puzzle-games" element={<HotGamePage game={hotGamePages.helpMeTrickyPuzzleGames} />} />
-          <Route path="/base-defence" element={<HotGamePage game={hotGamePages.baseDefence} />} />
-          <Route path="/cosplay-classified" element={<HotGamePage game={hotGamePages.cosplayClassified} />} />
-          <Route path="/merge-clash" element={<HotGamePage game={hotGamePages.mergeClash} />} />
-          <Route path="/catch-n-merge" element={<HotGamePage game={hotGamePages.catchNMerge} />} />
-          <Route path="/fishing-anomaly" element={<HotGamePage game={hotGamePages.fishingAnomaly} />} />
-          <Route path="/brick-bounce-idle" element={<HotGamePage game={hotGamePages.brickBounceIdle} />} />
-          <Route path="/iron-legion" element={<HotGamePage game={hotGamePages.ironLegion} />} />
-          <Route path="/merge-team-tactics" element={<HotGamePage game={hotGamePages.mergeTeamTactics} />} />
-          <Route path="/runic-rampage" element={<HotGamePage game={hotGamePages.runicRampage} />} />
-          <Route path="/army-base-of-america" element={<HotGamePage game={hotGamePages.armyBaseOfAmerica} />} />
-          <Route path="/float-for-brainrots" element={<HotGamePage game={hotGamePages.floatForBrainrots} />} />
-          <Route path="/lucky-blocks-for-brainrots" element={<HotGamePage game={hotGamePages.luckyBlocksForBrainrots} />} />
-          <Route path="/slide-out" element={<HotGamePage game={hotGamePages.slideOut} />} />
-          <Route path="/vein-rush" element={<HotGamePage game={hotGamePages.veinRush} />} />
-          <Route path="/robby-cross-the-road-for-brainrot" element={<HotGamePage game={hotGamePages.robbyCrossTheRoadForBrainrot} />} />
-          <Route path="/unscrew-drop" element={<HotGamePage game={hotGamePages.unscrewDrop} />} />
-          <Route path="/ahagram" element={<HotGamePage game={hotGamePages.ahagram} />} />
-          <Route path="/mega-hole-attack" element={<HotGamePage game={hotGamePages.megaHoleAttack} />} />
-          <Route path="/fruitix-physics-puzzle" element={<HotGamePage game={hotGamePages.fruitixPhysicsPuzzle} />} />
-          <Route path="/ablockalypse" element={<HotGamePage game={hotGamePages.ablockalypse} />} />
-          <Route path="/steal-beanstalk-for-brainrots" element={<StealBeanstalkForBrainrots />} />
-          <Route path="/cars-arena" element={<CarsArena />} />
-          <Route path="/goal-gang" element={<GoalGang />} />
-          <Route path="/imagine-island" element={<ImagineIsland />} />
-          <Route path="/emoji-guess-master" element={<EmojiGuessMaster />} />
-          <Route path="/dino-world" element={<DinoWorld />} />
-          <Route path="/captain-blast" element={<CaptainBlast />} />
+          {hotGameRoutePages.map((game) => (
+            <Route key={game.path} path={game.path} element={<HotGamePage game={game} />} />
+          ))}
         </Routes>
       </Suspense>
       <Footer />

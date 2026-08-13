@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "key": "magnetArrow",
+  "pageType": "hot-game",
+  "slug": "magnetarrow",
+  "title": "MagnetArrow",
+  "path": "/magnetarrow",
+  "pageTitle": "MagnetArrow - Play Magnetic Arrow Upgrade Game",
+  "seoTitle": "MagnetArrow - Play Online Shard Upgrade Arcade",
+  "seoDescription": "Play MagnetArrow through the official source. Collect shards before time expires, bank energy, buy upgrades, complete missions, reset, and travel farther.",
+  "keywords": "MagnetArrow, Magnet Arrow game, MagnetArrow upgrades, magnetic arrow game, shard collection game, energy upgrade arcade, MagnetArrow missions, MagnetArrow reset, CrazyGames Originals",
+  "image": "/images/magnetarrow.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/magnetarrow",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "Published on CrazyGames July 22, 2026 by StoB",
+  "trendLabel": "CrazyGames Originals magnetic upgrade trend",
+  "playCta": "Play MagnetArrow",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play MagnetArrow on CrazyGames",
+      "url": "https://www.crazygames.com/game/magnetarrow"
+    }
+  ],
+  "description": "MagnetArrow is a fast arcade upgrade game where a magnetic tether guides an arrow through fields of shards. Collect energy before time expires, invest it in upgrades, complete missions, unlock skins, build daily bonuses, and reach reset goals for credits.",
+  "intro": "The progression loop is clear enough for precise guide content: improve the value of each timed run, choose useful upgrades, complete reset requirements, and convert credits into longer future routes.",
+  "guideTitle": "MagnetArrow Upgrade Order, Shard Route, and Reset Guide",
+  "guideIntro": "Each run should either produce more energy or move a mission forward. A controlled route through dense shard groups is usually better than chasing scattered pieces at the edge of the field.",
+  "steps": [
+    "Hold and drag to pull the arrow with its magnetic tether, or use WASD and arrow keys for direct movement.",
+    "Sweep through dense shard clusters early so the timer produces as much stored energy as possible.",
+    "Spend energy on upgrades that improve the next run instead of scattering purchases across weak bonuses.",
+    "Check missions, skins, and the daily streak between runs so easy rewards are not left unclaimed.",
+    "Reach the reset goal when credits and permanent progress will outweigh one more small temporary upgrade."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Best early upgrades, high-density shard routes, reset timing, mission help, skins, and daily rewards."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The new CrazyGames Originals listing has an easy-to-follow upgrade loop and several searchable progression systems."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like short timed runs, visible incremental gains, collection routes, and unlock checklists."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "MagnetArrow"
+    ],
+    [
+      "Genre",
+      "Arcade upgrade, magnetic collection, incremental runner"
+    ],
+    [
+      "Official signal",
+      "CrazyGames published the Originals title July 22, 2026; it had an 8.5 rating from 296 votes during July 24 verification"
+    ],
+    [
+      "Trend hook",
+      "Distinctive brand plus magnet arrow, shard route, energy, upgrade, mission, credit, and reset keywords"
+    ],
+    [
+      "Guide focus",
+      "Shard collection, energy upgrades, timed runs, missions, skins, daily streaks, reset credits"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play MagnetArrow online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is MagnetArrow about?",
+      "answer": "Collect shards to generate energy, upgrade the magnetic arrow, finish missions, unlock cosmetics, and push farther on later runs."
+    },
+    {
+      "question": "What should I focus on first in MagnetArrow?",
+      "answer": "Prioritize dense shard paths and upgrades that improve every run, then reset once permanent credits accelerate progress more than another temporary purchase."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 8,
+    "tag": "Priority / Originals",
+    "summary": "Magnetic arrow arcade runner with shard collection, timed energy runs, upgrades, and resets.",
+    "recommendation": "Recommended for upgrade order, shard routes, mission help, reset strategy, and progression keywords."
+  },
+  "indexing": {
+    "order": 22,
+    "lastmod": "2026-07-24",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 18,
+    "description": "Find the official magnetic arcade source with shard routes, energy upgrades, missions, daily rewards, and reset tips",
+    "fullSummary": "MagnetArrow is a magnetic arcade upgrade module with an official CrazyGames source link, shard route guidance, timed energy strategy, mission and skin coverage, daily rewards, credits, and reset timing."
+  }
+}

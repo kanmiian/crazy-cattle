@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "key": "mergeTeamTactics",
+  "pageType": "hot-game",
+  "slug": "merge-team-tactics",
+  "title": "Merge Team Tactics",
+  "path": "/merge-team-tactics",
+  "pageTitle": "Merge Team Tactics - Play Online Merge Strategy Game",
+  "seoTitle": "Merge Team Tactics - Play Online Element Merge Game",
+  "seoDescription": "Play Merge Team Tactics through official sources. Merge Elemons, build elemental teams, and use unit-combo tips for this high-vote CrazyGames strategy title.",
+  "keywords": "Merge Team Tactics, Merge Team Tactics game, merge strategy game, Elemon merge, elemental tactics game, CrazyGames merge",
+  "image": "/images/merge-team-tactics.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/merge-team-tactics",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "CrazyGames strategy listing verified July 2026",
+  "trendLabel": "High-vote merge tactics keyword trend",
+  "playCta": "Play Merge Team Tactics",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Merge Team Tactics on CrazyGames",
+      "url": "https://www.crazygames.com/game/merge-team-tactics"
+    },
+    {
+      "label": "Open Google Play listing",
+      "url": "https://play.google.com/store/apps/details?id=com.kontoragames.mtt"
+    },
+    {
+      "label": "Open App Store listing",
+      "url": "https://apps.apple.com/gb/app/merge-team-tactics/id6753348265"
+    }
+  ],
+  "description": "Merge Team Tactics is a merge-and-battle strategy game about combining Elemons, building elemental teams, and using Fire, Water, Earth, and Air matchups to win arena fights.",
+  "intro": "This module targets merge tactics searches, unit synergy questions, and players who want a clear route for building stronger elemental teams.",
+  "guideTitle": "Merge Team Tactics Unit Combo Guide",
+  "guideIntro": "The strongest early route is not just merging everything. Keep useful elements available, merge only when it improves the board, and prepare counters before difficult fights.",
+  "steps": [
+    "Learn the four-element counter loop before spending heavily on one unit type.",
+    "Merge compatible units when the stronger form improves your current team shape.",
+    "Keep a balanced frontline and damage line instead of filling the board with one element.",
+    "Use Water against Fire, Fire against Earth, Earth against Air, and Air against Water.",
+    "Save resources for combinations that solve the next battle, not just the highest rarity."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Element counter table, best merge order, beginner team builds, and unit synergy pages."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The title has strong vote volume and a clear strategy/merge/category keyword structure."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like quick tactical decisions, collection growth, and merge-based power spikes."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Merge Team Tactics"
+    ],
+    [
+      "Genre",
+      "Merge tactics, strategy, elemental battle, casual arena"
+    ],
+    [
+      "Official signal",
+      "CrazyGames page shows KONTORA GAMES, Unity 6, 9.1 rating, and App Store / Google Play availability during verification"
+    ],
+    [
+      "Trend hook",
+      "Merge strategy traffic with clear element-counter and unit-combo search intent"
+    ],
+    [
+      "Guide focus",
+      "Elemons, merge timing, elemental counters, team synergy, upgrade order"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Merge Team Tactics online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Merge Team Tactics about?",
+      "answer": "Merge Elemons into stronger forms, build a balanced elemental team, and use counter matchups to win battles."
+    },
+    {
+      "question": "What should I focus on first in Merge Team Tactics?",
+      "answer": "Protect elemental balance first, then merge units when the upgrade fixes a clear weakness in your current lineup."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 20,
+    "icon": "🧩",
+    "tag": "Updated Jul 8",
+    "summary": "Merge-and-battle tactics game with strong vote volume and clear unit-combo hooks.",
+    "recommendation": "Recommended for merge tactics keywords, team synergy explanations, and unit upgrade guides."
+  },
+  "indexing": {
+    "order": 34,
+    "lastmod": "2026-07-09",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 30,
+    "description": "Find official playable and store links with Elemon merge, elemental counter, and team synergy tips",
+    "fullSummary": "Merge Team Tactics is a merge-and-battle strategy module with official CrazyGames, Google Play, and App Store links, Elemon merge guidance, elemental counter notes, team synergy strategy, and high-vote merge keyword coverage."
+  }
+}

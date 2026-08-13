@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "key": "helpMeTrickyPuzzleGames",
+  "pageType": "hot-game",
+  "slug": "help-me-tricky-puzzle-games",
+  "title": "Help Me: Tricky Puzzle Games",
+  "path": "/help-me-tricky-puzzle-games",
+  "pageTitle": "Help Me: Tricky Puzzle Games - Answers and Tips",
+  "seoTitle": "Help Me: Tricky Puzzle Games - Play and Solutions",
+  "seoDescription": "Play Help Me: Tricky Puzzle Games through the official source. Read each prompt, tap or drag green targets, solve comic rescue scenes, and find level hints.",
+  "keywords": "Help Me Tricky Puzzle Games, Help Me puzzle game, Help Me Tricky Puzzle answers, Help Me level solutions, brain teaser game, rescue puzzle, funny tricky puzzle, green target puzzle, Bravestars Games",
+  "image": "/images/help-me-tricky-puzzle-games.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/help-me-tricky-puzzle-games-cje",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "Published on CrazyGames July 23, 2026 by Bravestars Games",
+  "trendLabel": "Short-form tricky brain teaser trend",
+  "playCta": "Play Help Me: Tricky Puzzle Games",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Help Me: Tricky Puzzle Games on CrazyGames",
+      "url": "https://www.crazygames.com/game/help-me-tricky-puzzle-games-cje"
+    }
+  ],
+  "description": "Help Me: Tricky Puzzle Games is a comic brain teaser collection built around unexpected interactions. Read the prompt, then tap, drag, or pull the green targets attached to characters and objects to solve each strange rescue scene.",
+  "intro": "The short levels are a natural fit for answer and hint searches. This page explains a repeatable solving method while leaving room for verified level-by-level solutions as players reach specific scenes.",
+  "guideTitle": "Help Me: Tricky Puzzle Games Answers and Solving Guide",
+  "guideIntro": "The prompt describes the result, not always the obvious action. Identify every green target, test direction and order, and watch how the scene changes after each interaction.",
+  "steps": [
+    "Read the full prompt at the top before touching the scene.",
+    "Locate every green target because each one marks an object or character that can be manipulated.",
+    "Try tapping, dragging, or pulling in the direction suggested by the scene rather than by real-world assumptions.",
+    "Watch for a reaction after each move and use it to determine the next interaction order.",
+    "Reset and change one action at a time when a solution fails so the working step is easy to identify."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Short level solutions, spoiler-light hints, object interaction order, funny fails, and answer videos."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The new puzzle listing has compact, surprising scenes that translate directly into searchable answers and short clips."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who enjoy lateral thinking, visual jokes, quick levels, rescue scenarios, and simple touch controls."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Help Me: Tricky Puzzle Games"
+    ],
+    [
+      "Genre",
+      "Brain teaser, funny rescue puzzle, tricky level game"
+    ],
+    [
+      "Official signal",
+      "CrazyGames published the game July 23, 2026; it had an 8.0 rating from 245 votes during July 24 verification"
+    ],
+    [
+      "Trend hook",
+      "New-list position plus answers, level solutions, brain teaser, rescue, tap, drag, and green target searches"
+    ],
+    [
+      "Guide focus",
+      "Level answers, prompt reading, green targets, tap and drag interactions, rescue solutions"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Help Me: Tricky Puzzle Games online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Help Me: Tricky Puzzle Games about?",
+      "answer": "Interpret each prompt and manipulate marked characters or objects until the comic rescue scenario reaches its unexpected solution."
+    },
+    {
+      "question": "What should I focus on first in Help Me: Tricky Puzzle Games?",
+      "answer": "Start with the green targets, test direction and order deliberately, and change only one interaction when retrying a level."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 12,
+    "tag": "Tricky brain puzzle",
+    "summary": "Short comic brain teasers solved by tapping, dragging, and finding unexpected object interactions.",
+    "recommendation": "Recommended for level answers, puzzle solutions, rescue hints, and quick brain teaser content."
+  },
+  "indexing": {
+    "order": 26,
+    "lastmod": "2026-07-24",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 22,
+    "description": "Find the official brain teaser source with green-target interactions, level hints, answers, and rescue solutions",
+    "fullSummary": "Help Me: Tricky Puzzle Games is a short brain teaser module with an official CrazyGames source link, prompt-reading strategy, green-target interactions, spoiler-light hints, level answers, and rescue solution coverage."
+  }
+}

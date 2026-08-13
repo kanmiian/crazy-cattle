@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "key": "buildNowGG",
+  "pageType": "hot-game",
+  "slug": "buildnow-gg",
+  "title": "BuildNow GG",
+  "path": "/buildnow-gg",
+  "pageTitle": "BuildNow GG - Play Build and Shoot Game Online",
+  "seoTitle": "BuildNow GG - Play Online, Controls, and Building Tips",
+  "seoDescription": "Play BuildNow GG through the official source. Learn wall, floor, ramp, roof, edit, weapon, and aim controls across Freebuild, Arena, BoxFight, and Zone Wars.",
+  "keywords": "BuildNow GG, Build Now GG, BuildNow GG game, BuildNow GG controls, BuildNow GG building controls, build and shoot game, online building shooter, third person shooter, BoxFight game, Zone Wars game, aim training game, private shooter party",
+  "image": "/images/buildnow-gg.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/buildnow-gg",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "CrazyGames release updated July 13, 2026 by Battlelab",
+  "trendLabel": "Established build-and-shoot update trend",
+  "playCta": "Play BuildNow GG",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play BuildNow GG on CrazyGames",
+      "url": "https://www.crazygames.com/game/buildnow-gg"
+    }
+  ],
+  "description": "BuildNow GG is an online third-person build-and-shoot game where players place walls, floors, ramps, and roofs while switching between a pistol, machine gun, sniper rifle, shotgun, and pickaxe. Five modes support free practice, aim training, one-on-one fights, free-for-all battles, and private parties for up to six players.",
+  "intro": "This guide covers the repeatable skills behind BuildNow GG: choosing useful keybinds, turning builds into cover and height, editing without losing aim, selecting the right weapon, and practicing each mechanic in the mode that isolates it best.",
+  "guideTitle": "BuildNow GG Controls, Building, Aim, and Mode Guide",
+  "guideIntro": "Speed matters only when every piece has a purpose. Start with reliable wall, floor, ramp, and roof placement, then combine edits and weapon swaps after the basic sequence works without hesitation.",
+  "steps": [
+    "Use Aim Training on static and moving targets to learn mouse sensitivity before entering a live fight.",
+    "Practice Q for walls, C for floors, V for ramps, and Left Shift for roofs until each piece becomes automatic.",
+    "Use F to edit and apply edits, right click to reset an edit, and scroll down for a fast edit reset.",
+    "Match the weapon to the range: shotgun for close pressure, machine gun or pistol for steady fights, and sniper rifle for long sightlines.",
+    "Move from Freebuild into V-Arena, BoxFight, and Zone Wars, or host a private party when you want controlled practice with up to six players."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Full controls, beginner build order, sensitivity setup, fast edits, weapon roles, mode differences, and private match instructions."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The long-running browser shooter returned to the July update surface while retaining more than two hundred thousand votes and a high rating."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who want competitive third-person shooting, rapid construction, editable cover, offline drills, and small private matches."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "BuildNow GG"
+    ],
+    [
+      "Genre",
+      "Third-person shooter, tactical building, online arena game"
+    ],
+    [
+      "Official signal",
+      "CrazyGames shows a July 13, 2026 update, a 9.2 rating from 206,929 votes, Battlelab development, and Unity 2022 during July 27 verification"
+    ],
+    [
+      "Trend hook",
+      "July update resurfacing plus exact-title, controls, keybinds, building, aim training, BoxFight, Zone Wars, and private match searches"
+    ],
+    [
+      "Guide focus",
+      "Building controls, edits, weapon slots, aim training, five modes, private parties, graphics, FPS, custom key mapping"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play BuildNow GG online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is BuildNow GG about?",
+      "answer": "Build structures for cover and height, edit them quickly, switch weapons by range, and win across practice, duel, free-for-all, and zone modes."
+    },
+    {
+      "question": "What should I focus on first in BuildNow GG?",
+      "answer": "Use custom key mapping and offline training to make four basic build pieces automatic before adding fast edits and aggressive weapon swaps."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 0,
+    "tag": "Updated Jul 13",
+    "summary": "Established build-and-shoot game with five modes, fast structures, private parties, and offline aim training.",
+    "recommendation": "Recommended for BuildNow GG controls, building binds, aim practice, weapon guides, private matches, and mode tips."
+  },
+  "indexing": {
+    "order": 14,
+    "lastmod": "2026-07-27",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 10,
+    "description": "Find the official build-and-shoot source with construction binds, edit controls, weapon roles, aim training, five modes, and private match guidance",
+    "fullSummary": "BuildNow GG is an established third-person build-and-shoot module with official CrazyGames play access, construction and edit controls, weapon roles, aim training, Freebuild, V-Arena, BoxFight, Zone Wars, private parties, and July 2026 update coverage."
+  }
+}

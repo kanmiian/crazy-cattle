@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "key": "carsArena",
+  "pageType": "hot-game",
+  "slug": "cars-arena",
+  "title": "Cars Arena",
+  "path": "/cars-arena",
+  "pageTitle": "Cars Arena - Play Online Drift Survival Game",
+  "seoTitle": "Cars Arena - Play Online Shrinking Platform Car Game",
+  "seoDescription": "Play Cars Arena online. Drift across a shrinking platform, fight for space, and use survival tips for this hot CrazyGames car arena game.",
+  "keywords": "Cars Arena, Cars Arena game, drift arena game, shrinking platform car game, CrazyGames car game",
+  "image": "/images/cars-arena.jpg",
+  "embedUrl": "https://play.famobi.com/cars-arena",
+  "sourceUrl": "https://www.crazygames.com/game/cars-arena",
+  "playableLinks": [
+    {
+      "label": "Play Cars Arena on Famobi",
+      "url": "https://play.famobi.com/cars-arena"
+    },
+    {
+      "label": "Open CrazyGames Source",
+      "url": "https://www.crazygames.com/game/cars-arena"
+    }
+  ],
+  "sourceName": "CrazyGames",
+  "sourceStatus": "New CrazyGames listing added June 29, 2026",
+  "trendLabel": "Hot drifting shrinking-zone gameplay",
+  "playCta": "Play Cars Arena",
+  "description": "Cars Arena is a 3D physics-based car arena game where players drift, cut tiles, and compete for safe space on a shrinking platform. Its hot desktop and mobile labels make it a good page for short-session driving traffic.",
+  "intro": "Survival depends less on top speed and more on controlled drifting. Keep a clean route, avoid panic turns, and force rivals into weak zones as the arena shrinks.",
+  "guideTitle": "Cars Arena Drift Survival Tips",
+  "guideIntro": "The best strategy is to carve safe space without trapping yourself. Drift with intention, leave escape lanes, and pressure opponents only when your own platform is stable.",
+  "steps": [
+    "Start wide and read how quickly the platform breaks behind each car.",
+    "Use smooth drift arcs instead of sharp turns that burn escape space.",
+    "Avoid following another car directly because their path can remove your route.",
+    "Cut toward the center before the outer platform becomes too thin.",
+    "When only a few cars remain, drive defensively and let rivals make risky turns first."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Drift control tips, shrinking platform survival, car arena tactics, and short match strategy."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The official page marks it as hot on desktop and mobile with strong early rating volume."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who want quick car battles, physics drifting, and last-car-standing pressure."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Cars Arena"
+    ],
+    [
+      "Genre",
+      "Car arena, drift survival, shrinking platform"
+    ],
+    [
+      "Official launch signal",
+      "CrazyGames listing added on June 29, 2026"
+    ],
+    [
+      "Trend hook",
+      "High-vote drifting arena gameplay"
+    ],
+    [
+      "Guide focus",
+      "Drift control, survival routes, shrinking-zone positioning"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Cars Arena online for free?",
+      "answer": "Yes. The page now uses the verified Famobi playable build for the embedded game, with the official CrazyGames source link available as backup."
+    },
+    {
+      "question": "What kind of game is Cars Arena?",
+      "answer": "It is a 3D car arena survival game where drifting removes parts of the platform and players compete for the remaining safe space."
+    },
+    {
+      "question": "What is the best Cars Arena strategy?",
+      "answer": "Control your drift, avoid dead ends, keep escape lanes open, and let opponents overcommit when the arena shrinks."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 34,
+    "icon": "🏎️",
+    "tag": "Hot car arena",
+    "summary": "High-vote drifting arena game where the platform shrinks as players fight for space.",
+    "recommendation": "Recommended for players who want short car battles, drift survival, and shrinking-zone tactics."
+  },
+  "indexing": {
+    "order": 48,
+    "lastmod": "2026-07-06",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 44,
+    "description": "Play a hot drifting arena game with shrinking platform survival tips",
+    "fullSummary": "Cars Arena is a hot car arena module with an embedded playable build, shrinking platform drift-survival tips, car battle strategy, and short-session driving game recommendation content."
+  }
+}

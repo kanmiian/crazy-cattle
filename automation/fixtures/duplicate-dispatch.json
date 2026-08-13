@@ -1,0 +1,17 @@
+{
+  "action": "feishu_game_submission",
+  "client_payload": {
+    "message_id": "fixture-message-sweetjong",
+    "event_id": "fixture-event-sweetjong",
+    "chat_id": "fixture-chat",
+    "received_at": "2026-07-27T00:00:00.000Z",
+    "games": [
+      {
+        "keyword": "Sweetjong",
+        "description": "CrazyGames new high-rated puzzle listing",
+        "projectUrl": "https://www.crazygames.com/game/sweetjong",
+        "trends": "Sweetjong vs GPTs"
+      }
+    ]
+  }
+}

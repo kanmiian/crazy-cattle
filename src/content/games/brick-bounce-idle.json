@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "key": "brickBounceIdle",
+  "pageType": "hot-game",
+  "slug": "brick-bounce-idle",
+  "title": "Brick Bounce Idle",
+  "path": "/brick-bounce-idle",
+  "pageTitle": "Brick Bounce Idle - Play Online Idle Brick Breaker",
+  "seoTitle": "Brick Bounce Idle - Play Online Incremental Brick Game",
+  "seoDescription": "Play Brick Bounce Idle through the official CrazyGames source. Break bricks, earn cash, buy bouncing balls, improve damage, and follow prestige upgrade tips.",
+  "keywords": "Brick Bounce Idle, Brick Bounce Idle game, idle brick breaker, incremental brick game, bouncing balls upgrade, CrazyGames idle",
+  "image": "/images/brick-bounce-idle.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/brick-bounce-idle",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "CrazyGames new listing added July 14, 2026",
+  "trendLabel": "Idle brick breaker upgrade trend",
+  "playCta": "Play Brick Bounce Idle",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Brick Bounce Idle on CrazyGames",
+      "url": "https://www.crazygames.com/game/brick-bounce-idle"
+    }
+  ],
+  "description": "Brick Bounce Idle is a relaxing incremental brick-breaking game where bouncing balls break blocks, clicks add damage, cash funds upgrades, and prestige creates long-term growth.",
+  "intro": "This module targets idle players looking for upgrade order, ball scaling, cash efficiency, damage breakpoints, and prestige timing.",
+  "guideTitle": "Brick Bounce Idle Upgrade and Prestige Guide",
+  "guideIntro": "Progress is about compounding value. Buy upgrades that increase future income first, then use prestige when the reset multiplier beats another short cash grind.",
+  "steps": [
+    "Click early bricks manually until ball income becomes steady.",
+    "Buy more balls when extra hits speed up every future block.",
+    "Upgrade damage when bricks take too long to clear.",
+    "Prioritize cash multipliers before cosmetic or low-impact upgrades.",
+    "Prestige when the permanent bonus noticeably shortens the next run."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Best upgrade order, prestige timing, cash efficiency, and early idle route."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "Idle brick breakers naturally support repeat searches for upgrade math, prestige value, and fast progression."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like hands-off progress, number growth, and steady upgrade decisions."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Brick Bounce Idle"
+    ],
+    [
+      "Genre",
+      "Idle, clicker, incremental, brick breaker, ball upgrade game"
+    ],
+    [
+      "Official signal",
+      "CrazyGames page shows a July 14, 2026 new label, Westeren Games, HTML5, 8.7 rating, and 23 votes during verification"
+    ],
+    [
+      "Trend hook",
+      "新榜增量 idle title with clear upgrade, prestige, and number-guide search intent"
+    ],
+    [
+      "Guide focus",
+      "Ball count, brick damage, cash scaling, upgrade efficiency, prestige timing"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Brick Bounce Idle online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Brick Bounce Idle about?",
+      "answer": "Break bricks with bouncing balls, earn cash, improve damage and rewards, then prestige for permanent growth."
+    },
+    {
+      "question": "What should I focus on first in Brick Bounce Idle?",
+      "answer": "Invest in income and ball scaling first, then add damage when brick health becomes the main bottleneck."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 18,
+    "icon": "🧱",
+    "tag": "New idle",
+    "summary": "Incremental brick-breaking idle game with bouncing balls, cash upgrades, and prestige value.",
+    "recommendation": "Recommended for idle number guides, upgrade order content, prestige tips, and brick breaker searches."
+  },
+  "indexing": {
+    "order": 32,
+    "lastmod": "2026-07-14",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 28,
+    "description": "Find the official playable idle brick breaker source with ball scaling, cash upgrades, and prestige timing tips",
+    "fullSummary": "Brick Bounce Idle is an idle brick breaker module with an official CrazyGames playable source link, ball scaling guidance, cash upgrade priorities, damage breakpoint notes, prestige timing, and incremental number-guide coverage."
+  }
+}

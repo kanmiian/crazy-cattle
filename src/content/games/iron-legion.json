@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "key": "ironLegion",
+  "pageType": "hot-game",
+  "slug": "iron-legion",
+  "title": "Iron Legion",
+  "path": "/iron-legion",
+  "pageTitle": "Iron Legion - Play Online Tank Combat Game",
+  "seoTitle": "Iron Legion - Play Online Tank Battle Game",
+  "seoDescription": "Play Iron Legion online through the official CrazyGames source. Command tanks, capture control points, upgrade vehicles, and follow combat tips after the July 7 update.",
+  "keywords": "Iron Legion, Iron Legion game, tank combat game, online tank battle, CrazyGames Iron Legion, war vehicle game",
+  "image": "/images/iron-legion.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/iron-legion",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "CrazyGames page updated July 7, 2026",
+  "trendLabel": "Tank combat hot-mobile update trend",
+  "playCta": "Play Iron Legion",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Iron Legion on CrazyGames",
+      "url": "https://www.crazygames.com/game/iron-legion"
+    }
+  ],
+  "description": "Iron Legion is a tank combat game where players command military vehicles, capture control points, and switch between offline PvE and online PvP battles. The July 7 CrazyGames update makes it useful for combat, tank, and battle strategy searches.",
+  "intro": "This page is built for players searching for Iron Legion play links, tank upgrades, control point routes, and fast battle guidance.",
+  "guideTitle": "Iron Legion Tank Combat and Capture Guide",
+  "guideIntro": "Winning starts with map control. Choose a tank role, move with cover, and fight around capture points instead of chasing every enemy across open ground.",
+  "steps": [
+    "Start in Offline PvE to learn tank movement, turret aiming, and damage timing.",
+    "Move toward control points early because the objective pressure decides most matches.",
+    "Use lighter tanks for scouting and repositioning, then switch to heavier vehicles when you need to hold ground.",
+    "Aim the vehicle body and turret together before firing so shots land cleanly.",
+    "Upgrade the tank role you use most instead of spreading rewards across every vehicle."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Tank tier notes, capture point tactics, aiming guide, and beginner upgrade route."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The official page was updated in July 2026 and carries strong action, battle, war, and mobile signals."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who want tactical vehicle fights, objective battles, and short online tank matches."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Iron Legion"
+    ],
+    [
+      "Genre",
+      "Tank combat, action, PvP battle, war vehicle game"
+    ],
+    [
+      "Official signal",
+      "CrazyGames page shows a July 7, 2026 update, Unity 2022 engine, and 9.3 rating during verification"
+    ],
+    [
+      "Trend hook",
+      "Updated combat title with tank, war, battle, and mobile tags"
+    ],
+    [
+      "Guide focus",
+      "Tank choice, control point capture, turret aiming, PvE practice, PvP positioning"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Iron Legion online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Iron Legion about?",
+      "answer": "Capture and hold control points, destroy enemy vehicles, complete missions, and improve your tank lineup."
+    },
+    {
+      "question": "What should I focus on first in Iron Legion?",
+      "answer": "Learn turret aiming in PvE first, then prioritize capture points and upgrade the tank class that matches your role."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 19,
+    "icon": "⚔️",
+    "tag": "Updated Jul 7",
+    "summary": "High-vote battle strategy game with CrazyGames hot-mobile and updated signals.",
+    "recommendation": "Recommended for combat game traffic, unit upgrade searches, and battle strategy guide content."
+  },
+  "indexing": {
+    "order": 33,
+    "lastmod": "2026-07-09",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 29,
+    "description": "Find the official playable tank combat source with control point, PvE, PvP, and upgrade guidance",
+    "fullSummary": "Iron Legion is a tank combat module with an official CrazyGames playable source link, control point tactics, tank role guidance, turret aiming notes, PvE practice tips, and July 7, 2026 update coverage."
+  }
+}

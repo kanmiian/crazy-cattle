@@ -8,6 +8,10 @@ Crazy Cattle 3D is a fun physics simulation game, available to play online or do
 - [Crazy Cattle 3D Home Page](https://cattlecrazy3d.com): Home Page
 - [Play Now](https://cattlecrazy3d.com/#game): Experience the complete game directly in your browser
 - [Build A Ring Farm](https://cattlecrazy3d.com/build-a-ring-farm): Play a circular farm incremental game with codes, seed tips, and upgrade guide
+- [BuildNow GG](https://cattlecrazy3d.com/buildnow-gg): Find the official build-and-shoot source with construction binds, edit controls, weapon roles, aim training, five modes, and private match guidance
+- [Racing Limits](https://cattlecrazy3d.com/racing-limits): Find the official traffic racer with overtaking, camera, nitro, manual gear, car upgrade, road direction, and event tips
+- [HoodKill](https://cattlecrazy3d.com/hoodkill): Find the official Newgrounds puzzle-stealth shooter with patrol, mask, locked-door, lantern trap, shotgun, and noise guidance
+- [Scorching Light](https://cattlecrazy3d.com/scorching-light): Find the official Game Boy horror source with deadly-light rules, environment hiding, outline controls, platforming, and short walkthrough tips
 - [Sweetjong](https://cattlecrazy3d.com/sweetjong): Find the official sweet mahjong source with tray strategy, frozen tile rules, boosters, and match-three tips
 - [Pew Pew](https://cattlecrazy3d.com/pew-pew): Find the official airplane arcade source with power-up routes, enemy wave positioning, and boss survival tips
 - [putt.day](https://cattlecrazy3d.com/putt-day): Find the official daily mini-golf source with aim, power, hazard, hole-in-one, and Endless mode guidance
@@ -44,6 +48,7 @@ Crazy Cattle 3D is a fun physics simulation game, available to play online or do
 - [Emoji Guess Master](https://cattlecrazy3d.com/emoji-guess-master): Play the updated emoji puzzle game with answer hints and level keyword guidance
 - [Dino World](https://cattlecrazy3d.com/dino-world): Play a new dinosaur squad game with upgrade and beginner strategy tips
 - [Captain Blast](https://cattlecrazy3d.com/captain-blast): Play a level-based puzzle adventure with obstacle timing and stage tips
+- [Hop Earth](https://cattlecrazy3d.com/hop-earth): Open the official real-world browser driving game and learn route creation, races, controls, and loading tips
 - [Download Game](https://cattlecrazy3d.com/#download): Download the offline version from itch.io
 - [Game Features](https://cattlecrazy3d.com/#features): Physics-driven, multiple battle environments, unique characters, and more
 - [How to Play](https://cattlecrazy3d.com/#how-to-play): Learn how to control characters and achieve victory
@@ -55,4 +60,4 @@ Crazy Cattle 3D is a fun physics simulation game, available to play online or do
 ## About the Game
 - [About Us](https://cattlecrazy3d.com/about): Learn about the development team
 - [Privacy Policy](https://cattlecrazy3d.com/privacy-policy): User data processing information
-- [Terms of Service](https://cattlecrazy3d.com/terms-of-service): Terms of use 
+- [Terms of Service](https://cattlecrazy3d.com/terms-of-service): Terms of use

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "key": "veinRush",
+  "pageType": "hot-game",
+  "slug": "vein-rush",
+  "title": "Vein Rush",
+  "path": "/vein-rush",
+  "pageTitle": "Vein Rush - Play Online Voxel Mining Game",
+  "seoTitle": "Vein Rush - Play Online Mining Upgrade Game",
+  "seoDescription": "Play Vein Rush online. Mine rare ores, manage inventory, upgrade your pickaxe, and follow voxel mining tips after the July 7 CrazyGames update.",
+  "keywords": "Vein Rush, Vein Rush game, mining upgrade game, voxel mining game, pickaxe upgrade, CrazyGames mining",
+  "image": "/images/vein-rush.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://www.crazygames.com/game/vein-rush",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "CrazyGames listing added July 6, 2026 and updated July 7, 2026",
+  "trendLabel": "Voxel mining update trend",
+  "playCta": "Play Vein Rush",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Playable Source",
+  "externalPlayReason": "CrazyGames currently marks this build as unavailable for third-party embedding, and direct loader checks returned frame-blocking or forbidden headers. Use the official playable source to avoid connection issues.",
+  "playableLinks": [
+    {
+      "label": "Play Vein Rush on CrazyGames",
+      "url": "https://www.crazygames.com/game/vein-rush"
+    }
+  ],
+  "description": "Vein Rush is a destructible voxel mining game about digging deeper, collecting rare ores, managing inventory space, and upgrading a pickaxe to break tougher layers.",
+  "intro": "The July 7 update signal gives this page a strong fresh-search angle around ore lists, pickaxe upgrades, and mining routes.",
+  "guideTitle": "Vein Rush Mining Upgrade Guide",
+  "guideIntro": "Progress depends on matching your pickaxe strength to the next rock layer while keeping inventory space open for valuable ores.",
+  "steps": [
+    "Mine shallow layers first to learn ore values and inventory limits.",
+    "Upgrade pickaxe power when rock layers start slowing every run.",
+    "Keep inventory space for rare ores instead of filling it with low-value blocks.",
+    "Use quick return options before a deep run becomes inefficient.",
+    "Track which upgrade creates the next meaningful depth break."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Ore list, pickaxe upgrade order, mining depth guide, and July 7 update notes."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The official page shows a new and updated label with strong early rating quality."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like mining loops, resource management, and measurable upgrade progress."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Vein Rush"
+    ],
+    [
+      "Genre",
+      "Voxel mining, pickaxe upgrade, resource progression"
+    ],
+    [
+      "Official signal",
+      "CrazyGames listing added on July 6, 2026 and significantly updated on July 7, 2026"
+    ],
+    [
+      "Trend hook",
+      "Same-day update interest around mining, ore, and pickaxe keywords"
+    ],
+    [
+      "Guide focus",
+      "Ore value, pickaxe upgrades, inventory management, depth routing"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ],
+    [
+      "Embed status",
+      "Official external play source recommended"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Vein Rush online here?",
+      "answer": "This module opens the official CrazyGames playable source because the current build is not safe to embed on third-party pages without connection issues."
+    },
+    {
+      "question": "What is Vein Rush about?",
+      "answer": "Dig through voxel rock, collect ores, manage inventory, and upgrade your pickaxe to reach deeper layers."
+    },
+    {
+      "question": "What should I focus on first in Vein Rush?",
+      "answer": "Upgrade pickaxe strength and inventory efficiency before pushing too deep, because slow mining wastes run value."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 27,
+    "icon": "⛏️",
+    "tag": "Updated Jul 7",
+    "summary": "Voxel mining rush with rare ores, pickaxe upgrades, inventory pressure, and live update interest.",
+    "recommendation": "Recommended for mining upgrade routes, ore lists, pickaxe progression, and update-driven searches."
+  },
+  "indexing": {
+    "order": 41,
+    "lastmod": "2026-07-08",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 37,
+    "description": "Find the official playable voxel mining source with ore, inventory, and pickaxe upgrade tips",
+    "fullSummary": "Vein Rush is a voxel mining module with an official playable source link, ore value framing, inventory management notes, pickaxe upgrade order, and July 7 update keyword coverage."
+  }
+}

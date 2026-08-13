@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "key": "imagineIsland",
+  "pageType": "hot-game",
+  "slug": "imagine-island",
+  "title": "Imagine Island",
+  "path": "/imagine-island",
+  "pageTitle": "Imagine Island - Play Online Virtual Island World",
+  "seoTitle": "Imagine Island - Play Online Virtual Island Game",
+  "seoDescription": "Play Imagine Island online. Explore fishing, fashion, food obby runs, prop hunt, friends, and monthly event update tips.",
+  "keywords": "Imagine Island, Imagine Island game, virtual island game, fishing fashion obby prop hunt, CrazyGames social world",
+  "image": "/images/imagine-island.jpg",
+  "embedUrl": "https://games.crazygames.com/en_US/imagine-island/index.html?v=2.4",
+  "sourceUrl": "https://www.crazygames.com/game/imagine-island",
+  "sourceName": "CrazyGames",
+  "sourceStatus": "CrazyGames page updated July 1, 2026",
+  "trendLabel": "Monthly virtual island event trend",
+  "playCta": "Play Imagine Island",
+  "description": "Imagine Island is a virtual island world with friends, fishing, fashion, food-themed obby runs, and prop hunt. Its monthly update rhythm makes it useful for event lists, new item summaries, and recurring gameplay guides.",
+  "intro": "Start by exploring the island systems one at a time instead of rushing every activity. The page below organizes the main loops so players can find events, collections, and social activities faster.",
+  "guideTitle": "Imagine Island Events and Activity Guide",
+  "guideIntro": "The best route is to treat Imagine Island as a rotating event hub: check what changed, pick one activity, then collect rewards before moving into social games.",
+  "steps": [
+    "Check the current island update first so you do not miss new event items or limited tasks.",
+    "Try fishing early because collections and funny catches are easy repeat goals.",
+    "Use fashion customization to set up a recognizable look before joining social areas.",
+    "Run the food-themed obby when you want movement practice and quick challenge content.",
+    "Play prop hunt with friends after learning the map, because hiding spots matter more than speed."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Best content angle",
+      "text": "Monthly update notes, event checklist, fish collection, fashion items, obby and prop hunt tips."
+    },
+    {
+      "title": "Why it is hot",
+      "text": "The official page shows a July 1, 2026 update and describes recurring monthly additions."
+    },
+    {
+      "title": "Player fit",
+      "text": "Good for players who like relaxed virtual worlds with many small activities and friends."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Imagine Island"
+    ],
+    [
+      "Genre",
+      "Virtual world, multiplayer, fishing, fashion, obby, prop hunt"
+    ],
+    [
+      "Official update signal",
+      "Updated on CrazyGames on July 1, 2026"
+    ],
+    [
+      "Trend hook",
+      "Monthly event and social-world update traffic"
+    ],
+    [
+      "Guide focus",
+      "Events, activities, collections, friends, map learning"
+    ],
+    [
+      "Platform",
+      "Browser, desktop and mobile"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Imagine Island online here?",
+      "answer": "Yes. Click the play button to load the browser build. The official CrazyGames source link is also included as a fallback."
+    },
+    {
+      "question": "What can you do in Imagine Island?",
+      "answer": "The official description highlights fishing, fashion, a food-themed obby, social play with friends, and prop hunt."
+    },
+    {
+      "question": "Why does Imagine Island need an events page?",
+      "answer": "The game updates monthly with new items, events, and challenges, so players benefit from a clear rotating checklist."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": 36,
+    "icon": "🏝️",
+    "tag": "Monthly events",
+    "summary": "Virtual island life with fishing, fashion, obby runs, prop hunt, and monthly updates.",
+    "recommendation": "Recommended for players who like social worlds, event tasks, collectibles, and light roleplay."
+  },
+  "indexing": {
+    "order": 50,
+    "lastmod": "2026-07-03",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 46,
+    "description": "Play a virtual island world with monthly events, fishing, fashion, obby, and prop hunt",
+    "fullSummary": "Imagine Island is a virtual island module with an embedded playable web build, monthly event checklist content, fishing and fashion notes, food obby tips, prop hunt guidance, and social-world update coverage."
+  }
+}
