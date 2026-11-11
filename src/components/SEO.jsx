@@ -25,7 +25,7 @@ const SEO = ({ title, description, keywords }) => {
           title: 'Crazy Cattle 3D Unblocked - Play Online Free (2026) | All 3 Maps',
           description: 'Play Crazy Cattle 3D unblocked online for free in your browser (2026). Master physics-based sheep battle royale across Ireland, Iceland & New Zealand maps with no download needed!',
           keywords: 'Crazy Cattle 3D, Crazy Cattle 3D Unblocked, Play Crazy Cattle 3D Free, Sheep Battle Royale, Crazy Cattle Online 2026, Ireland Iceland New Zealand maps',
-          canonical: baseUrl
+          canonical: `${baseUrl}/`
         };
       case '/crazy-cattle-3d-unblocked':
         return {

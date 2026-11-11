@@ -29,7 +29,7 @@ const sitemap = [
   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
   ...sitemapEntries.flatMap(({ content }) => [
     '  <url>',
-    `    <loc>${xmlEscape(`${BASE_URL}${content.path === '/' ? '' : content.path}`)}</loc>`,
+    `    <loc>${xmlEscape(`${BASE_URL}${content.path === '/' ? '/' : content.path}`)}</loc>`,
     `    <lastmod>${content.indexing.lastmod}</lastmod>`,
     `    <changefreq>${content.indexing.changefreq}</changefreq>`,
     `    <priority>${content.indexing.priority.toFixed(1)}</priority>`,

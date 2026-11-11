@@ -16,7 +16,7 @@
     "content:validate": "node scripts/validate-game-content.mjs",
     "content:generate": "node scripts/generate-content-indexes.mjs",
     "test:automation": "node --test automation/feishu-worker/test/game-message.test.mjs automation/feishu-worker/test/feishu-security.test.mjs automation/feishu-worker/test/worker.test.mjs",
-    "build": "npm run content:validate && npm run content:generate && vite build && node scripts/copy-game.js",
+    "build": "npm run content:validate && npm run content:generate && vite build && node scripts/copy-game.js && node scripts/prerender-pages.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
