@@ -26,6 +26,11 @@ const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy'))
 const TermsOfService = lazy(() => import('./components/TermsOfService'))
 const Contact = lazy(() => import('./components/Contact'))
 const FAQ = lazy(() => import('./components/FAQ'))
+const CrazyCattleUnblocked = lazy(() => import('./components/CrazyCattleUnblocked'))
+const CrazyCattleOnline = lazy(() => import('./components/CrazyCattleOnline'))
+const CrazyCattleDownload = lazy(() => import('./components/CrazyCattleDownload'))
+const CrazyCattleGuide = lazy(() => import('./components/CrazyCattleGuide'))
+const CattleCrazy3D = lazy(() => import('./components/CattleCrazy3D'))
 
 // 加载占位符组件
 const LoadingPlaceholder = () => {
@@ -254,11 +259,11 @@ const Navigation = () => {
         <div className="nav-main">
           <div className="nav-main-links">
             <button onClick={() => scrollToSection('game')} className="nav-link">🎮 Play Now</button>
-            <button onClick={() => scrollToSection('download')} className="nav-link">⬇️ Download</button>
-            <button onClick={() => scrollToSection('what-is')} className="nav-link">ℹ️ What is</button>
-            <button onClick={() => scrollToSection('features')} className="nav-link">✨ Features</button>
-            <button onClick={() => scrollToSection('how-to-play')} className="nav-link">🎯 How to Play</button>
-            <button onClick={() => scrollToSection('requirements')} className="nav-link">⚙️ Requirements</button>
+            <Link to="/crazy-cattle-3d-unblocked" className="nav-link">🔓 Unblocked</Link>
+            <Link to="/crazy-cattle-3d-guide" className="nav-link">📖 Strategy Guide</Link>
+            <Link to="/crazy-cattle-3d-mobile" className="nav-link">📱 Mobile</Link>
+            <Link to="/crazy-cattle-3d-download" className="nav-link">⬇️ Download</Link>
+            <Link to="/faq" className="nav-link">❓ FAQ</Link>
           </div>
           
           <button 
@@ -303,6 +308,28 @@ const Navigation = () => {
             </button>
           </div>
           <div className="games-list">
+            <div style={{ padding: '8px 12px', fontSize: '0.78rem', fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Crazy Cattle 3D Hub</div>
+            <Link to="/crazy-cattle-3d-unblocked" className="game-link" onClick={() => setIsGameDrawerOpen(false)}>
+              <span className="game-icon">🔓</span>
+              <span className="game-name">Crazy Cattle 3D Unblocked</span>
+            </Link>
+            <Link to="/crazy-cattle-3d-guide" className="game-link" onClick={() => setIsGameDrawerOpen(false)}>
+              <span className="game-icon">📖</span>
+              <span className="game-name">Maps &amp; Controls Guide</span>
+            </Link>
+            <Link to="/crazy-cattle-3d-online" className="game-link" onClick={() => setIsGameDrawerOpen(false)}>
+              <span className="game-icon">🌐</span>
+              <span className="game-name">Play Online Free</span>
+            </Link>
+            <Link to="/crazy-cattle-3d-download" className="game-link" onClick={() => setIsGameDrawerOpen(false)}>
+              <span className="game-icon">⬇️</span>
+              <span className="game-name">Official PC Download</span>
+            </Link>
+            <Link to="/cattle-crazy-3d" className="game-link" onClick={() => setIsGameDrawerOpen(false)}>
+              <span className="game-icon">🐄</span>
+              <span className="game-name">Cattle Crazy 3D Hub</span>
+            </Link>
+            <div style={{ padding: '10px 12px 6px', fontSize: '0.78rem', fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.05em' }}>More Trending Games</div>
             <Link
               to="/merge-clash"
               className={`game-link ${currentPath === '/merge-clash' ? 'active' : ''}`}
@@ -618,21 +645,23 @@ const Footer = () => {
         </div>
 
         <div className="footer-section">
-          <h3>⚡ Quick Links</h3>
+          <h3>⚡ Crazy Cattle 3D</h3>
           <div className="footer-links">
-            <button onClick={() => scrollToSection('game')} className="footer-link">🎮 Play Now</button>
-            <button onClick={() => scrollToSection('features')} className="footer-link">✨ Features</button>
-            <button onClick={() => scrollToSection('how-to-play')} className="footer-link">🎯 How to Play</button>
-            <button onClick={() => scrollToSection('requirements')} className="footer-link">⚙️ Requirements</button>
+            <Link to="/crazy-cattle-3d-unblocked" className="footer-link">🔓 Unblocked Version</Link>
+            <Link to="/crazy-cattle-3d-guide" className="footer-link">📖 Strategy &amp; Map Guide</Link>
+            <Link to="/crazy-cattle-3d-online" className="footer-link">🌐 Play Online Free</Link>
+            <Link to="/crazy-cattle-3d-download" className="footer-link">⬇️ PC Download Guide</Link>
+            <Link to="/crazy-cattle-3d-mobile" className="footer-link">📱 Mobile Edition</Link>
+            <Link to="/cattle-crazy-3d" className="footer-link">🐄 Cattle Crazy 3D Hub</Link>
           </div>
         </div>
 
         <div className="footer-section">
-          <h3>ℹ️ Info</h3>
+          <h3>ℹ️ Info &amp; Help</h3>
           <div className="footer-links">
-            <Link to="/about" className="footer-link">About</Link>
-            <Link to="/contact" className="footer-link">Contact</Link>
-            <Link to="/faq" className="footer-link">FAQ</Link>
+            <Link to="/about" className="footer-link">About (Attribution)</Link>
+            <Link to="/faq" className="footer-link">FAQ &amp; Unblocked</Link>
+            <Link to="/contact" className="footer-link">Contact Support</Link>
             <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
             <Link to="/terms-of-service" className="footer-link">Terms of Service</Link>
           </div>
@@ -651,7 +680,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2024 Crazy Cattle 3D. All rights reserved.</p>
+        <p>© 2026 Crazy Cattle 3D. All rights reserved.</p>
       </div>
     </footer>
   );
@@ -729,6 +758,11 @@ const AppContent = () => {
           <Route path="/clues-by-sam" element={<CluesBySam />} />
           <Route path="/crazy-cattle-3d-mobile" element={<CrazyCattle3DMobile />} />
           <Route path="/build-a-ring-farm" element={<BuildARingFarm />} />
+          <Route path="/crazy-cattle-3d-unblocked" element={<CrazyCattleUnblocked />} />
+          <Route path="/crazy-cattle-3d-online" element={<CrazyCattleOnline />} />
+          <Route path="/crazy-cattle-3d-download" element={<CrazyCattleDownload />} />
+          <Route path="/crazy-cattle-3d-guide" element={<CrazyCattleGuide />} />
+          <Route path="/cattle-crazy-3d" element={<CattleCrazy3D />} />
           {hotGameRoutePages.map((game) => (
             <Route key={game.path} path={game.path} element={<HotGamePage game={game} />} />
           ))}
@@ -822,54 +856,6 @@ const MainContent = () => {
         </header>
       </div>
 
-      <section className="new-games-panel" aria-label="New hot game updates">
-        <div className="new-games-heading">
-          <span className="new-games-label">New Hot Games</span>
-          <h2>Fresh playable modules</h2>
-          <p>Trending mini-games added for quick play, simple guides, and recommendation traffic.</p>
-        </div>
-
-        <div className="new-games-ticker" aria-label="Latest playable game updates">
-          <div className="ticker-label">Updated</div>
-          <div className="ticker-viewport">
-            <div className="ticker-track">
-              {[...hotGameUpdates, ...hotGameUpdates].map((game, index) => (
-                <Link to={game.path} className="ticker-item" key={`${game.path}-${index}`}>
-                  <strong>
-                    {game.icon && <span className="ticker-icon">{game.icon}</span>}
-                    {game.title}
-                  </strong>
-                  <span>{game.summary}</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        <div className="new-games-grid">
-          {hotGameUpdates.map((game) => (
-            <Link to={game.path} className="new-game-card" key={game.path}>
-              <img src={game.image} alt={`${game.title} preview`} loading="lazy" decoding="async" />
-              <div className="new-game-card-body">
-                <span className="new-game-tag">{game.tag}</span>
-                <h3>
-                  {game.icon && <span className="new-game-icon">{game.icon}</span>}
-                  {game.title}
-                </h3>
-                <p>{game.summary}</p>
-                <strong>{game.recommendation}</strong>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* Adsterra Native Banner */}
-      <div className="adsterra-banner">
-        <script async="async" data-cfasync="false" src="//pl26582350.profitableratecpm.com/0a313e2db292755835f544f199abfda3/invoke.js"></script>
-        <div id="container-0a313e2db292755835f544f199abfda3"></div>
-      </div>
-
       <section id="game" className="iframe-section">
         {!showGame ? (
           <div className="game-placeholder">
@@ -921,6 +907,53 @@ const MainContent = () => {
             </div>
           </div>
         )}
+      </section>
+
+      <section className="hub-quick-features" style={{ maxWidth: '1200px', margin: '1.5rem auto 2.5rem', padding: '0 1rem' }}>
+        <div style={{
+          background: '#eff6ff',
+          border: '1px solid #bfdbfe',
+          borderRadius: '8px',
+          padding: '12px 18px',
+          marginBottom: '1.25rem',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          flexWrap: 'wrap',
+          gap: '8px',
+          fontSize: '0.92rem',
+          color: '#1e40af'
+        }}>
+          <div>
+            <strong>💻 Best Desktop Experience:</strong> Crazy Cattle 3D momentum physics are optimized for keyboard (WASD) and mouse control. Playing on smartphone or tablet?
+          </div>
+          <Link to="/crazy-cattle-3d-mobile" className="btn primary" style={{ padding: '6px 14px', fontSize: '0.85rem' }}>
+            📱 Open Mobile Touch Edition
+          </Link>
+        </div>
+
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))',
+          gap: '1rem'
+        }}>
+          <Link to="/crazy-cattle-3d-unblocked" className="feature-card" style={{ textDecoration: 'none', color: 'inherit', margin: 0, padding: '16px' }}>
+            <h4 style={{ margin: '0 0 6px 0', color: '#2563eb' }}>🔓 Unblocked Mode</h4>
+            <p style={{ margin: 0, fontSize: '0.88rem', color: '#475569' }}>Play on school Chromebooks and restricted networks with zero setup.</p>
+          </Link>
+          <Link to="/crazy-cattle-3d-guide" className="feature-card" style={{ textDecoration: 'none', color: 'inherit', margin: 0, padding: '16px' }}>
+            <h4 style={{ margin: '0 0 6px 0', color: '#2563eb' }}>📖 Strategy &amp; Maps</h4>
+            <p style={{ margin: 0, fontSize: '0.88rem', color: '#475569' }}>Master Ireland hills, Iceland drop-offs, and New Zealand peaks.</p>
+          </Link>
+          <Link to="/crazy-cattle-3d-download" className="feature-card" style={{ textDecoration: 'none', color: 'inherit', margin: 0, padding: '16px' }}>
+            <h4 style={{ margin: '0 0 6px 0', color: '#2563eb' }}>⬇️ Official PC Build</h4>
+            <p style={{ margin: 0, fontSize: '0.88rem', color: '#475569' }}>Support creator Anna Mayberry on itch.io for offline PC gaming.</p>
+          </Link>
+          <Link to="/cattle-crazy-3d" className="feature-card" style={{ textDecoration: 'none', color: 'inherit', margin: 0, padding: '16px' }}>
+            <h4 style={{ margin: '0 0 6px 0', color: '#2563eb' }}>🐄 Cattle Crazy Hub</h4>
+            <p style={{ margin: 0, fontSize: '0.88rem', color: '#475569' }}>Search term disambiguation, mirror guide, and fan portal safety.</p>
+          </Link>
+        </div>
       </section>
 
       <section className="best-result-section">
@@ -976,6 +1009,54 @@ const MainContent = () => {
           <Content />
         </Suspense>
       </main>
+
+      <section className="new-games-panel" aria-label="New hot game updates">
+        <div className="new-games-heading">
+          <span className="new-games-label">New Hot Games</span>
+          <h2>Fresh playable modules</h2>
+          <p>Trending mini-games added for quick play, simple guides, and recommendation traffic.</p>
+        </div>
+
+        <div className="new-games-ticker" aria-label="Latest playable game updates">
+          <div className="ticker-label">Updated</div>
+          <div className="ticker-viewport">
+            <div className="ticker-track">
+              {[...hotGameUpdates, ...hotGameUpdates].map((game, index) => (
+                <Link to={game.path} className="ticker-item" key={`${game.path}-${index}`}>
+                  <strong>
+                    {game.icon && <span className="ticker-icon">{game.icon}</span>}
+                    {game.title}
+                  </strong>
+                  <span>{game.summary}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="new-games-grid">
+          {hotGameUpdates.map((game) => (
+            <Link to={game.path} className="new-game-card" key={game.path}>
+              <img src={game.image} alt={`${game.title} preview`} loading="lazy" decoding="async" />
+              <div className="new-game-card-body">
+                <span className="new-game-tag">{game.tag}</span>
+                <h3>
+                  {game.icon && <span className="new-game-icon">{game.icon}</span>}
+                  {game.title}
+                </h3>
+                <p>{game.summary}</p>
+                <strong>{game.recommendation}</strong>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Adsterra Native Banner */}
+      <div className="adsterra-banner">
+        <script async="async" data-cfasync="false" src="//pl26582350.profitableratecpm.com/0a313e2db292755835f544f199abfda3/invoke.js"></script>
+        <div id="container-0a313e2db292755835f544f199abfda3"></div>
+      </div>
     </>
   );
 };

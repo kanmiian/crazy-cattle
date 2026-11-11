@@ -1,4 +1,6 @@
 import React, { useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
+import SEO from './SEO';
 
 const GAME_SRC = 'https://crazycattle3dgithub.io/game/crazy-cattle-3d-mobile/';
 
@@ -38,7 +40,12 @@ const CrazyCattle3DMobile = () => {
   };
 
   return (
-    <div className="game-page">
+    <div className="game-page mobile-edition-page">
+      <SEO
+        title="Crazy Cattle 3D Mobile - Sheep Battle Royale Mobile Touch Edition"
+        description="Play Crazy Cattle 3D Mobile free in your smartphone or tablet browser! Touch-screen optimized physics sheep combat adapted from the original PC edition."
+        keywords="Crazy Cattle 3D Mobile, Crazy Cattle mobile version, play crazy cattle on phone, crazy cattle android ios, touch battle royale"
+      />
       <div className="game-header">
         <h1>🐄 Crazy Cattle 3D Mobile – Sheep Battle Royale (Mobile Version)</h1>
         <p className="game-description-header">
@@ -51,6 +58,9 @@ const CrazyCattle3DMobile = () => {
           >
             <span>🎮</span> Play Crazy Cattle 3D Mobile Now
           </button>
+          <Link to="/" className="btn secondary">
+            <span>💻</span> Switch to Desktop PC Edition
+          </Link>
         </div>
       </div>
 
@@ -146,6 +156,31 @@ const CrazyCattle3DMobile = () => {
         <div className="faq-item">
           <h4>Can I play Crazy Cattle 3D Mobile on desktop?</h4>
           <p>Yes. You can open the <strong>Crazy Cattle 3D mobile</strong> page on a PC; the game runs in the browser. For the full desktop experience, use the main site’s <strong>PC version</strong> of Crazy Cattle 3D.</p>
+        </div>
+        <div className="hub-backlink-card" style={{
+          marginTop: '2.5rem',
+          padding: '1.5rem',
+          background: '#eff6ff',
+          borderRadius: '10px',
+          border: '1px solid #bfdbfe'
+        }}>
+          <h3 style={{ margin: '0 0 8px 0', color: '#1e40af' }}>
+            Looking for the Full Desktop Keyboard &amp; Mouse Experience?
+          </h3>
+          <p style={{ margin: '0 0 12px 0', fontSize: '0.95rem', color: '#1e3a8a' }}>
+            While this mobile edition is tailored for touchscreens, competitive physics players prefer the raw precision of the desktop build.
+          </p>
+          <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+            <Link to="/" className="btn primary" style={{ padding: '6px 14px', fontSize: '0.85rem' }}>
+              🐄 Full PC Desktop Version
+            </Link>
+            <Link to="/crazy-cattle-3d-guide" className="btn secondary" style={{ padding: '6px 14px', fontSize: '0.85rem' }}>
+              📖 Maps &amp; Tactics Guide
+            </Link>
+            <Link to="/crazy-cattle-3d-unblocked" className="btn secondary" style={{ padding: '6px 14px', fontSize: '0.85rem' }}>
+              🔓 Unblocked Mode
+            </Link>
+          </div>
         </div>
       </div>
     </div>

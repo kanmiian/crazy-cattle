@@ -1,106 +1,119 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './FAQ.css';
+import { Link } from 'react-router-dom';
+
+const faqData = [
+  {
+    category: 'Essential Player Questions',
+    items: [
+      {
+        q: 'Is Crazy Cattle 3D completely free to play?',
+        a: 'Yes, Crazy Cattle 3D is 100% free to play in your web browser. There are no pay-to-win microtransactions, paywalls, or mandatory subscriptions required to access any of the three maps (Ireland, Iceland, New Zealand).'
+      },
+      {
+        q: 'Can I play Crazy Cattle 3D unblocked at school or work?',
+        a: 'Yes! The browser version runs on standard client-side WebGL/HTML5 without requiring administrator installation, desktop executables, or third-party plugins. It runs seamlessly on school Chromebooks, library laptops, and managed office networks where app downloads are restricted.'
+      },
+      {
+        q: 'Do I need to download or install files to play Crazy Cattle 3D?',
+        a: 'No download is required to play online. You can play directly inside modern browsers (Chrome, Edge, Firefox, Safari). However, if you prefer an offline standalone PC version with raw local performance, the original creator Anna Mayberry provides an official download on itch.io.'
+      },
+      {
+        q: 'Can I play Crazy Cattle 3D on mobile devices (Android & iPhone)?',
+        a: 'Crazy Cattle 3D is primarily built for desktop computers using keyboard (WASD) and mouse controls for optimal physics precision. While modern mobile browsers with WebGL support can load our mobile-adapted touch interface, please note that intense ragdoll physics simulations require substantial mobile processing power and physical keys remain recommended for competitive play.'
+      },
+      {
+        q: 'Is Crazy Cattle 3D multiplayer or single-player against AI?',
+        a: 'Crazy Cattle 3D currently features fast-paced single-player battle royale matches against a herd of simulated AI bots. We are completely honest with our community: there is currently no true peer-to-peer or server-authoritative live multiplayer PvP matchmaking. A synchronized online multiplayer mode is in community development and experimental stages, but today\'s core gameplay is an offline-capable AI survival arena.'
+      }
+    ]
+  },
+  {
+    category: 'Maps, Controls & Tactics',
+    items: [
+      {
+        q: 'What are the three maps in Crazy Cattle 3D?',
+        a: 'The game features three distinct battlegrounds: 1) Ireland — rolling grassy hills ideal for downhill momentum strikes; 2) Iceland — volcanic rock terrain with high-risk perimeter drop-offs and narrow footholds; 3) New Zealand — mountainous vertical cliffs that challenge your recovery bounces.'
+      },
+      {
+        q: 'What are the controls for Crazy Cattle 3D?',
+        a: 'Use WASD or Arrow Keys for movement and directional steering. Press Spacebar to activate your explosive charge/jump collision. Move your mouse to orient your camera and line up devastating angled rams into rival sheep.'
+      },
+      {
+        q: 'How do I fix WebGL lag or black screen issues?',
+        a: 'Ensure Hardware Acceleration is toggled ON in your browser settings (Settings > System > Use graphics acceleration when available). Updating your graphics drivers and closing background memory-heavy tabs will noticeably improve physics framerates.'
+      }
+    ]
+  }
+];
 
 const FAQ = () => {
+  useEffect(() => {
+    // 注入 FAQPage 结构化数据 (JSON-LD)
+    const faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqData.flatMap(cat => cat.items).map(item => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.a
+        }
+      }))
+    };
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.id = 'faq-jsonld';
+    script.text = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+
+    return () => {
+      const existing = document.getElementById('faq-jsonld');
+      if (existing) {
+        existing.remove();
+      }
+    };
+  }, []);
+
   return (
     <div className="faq-page">
       <h1>
         <span role="img" aria-label="question mark">❓</span>
-        Frequently Asked Questions
+        Crazy Cattle 3D FAQ &amp; Player Guide
       </h1>
+      <p className="faq-subtitle" style={{ textAlign: 'center', color: '#64748b', marginBottom: '2rem' }}>
+        Honest, verified answers about gameplay, unblocked access, controls, and developer attribution.
+      </p>
+
       <div className="faq-content">
-        <section className="faq-section">
-          <h2>Game Basics</h2>
-          <div className="faq-item">
-            <h3>
-              <span role="img" aria-label="question">❓</span> 
-              What is Crazy Cattle 3D?
-            </h3>
-            <p>Crazy Cattle 3D is a free-to-play browser-based physics battle royale game where players control cows in a chaotic arena. The game combines humor, strategy, and physics-based gameplay in a unique multiplayer experience.</p>
-          </div>
-          <div className="faq-item">
-            <h3>
-              <span role="img" aria-label="money">💰</span> 
-              Is the game really free to play?
-            </h3>
-            <p>Yes! Crazy Cattle 3D is completely free to play. There are no hidden costs, no pay-to-win mechanics, and no advertisements. We believe in providing a pure gaming experience for all players.</p>
-          </div>
-          <div className="faq-item">
-            <h3>
-              <span role="img" aria-label="computer">💻</span> 
-              What are the system requirements?
-            </h3>
-            <p>The game is designed to run smoothly on most modern browsers. We recommend using Chrome, Firefox, or Edge with a stable internet connection. The game uses WebGL for 3D graphics, so your browser needs to support it.</p>
-          </div>
-        </section>
+        {faqData.map(category => (
+          <section className="faq-section" key={category.category}>
+            <h2>{category.category}</h2>
+            {category.items.map(item => (
+              <div className="faq-item" key={item.q}>
+                <h3>{item.q}</h3>
+                <p>{item.a}</p>
+              </div>
+            ))}
+          </section>
+        ))}
 
-        <section className="faq-section">
-          <h2>Gameplay</h2>
-          <div className="faq-item">
-            <h3>
-              <span role="img" aria-label="game controller">🎮</span> 
-              How do I play the game?
-            </h3>
-            <p>Use WASD or arrow keys to move your cow, and the spacebar to jump. Click to attack other players. The goal is to be the last cow standing in the arena. Each match typically lasts 3-5 minutes.</p>
-          </div>
-          <div className="faq-item">
-            <h3>
-              <span role="img" aria-label="video game">🎲</span> 
-              Are there different game modes?
-            </h3>
-            <p>Yes! We offer several game modes including Classic Battle Royale, Team Deathmatch, and special event modes that rotate weekly. Each mode offers unique gameplay experiences and rewards.</p>
-          </div>
-          <div className="faq-item">
-            <h3>
-              <span role="img" aria-label="people">👥</span> 
-              Can I play with friends?
-            </h3>
-            <p>Absolutely! You can create or join private matches with friends using the room code system. We also have a party system that allows you to queue together for public matches.</p>
-          </div>
-        </section>
-
-        <section className="faq-section">
-          <h2>Technical Support</h2>
-          <div className="faq-item">
-            <h3>What should I do if the game isn't loading?</h3>
-            <p>First, try refreshing your browser. If the problem persists, clear your browser cache and cookies. Make sure you have a stable internet connection and that your browser is up to date.</p>
-          </div>
-          <div className="faq-item">
-            <h3>How do I report bugs or issues?</h3>
-            <p>You can report bugs through our Discord community or by using the in-game feedback system. We actively monitor and address player reports to improve the game experience.</p>
-          </div>
-          <div className="faq-item">
-            <h3>Will the game be available on mobile devices?</h3>
-            <p>We're currently working on a mobile version of Crazy Cattle 3D. While we don't have a specific release date yet, we're committed to bringing the game to mobile platforms in the future.</p>
-          </div>
-        </section>
-
-        <section className="faq-section">
-          <h2>Community & Support</h2>
-          <div className="faq-item">
-            <h3>How can I join the community?</h3>
-            <p>Join our Discord server to connect with other players, participate in community events, and stay updated on game news and updates. You can also follow us on social media for the latest announcements.</p>
-          </div>
-          <div className="faq-item">
-            <h3>How often is the game updated?</h3>
-            <p>We release regular updates every two weeks, including new features, balance changes, and bug fixes. Major content updates typically occur every 2-3 months.</p>
-          </div>
-          <div className="faq-item">
-            <h3>How can I provide feedback or suggestions?</h3>
-            <p>We welcome player feedback! You can share your ideas and suggestions through our Discord server, the in-game feedback system, or our community forums. Your input helps shape the future of Crazy Cattle 3D.</p>
-          </div>
-        </section>
-        
-        {/* 底部快速导航 */}
-        <div className="faq-quick-nav">
-          <h3>Quick Navigation</h3>
-          <ul>
-            <li><a href="#game-basics">Game Basics</a></li>
-            <li><a href="#gameplay">Gameplay</a></li>
-            <li><a href="#technical-support">Technical Support</a></li>
-            <li><a href="#community-support">Community & Support</a></li>
-            <li><a href="/about">About the Game</a></li>
-            <li><a href="/terms">Terms of Service</a></li>
+        {/* 内部推荐导航 */}
+        <div className="faq-related-links" style={{
+          marginTop: '3rem',
+          padding: '1.5rem',
+          background: '#f1f5f9',
+          borderRadius: '8px'
+        }}>
+          <h3 style={{ marginTop: 0 }}>Explore More Guides</h3>
+          <p>Want deeper game tactics, unblocked mirrors, or download links?</p>
+          <ul style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', listStyle: 'none', padding: 0 }}>
+            <li><Link to="/crazy-cattle-3d-unblocked" style={{ color: '#2563eb', fontWeight: 600 }}>Play Unblocked</Link></li>
+            <li><Link to="/crazy-cattle-3d-guide" style={{ color: '#2563eb', fontWeight: 600 }}>Complete Map Guide</Link></li>
+            <li><Link to="/crazy-cattle-3d-download" style={{ color: '#2563eb', fontWeight: 600 }}>Download PC Version</Link></li>
+            <li><Link to="/crazy-cattle-3d-online" style={{ color: '#2563eb', fontWeight: 600 }}>Play Online Free</Link></li>
           </ul>
         </div>
       </div>
@@ -108,4 +121,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ; 
+export default FAQ;

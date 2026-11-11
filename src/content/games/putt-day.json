@@ -104,7 +104,7 @@
   "indexing": {
     "order": 20,
     "lastmod": "2026-07-24",
-    "changefreq": "daily",
+    "changefreq": "weekly",
     "priority": 0.9
   },
   "llms": {

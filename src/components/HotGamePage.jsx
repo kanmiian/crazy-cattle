@@ -1,9 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { hotGameRoutePages } from '../data/gameRegistry';
 import SEO from './SEO';
 
 const BASE_URL = 'https://cattlecrazy3d.com';
 
 const HotGamePage = ({ game }) => {
+  const relatedGames = hotGameRoutePages
+    .filter((item) => item.path !== game?.path)
+    .slice(0, 4);
   const [showGame, setShowGame] = useState(false);
   const [iframeLoaded, setIframeLoaded] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -253,6 +258,73 @@ const HotGamePage = ({ game }) => {
             <p>{faq.answer}</p>
           </div>
         ))}
+
+        {/* 回链 Crazy Cattle 3D 主词与核心集群 */}
+        <div className="hub-backlink-card" style={{
+          marginTop: '2.5rem',
+          padding: '1.5rem',
+          background: '#eff6ff',
+          borderRadius: '10px',
+          border: '1px solid #bfdbfe'
+        }}>
+          <h3 style={{ margin: '0 0 8px 0', color: '#1e40af' }}>
+            🐄 Looking for More Browser Physics Fun?
+          </h3>
+          <p style={{ margin: '0 0 12px 0', fontSize: '0.95rem', color: '#1e3a8a' }}>
+            Check out our flagship game <strong><Link to="/" style={{ color: '#2563eb', fontWeight: 700 }}>Crazy Cattle 3D</Link></strong>! Knock rival sheep off scenic hills in Ireland, Iceland, and New Zealand in a chaotic physics battle royale.
+          </p>
+          <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+            <Link to="/crazy-cattle-3d-unblocked" className="btn primary" style={{ padding: '6px 14px', fontSize: '0.85rem' }}>
+              🔓 Play Unblocked
+            </Link>
+            <Link to="/crazy-cattle-3d-guide" className="btn secondary" style={{ padding: '6px 14px', fontSize: '0.85rem' }}>
+              📖 Map Strategy Guide
+            </Link>
+            <Link to="/crazy-cattle-3d-mobile" className="btn secondary" style={{ padding: '6px 14px', fontSize: '0.85rem' }}>
+              📱 Mobile Edition
+            </Link>
+          </div>
+        </div>
+
+        {/* 同簇相关游戏推荐 */}
+        <div className="related-cluster-games" style={{ marginTop: '2.5rem' }}>
+          <h3>🎮 More Trending Browser Games</h3>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+            gap: '1rem',
+            marginTop: '1rem'
+          }}>
+            {relatedGames.map((item) => (
+              <Link
+                to={item.path}
+                key={item.path}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '12px',
+                  padding: '12px',
+                  background: '#f8fafc',
+                  border: '1px solid #e2e8f0',
+                  borderRadius: '8px',
+                  textDecoration: 'none',
+                  color: 'inherit'
+                }}
+              >
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  style={{ width: '48px', height: '48px', objectFit: 'cover', borderRadius: '6px' }}
+                  loading="lazy"
+                />
+                <div>
+                  <div style={{ fontWeight: 600, fontSize: '0.92rem', color: '#1e293b' }}>{item.title}</div>
+                  <div style={{ fontSize: '0.78rem', color: '#64748b' }}>{item.details?.[1]?.[1] || 'Free Browser Game'}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -122,7 +122,7 @@
   "indexing": {
     "order": 60,
     "lastmod": "2026-08-13",
-    "changefreq": "daily",
+    "changefreq": "weekly",
     "priority": 0.9
   },
   "llms": {

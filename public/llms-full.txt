@@ -2,10 +2,16 @@
 
 > A physics-driven battle game where players control explosive sheep and cattle competing for survival across three unique environments.
 
-[Crazy Cattle 3D](https://cattlecrazy3d.com) is a fun physics simulation game, available to play online or download. In this chaotic battlefield, players will experience the thrill of sheep versus cattle herds, using physics and momentum to become the ultimate warrior. The game offers a browser-based online version and a downloadable offline version, supporting multiple platforms.
+[Crazy Cattle 3D](https://cattlecrazy3d.com) is an indie physics simulation game, available to play online or download. In this chaotic battlefield, players will experience the thrill of sheep battle royale, using physics and momentum to become the ultimate survivor across Ireland, Iceland, and New Zealand. The website offers a browser-based online version and official developer download links.
 
-## Play Now
-On our website, you can experience the complete version of Crazy Cattle 3D directly through your browser, with no download required. The game loads quickly, has simple controls, and is suitable for players of all ages. Just click the "Play Now" button to begin your battle journey.
+## Play Now & Featured Portals
+On our website, you can experience the complete version of Crazy Cattle 3D directly through your browser, with no download required:
+- [Crazy Cattle 3D Unblocked](https://cattlecrazy3d.com/crazy-cattle-3d-unblocked): Safe, sandboxed browser gaming designed for school Chromebooks and restricted networks.
+- [Crazy Cattle 3D Online](https://cattlecrazy3d.com/crazy-cattle-3d-online): High-speed client-side WebGL canvas rendering with instant rematches.
+- [Crazy Cattle 3D Strategy Guide](https://cattlecrazy3d.com/crazy-cattle-3d-guide): In-depth mechanics breakdown for Ireland, Iceland, and New Zealand arenas.
+- [Crazy Cattle 3D Download](https://cattlecrazy3d.com/crazy-cattle-3d-download): Transparent instructions to get the official standalone build from original creator Anna Mayberry on itch.io.
+- [Cattle Crazy 3D Hub](https://cattlecrazy3d.com/cattle-crazy-3d): Clarification for users searching inverted terms and distinguishing cattlecrazy3d.com from clone mirrors.
+- [Crazy Cattle 3D Mobile](https://cattlecrazy3d.com/crazy-cattle-3d-mobile): Touch-optimized mobile web edition for smartphones and tablets.
 
 ## Build A Ring Farm
 Build A Ring Farm is a browser farming incremental game page with an embedded playable web build, seed priority tips, current code status, crop upgrade strategy, and FAQ content for players searching for ring farm simulator guidance.
@@ -122,7 +128,7 @@ Goal Gang is a multiplayer football module with an embedded playable web build, 
 Imagine Island is a virtual island module with an embedded playable web build, monthly event checklist content, fishing and fashion notes, food obby tips, prop hunt guidance, and social-world update coverage.
 
 ## Emoji Guess Master
-Emoji Guess Master is an updated CrazyGames emoji puzzle module with an embedded playable build, answer-hint strategy, level keyword framing, and FAQ content for players searching for emoji puzzle answers.
+Emoji Guess Master is an updated CrazyGames emoji puzzle module with an embedded playable build, verified answer-hint strategy, level keyword framing, and FAQ content for players searching for emoji puzzle answers.
 
 ## Dino World
 Dino World is a new CrazyGames dinosaur squad module with an embedded playable build, beginner upgrade route, squad-building recommendations, and fresh dinosaur game keyword coverage.
@@ -134,40 +140,32 @@ Captain Blast is a level-based puzzle adventure module with an embedded playable
 Hop Earth is a guide and official play gateway for Hop.Earth, the viral browser driving game that turns real road networks and elevation data into explorable 3D routes. It covers official access, account expectations, short-route setup, map-generation limits, custom races, speed comparison, browser performance, and common loading questions.
 
 ## Download Game
-If you want a smoother gaming experience, you can download the offline version of Crazy Cattle 3D from the itch.io platform. We provide multi-platform support to ensure you can enjoy the game on any device. After downloading, you'll get access to the complete game content and regular updates.
+If you want a standalone PC gaming experience with offline support and dedicated GPU rendering, download the official version of Crazy Cattle 3D created by Anna Mayberry directly from itch.io (https://annamayberry.itch.io/crazy-cattle-3d).
 
 ## Game Features
 Crazy Cattle 3D has many unique features:
-- Physics-driven system: A realistic physics engine delivers a laugh-out-loud gaming experience
-- Diverse environments: Three unique scenes, each with different strategic challenges
-- Character diversity: Choose to play as explosive sheep or strong cattle, each with unique abilities
-- Easy to learn: A control system that's easy to pick up but difficult to master
-- Strategic depth: Requires strategic thinking and skill to become the ultimate winner
+- Physics-driven system: A momentum-based physics engine delivers unpredictable collisions and ragdoll dynamics
+- Diverse environments: Three distinct battlegrounds (Ireland rolling hills, Iceland volcanic cliffs, and New Zealand alpine ridges)
+- Pure skill combat: Master timing, angular momentum, and terrain slopes rather than RNG loot
+- Easy to learn: Simple WASD + Space controls that reward positioning mastery
+- Single-player vs AI Bots: Fast survival matches against an aggressive herd of AI sheep
 
 ## How to Play
 In Crazy Cattle 3D, you'll learn how to:
-- Control character movement and jumping
-- Use the physics system to create momentum advantages
-- Use special abilities to defeat opponents
-- Survive and fight in different terrains
-- Master timing and strategy to become the ultimate winner
+- Steer your sheep with WASD / Arrow Keys and adjust perspective with the mouse
+- Build downhill speed to convert momentum into high-knockout collisions
+- Use Spacebar for explosive charges and jumping over rival rushes
+- Exploit map edges and hazard zones to send rival AI flying off the arena
 
 ## System Requirements
-For the best experience, we recommend:
-- Modern web browsers (latest versions of Chrome, Firefox, Safari, or Edge)
-- Stable internet connection (for online version)
-- 2GB RAM
-- Any graphics card that supports WebGL
+For the best browser experience:
+- Modern web browser (latest Chrome, Edge, Firefox, or Safari) with WebGL enabled
+- Desktop computer with keyboard and mouse recommended for competitive control
+- 4GB+ RAM and hardware graphics acceleration toggled on
 
-## Support and Feedback
-We are committed to continuously improving the Crazy Cattle 3D gaming experience. If you have any questions or suggestions, please contact us through:
-- Visit our FAQ page for answers to common questions
-- Send your feedback and suggestions via our contact page
-- Support our development on Ko-fi
-
-## About the Development Team
-Crazy Cattle 3D is developed by a small independent team that loves games and physics simulation. Our goal is to create fun, easy-to-learn yet deep gaming experiences. We value player feedback and continuously update our game content.
+## About cattlecrazy3d.com & Developer Attribution
+cattlecrazy3d.com is an independent community portal and gameplay guide site. The original game Crazy Cattle 3D was created by independent developer Anna Mayberry. We promote transparent developer attribution and encourage players to visit Anna Mayberry's itch.io page to support the creator.
 
 ## Legal Information
-- Privacy Policy: Detailed explanation of how we collect, use, and protect user data
-- Terms of Service: Terms and conditions for using our website and game
+- Privacy Policy: Transparent information on client cookies and web security
+- Terms of Service: Guidelines and terms of use for our browser game portal

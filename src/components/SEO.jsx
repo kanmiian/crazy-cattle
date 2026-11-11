@@ -22,14 +22,50 @@ const SEO = ({ title, description, keywords }) => {
     switch (location.pathname) {
       case '/':
         return {
-          title: 'Crazy Cattle 3D - Sheep Battle Royale Game',
-          description: 'Join the ultimate physics battle royale where explosive sheep compete for victory! Master physics mechanics, battle in chaotic arenas, and become the champion.',
+          title: 'Crazy Cattle 3D Unblocked - Play Online Free (2026) | All 3 Maps',
+          description: 'Play Crazy Cattle 3D unblocked online for free in your browser (2026). Master physics-based sheep battle royale across Ireland, Iceland & New Zealand maps with no download needed!',
+          keywords: 'Crazy Cattle 3D, Crazy Cattle 3D Unblocked, Play Crazy Cattle 3D Free, Sheep Battle Royale, Crazy Cattle Online 2026, Ireland Iceland New Zealand maps',
           canonical: baseUrl
+        };
+      case '/crazy-cattle-3d-unblocked':
+        return {
+          title: 'Crazy Cattle 3D Unblocked - Play Free at School & Work (2026)',
+          description: 'Play Crazy Cattle 3D unblocked online for free! Enjoy the physics battle royale on school Chromebooks and restricted networks without downloads or installation.',
+          keywords: 'Crazy Cattle 3D Unblocked, Crazy Cattle Unblocked, Crazy Cattle 3D at school, crazy cattle unblocked 76, crazy cattle unblocked 66, physics battle royale unblocked',
+          canonical: `${baseUrl}/crazy-cattle-3d-unblocked`
+        };
+      case '/crazy-cattle-3d-online':
+        return {
+          title: 'Crazy Cattle 3D Online - Play Free Browser Game (2026)',
+          description: 'Play Crazy Cattle 3D online directly in your browser. Fast WebGL loading, zero downloads, and responsive physics battle royale action on PC and Mac.',
+          keywords: 'Crazy Cattle 3D Online, Play Crazy Cattle 3D Online, Crazy Cattle free online, browser battle royale, sheep battle game',
+          canonical: `${baseUrl}/crazy-cattle-3d-online`
+        };
+      case '/crazy-cattle-3d-download':
+        return {
+          title: 'Crazy Cattle 3D Download - Official PC & Mac Version (itch.io)',
+          description: 'Learn how to download Crazy Cattle 3D for PC. Find the official itch.io page by creator Anna Mayberry, system requirements, and instant browser play alternatives.',
+          keywords: 'Crazy Cattle 3D Download, Crazy Cattle 3D PC download, Crazy Cattle itch.io, Anna Mayberry Crazy Cattle, Crazy Cattle free download, play without downloading',
+          canonical: `${baseUrl}/crazy-cattle-3d-download`
+        };
+      case '/crazy-cattle-3d-guide':
+        return {
+          title: 'Crazy Cattle 3D Strategy Guide - Controls, Maps & Pro Tips',
+          description: 'Master Crazy Cattle 3D with our comprehensive guide! Detailed breakdown of Ireland, Iceland, and New Zealand maps, physics controls, and winning combat tactics.',
+          keywords: 'Crazy Cattle 3D Guide, Crazy Cattle 3D tips, Crazy Cattle controls, Crazy Cattle 3D maps, Ireland map crazy cattle, Iceland map crazy cattle, New Zealand map crazy cattle',
+          canonical: `${baseUrl}/crazy-cattle-3d-guide`
+        };
+      case '/cattle-crazy-3d':
+        return {
+          title: 'Cattle Crazy 3D - Play Online & Domain Guide (cattlecrazy3d.com)',
+          description: 'Searching for Cattle Crazy 3D? Play the viral physics battle royale online free. Understand the differences between cattlecrazy3d.com and other mirror sites.',
+          keywords: 'Cattle Crazy 3D, cattle crazy, cattlecrazy3d, crazycattle3d.com, cattle crazy game, sheep physics battle royale',
+          canonical: `${baseUrl}/cattle-crazy-3d`
         };
       case '/about':
         return {
-          title: 'About Crazy Cattle 3D | Physics Battle Royale Game',
-          description: 'Discover Crazy Cattle 3D, where explosive sheep create chaos in physics-based battles. Learn about our unique game design and the team behind the mayhem!',
+          title: 'About Crazy Cattle 3D | Independent Guide & Gameplay Portal',
+          description: 'Discover Crazy Cattle 3D, the physics sheep battle royale by indie developer Anna Mayberry. Learn about our independent fan guide and online play portal.',
           canonical: `${baseUrl}/about`
         };
       case '/contact':
@@ -40,9 +76,9 @@ const SEO = ({ title, description, keywords }) => {
         };
       case '/faq':
         return {
-           title: 'FAQ | Crazy Cattle 3D Game Help & Information',
-           description: 'Get answers about Crazy Cattle 3D gameplay, controls, multiplayer features, and technical requirements. Find tips and solutions to common questions.',
-           canonical: `${baseUrl}/faq`
+          title: 'FAQ | Crazy Cattle 3D Game Help & Information',
+          description: 'Get verified answers about Crazy Cattle 3D gameplay, controls, unblocked access, mobile play, and developer attribution.',
+          canonical: `${baseUrl}/faq`
         };
       case '/privacy-policy':
         return {
@@ -52,9 +88,16 @@ const SEO = ({ title, description, keywords }) => {
         };
       case '/terms-of-service':
         return {
-           title: 'Terms of Service | Crazy Cattle 3D Game',
-           description: 'Review Crazy Cattle 3D\'s terms of service. Understand the rules and conditions for playing our physics-based battle royale game and using our services.',
+          title: 'Terms of Service | Crazy Cattle 3D Game',
+          description: 'Review Crazy Cattle 3D\'s terms of service. Understand the rules and conditions for playing our physics-based battle royale game and using our services.',
           canonical: `${baseUrl}/terms-of-service`
+        };
+      case '/crazy-cattle-3d-mobile':
+        return {
+          title: 'Crazy Cattle 3D Mobile - Sheep Battle Royale Mobile Touch Edition',
+          description: 'Play Crazy Cattle 3D Mobile free in your smartphone or tablet browser! Touch-screen optimized physics sheep combat adapted from the original PC edition.',
+          keywords: 'Crazy Cattle 3D Mobile, Crazy Cattle mobile version, play crazy cattle on phone, crazy cattle android ios, touch battle royale',
+          canonical: `${baseUrl}/crazy-cattle-3d-mobile`
         };
       case '/lovemoney':
         return {
@@ -122,16 +165,10 @@ const SEO = ({ title, description, keywords }) => {
           description: 'Play Cheese Chompers online! Guide your mouse through exciting 3D levels, collect cheese, and avoid obstacles in this addictive platformer game. Free to play',
           canonical: `${baseUrl}/cheese-chompers`
         };
-      case '/crazy-cattle-3d-mobile':
-        return {
-          title: 'Crazy Cattle 3D Mobile - Sheep Battle Royale Mobile Game | Play Free',
-          description: 'Play Crazy Cattle 3D Mobile free! The mobile version of Crazy Cattle 3D, adapted from the PC version. Physics-based sheep and cattle battle royale for phones and tablets. No download required.',
-          canonical: `${baseUrl}/crazy-cattle-3d-mobile`
-        };
       default:
         return {
-          title: title || 'Crazy Cattle 3D - Sheep Battle Royale Game',
-          description: description || 'Play Crazy Cattle 3D, the ultimate physics-based battle royale game! Control explosive sheep and cattle, master momentum, and become the last animal standing.',
+          title: title || 'Crazy Cattle 3D Unblocked - Play Online Free (2026) | All 3 Maps',
+          description: description || 'Play Crazy Cattle 3D, the ultimate physics-based battle royale game! Control explosive sheep and cattle across Ireland, Iceland & New Zealand.',
           keywords,
           canonical: `${baseUrl}${location.pathname}`
         };

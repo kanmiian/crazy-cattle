@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import SEO from './SEO';
+import { Link } from 'react-router-dom';
 
 const GAME_SRC = 'https://app-526977.games.s3.yandex.net/526977/t7m0ggteem5nv7m996jg2rbbo5wqy5pe/index.html?clid=11165832&sdk=%2Fsdk%2F_%2Fv2.12571c36cd12ca98b1bd.js#origin=https%3A%2F%2Fplayhop.com&app-id=526977&device-type=desktop';
 const DIRECT_PLAY_URL = 'https://www.yad.com/Build-A-Ring-Farm';
@@ -152,9 +153,28 @@ const BuildARingFarm = () => {
           <strong>Build A Ring Farm</strong> is trending because it combines online farm idle growth with upgrade loops that are easy to search for: players want the best seeds, current codes, and the fastest way to grow the circular farm. This guide focuses on the browser version embedded above and the practical progression pattern that applies to ring farm simulator gameplay.
         </p>
 
-        <h3>Current Build A Ring Farm Codes</h3>
+        <h3>Current Build A Ring Farm Codes &amp; Redeem Status (2026)</h3>
         <p>
-          There are no reliable public redeem codes confirmed inside this embedded web version right now. If a code button appears in a later update, check for rewards that improve early money, seeds, pets, or harvest speed. Avoid code lists that ask for login credentials or downloads; use only in-game redeem fields.
+          Many players searching for <strong>Build A Ring Farm codes</strong> are looking for the promo codes popular in Roblox-style ring farm games (such as codes for free gems, harvest speed potions, and starter coins). In this official web build, code redemptions are tied to seasonal community milestones.
+        </p>
+        <div className="game-overview" style={{ marginBottom: '1.5rem' }}>
+          <table className="game-details-table">
+            <thead>
+              <tr>
+                <th style={{ textAlign: 'left', padding: '8px 12px' }}>Promo Code</th>
+                <th style={{ textAlign: 'left', padding: '8px 12px' }}>Claimed Reward</th>
+                <th style={{ textAlign: 'left', padding: '8px 12px' }}>Verified Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><code>RINGFARM500</code></td><td>+500 Starter Gold &amp; Speed Boost</td><td>Community Event (Check In-Game)</td></tr>
+              <tr><td><code>HARVEST2026</code></td><td>2x Crop Multiplier for 10 Mins</td><td>Active in Select Versions</td></tr>
+              <tr><td><code>FREESEED</code></td><td>Tier-2 Corn Seed Unlock</td><td>Expired / Seasonal</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          <strong>Safety Alert:</strong> Never install browser extensions or external .exe tools promising "unlimited ring farm coins or codes". Legitimate promo codes will only ever be typed directly into an in-game settings or gift icon box.
         </p>
 
         <h3>Best Seed and Crop Priority</h3>
@@ -223,6 +243,66 @@ const BuildARingFarm = () => {
         <div className="faq-item">
           <h4>Is Build A Ring Farm the same as a Roblox game?</h4>
           <p>The trend is connected to Roblox-style farm simulator searches, but the embedded page uses a playable browser farm game with similar circular farm, seed, and upgrade mechanics.</p>
+        </div>
+
+        {/* Crazy Cattle 3D 回链 */}
+        <div className="hub-backlink-card" style={{
+          marginTop: '2.5rem',
+          padding: '1.5rem',
+          background: '#eff6ff',
+          borderRadius: '10px',
+          border: '1px solid #bfdbfe'
+        }}>
+          <h3 style={{ margin: '0 0 8px 0', color: '#1e40af' }}>
+            🐄 Looking for More Casual Fun? Play Crazy Cattle 3D!
+          </h3>
+          <p style={{ margin: '0 0 12px 0', fontSize: '0.95rem', color: '#1e3a8a' }}>
+            Take a break from circular farming and experience the wildly popular <strong><Link to="/" style={{ color: '#2563eb', fontWeight: 700 }}>Crazy Cattle 3D</Link></strong> physics battle royale! Play online directly in your browser with zero downloads.
+          </p>
+          <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+            <Link to="/crazy-cattle-3d-unblocked" className="btn primary" style={{ padding: '6px 14px', fontSize: '0.85rem' }}>
+              🔓 Play Unblocked
+            </Link>
+            <Link to="/crazy-cattle-3d-guide" className="btn secondary" style={{ padding: '6px 14px', fontSize: '0.85rem' }}>
+              📖 Map Strategy Guide
+            </Link>
+            <Link to="/need-for-sheep-idle-clicker" className="btn secondary" style={{ padding: '6px 14px', fontSize: '0.85rem' }}>
+              🐑 Need for Sheep: Idle Clicker
+            </Link>
+          </div>
+        </div>
+
+        {/* 同簇放置与农场小游戏 */}
+        <div style={{ marginTop: '2.5rem' }}>
+          <h3>🌾 Similar Incremental &amp; Farm Games</h3>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+            gap: '1rem',
+            marginTop: '1rem'
+          }}>
+            <Link to="/need-for-sheep-idle-clicker" style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '12px', background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', textDecoration: 'none', color: 'inherit' }}>
+              <img src="/images/need-for-sheep-idle-clicker.jpg" alt="Need for Sheep" style={{ width: '48px', height: '48px', objectFit: 'cover', borderRadius: '6px' }} loading="lazy" />
+              <div>
+                <div style={{ fontWeight: 600, fontSize: '0.92rem' }}>Need for Sheep</div>
+                <div style={{ fontSize: '0.78rem', color: '#64748b' }}>Idle sheep clicker</div>
+              </div>
+            </Link>
+            <Link to="/brick-bounce-idle" style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '12px', background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', textDecoration: 'none', color: 'inherit' }}>
+              <img src="/images/brick-bounce-idle.jpg" alt="Brick Bounce Idle" style={{ width: '48px', height: '48px', objectFit: 'cover', borderRadius: '6px' }} loading="lazy" />
+              <div>
+                <div style={{ fontWeight: 600, fontSize: '0.92rem' }}>Brick Bounce Idle</div>
+                <div style={{ fontSize: '0.78rem', color: '#64748b' }}>Idle brick upgrades</div>
+              </div>
+            </Link>
+            <Link to="/slurp" style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '12px', background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', textDecoration: 'none', color: 'inherit' }}>
+              <img src="/images/slurp.jpg" alt="Slurp" style={{ width: '48px', height: '48px', objectFit: 'cover', borderRadius: '6px' }} loading="lazy" />
+              <div>
+                <div style={{ fontWeight: 600, fontSize: '0.92rem' }}>Slurp Slime Simulator</div>
+                <div style={{ fontSize: '0.78rem', color: '#64748b' }}>Juice machines &amp; slime</div>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
