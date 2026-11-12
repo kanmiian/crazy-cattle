@@ -62,6 +62,27 @@ const SEO = ({ title, description, keywords }) => {
           keywords: 'Cattle Crazy 3D, cattle crazy, cattlecrazy3d, crazycattle3d.com, cattle crazy game, sheep physics battle royale',
           canonical: `${baseUrl}/cattle-crazy-3d`
         };
+      case '/crazy-cattle-3d-how-to-play':
+        return {
+          title: 'Crazy Cattle 3D How to Play - Beginner Guide & Controls (2026)',
+          description: 'Learn how to play Crazy Cattle 3D! Step-by-step beginner guide covering PC & mobile controls, the 4-phase match loop, and crucial first 60 seconds survival.',
+          keywords: 'Crazy Cattle 3D how to play, how to play crazy cattle, crazy cattle 3d controls, crazy cattle beginner guide, sheep battle royale tutorial',
+          canonical: `${baseUrl}/crazy-cattle-3d-how-to-play`
+        };
+      case '/crazy-cattle-3d-how-to-win':
+        return {
+          title: 'Crazy Cattle 3D How to Win - Pro Strategy, Collision Angles & Tips (2026)',
+          description: 'Master how to win Crazy Cattle 3D! Pro tactics on 45-degree flank collisions, momentum scaling, final circle positioning, and avoiding common elimination traps.',
+          keywords: 'Crazy Cattle 3D how to win, how to win crazy cattle, crazy cattle 3d tips, crazy cattle pro strategy, sheep battle royale guide',
+          canonical: `${baseUrl}/crazy-cattle-3d-how-to-win`
+        };
+      case '/crazy-cattle-3d-online-free':
+        return {
+          title: 'Crazy Cattle 3D Online Free - Play In Browser (2026)',
+          description: 'Play Crazy Cattle 3D online free directly in your browser. Fast WebGL loading, zero downloads, and responsive physics battle royale action.',
+          keywords: 'Crazy Cattle 3D online free, play crazy cattle free, crazy cattle browser game, crazy cattle unblocked',
+          canonical: `${baseUrl}/crazy-cattle-3d-online`
+        };
       case '/about':
         return {
           title: 'About Crazy Cattle 3D | Independent Guide & Gameplay Portal',

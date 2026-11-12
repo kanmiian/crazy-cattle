@@ -31,6 +31,8 @@ const CrazyCattleOnline = lazy(() => import('./components/CrazyCattleOnline'))
 const CrazyCattleDownload = lazy(() => import('./components/CrazyCattleDownload'))
 const CrazyCattleGuide = lazy(() => import('./components/CrazyCattleGuide'))
 const CattleCrazy3D = lazy(() => import('./components/CattleCrazy3D'))
+const CrazyCattleHowToPlay = lazy(() => import('./components/CrazyCattleHowToPlay'))
+const CrazyCattleHowToWin = lazy(() => import('./components/CrazyCattleHowToWin'))
 
 // 加载占位符组件
 const LoadingPlaceholder = () => {
@@ -328,6 +330,14 @@ const Navigation = () => {
             <Link to="/cattle-crazy-3d" className="game-link" onClick={() => setIsGameDrawerOpen(false)}>
               <span className="game-icon">🐄</span>
               <span className="game-name">Cattle Crazy 3D Hub</span>
+            </Link>
+            <Link to="/crazy-cattle-3d-how-to-play" className="game-link" onClick={() => setIsGameDrawerOpen(false)}>
+              <span className="game-icon">🎮</span>
+              <span className="game-name">How to Play Walkthrough</span>
+            </Link>
+            <Link to="/crazy-cattle-3d-how-to-win" className="game-link" onClick={() => setIsGameDrawerOpen(false)}>
+              <span className="game-icon">🏆</span>
+              <span className="game-name">How to Win (Pro Meta)</span>
             </Link>
             <div style={{ padding: '10px 12px 6px', fontSize: '0.78rem', fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.05em' }}>More Trending Games</div>
             <Link
@@ -653,6 +663,8 @@ const Footer = () => {
             <Link to="/crazy-cattle-3d-download" className="footer-link">⬇️ PC Download Guide</Link>
             <Link to="/crazy-cattle-3d-mobile" className="footer-link">📱 Mobile Edition</Link>
             <Link to="/cattle-crazy-3d" className="footer-link">🐄 Cattle Crazy 3D Hub</Link>
+            <Link to="/crazy-cattle-3d-how-to-play" className="footer-link">🎮 How to Play Guide</Link>
+            <Link to="/crazy-cattle-3d-how-to-win" className="footer-link">🏆 How to Win (Pro Tips)</Link>
           </div>
         </div>
 
@@ -763,6 +775,9 @@ const AppContent = () => {
           <Route path="/crazy-cattle-3d-download" element={<CrazyCattleDownload />} />
           <Route path="/crazy-cattle-3d-guide" element={<CrazyCattleGuide />} />
           <Route path="/cattle-crazy-3d" element={<CattleCrazy3D />} />
+          <Route path="/crazy-cattle-3d-how-to-play" element={<CrazyCattleHowToPlay />} />
+          <Route path="/crazy-cattle-3d-how-to-win" element={<CrazyCattleHowToWin />} />
+          <Route path="/crazy-cattle-3d-online-free" element={<CrazyCattleOnline />} />
           {hotGameRoutePages.map((game) => (
             <Route key={game.path} path={game.path} element={<HotGamePage game={game} />} />
           ))}
@@ -952,6 +967,14 @@ const MainContent = () => {
           <Link to="/cattle-crazy-3d" className="feature-card" style={{ textDecoration: 'none', color: 'inherit', margin: 0, padding: '16px' }}>
             <h4 style={{ margin: '0 0 6px 0', color: '#2563eb' }}>🐄 Cattle Crazy Hub</h4>
             <p style={{ margin: 0, fontSize: '0.88rem', color: '#475569' }}>Search term disambiguation, mirror guide, and fan portal safety.</p>
+          </Link>
+          <Link to="/crazy-cattle-3d-how-to-play" className="feature-card" style={{ textDecoration: 'none', color: 'inherit', margin: 0, padding: '16px' }}>
+            <h4 style={{ margin: '0 0 6px 0', color: '#2563eb' }}>🎮 How to Play</h4>
+            <p style={{ margin: 0, fontSize: '0.88rem', color: '#475569' }}>Beginner keybinds, 4-phase match loop, and first 60s survival guide.</p>
+          </Link>
+          <Link to="/crazy-cattle-3d-how-to-win" className="feature-card" style={{ textDecoration: 'none', color: 'inherit', margin: 0, padding: '16px' }}>
+            <h4 style={{ margin: '0 0 6px 0', color: '#16a34a' }}>🏆 How to Win</h4>
+            <p style={{ margin: 0, fontSize: '0.88rem', color: '#475569' }}>Pro 45-degree flank collisions, momentum rules, and endgame positioning.</p>
           </Link>
         </div>
       </section>

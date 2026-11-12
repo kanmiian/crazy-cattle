@@ -174,6 +174,89 @@ async function runPrerender() {
     `
   });
 
+  routesData.set('/crazy-cattle-3d-how-to-play', {
+    title: 'Crazy Cattle 3D How to Play - Beginner Guide & Controls (2026)',
+    description: 'Learn how to play Crazy Cattle 3D! Step-by-step beginner guide covering PC & mobile controls, the 4-phase match loop, and crucial first 60 seconds survival.',
+    canonical: `${BASE_URL}/crazy-cattle-3d-how-to-play`,
+    contentHtml: `
+      <div class="game-page how-to-play-page" style="max-width:1200px;margin:0 auto;padding:2rem 1rem;">
+        <span style="color:#2563eb;font-weight:700;font-size:0.85rem;text-transform:uppercase;">Beginner Mastery Guide &bull; Updated 2026</span>
+        <h1>🎮 Crazy Cattle 3D How to Play: Complete Beginner Walkthrough</h1>
+        <p><strong>The Objective in One Sentence:</strong> Be the last sheep standing by knocking rival animals off the edge before the shrinking arena boundary claims you.</p>
+
+        <h2>1. Core Controls: PC &amp; Mobile</h2>
+        <ul>
+          <li><strong>Steer &amp; Move:</strong> WASD or Arrow Keys on desktop; Virtual joystick on mobile.</li>
+          <li><strong>Explosive Ram:</strong> Spacebar on desktop; Right action charge button on mobile.</li>
+          <li><strong>Camera Orientation:</strong> Mouse movement on desktop; Right-screen swipe on mobile.</li>
+          <li><strong>Braking &amp; Edge Stop:</strong> S key on desktop; Pull thumbstick back on mobile.</li>
+        </ul>
+
+        <h2>2. A Full Match in 4 Stages</h2>
+        <ol>
+          <li><strong>Stage 1: Spawn &amp; Dispersal (0-15s):</strong> 12-16 sheep spawn together. Turn 90 degrees outward and escape the initial pile-up.</li>
+          <li><strong>Stage 2: Momentum Farming (15-60s):</strong> Use downhill slopes to build speed while aggressive bots eliminate each other.</li>
+          <li><strong>Stage 3: Ring Compression (60-120s):</strong> The boundary shrinks. Move toward the central high ground early.</li>
+          <li><strong>Stage 4: Sudden-Death Showdown (120s+):</strong> Only 2-3 sheep remain. Wait for the rival to charge, dodge sideways, and counter-strike!</li>
+        </ol>
+
+        <h2>3. Beginner Checklist: First 60 Seconds</h2>
+        <ul>
+          <li>Avoid the center brawl immediately.</li>
+          <li>Locate downhill angles to maximize momentum collision force.</li>
+          <li>Keep your camera locked on rivals to avoid blindside attacks.</li>
+          <li>Pick off isolated or recovering bots on perimeter edges.</li>
+        </ul>
+
+        <div style="margin-top:2rem;padding:1.5rem;background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;">
+          <h3>Ready for Championship Tactics?</h3>
+          <p>Read our advanced companion guide on <a href="/crazy-cattle-3d-how-to-win" style="color:#2563eb;font-weight:700;">how to win Crazy Cattle 3D</a> with pro 45-degree flank collisions.</p>
+          <a href="/" class="btn primary">Play Crazy Cattle 3D Now</a>
+          <a href="/crazy-cattle-3d-unblocked" class="btn secondary" style="margin-left:8px;">Play Unblocked</a>
+        </div>
+      </div>
+    `
+  });
+
+  routesData.set('/crazy-cattle-3d-how-to-win', {
+    title: 'Crazy Cattle 3D How to Win - Pro Strategy, Collision Angles & Tips (2026)',
+    description: 'Master how to win Crazy Cattle 3D! Pro tactics on 45-degree flank collisions, momentum scaling, final circle positioning, and avoiding common elimination traps.',
+    canonical: `${BASE_URL}/crazy-cattle-3d-how-to-win`,
+    contentHtml: `
+      <div class="game-page how-to-win-page" style="max-width:1200px;margin:0 auto;padding:2rem 1rem;">
+        <span style="color:#16a34a;font-weight:700;font-size:0.85rem;text-transform:uppercase;">Pro Strategy &bull; Tactics &bull; Updated 2026</span>
+        <h1>🏆 Crazy Cattle 3D How to Win: Pro Tactics &amp; Collision Meta</h1>
+        <p>Winning Crazy Cattle 3D is about angular momentum, timing, and terrain awareness. Learn how to consistently place 1st across Ireland, Iceland, and New Zealand.</p>
+
+        <h2>1. The Physics Meta: Collision Angles &amp; Timing</h2>
+        <ul>
+          <li><strong>The 45-Degree Flank Strike:</strong> Avoid direct head-on impacts. Striking a target at a 45-degree angle spins their model and guarantees high knockback.</li>
+          <li><strong>Slope Momentum Multiplier:</strong> Gravity converts downhill potential energy into massive kinetic force. Never fight uphill.</li>
+          <li><strong>The Sudden Brake Tap:</strong> Tap S key just before impact when a rival is near an edge so your momentum stops while they fly off.</li>
+        </ul>
+
+        <h2>2. Phased Game Plan</h2>
+        <p><strong>Early Game:</strong> Play the observer from an elevated ridge. Let bot packs eliminate each other.</p>
+        <p><strong>Mid Game:</strong> Flank isolated targets from behind using downhill momentum.</p>
+        <p><strong>Late Game / Final Circle:</strong> Anchor the dead center. Sidestep incoming charges with A or D so enemies plunge off the cliff.</p>
+
+        <h2>3. Top 3 Fatal Mistakes to Avoid</h2>
+        <ul>
+          <li><strong>Getting Sandwiched:</strong> Never fight in between two active competitors.</li>
+          <li><strong>Overcharging Off the Edge:</strong> The #1 cause of death. Maintain braking distance near cliffs.</li>
+          <li><strong>Greedy Chasing:</strong> Never plunge down steep ravines to chase a single runaway sheep.</li>
+        </ul>
+
+        <div style="margin-top:2rem;padding:1.5rem;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;">
+          <h3>Need a Refresher on Controls?</h3>
+          <p>Review basic keybinds and the 4-phase match loop in our <a href="/crazy-cattle-3d-how-to-play" style="color:#16a34a;font-weight:700;">how to play Crazy Cattle 3D</a> walkthrough.</p>
+          <a href="/" class="btn primary" style="background:#16a34a;">Play Crazy Cattle 3D</a>
+          <a href="/crazy-cattle-3d-guide" class="btn secondary" style="margin-left:8px;">All 3 Maps Guide</a>
+        </div>
+      </div>
+    `
+  });
+
   // 3. 静态信息页
   routesData.set('/about', {
     title: 'About Crazy Cattle 3D | Independent Guide & Gameplay Portal',

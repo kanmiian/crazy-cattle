@@ -12,3 +12,5 @@ On our website, you can experience the complete version of Crazy Cattle 3D direc
 - [Crazy Cattle 3D Download](https://cattlecrazy3d.com/crazy-cattle-3d-download): Transparent instructions to get the official standalone build from original creator Anna Mayberry on itch.io.
 - [Cattle Crazy 3D Hub](https://cattlecrazy3d.com/cattle-crazy-3d): Clarification for users searching inverted terms and distinguishing cattlecrazy3d.com from clone mirrors.
 - [Crazy Cattle 3D Mobile](https://cattlecrazy3d.com/crazy-cattle-3d-mobile): Touch-optimized mobile web edition for smartphones and tablets.
+- [Crazy Cattle 3D How to Play](https://cattlecrazy3d.com/crazy-cattle-3d-how-to-play): Complete beginner walkthrough covering controls, 4-phase match progression, and early-game survival.
+- [Crazy Cattle 3D How to Win](https://cattlecrazy3d.com/crazy-cattle-3d-how-to-win): Advanced collision meta, 45-degree flank angles, final circle tactics, and top 3 fatal mistakes to avoid.

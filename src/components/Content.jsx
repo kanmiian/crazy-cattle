@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Content.css';
 import './About.css';
 
@@ -130,7 +131,7 @@ const About = () => {
             A successful strategy often involves a combination of patience and opportunistic aggression. 
             Early in matches, focus on survival and positioning rather than eliminations. Learn the map 
             layouts to identify advantage points and hazard zones. As the play area shrinks, be prepared 
-            to engage more aggressively with remaining opponents.
+            to engage more aggressively with remaining opponents. For a complete walkthrough of PC and mobile controls plus the first 60 seconds survival checklist, check out our dedicated guide on <Link to="/crazy-cattle-3d-how-to-play" style={{ color: '#2563eb', fontWeight: 600 }}>how to play Crazy Cattle 3D</Link>.
           </p>
         </div>
       </div>
@@ -236,7 +237,8 @@ const About = () => {
           <p>
             Remember that in Crazy Cattle 3D, victory often comes not to the most aggressive sheep, but 
             to the most strategic one. Develop your skills, learn from your mistakes, and gradually you'll 
-            see your performance improve.
+            see your performance improve. To master advanced collision angles, momentum formulas, and 
+            the final circle meta, study our pro breakdown on <Link to="/crazy-cattle-3d-how-to-win" style={{ color: '#2563eb', fontWeight: 600 }}>how to win Crazy Cattle 3D</Link>.
           </p>
         </div>
       </div>

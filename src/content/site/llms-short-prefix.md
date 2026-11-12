@@ -13,3 +13,5 @@ Crazy Cattle 3D is a fun physics simulation game, available to play online or do
 - [Crazy Cattle 3D Download](https://cattlecrazy3d.com/crazy-cattle-3d-download): Official PC standalone version guide and developer Anna Mayberry on itch.io
 - [Cattle Crazy 3D Hub](https://cattlecrazy3d.com/cattle-crazy-3d): Clarifying inverted name searches, domain differences, and mirror guidance
 - [Crazy Cattle 3D Mobile](https://cattlecrazy3d.com/crazy-cattle-3d-mobile): Touch-optimized mobile web version for smartphones and tablets
+- [Crazy Cattle 3D How to Play](https://cattlecrazy3d.com/crazy-cattle-3d-how-to-play): Beginner guide with PC & mobile controls, 4-phase match loop, and first 60s survival checklist
+- [Crazy Cattle 3D How to Win](https://cattlecrazy3d.com/crazy-cattle-3d-how-to-win): Pro tactics on 45-degree flank collisions, momentum scaling, final circle positioning, and avoiding common traps
