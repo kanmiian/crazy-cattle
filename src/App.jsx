@@ -341,6 +341,14 @@ const Navigation = () => {
             </Link>
             <div style={{ padding: '10px 12px 6px', fontSize: '0.78rem', fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.05em' }}>More Trending Games</div>
             <Link
+              to="/krillion"
+              className={`game-link ${currentPath === '/krillion' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🌊</span>
+              <span className="game-name">Krillion (Noillirk)</span>
+            </Link>
+            <Link
               to="/merge-clash"
               className={`game-link ${currentPath === '/merge-clash' ? 'active' : ''}`}
               onClick={() => setIsGameDrawerOpen(false)}
@@ -673,6 +681,7 @@ const Footer = () => {
           <div className="footer-links">
             <Link to="/about" className="footer-link">About (Attribution)</Link>
             <Link to="/faq" className="footer-link">FAQ &amp; Unblocked</Link>
+            <Link to="/krillion" className="footer-link">🌊 Krillion (Daily Dive Guide)</Link>
             <Link to="/contact" className="footer-link">Contact Support</Link>
             <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
             <Link to="/terms-of-service" className="footer-link">Terms of Service</Link>

@@ -11,7 +11,8 @@ export const publicDirectory = path.join(projectRoot, 'public');
 export const allowedSourceHosts = new Set([
   'hop.earth',
   'www.crazygames.com',
-  'www.newgrounds.com'
+  'www.newgrounds.com',
+  'krillion.io'
 ]);
 
 export const readJson = async (filePath) => JSON.parse(await readFile(filePath, 'utf8'));
@@ -59,7 +60,7 @@ export const parseAllowedSourceUrl = (value) => {
     throw new Error(`sourceUrl host is not allowed: ${sourceUrl.hostname}`);
   }
 
-  const validPath = sourceUrl.hostname === 'hop.earth'
+  const validPath = (sourceUrl.hostname === 'hop.earth' || sourceUrl.hostname === 'krillion.io')
     ? sourceUrl.pathname === '/' || sourceUrl.pathname === ''
     : sourceUrl.hostname === 'www.crazygames.com'
       ? sourceUrl.pathname.startsWith('/game/')

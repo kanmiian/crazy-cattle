@@ -57,6 +57,7 @@ Crazy Cattle 3D is a fun physics simulation game, available to play online or do
 - [Dino World](https://cattlecrazy3d.com/dino-world): Play a new dinosaur squad game with upgrade and beginner strategy tips
 - [Captain Blast](https://cattlecrazy3d.com/captain-blast): Play a level-based puzzle adventure with obstacle timing and stage tips
 - [Hop Earth](https://cattlecrazy3d.com/hop-earth): Open the official real-world browser driving game and learn route creation, races, controls, and loading tips
+- [Krillion](https://cattlecrazy3d.com/krillion): Daily reverse-rarity trivia guide covering the 7-prompt Daily Dive and 7,000m Hadal Trench scoring tiers.
 - [Download Game](https://cattlecrazy3d.com/#download): Download the offline version from itch.io
 - [Game Features](https://cattlecrazy3d.com/#features): Physics-driven, multiple battle environments, unique characters, and more
 - [How to Play](https://cattlecrazy3d.com/#how-to-play): Learn how to control characters and achieve victory

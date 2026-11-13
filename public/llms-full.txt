@@ -141,6 +141,9 @@ Captain Blast is a level-based puzzle adventure module with an embedded playable
 ## Hop Earth
 Hop Earth is a guide and official play gateway for Hop.Earth, the viral browser driving game that turns real road networks and elevation data into explorable 3D routes. It covers official access, account expectations, short-route setup, map-generation limits, custom races, speed comparison, browser performance, and common loading questions.
 
+## Krillion
+Krillion is a daily reverse-trivia browser puzzle featured at Dive #120. Our guide breaks down the 6 rarity scoring tiers (from 10-point Plankton to 100-point One in a Krillion), explains the 25-second prompt countdown, decodes the Noillirk reverse search surge, and links to the official krillion.io portal.
+
 ## Download Game
 If you want a standalone PC gaming experience with offline support and dedicated GPU rendering, download the official version of Crazy Cattle 3D created by Anna Mayberry directly from itch.io (https://annamayberry.itch.io/crazy-cattle-3d).
 

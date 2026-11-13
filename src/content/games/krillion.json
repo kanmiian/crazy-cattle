@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "key": "krillion",
+  "pageType": "hot-game",
+  "slug": "krillion",
+  "title": "Krillion",
+  "path": "/krillion",
+  "pageTitle": "Krillion Game - Daily Dive Rules, Scoring & Rare Answer Hints",
+  "seoTitle": "Krillion (Noillirk) - Daily Dive Rules, Rarity Tiers & Answers",
+  "seoDescription": "Play Krillion (and reverse search Noillirk) online! Master Daily Dive 7-prompt trivia, 6 rarity tiers from Plankton to One in a Krillion, and 7,000m Hadal Trench depth strategy.",
+  "keywords": "Krillion, Krillion game, Krillion io, Krillion answers, Noillirk, Krillion daily dive, Krillion multiplayer, Krillion tips, reverse trivia game, rare answer game",
+  "image": "/images/krillion.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://krillion.io",
+  "sourceName": "Krillion.io",
+  "sourceStatus": "Official Krillion daily browser puzzle live at Dive #120",
+  "trendLabel": "Viral Reverse-Rarity Trivia (Opportunity 88)",
+  "playCta": "Play Krillion Daily Dive",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Krillion.io Official Dive",
+  "externalPlayReason": "Krillion is an independent daily web puzzle hosted on krillion.io. Direct iframe embedding is restricted by origin security headers; launch the official web portal directly to sync your daily dive stats.",
+  "playableLinks": [
+    {
+      "label": "Play Daily Dive on Krillion.io",
+      "url": "https://krillion.io"
+    }
+  ],
+  "description": "Krillion is the breakout reverse-trivia game where obvious answers barely move your sub, but obscure, niche answers dive you all the way down to the 7,000-meter ocean trench.",
+  "intro": "Unlike traditional quiz games that test if you know the common answer, Krillion rewards deep cuts. Every point converts to 10 meters of descent across 7 daily open-ended prompts under a 25-second countdown.",
+  "guideTitle": "Krillion Gameplay Guide: Rarity Tiers, Daily Dive & Pro Tactics",
+  "guideIntro": "Reaching the 7,000-meter trench floor requires disciplined restraint. Your first accepted answer locks immediately, meaning the most common answer you think of is often the worst answer to type.",
+  "steps": [
+    "Preview the prompt category during the 3-second buffer before the 25-second clock starts.",
+    "Suppress the top 3 most common entries in that category—they only award Plankton (10 pts / 100m).",
+    "Target Deep Cut (85 pts) or One in a Krillion (100 pts) valid responses with precise spelling.",
+    "If your niche answer is rejected by the database, quickly pivot to a safe Schooler (30 pts) answer before time expires.",
+    "Review your cumulative ocean depth and compare score breakdowns with the global daily dive leaderboard."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Rarity Tier Breakdown",
+      "text": "Plankton (10 pts / 100m), Too Clever (15 pts), Schooler (30 pts), Rare (60 pts), Deep Cut (85 pts), One in a Krillion (100 pts / 1,000m)."
+    },
+    {
+      "title": "Why It's Trending (#120)",
+      "text": "Over +2,100% surge on reverse search 'noillirk', with WW score soaring from 24 to 95. First 'Worth Doing' breakout of November 2026."
+    },
+    {
+      "title": "Player & Strategy Fit",
+      "text": "Perfect for trivia lovers, lateral thinkers, and puzzle solvers who enjoy finding obscure cultural, geographic, and scientific facts."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Krillion (Noillirk)"
+    ],
+    [
+      "Genre",
+      "Daily Trivia, Word Puzzle, Ocean Depth Simulator"
+    ],
+    [
+      "Daily Structure",
+      "7 Open-Ended Prompts (Daily Dive)"
+    ],
+    [
+      "Scoring Ratio",
+      "1 Point = 10 Meters Depth (Max 700 pts / 7,000m)"
+    ],
+    [
+      "Time Limit",
+      "25 Seconds per Prompt with 3-second preview"
+    ],
+    [
+      "Platform",
+      "Web Browser (Desktop & Mobile Touch)"
+    ],
+    [
+      "Official Portal",
+      "krillion.io"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "What is Krillion and how does scoring work?",
+      "answer": "Krillion is a daily browser trivia game where 7 open-ended prompts are answered against a 25-second timer. Each prompt scores from 10 to 100 points depending on the rarity of your answer, with 1 point translating to 10 meters of ocean descent toward the 7,000-meter Hadal Trench."
+    },
+    {
+      "question": "What is Noillirk?",
+      "answer": "Noillirk is simply 'Krillion' spelled backwards. It has surged as a trending viral search query and easter egg among players sharing their daily dive scores."
+    },
+    {
+      "question": "Does Krillion have real-time multiplayer?",
+      "answer": "Krillion operates on asynchronous global competition: all players worldwide receive the identical 7 daily prompts, and final depths are shared via scorecards rather than direct head-to-head lobbies."
+    },
+    {
+      "question": "How do you score 'One in a Krillion' (100 points)?",
+      "answer": "You must submit an officially verified, highly obscure answer that matches the prompt's exact qualifiers without being guessed by the broad player base. Obvious answers are relegated to Plankton (10 pts)."
+    }
+  ],
+  "featured": {
+    "enabled": true,
+    "order": -2,
+    "icon": "🌊",
+    "tag": "Trending #120",
+    "summary": "Reverse-trivia sensation where obscure answers dive your submarine down to the 7,000m Hadal Trench.",
+    "recommendation": "Essential guide for daily dive solutions, rarity tier rankings, and Noillirk reverse search queries."
+  },
+  "indexing": {
+    "order": 68,
+    "lastmod": "2026-11-13",
+    "changefreq": "weekly",
+    "priority": 0.9
+  },
+  "llms": {
+    "order": 51,
+    "description": "Daily reverse-rarity trivia guide covering the 7-prompt Daily Dive and 7,000m Hadal Trench scoring tiers.",
+    "fullSummary": "Krillion is a daily reverse-trivia browser puzzle featured at Dive #120. Our guide breaks down the 6 rarity scoring tiers (from 10-point Plankton to 100-point One in a Krillion), explains the 25-second prompt countdown, decodes the Noillirk reverse search surge, and links to the official krillion.io portal."
+  }
+}
