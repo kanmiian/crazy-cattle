@@ -8,7 +8,7 @@
   "pageTitle": "Krillion Game - Daily Dive Rules, Scoring & Rare Answer Hints",
   "seoTitle": "Krillion (Noillirk) - Daily Dive Rules, Rarity Tiers & Answers",
   "seoDescription": "Play Krillion (and reverse search Noillirk) online! Master Daily Dive 7-prompt trivia, 6 rarity tiers from Plankton to One in a Krillion, and 7,000m Hadal Trench depth strategy.",
-  "keywords": "Krillion, Krillion game, Krillion io, Krillion answers, Noillirk, Krillion daily dive, Krillion multiplayer, Krillion tips, reverse trivia game, rare answer game",
+  "keywords": "Krillion, Krillion game, Krillion io, Krillion answers, Krillion unlimited, Noillirk, Krillion daily dive, Krillion multiplayer, games like krillion, pokemon krillion, minecraft krillion, is krillion game ai, reverse trivia game, rare answer game",
   "image": "/images/krillion.jpg",
   "embedUrl": null,
   "sourceUrl": "https://krillion.io",
@@ -91,7 +91,15 @@
     },
     {
       "question": "Does Krillion have real-time multiplayer?",
-      "answer": "Krillion operates on asynchronous global competition: all players worldwide receive the identical 7 daily prompts, and final depths are shared via scorecards rather than direct head-to-head lobbies."
+      "answer": "Krillion operates on asynchronous global competition: all players worldwide receive the identical 7 daily prompts, and final depths are shared via scorecards rather than direct head-to-head lobbies. Friends often run 'Depth Duels' to compare final scores, while Roblox developers have launched community tribute rooms."
+    },
+    {
+      "question": "Is there an Unlimited practice mode for Krillion?",
+      "answer": "Yes! Krillion offers an Unlimited practice mode and past dive archives where you can play without 24-hour limits and try themed decks (like Pokemon and Minecraft)."
+    },
+    {
+      "question": "What games are like Krillion?",
+      "answer": "If you enjoy Krillion's reverse-rarity logic, check out Noillirk (the reverse common-answer challenge), Semantle (semantic similarity guessing), Contexto (AI distance ranking), and Wordle."
     },
     {
       "question": "How do you score 'One in a Krillion' (100 points)?",

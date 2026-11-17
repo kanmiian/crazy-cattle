@@ -60,11 +60,13 @@ export const parseAllowedSourceUrl = (value) => {
     throw new Error(`sourceUrl host is not allowed: ${sourceUrl.hostname}`);
   }
 
-  const validPath = (sourceUrl.hostname === 'hop.earth' || sourceUrl.hostname === 'krillion.io')
+  const validPath = sourceUrl.hostname === 'hop.earth'
     ? sourceUrl.pathname === '/' || sourceUrl.pathname === ''
-    : sourceUrl.hostname === 'www.crazygames.com'
-      ? sourceUrl.pathname.startsWith('/game/')
-      : sourceUrl.pathname.startsWith('/portal/view/');
+    : sourceUrl.hostname === 'krillion.io'
+      ? sourceUrl.pathname === '/' || sourceUrl.pathname === '' || sourceUrl.pathname === '/unlimited'
+      : sourceUrl.hostname === 'www.crazygames.com'
+        ? sourceUrl.pathname.startsWith('/game/')
+        : sourceUrl.pathname.startsWith('/portal/view/');
 
   if (!validPath) {
     throw new Error(`sourceUrl path is not an allowed game page: ${sourceUrl.pathname}`);

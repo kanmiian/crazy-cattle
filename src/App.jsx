@@ -349,6 +349,14 @@ const Navigation = () => {
               <span className="game-name">Krillion (Noillirk)</span>
             </Link>
             <Link
+              to="/krillion-unlimited"
+              className={`game-link ${currentPath === '/krillion-unlimited' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">♾️</span>
+              <span className="game-name">Krillion Unlimited</span>
+            </Link>
+            <Link
               to="/merge-clash"
               className={`game-link ${currentPath === '/merge-clash' ? 'active' : ''}`}
               onClick={() => setIsGameDrawerOpen(false)}
@@ -682,6 +690,7 @@ const Footer = () => {
             <Link to="/about" className="footer-link">About (Attribution)</Link>
             <Link to="/faq" className="footer-link">FAQ &amp; Unblocked</Link>
             <Link to="/krillion" className="footer-link">🌊 Krillion (Daily Dive Guide)</Link>
+            <Link to="/krillion-unlimited" className="footer-link">♾️ Krillion Unlimited (Practice)</Link>
             <Link to="/contact" className="footer-link">Contact Support</Link>
             <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
             <Link to="/terms-of-service" className="footer-link">Terms of Service</Link>

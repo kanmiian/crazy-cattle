@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "key": "krillionUnlimited",
+  "pageType": "hot-game",
+  "slug": "krillion-unlimited",
+  "title": "Krillion Unlimited",
+  "path": "/krillion-unlimited",
+  "pageTitle": "Krillion Unlimited - Practice Mode, Past Dives & Theme Decks",
+  "seoTitle": "Krillion Unlimited - Practice Mode, Archives & Theme Packs",
+  "seoDescription": "Play Krillion Unlimited practice mode online! Replay past Daily Dives, explore Pokemon and Minecraft theme packs, and hone 7,000m depth trivia tactics.",
+  "keywords": "Krillion unlimited, Krillion practice mode, Krillion past dives, pokemon krillion, minecraft krillion, krillion roblox, games like krillion, krillion word game, is krillion game ai",
+  "image": "/images/krillion.jpg",
+  "embedUrl": null,
+  "sourceUrl": "https://krillion.io/unlimited",
+  "sourceName": "Krillion.io",
+  "sourceStatus": "Official Krillion practice mode and archives live",
+  "trendLabel": "Unlimited Practice & Archives (GPTs x8.26)",
+  "playCta": "Play Krillion Unlimited",
+  "externalPlayOnly": true,
+  "externalPlayCta": "Open Krillion.io Unlimited",
+  "externalPlayReason": "Krillion Unlimited runs on official krillion.io servers. Direct iframe embedding is restricted by origin security headers; launch the official web portal directly to access unlimited training decks.",
+  "playableLinks": [
+    {
+      "label": "Play Unlimited Mode on Krillion.io",
+      "url": "https://krillion.io/unlimited"
+    }
+  ],
+  "description": "Krillion Unlimited is the practice edition of the viral reverse-rarity trivia game, allowing players to dive without 24-hour lockouts, test niche keywords, and explore themed decks.",
+  "intro": "Unlike the official Daily Dive which restricts players to a single 7-prompt run each day, Krillion Unlimited allows endless practice. Train your brain to avoid common answers and master submarine descents toward the 7,000-meter Hadal Trench.",
+  "guideTitle": "Krillion Unlimited Gameplay Guide: Practice Tactics, Decks & Strategy",
+  "guideIntro": "Reaching deep ocean trenches demands fast recall of obscure facts. Unlimited mode serves as the perfect training ground to test vocabulary boundaries without risking your daily leaderboard standing.",
+  "steps": [
+    "Select your game mode: choose Infinite Practice, Past Dive Archives, or custom theme packs like Pokemon or Minecraft.",
+    "Read the prompt and immediately eliminate the top 3 common answers that only yield Plankton (10 pts / 100m).",
+    "Brainstorm rare, deep-cut candidates during the 25-second countdown timer.",
+    "Verify spelling before submission: misspelled entries score zero and halt your submarine descent.",
+    "Review your final depth breakdown and log newly discovered rare answers into your personal knowledge bank."
+  ],
+  "recommendationCards": [
+    {
+      "title": "Daily Dive vs. Unlimited",
+      "text": "Daily Dive allows only 1 official attempt per day with global leaderboard ranking; Unlimited allows infinite practice runs and instant restarts."
+    },
+    {
+      "title": "Theme Packs (Pokemon & Minecraft)",
+      "text": "Practice mode introduces vertical decks including Pokemon species, Minecraft crafting recipes, geography, and pop culture."
+    },
+    {
+      "title": "Training & Warmup Routine",
+      "text": "Top Hadal Trench divers play 2 to 3 Unlimited rounds every morning as a mental warmup before locking in their official daily dive."
+    }
+  ],
+  "details": [
+    [
+      "Game",
+      "Krillion Unlimited"
+    ],
+    [
+      "Mode",
+      "Infinite Practice, Past Dives & Themed Decks"
+    ],
+    [
+      "Scoring Ratio",
+      "1 Point = 10 Meters Depth (Max 700 pts / 7,000m)"
+    ],
+    [
+      "Time Limit",
+      "25 Seconds per Prompt"
+    ],
+    [
+      "Attempt Cooldown",
+      "None (Instant Replay)"
+    ],
+    [
+      "Platform",
+      "Web Browser (Desktop & Mobile)"
+    ],
+    [
+      "Official Portal",
+      "krillion.io"
+    ]
+  ],
+  "faqs": [
+    {
+      "question": "What is Krillion Unlimited?",
+      "answer": "Krillion Unlimited is the unconstrained practice mode of Krillion. It lets you play unlimited consecutive trivia rounds, explore past daily archives, and practice without waiting for the midnight New York reset."
+    },
+    {
+      "question": "Can I play themed decks like Pokemon and Minecraft?",
+      "answer": "Yes! While the daily dive features mixed general knowledge, unlimited practice mode and community decks allow focused trivia on specific topics like Pokemon, Minecraft, and pop culture."
+    },
+    {
+      "question": "Is Krillion game powered by AI?",
+      "answer": "Krillion utilizes structured entity databases and statistical frequency distributions of player answers to rank rarity tiers (from Plankton to One in a Krillion), rather than generative AI chatbots."
+    },
+    {
+      "question": "How does Krillion multiplayer work?",
+      "answer": "Official multiplayer operates asynchronously through Depth Duels—players share their 7,000-meter scorecard emoji grids to compare depths. Additionally, community recreations exist on platforms like Roblox for live social play."
+    },
+    {
+      "question": "What games are like Krillion?",
+      "answer": "Games like Krillion include Noillirk (the reverse popular-answer version), Semantle (semantic similarity guessing), Contexto (AI word distance ranking), and classic Wordle."
+    },
+    {
+      "question": "Do Unlimited scores count toward the official daily leaderboard?",
+      "answer": "No. Unlimited scores and past dive replays are recorded locally for training and skill-building. Only your first daily run counts toward global leaderboard stats."
+    }
+  ],
+  "featured": {
+    "enabled": false
+  },
+  "indexing": {
+    "order": 69,
+    "lastmod": "2026-11-17",
+    "changefreq": "weekly",
+    "priority": 0.85
+  },
+  "llms": {
+    "order": 52,
+    "description": "Comprehensive Krillion Unlimited practice guide covering past dive archives, Pokemon/Minecraft theme decks, and 7,000m trench training tactics.",
+    "fullSummary": "Krillion Unlimited is the practice sandbox for the viral reverse-rarity trivia game Krillion. Our guide explains how to access unlimited rounds, replay archived daily dives, train for Hadal Trench 7,000m scores, test themed packs, and compare scores with friends."
+  }
+}
