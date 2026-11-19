@@ -1,4 +1,5 @@
 {
+  "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
     {
@@ -14,6 +15,11 @@
     {
       "source": "/crazy-cattle-3d",
       "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/crazy-cattle-3d-online-free",
+      "destination": "/crazy-cattle-3d-online",
       "permanent": true
     }
   ],
@@ -39,12 +45,6 @@
       "headers": [
         { "key": "Document-Policy", "value": "js-profiling" }
       ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
     }
   ]
 }

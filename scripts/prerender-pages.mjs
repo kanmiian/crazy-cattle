@@ -122,6 +122,19 @@ async function runPrerender() {
     `
   });
 
+  routesData.set('/crazy-cattle-3d-online-free', {
+    title: 'Crazy Cattle 3D Online Free - Instant Browser Play',
+    description: 'Play Crazy Cattle 3D online free in your browser with zero installation. Experience full physics sheep combat across all 3 maps.',
+    canonical: `${BASE_URL}/crazy-cattle-3d-online`,
+    contentHtml: `
+      <div class="game-page online-page" style="max-width:1200px;margin:0 auto;padding:2rem 1rem;">
+        <h1>🌐 Crazy Cattle 3D Online Free</h1>
+        <p>Instant free browser access to Crazy Cattle 3D. Play with full WebGL 60 FPS performance without downloading files.</p>
+        <p><a href="/" class="btn primary">Play Free Online Now</a> <a href="/crazy-cattle-3d-guide" class="btn secondary">Strategy Guide</a></p>
+      </div>
+    `
+  });
+
   routesData.set('/crazy-cattle-3d-download', {
     title: 'Crazy Cattle 3D Download - Official PC & Mac Version (itch.io)',
     description: 'Learn how to download Crazy Cattle 3D for PC. Find the official itch.io page by creator Anna Mayberry, system requirements, and instant browser play alternatives.',
@@ -462,6 +475,16 @@ async function runPrerender() {
     }
 
     await writeFile(targetFilePath, html, 'utf8');
+  }
+
+  // 7. 确保生成 404.html，彻底根治软 404 漏洞
+  try {
+    const public404Path = path.join(projectRoot, 'public', '404.html');
+    const notFoundHtml = await readFile(public404Path, 'utf8');
+    await writeFile(path.join(distDir, '404.html'), notFoundHtml, 'utf8');
+    console.log('Successfully generated dist/404.html for hard 404 responses!');
+  } catch (err) {
+    console.warn('Could not copy 404.html:', err.message);
   }
 
   console.log(`Successfully pre-rendered ${routesData.size} static HTML pages in dist/!`);

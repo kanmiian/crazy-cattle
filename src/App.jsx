@@ -33,6 +33,7 @@ const CrazyCattleGuide = lazy(() => import('./components/CrazyCattleGuide'))
 const CattleCrazy3D = lazy(() => import('./components/CattleCrazy3D'))
 const CrazyCattleHowToPlay = lazy(() => import('./components/CrazyCattleHowToPlay'))
 const CrazyCattleHowToWin = lazy(() => import('./components/CrazyCattleHowToWin'))
+const NotFound = lazy(() => import('./components/NotFound'))
 
 // 加载占位符组件
 const LoadingPlaceholder = () => {
@@ -799,6 +800,7 @@ const AppContent = () => {
           {hotGameRoutePages.map((game) => (
             <Route key={game.path} path={game.path} element={<HotGamePage game={game} />} />
           ))}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
       <Footer />
@@ -861,10 +863,7 @@ const MainContent = () => {
     }
   };
 
-  const isProduction = process.env.NODE_ENV === 'production'
-  const gameSrc = 'https://crazycattle3d.io/game/crazycattle3d/v11/';
-//     ? 'https://cattle-crazy-game.vercel.app/'
-//     : './game/index.html';
+  const gameSrc = '/game/index.html';
 
   return (
     <>
@@ -920,9 +919,7 @@ const MainContent = () => {
               src={gameSrc}
               allowFullScreen
               frameBorder="0"
-              allow="cross-origin-isolated; shared-storage; fullscreen"
-              sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-downloads allow-presentation allow-modals"
-              referrerPolicy="origin"
+              allow="cross-origin-isolated; fullscreen; autoplay"
               onLoad={handleIframeLoad}
               style={{
                 display: 'block',

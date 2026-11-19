@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import SEO from './SEO';
 
-const GAME_SRC = 'https://crazycattle3d.io/game/crazycattle3d/v11/';
+const GAME_SRC = '/game/index.html';
 
 const CrazyCattleUnblocked = () => {
   const [showGame, setShowGame] = useState(false);
@@ -93,9 +93,7 @@ const CrazyCattleUnblocked = () => {
               src={GAME_SRC}
               allowFullScreen
               frameBorder="0"
-              allow="cross-origin-isolated; shared-storage; fullscreen"
-              sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-downloads allow-presentation allow-modals"
-              referrerPolicy="origin"
+              allow="cross-origin-isolated; fullscreen; autoplay"
               onLoad={handleIframeLoad}
               style={{
                 display: 'block',
