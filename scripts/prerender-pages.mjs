@@ -52,9 +52,15 @@ async function runPrerender() {
         </div>
       </header>
       <section id="game" class="iframe-section">
-        <div class="game-placeholder">
-          <img src="/images/crazycattle-preview.webp" alt="Crazy Cattle 3D Preview" class="preview-img" />
-          <a href="#game" class="play-button"><span>▶️</span> Click to Play Game</a>
+        <div class="game-container">
+          <iframe
+            title="Crazy Cattle 3D - Sheep Battle Royale Game"
+            src="/game/index.html"
+            allowfullscreen=""
+            frameborder="0"
+            allow="cross-origin-isolated; fullscreen; autoplay"
+            style="display:block;width:100%;height:100%;border:0;"
+          ></iframe>
         </div>
       </section>
       <section class="hub-quick-features" style="max-width:1200px;margin:2rem auto;padding:0 1rem;">

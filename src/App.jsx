@@ -815,7 +815,6 @@ const AppContent = () => {
 
 const MainContent = () => {
   // 添加必要的状态变量
-  const [showGame, setShowGame] = useState(false);
   const [iframeLoaded, setIframeLoaded] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const gameContainerRef = useRef(null);
@@ -889,54 +888,44 @@ const MainContent = () => {
       </div>
 
       <section id="game" className="iframe-section">
-        {!showGame ? (
-          <div className="game-placeholder">
-            <img
-              src="/images/crazycattle-preview.webp"
-              alt="Crazy Cattle 3D Preview"
-              className="preview-img"
-            />
-            <button onClick={() => setShowGame(true)} className="play-button">
-              <span>▶️</span> Play Game
+        <div className="game-container" ref={gameContainerRef}>
+          {!iframeLoaded && (
+            <div className="loading-placeholder">
+              <img
+                src="/images/crazycattle-preview.webp"
+                alt="Crazy Cattle 3D Preview"
+                className="preview-img"
+              />
+              <div className="loading-overlay">
+                <div className="loading-text">Loading Game...</div>
+              </div>
+            </div>
+          )}
+          <iframe
+            title="Crazy Cattle 3D - Sheep Battle Royale Game"
+            src={gameSrc}
+            allowFullScreen
+            frameBorder="0"
+            allow="cross-origin-isolated; fullscreen; autoplay"
+            onLoad={handleIframeLoad}
+            style={{
+              display: 'block',
+              opacity: iframeLoaded ? 1 : 0,
+              transition: 'opacity 0.3s ease',
+              width: '100%',
+              height: '100%',
+              border: '0'
+            }}
+          ></iframe>
+          <div className="game-controls">
+            <button onClick={handleWebFullscreen} className="control-btn" title="Web Fullscreen">
+              {isFullscreen ? '⤓' : '⤢'}
+            </button>
+            <button onClick={handleBrowserFullscreen} className="control-btn" title="Browser Fullscreen">
+              ⛶
             </button>
           </div>
-        ) : (
-          <div className="game-container" ref={gameContainerRef}>
-            {!iframeLoaded && (
-              <div className="loading-placeholder">
-                <img
-                  src="/images/crazycattle-preview.webp"
-                  alt="Crazy Cattle 3D Preview"
-                  className="preview-img"
-                />
-                <div className="loading-overlay">
-                  <div className="loading-text">Loading Game...</div>
-                </div>
-              </div>
-            )}
-            <iframe
-              title="Crazy Cattle 3D - Sheep Battle Royale Game"
-              src={gameSrc}
-              allowFullScreen
-              frameBorder="0"
-              allow="cross-origin-isolated; fullscreen; autoplay"
-              onLoad={handleIframeLoad}
-              style={{
-                display: 'block',
-                opacity: iframeLoaded ? 1 : 0,
-                transition: 'opacity 0.3s ease'
-              }}
-            ></iframe>
-            <div className="game-controls">
-              <button onClick={handleWebFullscreen} className="control-btn" title="Web Fullscreen">
-                {isFullscreen ? '⤓' : '⤢'}
-              </button>
-              <button onClick={handleBrowserFullscreen} className="control-btn" title="Browser Fullscreen">
-                ⛶
-              </button>
-            </div>
-          </div>
-        )}
+        </div>
       </section>
 
       <section className="hub-quick-features" style={{ maxWidth: '1200px', margin: '1.5rem auto 2.5rem', padding: '0 1rem' }}>

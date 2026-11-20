@@ -667,6 +667,13 @@ body {
   .container {
     padding-top: 5rem;
   }
+
+  .iframe-section {
+    margin: 1.5rem 0;
+    height: 60vh;
+    min-height: 420px;
+    border-radius: var(--radius-md);
+  }
 }
 
 /* 页脚部分 */
