@@ -1,3 +1,4 @@
+import { legacyGamesData } from './legacy-game-content.mjs';
 
 function getRelatedGames(targetGame, allGames) {
   const genreDetail = (targetGame.details || []).find(d => d[0]?.toLowerCase().includes('genre'));
@@ -766,6 +767,78 @@ async function runPrerender() {
             <div class="hub-backlink-card" style="margin-top:1.5rem;padding:1.5rem;background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;">
               <h3 style="margin:0 0 8px 0;color:#1e40af;">🐄 Crazy Cattle 3D Official Community Hub</h3>
               <p style="margin:0 0 12px 0;color:#1e3a8a;">Looking for browser battle royale physics? Play our flagship game <strong><a href="/" style="color:#2563eb;font-weight:700;">Crazy Cattle 3D</a></strong> across Ireland, Iceland, and New Zealand with instant load times!</p>
+              <div style="display:flex;gap:8px;flex-wrap:wrap;">
+                <a href="/crazy-cattle-3d-unblocked" class="btn primary" style="padding:6px 14px;font-size:0.85rem;">🔓 Play Unblocked</a>
+                <a href="/crazy-cattle-3d-how-to-play" class="btn secondary" style="padding:6px 14px;font-size:0.85rem;">🎮 How to Play</a>
+                <a href="/crazy-cattle-3d-how-to-win" class="btn secondary" style="padding:6px 14px;font-size:0.85rem;">🏆 How to Win</a>
+                <a href="/crazy-cattle-3d-guide" class="btn secondary" style="padding:6px 14px;font-size:0.85rem;">📖 3 Maps Guide</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      `
+    });
+  }
+
+  // 4.5. 为 11 款历史特色游戏注入深度解构指南与去模板化内容
+  for (const [route, gameData] of Object.entries(legacyGamesData)) {
+    routesData.set(route, {
+      title: gameData.title,
+      description: gameData.description,
+      canonical: `${BASE_URL}${route}`,
+      contentHtml: `
+        <div class="game-page legacy-rich-page" style="max-width:1200px;margin:0 auto;padding:2rem 1rem;">
+          <header class="game-header" style="margin-bottom:1.5rem;">
+            <span style="display:inline-block;background:#dbeafe;color:#1e40af;font-size:0.8rem;font-weight:700;padding:4px 10px;border-radius:4px;margin-bottom:8px;">${escapeHtml(gameData.kicker)}</span>
+            <h1 style="font-size:2.2rem;color:#1e293b;margin-bottom:0.5rem;">${escapeHtml(gameData.h1)}</h1>
+            <p style="font-size:1.1rem;color:#475569;line-height:1.6;">${escapeHtml(gameData.description)}</p>
+            <div style="margin:1rem 0;">
+              <a href="${route}" class="btn primary">Play ${escapeHtml(gameData.h1)} Online</a>
+              <a href="/" class="btn secondary" style="margin-left:10px;">Play Crazy Cattle 3D</a>
+            </div>
+          </header>
+
+          <section class="seo-content-section" style="margin-top:2rem;line-height:1.75;color:#334155;">
+            <h2>About ${escapeHtml(gameData.h1)} &amp; Gameplay Overview</h2>
+            <p>${escapeHtml(gameData.intro)}</p>
+
+            <h3>How to Play &amp; Core Controls</h3>
+            <p>${escapeHtml(gameData.howToPlay)}</p>
+
+            <h3>Unique Game Mechanics</h3>
+            <p>${escapeHtml(gameData.uniqueMechanic)}</p>
+
+            <h3>Pro Tips &amp; Winning Strategies</h3>
+            <ol style="line-height:1.8;padding-left:1.5rem;">
+              ${gameData.proTips.map(tip => `<li>${escapeHtml(tip)}</li>`).join('')}
+            </ol>
+
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-list">
+              ${gameData.faqs.map(f => `
+                <div class="faq-item" style="margin-bottom:1rem;background:#f8fafc;padding:1rem;border-radius:8px;">
+                  <h4 style="font-size:1.05rem;color:#1e293b;margin:0 0 4px 0;">${escapeHtml(f.q)}</h4>
+                  <p style="margin:0;color:#475569;">${escapeHtml(f.a)}</p>
+                </div>
+              `).join('')}
+            </div>
+
+            <section class="related-games-section" style="margin-top:2.5rem;padding:1.5rem;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;">
+              <h3 style="margin:0 0 1rem 0;color:#1e293b;font-size:1.25rem;">🎮 Related Games You Might Like</h3>
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;">
+                ${gameData.relatedGames.map(rg => `
+                  <a href="${escapeHtml(rg.path)}" style="display:block;text-decoration:none;background:#ffffff;border:1px solid #cbd5e1;border-radius:8px;padding:12px;color:inherit;transition:transform 0.2s;">
+                    <strong style="color:#2563eb;font-size:1.05rem;display:block;margin-bottom:4px;">${escapeHtml(rg.title)}</strong>
+                    <p style="margin:0;font-size:0.88rem;color:#475569;line-height:1.4;">${escapeHtml(rg.desc)}</p>
+                    <span style="display:inline-block;margin-top:6px;font-size:0.8rem;color:#16a34a;font-weight:600;">Play &amp; Guide &rarr;</span>
+                  </a>
+                `).join('')}
+              </div>
+            </section>
+
+            <div class="hub-backlink-card" style="margin-top:1.5rem;padding:1.5rem;background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;">
+              <h3 style="margin:0 0 8px 0;color:#1e40af;">🐄 Crazy Cattle 3D Official Community Hub</h3>
+              <p style="margin:0 0 12px 0;color:#1e3a8a;">Looking for browser battle royale physics? Play our flagship game <strong><a href="/" style="color:#2563eb;font-weight:700;">Crazy Cattle 3D</a></strong> across all 3 maps with instant load times!</p>
               <div style="display:flex;gap:8px;flex-wrap:wrap;">
                 <a href="/crazy-cattle-3d-unblocked" class="btn primary" style="padding:6px 14px;font-size:0.85rem;">🔓 Play Unblocked</a>
                 <a href="/crazy-cattle-3d-how-to-play" class="btn secondary" style="padding:6px 14px;font-size:0.85rem;">🎮 How to Play</a>

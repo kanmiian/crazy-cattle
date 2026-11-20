@@ -7,6 +7,35 @@
   "title": "Build A Ring Farm",
   "path": "/build-a-ring-farm",
   "image": "/images/build-a-ring-farm.jpg",
+  "description": "Build A Ring Farm combines online farm idle growth with upgrade loops: plant circular crops, automate harvest cycles, and expand your farm ring.",
+  "intro": "Build A Ring Farm combines online farm idle growth with upgrade loops that are easy to search for: players want the best seeds, current codes, and the fastest way to grow the circular farm.",
+  "guideTitle": "Build A Ring Farm Codes, Seeds & Expansion Guide",
+  "guideIntro": "The safest progression route is to buy early income multipliers, keep every sector planted, and unlock circular land tiers systematically.",
+  "steps": [
+    "Move around the circular farm using WASD, arrow keys, or mobile touch controls to manage crop plots.",
+    "Plant fast-cycling carrots and corn early to establish reliable cash flow before buying expensive upgrades.",
+    "Prioritize harvest speed and crop value multipliers rather than cosmetic or decorative purchases.",
+    "Unlock tier-3 mushrooms and pumpkins once automation allows you to harvest continuously without manual tapping.",
+    "Expand outward into new farm rings only when your existing inner rings generate enough surplus to pay back land costs quickly."
+  ],
+  "faqs": [
+    {
+      "question": "Can I play Build A Ring Farm online for free?",
+      "answer": "Yes, Build A Ring Farm is 100% free to play directly in your web browser with no downloads or installation required."
+    },
+    {
+      "question": "Are there working Build A Ring Farm promo codes?",
+      "answer": "Promo codes (like RINGFARM500) appear during seasonal community events and can be entered in-game; avoid third-party extension scams."
+    },
+    {
+      "question": "What seeds should I prioritize for fastest progression?",
+      "answer": "Start with carrots for quick starter income, transition into corn for mid-game scaling, and maximize pumpkins for late-game expansion."
+    },
+    {
+      "question": "Is Build A Ring Farm the same as Roblox ring farm games?",
+      "answer": "It shares the circular ring farming and upgrade progression mechanics popularized by Roblox farm sims, but runs natively in web browsers."
+    }
+  ],
   "featured": {
     "enabled": true,
     "order": 37,
@@ -17,7 +46,7 @@
   },
   "indexing": {
     "order": 13,
-    "lastmod": "2026-07-02",
+    "lastmod": "2026-11-20",
     "changefreq": "weekly",
     "priority": 0.9
   },
