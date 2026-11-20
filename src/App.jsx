@@ -502,12 +502,20 @@ const Navigation = () => {
               <span className="game-name">Clues by Sam</span>
             </Link>
             <Link 
-              to="/lovemoney" 
-              className={`game-link ${currentPath === '/lovemoney' ? 'active' : ''}`}
+              to="/crazy-cattle-3d-how-to-play" 
+              className={`game-link ${currentPath === '/crazy-cattle-3d-how-to-play' ? 'active' : ''}`}
               onClick={() => setIsGameDrawerOpen(false)}
             >
-              <span className="game-icon">💰</span>
-              <span className="game-name">LoveMoney</span>
+              <span className="game-icon">🎮</span>
+              <span className="game-name">How to Play</span>
+            </Link>
+            <Link 
+              to="/crazy-cattle-3d-how-to-win" 
+              className={`game-link ${currentPath === '/crazy-cattle-3d-how-to-win' ? 'active' : ''}`}
+              onClick={() => setIsGameDrawerOpen(false)}
+            >
+              <span className="game-icon">🏆</span>
+              <span className="game-name">How to Win</span>
             </Link>
             <Link 
               to="/steal-a-brainrot" 
@@ -623,7 +631,8 @@ const Navigation = () => {
             <Link to="/captain-blast" className="mobile-nav-link">💥 Captain Blast</Link>
             <Link to="/crazy-cattle-3d-mobile" className="mobile-nav-link">🐄 Crazy Cattle 3D Mobile</Link>
             <Link to="/clues-by-sam" className="mobile-nav-link">🔍 Clues by Sam</Link>
-            <Link to="/lovemoney" className="mobile-nav-link">💰 LoveMoney</Link>
+            <Link to="/crazy-cattle-3d-how-to-play" className="mobile-nav-link">🎮 How to Play</Link>
+            <Link to="/crazy-cattle-3d-how-to-win" className="mobile-nav-link">🏆 How to Win</Link>
             <Link to="/steal-a-brainrot" className="mobile-nav-link">🧠 Steal a Brainrot</Link>
             <Link to="/cheese-chompers" className="mobile-nav-link">🧀 Cheese Chompers</Link>
             <Link to="/doodle-baseball" className="mobile-nav-link">⚾ Doodle Baseball</Link>
@@ -1035,45 +1044,124 @@ const MainContent = () => {
         </Suspense>
       </main>
 
-      <section className="new-games-panel" aria-label="New hot game updates">
+      <section className="new-games-panel" aria-label="Crazy Cattle 3D and browser game directory">
         <div className="new-games-heading">
-          <span className="new-games-label">New Hot Games</span>
-          <h2>Fresh playable modules</h2>
-          <p>Trending mini-games added for quick play, simple guides, and recommendation traffic.</p>
+          <span className="new-games-label">Crazy Cattle 3D &amp; Browser Game Directory</span>
+          <h2>Explore Games &amp; Complete Walkthroughs</h2>
+          <p>Master our physics battle royale cluster or explore trending browser hits with verified guides and responsive controls.</p>
         </div>
 
-        <div className="new-games-ticker" aria-label="Latest playable game updates">
-          <div className="ticker-label">Updated</div>
-          <div className="ticker-viewport">
-            <div className="ticker-track">
-              {[...hotGameUpdates, ...hotGameUpdates].map((game, index) => (
-                <Link to={game.path} className="ticker-item" key={`${game.path}-${index}`}>
-                  <strong>
-                    {game.icon && <span className="ticker-icon">{game.icon}</span>}
-                    {game.title}
-                  </strong>
-                  <span>{game.summary}</span>
-                </Link>
-              ))}
-            </div>
+        {/* Priority Row 1: Crazy Cattle 3D Cluster */}
+        <div style={{ marginBottom: '2rem' }}>
+          <h3 style={{ fontSize: '1.2rem', color: '#1e3a8a', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span>🐄</span> Crazy Cattle 3D Official Guides &amp; Modes
+          </h3>
+          <div className="new-games-grid" style={{ marginBottom: '1.5rem' }}>
+            <Link to="/crazy-cattle-3d-unblocked" className="new-game-card">
+              <img src="/images/crazycattle-preview.webp" alt="Crazy Cattle 3D Unblocked" loading="lazy" />
+              <div className="new-game-card-body">
+                <span className="new-game-tag" style={{ background: '#dcfce7', color: '#166534' }}>Flagship Edition</span>
+                <h3>🔓 Crazy Cattle 3D Unblocked</h3>
+                <p>Play free on school Chromebooks and restricted networks without downloads.</p>
+                <strong>Zero Setup Required</strong>
+              </div>
+            </Link>
+            <Link to="/crazy-cattle-3d-guide" className="new-game-card">
+              <img src="/images/crazycattle-preview.webp" alt="Crazy Cattle 3D Guide" loading="lazy" />
+              <div className="new-game-card-body">
+                <span className="new-game-tag" style={{ background: '#eff6ff', color: '#1e40af' }}>Strategy</span>
+                <h3>📖 Crazy Cattle 3D Guide</h3>
+                <p>Master Ireland hills, Iceland drop-offs, and New Zealand mountain peaks.</p>
+                <strong>Full 3-Map Geography Breakdown</strong>
+              </div>
+            </Link>
+            <Link to="/crazy-cattle-3d-how-to-play" className="new-game-card">
+              <img src="/images/crazycattle-preview.webp" alt="How to Play Crazy Cattle 3D" loading="lazy" />
+              <div className="new-game-card-body">
+                <span className="new-game-tag" style={{ background: '#fef3c7', color: '#92400e' }}>Beginner</span>
+                <h3>🎮 How to Play Crazy Cattle 3D</h3>
+                <p>PC &amp; mobile controls, 4-phase match loop, and first 60 seconds survival.</p>
+                <strong>Controls &amp; Match Loop</strong>
+              </div>
+            </Link>
+            <Link to="/crazy-cattle-3d-how-to-win" className="new-game-card">
+              <img src="/images/crazycattle-preview.webp" alt="How to Win Crazy Cattle 3D" loading="lazy" />
+              <div className="new-game-card-body">
+                <span className="new-game-tag" style={{ background: '#fce7f3', color: '#9d174d' }}>Pro Tactics</span>
+                <h3>🏆 How to Win Crazy Cattle 3D</h3>
+                <p>7 proven tactics: 45-degree flank collisions, downhill momentum, and circle meta.</p>
+                <strong>High Win-Rate Strategies</strong>
+              </div>
+            </Link>
           </div>
         </div>
 
-        <div className="new-games-grid">
-          {hotGameUpdates.map((game) => (
-            <Link to={game.path} className="new-game-card" key={game.path}>
-              <img src={game.image} alt={`${game.title} preview`} loading="lazy" decoding="async" />
+        {/* Priority Row 2: High Search Demand Standalone Games */}
+        <div style={{ marginBottom: '2rem' }}>
+          <h3 style={{ fontSize: '1.2rem', color: '#0f172a', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span>🔥</span> High-Demand Daily Puzzles &amp; Browser Hits
+          </h3>
+          <div className="new-games-grid" style={{ marginBottom: '1.5rem' }}>
+            <Link to="/clues-by-sam" className="new-game-card">
+              <img src="/images/cluesbysam.jpg" alt="Clues by Sam" loading="lazy" />
               <div className="new-game-card-body">
-                <span className="new-game-tag">{game.tag}</span>
-                <h3>
-                  {game.icon && <span className="new-game-icon">{game.icon}</span>}
-                  {game.title}
-                </h3>
-                <p>{game.summary}</p>
-                <strong>{game.recommendation}</strong>
+                <span className="new-game-tag" style={{ background: '#e0e7ff', color: '#3730a3' }}>Daily Logic</span>
+                <h3>🔍 Clues by Sam</h3>
+                <p>Daily deductive grid puzzle. Find who is criminal and who is innocent without guessing.</p>
+                <strong>Full Walkthrough &amp; Clue Answers</strong>
               </div>
             </Link>
-          ))}
+            <Link to="/krillion" className="new-game-card">
+              <img src="/images/krillion.png" alt="Krillion" loading="lazy" />
+              <div className="new-game-card-body">
+                <span className="new-game-tag" style={{ background: '#fef08a', color: '#854d0e' }}>Daily Word Dive</span>
+                <h3>🌊 Krillion (Noillirk)</h3>
+                <p>Dive deep to discover rare marine words. Daily puzzle answers and practice archives.</p>
+                <strong>Daily Dive Rules &amp; Answers</strong>
+              </div>
+            </Link>
+            <Link to="/hop-earth" className="new-game-card">
+              <img src="/images/hop-earth.jpg" alt="Hop Earth" loading="lazy" />
+              <div className="new-game-card-body">
+                <span className="new-game-tag" style={{ background: '#dbeafe', color: '#1e40af' }}>Action</span>
+                <h3>🌍 Hop Earth</h3>
+                <p>Planetary precision jumping game. Master orbital physics and timing challenges.</p>
+                <strong>Controls &amp; Route Guide</strong>
+              </div>
+            </Link>
+            <Link to="/emoji-guess-master" className="new-game-card">
+              <img src="/images/emoji-guess-master.jpg" alt="Emoji Guess Master" loading="lazy" />
+              <div className="new-game-card-body">
+                <span className="new-game-tag" style={{ background: '#f3e8ff', color: '#6b21a8' }}>Puzzle Answers</span>
+                <h3>😀 Emoji Guess Master</h3>
+                <p>Decode emoji combination puzzles with full verified level solutions and hints.</p>
+                <strong>Level Solutions &amp; Answers</strong>
+              </div>
+            </Link>
+          </div>
+        </div>
+
+        {/* Priority Row 3+: All Remaining Games */}
+        <div>
+          <h3 style={{ fontSize: '1.2rem', color: '#334155', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span>🕹️</span> More Trending Browser Games (40+ Titles)
+          </h3>
+          <div className="new-games-grid">
+            {hotGameUpdates.map((game) => (
+              <Link to={game.path} className="new-game-card" key={game.path}>
+                <img src={game.image} alt={`${game.title} preview`} loading="lazy" decoding="async" />
+                <div className="new-game-card-body">
+                  <span className="new-game-tag">{game.tag}</span>
+                  <h3>
+                    {game.icon && <span className="new-game-icon">{game.icon}</span>}
+                    {game.title}
+                  </h3>
+                  <p>{game.summary}</p>
+                  <strong>{game.recommendation}</strong>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

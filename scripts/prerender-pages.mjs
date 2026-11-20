@@ -1,3 +1,31 @@
+
+function getRelatedGames(targetGame, allGames) {
+  const genreDetail = (targetGame.details || []).find(d => d[0]?.toLowerCase().includes('genre'));
+  const genreText = (genreDetail ? genreDetail[1] : targetGame.description || '').toLowerCase();
+  
+  const candidates = allGames.filter(g => g.path !== targetGame.path);
+  
+  const scored = candidates.map(candidate => {
+    const cGenreDetail = (candidate.details || []).find(d => d[0]?.toLowerCase().includes('genre'));
+    const cText = (cGenreDetail ? cGenreDetail[1] : candidate.description || '').toLowerCase();
+    
+    let score = 0;
+    const keywords = ['puzzle', 'brainrot', 'physics', 'shooter', 'survival', 'idle', 'clicker', 'car', 'race', 'merge', 'roguelite', 'arcade', 'word'];
+    for (const kw of keywords) {
+      if (genreText.includes(kw) && cText.includes(kw)) {
+        score += 3;
+      }
+    }
+    if (['/clues-by-sam', '/krillion', '/hop-earth', '/emoji-guess-master', '/cars-arena'].includes(candidate.path)) {
+      score += 1;
+    }
+    return { game: candidate, score };
+  });
+
+  scored.sort((a, b) => b.score - a.score);
+  return scored.slice(0, 3).map(s => s.game);
+}
+
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -678,6 +706,7 @@ async function runPrerender() {
   // 4. 为每个热游生成专属页面内容
   for (const game of games) {
     const route = game.path;
+    const relatedGames = getRelatedGames(game, games);
     const stepsHtml = (game.steps || []).map(s => `<li>${escapeHtml(s)}</li>`).join('');
     const faqsHtml = (game.faqs || []).map(f => `
       <div class="faq-item" style="margin-bottom:1rem;">
@@ -721,11 +750,28 @@ async function runPrerender() {
             <h3>Frequently Asked Questions</h3>
             <div class="faq-list">${faqsHtml}</div>
 
-            <div class="hub-backlink-card" style="margin-top:2.5rem;padding:1.5rem;background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;">
-              <h3 style="margin:0 0 8px 0;color:#1e40af;">🐄 More Physics &amp; Battle Royale Games: Crazy Cattle 3D</h3>
-              <p style="margin:0 0 12px 0;color:#1e3a8a;">Love browser gaming? Check out our flagship game <strong><a href="/" style="color:#2563eb;font-weight:700;">Crazy Cattle 3D</a></strong>! Battle across Ireland, Iceland, and New Zealand with zero download needed.</p>
-              <a href="/crazy-cattle-3d-unblocked" class="btn primary" style="padding:6px 14px;font-size:0.85rem;">🔓 Play Unblocked</a>
-              <a href="/crazy-cattle-3d-guide" class="btn secondary" style="padding:6px 14px;font-size:0.85rem;margin-left:8px;">📖 Map Guide</a>
+            <section class="related-games-section" style="margin-top:2.5rem;padding:1.5rem;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;">
+              <h3 style="margin:0 0 1rem 0;color:#1e293b;font-size:1.25rem;">🎮 Related Games You Might Like</h3>
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;">
+                ${relatedGames.map(rg => `
+                  <a href="${escapeHtml(rg.path)}" style="display:block;text-decoration:none;background:#ffffff;border:1px solid #cbd5e1;border-radius:8px;padding:12px;color:inherit;transition:transform 0.2s;">
+                    <strong style="color:#2563eb;font-size:1.05rem;display:block;margin-bottom:4px;">${escapeHtml(rg.title)}</strong>
+                    <p style="margin:0;font-size:0.88rem;color:#475569;line-height:1.4;">${escapeHtml((rg.description || '').slice(0, 90))}...</p>
+                    <span style="display:inline-block;margin-top:6px;font-size:0.8rem;color:#16a34a;font-weight:600;">Play &amp; Guide &rarr;</span>
+                  </a>
+                `).join('')}
+              </div>
+            </section>
+
+            <div class="hub-backlink-card" style="margin-top:1.5rem;padding:1.5rem;background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;">
+              <h3 style="margin:0 0 8px 0;color:#1e40af;">🐄 Crazy Cattle 3D Official Community Hub</h3>
+              <p style="margin:0 0 12px 0;color:#1e3a8a;">Looking for browser battle royale physics? Play our flagship game <strong><a href="/" style="color:#2563eb;font-weight:700;">Crazy Cattle 3D</a></strong> across Ireland, Iceland, and New Zealand with instant load times!</p>
+              <div style="display:flex;gap:8px;flex-wrap:wrap;">
+                <a href="/crazy-cattle-3d-unblocked" class="btn primary" style="padding:6px 14px;font-size:0.85rem;">🔓 Play Unblocked</a>
+                <a href="/crazy-cattle-3d-how-to-play" class="btn secondary" style="padding:6px 14px;font-size:0.85rem;">🎮 How to Play</a>
+                <a href="/crazy-cattle-3d-how-to-win" class="btn secondary" style="padding:6px 14px;font-size:0.85rem;">🏆 How to Win</a>
+                <a href="/crazy-cattle-3d-guide" class="btn secondary" style="padding:6px 14px;font-size:0.85rem;">📖 3 Maps Guide</a>
+              </div>
             </div>
           </section>
         </div>
@@ -747,10 +793,15 @@ async function runPrerender() {
             <h1>${escapeHtml(capName)} - Free Online Browser Game</h1>
             <p>Welcome to ${escapeHtml(capName)}! Play directly in your web browser with responsive controls, full levels, and no downloads required.</p>
             <div style="margin:1.5rem 0;"><a href="/" class="btn primary">Play Crazy Cattle 3D</a></div>
-            <div class="hub-backlink-card" style="margin-top:2rem;padding:1.5rem;background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;">
-              <h3>Featured Game: Crazy Cattle 3D</h3>
-              <p>Explore our flagship physics battle royale across Ireland, Iceland, and New Zealand.</p>
-              <a href="/crazy-cattle-3d-unblocked" class="btn primary">Play Unblocked</a>
+            <div class="hub-backlink-card" style="margin-top:2rem;padding:1.5rem;background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;">
+              <h3 style="margin:0 0 8px 0;color:#1e40af;">🐄 Crazy Cattle 3D Official Community Hub</h3>
+              <p style="margin:0 0 12px 0;color:#1e3a8a;">Looking for browser battle royale physics? Play our flagship game <strong><a href="/" style="color:#2563eb;font-weight:700;">Crazy Cattle 3D</a></strong> with zero download needed.</p>
+              <div style="display:flex;gap:8px;flex-wrap:wrap;">
+                <a href="/crazy-cattle-3d-unblocked" class="btn primary" style="padding:6px 14px;font-size:0.85rem;">🔓 Play Unblocked</a>
+                <a href="/crazy-cattle-3d-how-to-play" class="btn secondary" style="padding:6px 14px;font-size:0.85rem;">🎮 How to Play</a>
+                <a href="/crazy-cattle-3d-how-to-win" class="btn secondary" style="padding:6px 14px;font-size:0.85rem;">🏆 How to Win</a>
+                <a href="/crazy-cattle-3d-guide" class="btn secondary" style="padding:6px 14px;font-size:0.85rem;">📖 3 Maps Guide</a>
+              </div>
             </div>
           </div>
         `
