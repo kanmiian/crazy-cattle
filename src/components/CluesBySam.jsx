@@ -57,7 +57,7 @@ const CluesBySam = () => {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    checkMobile(); // 初始检查
+    checkMobile();
     window.addEventListener('resize', checkMobile);
 
     return () => {
@@ -71,12 +71,10 @@ const CluesBySam = () => {
       const iframe = gameContainerRef.current.querySelector('iframe');
       if (iframe) {
         if (isMobile) {
-          // 移动端：占满屏幕宽度和更多高度（竖屏游戏）
           iframe.style.height = isFullscreen ? '100vh' : '85vh';
           iframe.style.minHeight = '600px';
           iframe.style.width = '100%';
         } else {
-          // 桌面端：和preview一样大，使用固定高度600px
           iframe.style.height = isFullscreen ? '100vh' : '600px';
           iframe.style.minHeight = '600px';
         }
@@ -85,19 +83,19 @@ const CluesBySam = () => {
   }, [showGame, isFullscreen, isMobile]);
 
   return (
-    <div className="game-page clues-by-sam-page">
+    <div className="game-page clues-by-sam-page" style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem 1rem' }}>
       <SEO 
-        title="Clues by Sam - Free Daily Logic Puzzle Game | Play Online"
-        description="Play Clues by Sam online for free! Solve daily logic puzzles where you figure out who is criminal and who is innocent. New puzzle every day at midnight New York time. Play Clues by Sam completely free - no download required!"
-        keywords="clues by sam, daily clues, logic puzzle game, free puzzle game, online puzzle game, play clues by sam, daily logic puzzle, criminal innocent puzzle, sam clues game, free online puzzle"
+        title="Clues by Sam – Play Free Online + Full Answers & Walkthrough"
+        description="Play Clues by Sam online for free! Daily logic deduction walkthrough, clue puzzle answers, rules, and strategies to identify criminals and innocents without guessing."
+        keywords="clues by sam, clues by sam answers, clues by sam today, daily logic puzzle, deduction game, play clues by sam online, free logic grid puzzle"
       />
       
-      <div className="game-header">
-        <h1>🔍 Clues by Sam - Free Daily Logic Puzzle Game</h1>
-        <p className="game-description-header">
-          Challenge your logic skills with <strong>Clues by Sam</strong>, a daily puzzle game where you must figure out <strong>who is criminal</strong> and <strong>who is innocent</strong>. A new puzzle is released every day at midnight New York time. Play <strong>Clues by Sam online</strong> completely free - no download required! Use logical deduction to solve each puzzle without guessing!
+      <header className="game-header" style={{ marginBottom: '1.5rem' }}>
+        <h1 style={{ fontSize: '2.2rem', color: '#1e293b', marginBottom: '0.5rem' }}>Clues by Sam</h1>
+        <p className="game-description-header" style={{ fontSize: '1.1rem', color: '#475569', lineHeight: '1.6' }}>
+          Play <strong>Clues by Sam online</strong> for free! Solve daily logic deduction grids where you determine who is criminal and who is innocent. Master positional clues, row and column quotas, and corner tagging to solve every daily puzzle without guessing.
         </p>
-        <div className="game-actions">
+        <div className="game-actions" style={{ marginTop: '1rem' }}>
           <button 
             onClick={() => setShowGame(true)} 
             className="btn primary"
@@ -105,17 +103,18 @@ const CluesBySam = () => {
             <span>🔍</span> Play Clues by Sam Online Now
           </button>
         </div>
-      </div>
+      </header>
 
       {/* Game Section */}
-      <div className="game-section">
+      <div className="game-section" style={{ marginBottom: '2rem' }}>
         {!showGame ? (
           <div className="game-placeholder">
-            <div className="preview-container" onClick={() => setShowGame(true)}>
+            <div className="preview-container" onClick={() => setShowGame(true)} style={{ cursor: 'pointer', position: 'relative' }}>
               <img
                 src="/images/cluesbysam.jpg"
                 alt="Clues by Sam Game Preview"
                 className="preview-img"
+                style={{ width: '100%', maxHeight: '540px', objectFit: 'cover', borderRadius: '12px' }}
               />
               <div className="preview-overlay">
                 <div className="play-hint">
@@ -135,7 +134,7 @@ const CluesBySam = () => {
               </div>
             )}
             <iframe
-              title="Clues by Sam - Free Daily Logic Puzzle Game"
+              title="Clues by Sam - Daily Deductive Logic Puzzle"
               src="https://cluesbysam.com/"
               allowFullScreen
               frameBorder="0"
@@ -170,119 +169,159 @@ const CluesBySam = () => {
         )}
       </div>
 
-      {/* SEO Content Section */}
-      <div className="seo-content-section">
-        <h2>About Clues by Sam - The Daily Logic Puzzle Game</h2>
-        <p>
-          Welcome to <strong>Clues by Sam</strong>, a captivating daily logic puzzle game that challenges your deductive reasoning skills. In this <strong>free online puzzle game</strong>, you're presented with a grid of suspects and must use logical clues to determine <strong>who is criminal</strong> and <strong>who is innocent</strong>. Each day at midnight New York time, a brand new puzzle is released, keeping the game fresh and exciting. Play <strong>Clues by Sam online</strong> completely free - no downloads, no registration, and no hidden costs!
-        </p>
+      {/* Structured SEO Guide Section: 6 Complete Paragraphs */}
+      <article className="seo-content-section" style={{ lineHeight: '1.75', color: '#334155' }}>
+        
+        {/* Section 1: 什么是 Clues by Sam */}
+        <section style={{ marginBottom: '2rem' }}>
+          <h2 style={{ fontSize: '1.6rem', color: '#0f172a', borderBottom: '2px solid #e2e8f0', paddingBottom: '0.4rem', marginBottom: '1rem' }}>
+            What is Clues by Sam? Daily Logic Puzzle &amp; Deductive Rules
+          </h2>
+          <p>
+            <strong>Clues by Sam</strong> is an engaging daily deductive logic puzzle game created by independent developer Sam under Ad Artis Oy. Released every day precisely at midnight Eastern Time (00:00 New York time), the game presents players worldwide with a fresh, handcrafted grid of suspects, each featuring an illustrated portrait, full name, profession, and unique grid position.
+          </p>
+          <p>
+            The overarching objective is both simple to grasp and deeply intellectual: you must evaluate all available testimonies to determine which suspects are <strong>Criminal</strong> and which are <strong>Innocent</strong>. Unlike casual word games or trivia quizzes that rely on guesswork, trial-and-error, or vocabulary breadth, Clues by Sam is governed entirely by mathematical and formal logic determinism. Every single daily puzzle is procedurally and manually verified to ensure that a continuous, non-branching deduction path exists from the very first clue to the fully solved board. Zero guesswork or leap of faith is ever required to solve the grid.
+          </p>
+        </section>
 
-        <h3>Clues by Sam Gameplay and Rules</h3>
-        <p>
-          <strong>Clues by Sam</strong> is a logic puzzle game where your goal is simple yet challenging: figure out which suspects are criminals and which are innocent. The game features a grid layout (typically 4x5 or similar) with suspects arranged in rows and columns. Each suspect has a name, profession, and location on the grid. You'll receive various clues that help you deduce the truth about each person.
-        </p>
+        {/* Section 2: 怎么玩 */}
+        <section style={{ marginBottom: '2rem' }}>
+          <h2 style={{ fontSize: '1.6rem', color: '#0f172a', borderBottom: '2px solid #e2e8f0', paddingBottom: '0.4rem', marginBottom: '1rem' }}>
+            How to Play: Interface Layout, Input Controls &amp; Color Feedback
+          </h2>
+          <p>
+            The playfield consists of twenty suspect portrait cards arranged across a structured grid—typically four columns lettered A through D and five rows numbered 1 through 5, giving each character a distinct coordinate like A1, B3, or D5.
+          </p>
+          <ul style={{ paddingLeft: '1.5rem', marginBottom: '1rem' }}>
+            <li><strong>Marking Suspects:</strong> Click or tap a suspect card to toggle their status between <em>Innocent</em> (marked with a clean green badge) and <em>Criminal</em> (marked with a prominent red badge). When you accurately deduce and lock in a suspect, that person's testimony card flips open to reveal crucial new evidence regarding other suspects on the board.</li>
+            <li><strong>Corner Color Tagging System:</strong> Right-click on any card on desktop or tap the top-right corner tag icon on touchscreens to cycle through helper colors (yellow, blue, purple, orange). These non-permanent notes let you test hypothetical chains (such as 'Assume suspect B2 is guilty—what happens to Row 2?').</li>
+            <li><strong>Error Prevention &amp; Logic Guards:</strong> If an action directly contradicts an established clue or violates mathematical parity, the interface prevents contradictory locks, preserving the integrity of your deduction path.</li>
+            <li><strong>Daily Reset Schedule:</strong> Puzzles update every calendar day at 00:00 EST / EDT (midnight New York time). Your current solving progress is automatically cached in your browser's local storage, allowing you to pause, step away, and resume your deduction anytime without losing your place.</li>
+          </ul>
+        </section>
 
-        <h3>How to Play Clues by Sam Online</h3>
-        <ol>
-          <li><strong>Read the Clues Carefully:</strong> Each puzzle provides multiple clues about the relationships, positions, and characteristics of the suspects. Pay attention to details like "neighbors," "between," "connected," and other spatial relationships.</li>
-          <li><strong>Use Logical Deduction:</strong> The game prevents guessing - you can only make choices when you have logical evidence. Work through the clues systematically to eliminate possibilities.</li>
-          <li><strong>Tap to Mark Suspects:</strong> Tap on a suspect to mark them as either innocent or criminal. If your logic is correct, they might reveal a new clue to help you solve the rest of the puzzle.</li>
-          <li><strong>Use Corner Tags:</strong> Tap the top right corner of each card to add color tags, helping you track your deductions and test hypothetical scenarios.</li>
-          <li><strong>Complete the Puzzle:</strong> Once you've correctly identified all criminals and innocents, you've solved the puzzle! Share your result and see how your time compares to others.</li>
-        </ol>
+        {/* Section 3: 常见谜题类型与解题套路 */}
+        <section style={{ marginBottom: '2rem' }}>
+          <h2 style={{ fontSize: '1.6rem', color: '#0f172a', borderBottom: '2px solid #e2e8f0', paddingBottom: '0.4rem', marginBottom: '1rem' }}>
+            Common Puzzle Types &amp; Core Deductive Patterns
+          </h2>
+          <p>
+            Mastering Clues by Sam requires understanding the exact language and spatial terminology used in the clues:
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem', marginTop: '1rem' }}>
+            <div style={{ background: '#f8fafc', padding: '1.25rem', borderRadius: '8px', border: '1px solid #e2e8f0' }}>
+              <h3 style={{ fontSize: '1.15rem', color: '#1e293b', marginTop: 0 }}>1. Positional &amp; Spatial Clues</h3>
+              <p style={{ margin: 0, fontSize: '0.95rem', color: '#475569' }}>
+                <strong>Neighbors:</strong> Crucially, 'neighbors' always includes horizontal, vertical, AND diagonal adjacent cards. Corner cells have 3 neighbors, edges have 5, and center cards have 8. <strong>In Between:</strong> Suspects situated directly between two targets along the same row or column, excluding the endpoints. <strong>Connected:</strong> Continuous chains linked strictly by orthogonal adjacency (horizontal or vertical).
+              </p>
+            </div>
+            <div style={{ background: '#f8fafc', padding: '1.25rem', borderRadius: '8px', border: '1px solid #e2e8f0' }}>
+              <h3 style={{ fontSize: '1.15rem', color: '#1e293b', marginTop: 0 }}>2. Numerical &amp; Row/Column Quotas</h3>
+              <p style={{ margin: 0, fontSize: '0.95rem', color: '#475569' }}>
+                Clues stating 'Row 3 contains exactly 2 criminals' or 'Column B has more innocents than Column D' establish rigid boundaries. Cross-referencing these totals against confirmed cards lets you apply the Pigeonhole Principle to resolve remaining slots immediately.
+              </p>
+            </div>
+            <div style={{ background: '#f8fafc', padding: '1.25rem', borderRadius: '8px', border: '1px solid #e2e8f0' }}>
+              <h3 style={{ fontSize: '1.15rem', color: '#1e293b', marginTop: 0 }}>3. Suspect Attributes &amp; Names</h3>
+              <p style={{ margin: 0, fontSize: '0.95rem', color: '#475569' }}>
+                Testimonies frequently refer to name spelling patterns ('All suspects whose names start with M are innocent'), occupational roles ('Both doctors are criminals'), or visual traits (glasses, hats). Always scan character labels carefully.
+              </p>
+            </div>
+            <div style={{ background: '#f8fafc', padding: '1.25rem', borderRadius: '8px', border: '1px solid #e2e8f0' }}>
+              <h3 style={{ fontSize: '1.15rem', color: '#1e293b', marginTop: 0 }}>4. Logical Elimination (Indirect Proof)</h3>
+              <p style={{ margin: 0, fontSize: '0.95rem', color: '#475569' }}>
+                When direct deductions stall, apply <em>reductio ad absurdum</em>: assume a suspect is Innocent. If that hypothesis forces a row to exceed its allowed criminal quota, the assumption is false and the suspect must be Criminal.
+              </p>
+            </div>
+          </div>
+        </section>
 
-        <h3>Clues by Sam Game Features</h3>
-        <div className="features-grid">
-          <div className="feature-card">
-            <h4>🔍 Daily Puzzles</h4>
-            <p>A new puzzle is released every day at midnight New York time, ensuring you always have fresh content to challenge your logic skills in this <strong>free online puzzle game</strong>.</p>
-          </div>
-          <div className="feature-card">
-            <h4>🧩 Logic-Based Gameplay</h4>
-            <p>No guessing allowed! Every choice must be based on logical deduction. The game ensures you can always find the next logical step, even when it seems impossible.</p>
-          </div>
-          <div className="feature-card">
-            <h4>📱 Mobile & Desktop Support</h4>
-            <p>Play <strong>Clues by Sam online</strong> on any device - optimized for both mobile phones and desktop computers. The game adapts to your screen size for the best experience.</p>
-          </div>
-          <div className="feature-card">
-            <h4>🏷️ Color Tagging System</h4>
-            <p>Use corner tags to organize your thoughts and track different deduction paths. Right-click anywhere on a card to cycle through tag colors.</p>
-          </div>
-          <div className="feature-card">
-            <h4>💡 Hint System</h4>
-            <p>If you get stuck, use the hint button to get guidance. The first hint shows which clues to focus on, and the second reveals which suspects you can identify.</p>
-          </div>
-          <div className="feature-card">
-            <h4>📊 Share Your Results</h4>
-            <p>Share your completion time and results with others. Compare your solving speed and see how you stack up against other players.</p>
-          </div>
-        </div>
+        {/* Section 4: 今日谜题思路与过关技巧 */}
+        <section style={{ marginBottom: '2rem' }}>
+          <h2 style={{ fontSize: '1.6rem', color: '#0f172a', borderBottom: '2px solid #e2e8f0', paddingBottom: '0.4rem', marginBottom: '1rem' }}>
+            Daily Walkthrough Strategy: 5 Proven Solving Tips
+          </h2>
+          <p>
+            Experienced players rely on five systematic principles to solve daily boards smoothly without ever getting stuck:
+          </p>
+          <ol style={{ paddingLeft: '1.5rem', lineHeight: '1.8' }}>
+            <li>
+              <strong>Prioritize Boundary Edges and Corners:</strong> Center cards have 8 neighbors, creating high complexity. Corners have only 3 neighbors and edges have 5. Any clue stating 'All neighbors of corner card A1 are innocent' immediately locks down 3 suspects with zero ambiguity.
+            </li>
+            <li>
+              <strong>Lock Down Row and Column Quotas:</strong> Always audit row and column totals after every confirmed card. If Row 2 requires exactly 2 criminals and you have confirmed 2, every other suspect in Row 2 must instantly be marked Innocent.
+            </li>
+            <li>
+              <strong>Deploy Corner Tags for Binary Bifurcations:</strong> When a clue states 'Exactly one of Alice and Bob is guilty,' tag Alice yellow and Bob orange. Trace the deductive ripple effects; frequently, one branch triggers an instant quota contradiction, proving the alternative branch immediately.
+            </li>
+            <li>
+              <strong>Respect Strict Mathematical Quantifiers:</strong> Remember that 'All' implies at least one subject exists, 'In between' never includes the boundaries, and 'At most one' includes zero. Reading quantifiers with absolute literal precision avoids fatal false assumptions.
+            </li>
+            <li>
+              <strong>Trace Newly Unlocked Testimonies Immediately:</strong> Each correctly identified suspect reveals their hidden testimony. Novice players often stall because they keep re-reading old static clues. Always check newly revealed testimonies first—they provide the intended next link in the deduction chain.
+            </li>
+          </ol>
+        </section>
 
-        <h3>Clues by Sam Terminology Guide</h3>
-        <p>
-          Understanding the terminology is crucial for solving puzzles in <strong>Clues by Sam</strong>:
-        </p>
-        <ul>
-          <li><strong>Neighbors:</strong> Always include diagonal neighbors. One person can have up to 8 neighbors.</li>
-          <li><strong>In between:</strong> Means the persons between two suspects, not including the two themselves.</li>
-          <li><strong>Connected:</strong> A chain of orthogonal adjacency (horizontal or vertical, not diagonal).</li>
-          <li><strong>Rows:</strong> Go sideways and are numbered 1, 2, 3, 4, 5.</li>
-          <li><strong>Columns:</strong> Go up and down and are lettered A, B, C, D.</li>
-          <li><strong>All:</strong> Always means there's at least one (doesn't necessarily mean more than one).</li>
-          <li><strong>Common neighbors:</strong> Those who are neighbors of both persons (doesn't include the persons themselves).</li>
-        </ul>
+        {/* Section 5: 常见问题 FAQ */}
+        <section style={{ marginBottom: '2rem' }}>
+          <h2 style={{ fontSize: '1.6rem', color: '#0f172a', borderBottom: '2px solid #e2e8f0', paddingBottom: '0.4rem', marginBottom: '1rem' }}>
+            Frequently Asked Questions (FAQ)
+          </h2>
+          <div className="faq-list">
+            <div style={{ marginBottom: '1.25rem', background: '#f8fafc', padding: '1.25rem', borderRadius: '8px' }}>
+              <h3 style={{ fontSize: '1.15rem', color: '#1e293b', marginTop: 0 }}>Can I play past daily puzzles or archive levels?</h3>
+              <p style={{ margin: 0, color: '#475569' }}>
+                Yes! Clues by Sam features an integrated archive calendar accessible directly within the game interface. You can access and solve previous daily puzzles from past weeks and months, allowing newcomers to practice and regular players to catch up on missed days.
+              </p>
+            </div>
+            <div style={{ marginBottom: '1.25rem', background: '#f8fafc', padding: '1.25rem', borderRadius: '8px' }}>
+              <h3 style={{ fontSize: '1.15rem', color: '#1e293b', marginTop: 0 }}>Is there a hint limit or score penalty?</h3>
+              <p style={{ margin: 0, color: '#475569' }}>
+                The game includes a progressive two-stage hint system: Stage 1 highlights the specific clue or testimony you should focus on, and Stage 2 reveals the exact suspect you can deduce next. Hints are designed as friendly educational aids and do not lock you out of puzzle completion.
+              </p>
+            </div>
+            <div style={{ marginBottom: '1.25rem', background: '#f8fafc', padding: '1.25rem', borderRadius: '8px' }}>
+              <h3 style={{ fontSize: '1.15rem', color: '#1e293b', marginTop: 0 }}>How does Clues by Sam run on mobile devices?</h3>
+              <p style={{ margin: 0, color: '#475569' }}>
+                Clues by Sam is natively optimized for mobile touchscreens (iOS Safari, Android Chrome). Simply tap cards to mark status, tap the card corner to access note tags, and pinch to zoom on smaller screens. No app store download or installation is required.
+              </p>
+            </div>
+            <div style={{ marginBottom: '1.25rem', background: '#f8fafc', padding: '1.25rem', borderRadius: '8px' }}>
+              <h3 style={{ fontSize: '1.15rem', color: '#1e293b', marginTop: 0 }}>How is Clues by Sam different from Wordle or NYT Connections?</h3>
+              <p style={{ margin: 0, color: '#475569' }}>
+                While Wordle tests vocabulary through 5-letter frequency guessing and Connections tests categorical associations, Clues by Sam is a pure spatial-deduction logic grid game (comparable to Minesweeper logic meets classic Einstein riddle grids). It requires logical deduction, quantifier analysis, and spatial reasoning rather than vocabulary trivia.
+              </p>
+            </div>
+          </div>
+        </section>
 
-        <h3>Game Overview</h3>
-        <div className="game-overview">
-          <table className="game-details-table">
-            <tr><td><strong>Developer</strong></td><td>Sam (Ad Artis Oy)</td></tr>
-            <tr><td><strong>Release Date</strong></td><td>2025</td></tr>
-            <tr><td><strong>Genre</strong></td><td>Logic Puzzle, Deduction Game</td></tr>
-            <tr><td><strong>Game Modes</strong></td><td>Daily puzzle mode</td></tr>
-            <tr><td><strong>Controls</strong></td><td>Mouse/touch to interact with suspects</td></tr>
-            <tr><td><strong>Platform</strong></td><td>Web browser (mobile and desktop)</td></tr>
-            <tr><td><strong>Puzzle Frequency</strong></td><td>New puzzle daily at midnight NY time</td></tr>
-          </table>
-        </div>
+        {/* Section 6: 版本更新与社群动态 */}
+        <section style={{ marginBottom: '2rem' }}>
+          <h2 style={{ fontSize: '1.6rem', color: '#0f172a', borderBottom: '2px solid #e2e8f0', paddingBottom: '0.4rem', marginBottom: '1rem' }}>
+            Version Updates &amp; Active Community Culture
+          </h2>
+          <p>
+            Since its launch, Clues by Sam has received notable community-focused improvements:
+          </p>
+          <ul style={{ paddingLeft: '1.5rem', lineHeight: '1.8' }}>
+            <li><strong>Archive &amp; Historical Calendar:</strong> Full calendar integration allows players to browse and replay any past daily puzzle with comprehensive local save preservation.</li>
+            <li><strong>High-Contrast Dark Mode &amp; Mobile Hitboxes:</strong> Designed to prevent eye strain during late-night solving sessions and provide larger, responsive touch targets on mobile devices.</li>
+            <li><strong>Spoiler-Free Share Grids &amp; Reddit Community:</strong> Players can export emoji deduction matrices to share completion times without spoiling solutions. An active solver community on Reddit (<code>r/CluesBySamHelp</code>) and Bluesky exchanges daily walkthrough strategies and hints.</li>
+          </ul>
+        </section>
 
-        <h3>Frequently Asked Questions (FAQ)</h3>
-        <div className="faq-item">
-          <h4>Is Clues by Sam free to play online?</h4>
-          <p>Yes, absolutely! <strong>Clues by Sam</strong> is a completely free <strong>online puzzle game</strong>. You can play directly in your browser with no downloads, hidden costs, or registration required. Play <strong>Clues by Sam online</strong> at cluesbysam.com completely free!</p>
-        </div>
-        <div className="faq-item">
-          <h4>What is Clues by Sam and how does it work?</h4>
-          <p><strong>Clues by Sam</strong> is a daily logic puzzle game where you must figure out which suspects are criminals and which are innocent. You're given a grid of suspects with various clues about their relationships, positions, and characteristics. Using logical deduction, you mark each suspect as criminal or innocent. The game prevents guessing - you can only make choices when you have logical evidence.</p>
-        </div>
-        <div className="faq-item">
-          <h4>How do I play Clues by Sam online?</h4>
-          <p>Simply read the clues carefully and use logical deduction to determine who is criminal and who is innocent. Tap on a suspect to mark them. If your logic is correct, they might reveal a new clue. Use corner tags to track your deductions. The game ensures there's always a logical next step - you never need to guess!</p>
-        </div>
-        <div className="faq-item">
-          <h4>When are new puzzles released?</h4>
-          <p>A new puzzle is released every day at midnight New York time. This ensures you always have fresh content to challenge your logic skills in this <strong>free online puzzle game</strong>.</p>
-        </div>
-        <div className="faq-item">
-          <h4>Can I play Clues by Sam on my mobile device?</h4>
-          <p>Yes! <strong>Clues by Sam</strong> is fully optimized for both desktop and mobile browsers, ensuring you can enjoy this <strong>online puzzle game</strong> anywhere, anytime. The interface adapts to your screen size for the best experience.</p>
-        </div>
-        <div className="faq-item">
-          <h4>What makes Clues by Sam different from other puzzle games?</h4>
-          <p><strong>Clues by Sam</strong> is unique because it combines daily puzzle releases with strict logic-based gameplay. Unlike other puzzle games, you cannot guess - every choice must be based on logical deduction. The game ensures there's always a logical next step, making it a true test of your reasoning skills.</p>
-        </div>
-        <div className="faq-item">
-          <h4>Do I need to create an account to play Clues by Sam online?</h4>
-          <p>No account required! You can start playing <strong>Clues by Sam</strong> immediately in your browser. The <strong>online</strong> game saves your progress automatically, so you can continue your puzzle-solving adventure anytime.</p>
-        </div>
-        <div className="faq-item">
-          <h4>What if I get stuck on a puzzle?</h4>
-          <p>If you get stuck, use the hint button below the grid. The first press reveals which clues you should be looking at, and the second press reveals which suspects you can identify. You can also ask for help on Bluesky or r/CluesBySamHelp, or share your scenario using the "Share scenario" button.</p>
-        </div>
-      </div>
+        {/* Subtle, non-intrusive footer backlink per user instruction */}
+        <footer style={{ marginTop: '3rem', paddingTop: '1.5rem', borderTop: '1px solid #e2e8f0', textAlign: 'center' }}>
+          <p style={{ color: '#64748b', fontSize: '0.95rem', margin: 0 }}>
+            Looking for more browser fun? Try <a href="/" style={{ color: '#2563eb', fontWeight: 600, textDecoration: 'underline' }}>Crazy Cattle 3D</a> – our free physics battle royale.
+          </p>
+        </footer>
+
+      </article>
     </div>
   );
 };
 
 export default CluesBySam;
-

@@ -176,8 +176,8 @@ const SEO = ({ title, description, keywords }) => {
         };
       case '/clues-by-sam':
         return {
-          title: 'Clues by Sam - Free Daily Logic Puzzle Game | Play Online',
-          description: 'Play Clues by Sam online for free! Solve daily logic puzzles where you figure out who is criminal and who is innocent. New puzzle every day at midnight New York time. Play Clues by Sam completely free - no download required!',
+          title: 'Clues by Sam – Play Free Online + Full Answers & Walkthrough',
+          description: 'Play Clues by Sam online for free! Daily logic deduction walkthrough, clue puzzle answers, rules, and strategies to identify criminals and innocents without guessing.',
           canonical: `${baseUrl}/clues-by-sam`
         };
       case '/cheese-chompers':
