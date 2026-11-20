@@ -59,6 +59,44 @@ const CrazyCattleHowToPlay = () => {
   };
 
   useEffect(() => {
+    const howToSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: 'How to Play Crazy Cattle 3D: Beginner to Winner Walkthrough',
+      description: 'Step-by-step walkthrough on how to play Crazy Cattle 3D, covering early spawn cover, speed momentum scaling, ramming collision timing, and endgame circle survival.',
+      totalTime: 'PT3M',
+      step: [
+        {
+          '@type': 'HowToStep',
+          position: 1,
+          name: 'Early Game: Find Cover & Evacuate Spawn Pack (开局找掩体)',
+          text: 'Upon spawning, immediately turn 90 degrees outward to clear the central meat-grinder. Locate natural terrain ridges or boulder covers to avoid being shoved off the edge in the opening 10 seconds.',
+          url: 'https://cattlecrazy3d.com/crazy-cattle-3d-how-to-play#step-1'
+        },
+        {
+          '@type': 'HowToStep',
+          position: 2,
+          name: 'Mid Game: Farm Momentum & Gather Speed on Slopes (吃道具成长与坡道聚势)',
+          text: 'Traverse elevated ridges to build momentum. Harness downhill gravitational velocity across Ireland, Iceland, and New Zealand to power up collision knockback force while rival AI sheep thin out.',
+          url: 'https://cattlecrazy3d.com/crazy-cattle-3d-how-to-play#step-2'
+        },
+        {
+          '@type': 'HowToStep',
+          position: 3,
+          name: 'Attack Timing: Execute 45-Degree Flank Ramming Strikes (把握冲撞时机)',
+          text: 'Avoid head-on impacts. Line up your camera crosshair and time your explosive Spacebar ram to strike enemies at a 45-degree angle or from the rear while they are disoriented near boundary cliffs.',
+          url: 'https://cattlecrazy3d.com/crazy-cattle-3d-how-to-play#step-3'
+        },
+        {
+          '@type': 'HowToStep',
+          position: 4,
+          name: 'Endgame: Final Circle Center Positioning & Sidestep Counter (决赛圈核心走位)',
+          text: 'As the boundary compresses into sudden-death, secure the dead center high ground. When the final surviving rival charges you, tap A or D to sidestep at the last second, allowing their own forward momentum to propel them into the void.',
+          url: 'https://cattlecrazy3d.com/crazy-cattle-3d-how-to-play#step-4'
+        }
+      ]
+    };
+
     const faqSchema = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
@@ -72,13 +110,20 @@ const CrazyCattleHowToPlay = () => {
       }))
     };
 
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.id = 'faq-howtoplay-jsonld';
-    script.text = JSON.stringify(faqSchema);
-    document.head.appendChild(script);
+    const scriptHowTo = document.createElement('script');
+    scriptHowTo.type = 'application/ld+json';
+    scriptHowTo.id = 'howto-howtoplay-jsonld';
+    scriptHowTo.text = JSON.stringify(howToSchema);
+    document.head.appendChild(scriptHowTo);
+
+    const scriptFaq = document.createElement('script');
+    scriptFaq.type = 'application/ld+json';
+    scriptFaq.id = 'faq-howtoplay-jsonld';
+    scriptFaq.text = JSON.stringify(faqSchema);
+    document.head.appendChild(scriptFaq);
 
     return () => {
+      document.getElementById('howto-howtoplay-jsonld')?.remove();
       document.getElementById('faq-howtoplay-jsonld')?.remove();
     };
   }, []);
@@ -220,12 +265,12 @@ const CrazyCattleHowToPlay = () => {
           </div>
         </div>
 
-        <h2>3. What to Do in Your First 60 Seconds: Beginner Checklist</h2>
+        <h2>3. Match Walkthrough: 4 Core Survival Steps</h2>
         <ol style={{ lineHeight: 1.9, fontSize: '1.02rem', paddingLeft: '1.5rem', marginBottom: '2.5rem' }}>
-          <li><strong>Step 1: Avoid the Center Meat-Grinder:</strong> Over 40% of first-time players die within 10 seconds because they sprint directly into the central pile-up. Always flank outward.</li>
-          <li><strong>Step 2: Locate Downhill Angles:</strong> Find an elevated ridge in Ireland, Iceland, or New Zealand. Physics momentum scales exponentially when charging down a slope.</li>
-          <li><strong>Step 3: Keep Your Camera Centered on Rivals:</strong> Never let enemies leave your field of view. A blindside hit from behind sends your ragdoll flying off the arena.</li>
-          <li><strong>Step 4: Pick Off Isolated Stragglers:</strong> Hunt sheep that are already stuck near an edge or recovering from a collision. High-impact flank hits guarantee safe knockouts.</li>
+          <li id="step-1"><strong>Step 1: Early Game: Find Cover &amp; Evacuate Spawn Pack (开局找掩体):</strong> Over 40% of first-time players die within 10 seconds in the central pile-up. Immediately turn 90 degrees outward upon spawning, locate boundary rocks or terrain ridges, and seek temporary cover before bots converge.</li>
+          <li id="step-2"><strong>Step 2: Mid Game: Farm Momentum &amp; Gather Speed on Slopes (吃道具成长与坡道聚势):</strong> Traverse elevated ridges across Ireland, Iceland, and New Zealand to accumulate speed. Use downward momentum to amplify your sheep's collision kinetic energy while remaining cautious of edge drops.</li>
+          <li id="step-3"><strong>Step 3: Attack Timing: Execute 45-Degree Flank Ramming Strikes (把握冲撞时机):</strong> Never engage in head-on collisions. Time your Spacebar charge to strike opponents at an oblique 45-degree angle or from behind while they recover from previous clashes.</li>
+          <li id="step-4"><strong>Step 4: Endgame: Final Circle Center Positioning &amp; Sidestep Counter (决赛圈核心走位):</strong> When the shrinking safe boundary forces surviving sheep into close quarters, hold the dead center high ground. When the last enemy charges, tap A or D to dodge aside at the final moment, letting their momentum plunge them off the edge.</li>
         </ol>
 
         <h2>4. Frequently Asked Questions</h2>

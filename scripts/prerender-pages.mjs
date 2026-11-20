@@ -33,6 +33,92 @@ async function runPrerender() {
   const staticSitemap = JSON.parse(await readFile(path.join(siteDir, 'static-sitemap.json'), 'utf8'));
 
   // 维护全站元数据与预渲染正文的字典
+
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Play Crazy Cattle 3D: Beginner to Winner Walkthrough',
+    description: 'Step-by-step walkthrough on how to play Crazy Cattle 3D, covering early spawn cover, speed momentum scaling, ramming collision timing, and endgame circle survival.',
+    totalTime: 'PT3M',
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Early Game: Find Cover & Evacuate Spawn Pack (开局找掩体)',
+        text: 'Upon spawning, immediately turn 90 degrees outward to clear the central meat-grinder. Locate natural terrain ridges or boulder covers to avoid being shoved off the edge in the opening 10 seconds.',
+        url: `${BASE_URL}/crazy-cattle-3d-how-to-play#step-1`
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Mid Game: Farm Momentum & Gather Speed on Slopes (吃道具成长与坡道聚势)',
+        text: 'Traverse elevated ridges to build momentum. Harness downhill gravitational velocity across Ireland, Iceland, and New Zealand to power up collision knockback force while rival AI sheep thin out.',
+        url: `${BASE_URL}/crazy-cattle-3d-how-to-play#step-2`
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Attack Timing: Execute 45-Degree Flank Ramming Strikes (把握冲撞时机)',
+        text: 'Avoid head-on impacts. Line up your camera crosshair and time your explosive Spacebar ram to strike enemies at a 45-degree angle or from the rear while they are disoriented near boundary cliffs.',
+        url: `${BASE_URL}/crazy-cattle-3d-how-to-play#step-3`
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Endgame: Final Circle Center Positioning & Sidestep Counter (决赛圈核心走位)',
+        text: 'As the boundary compresses into sudden-death, secure the dead center high ground. When the final surviving rival charges you, tap A or D to sidestep at the last second, allowing their own forward momentum to propel them into the void.',
+        url: `${BASE_URL}/crazy-cattle-3d-how-to-play#step-4`
+      }
+    ]
+  };
+
+  const faqPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Is Crazy Cattle 3D completely free to play?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, Crazy Cattle 3D is 100% free to play in your web browser. There are no pay-to-win microtransactions, paywalls, or mandatory subscriptions required to access any of the three maps (Ireland, Iceland, New Zealand).'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I play Crazy Cattle 3D unblocked at school or work?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes! The browser version runs on standard client-side WebGL/HTML5 without requiring administrator installation, desktop executables, or third-party plugins. It runs seamlessly on school Chromebooks, library laptops, and managed office networks where app downloads are restricted.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'Do I need to download or install files to play Crazy Cattle 3D?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No download is required to play online. You can play directly inside modern browsers (Chrome, Edge, Firefox, Safari). However, if you prefer an offline standalone PC version with raw local performance, the original creator Anna Mayberry provides an official download on itch.io.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I play Crazy Cattle 3D on mobile devices (Android & iPhone)?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Crazy Cattle 3D is primarily built for desktop computers using keyboard (WASD) and mouse controls for optimal physics precision. While modern mobile browsers with WebGL support can load our mobile-adapted touch interface, please note that intense ragdoll physics simulations require substantial mobile processing power and physical keys remain recommended for competitive play.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'Is Crazy Cattle 3D multiplayer or single-player against AI?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Crazy Cattle 3D currently features fast-paced single-player battle royale matches against a herd of simulated AI bots. We are completely honest with our community: there is currently no true peer-to-peer or server-authoritative live multiplayer PvP matchmaking. A synchronized online multiplayer mode is in community development and experimental stages, but today\'s core gameplay is an offline-capable AI survival arena.'
+        }
+      }
+    ]
+  };
+
   const routesData = new Map();
 
   // 1. 首页
@@ -672,6 +758,55 @@ async function runPrerender() {
     }
   }
 
+  // 注入 HowTo 结构化数据与更新 4 步走位正文
+  if (routesData.has('/crazy-cattle-3d-how-to-play')) {
+    const entry = routesData.get('/crazy-cattle-3d-how-to-play');
+    entry.schema = howToSchema;
+    entry.contentHtml = `
+      <div class="game-page how-to-play-page" style="max-width:1200px;margin:0 auto;padding:2rem 1rem;">
+        <span style="color:#2563eb;font-weight:700;font-size:0.85rem;text-transform:uppercase;">Beginner Mastery Guide &bull; Updated 2026</span>
+        <h1>🎮 How to Play Crazy Cattle 3D – Controls &amp; First Match Walkthrough</h1>
+        <p><strong>The Objective in One Sentence:</strong> Be the last sheep standing by knocking rival animals off the edge before the shrinking arena boundary claims you.</p>
+
+        <h2>1. Core Controls: PC &amp; Mobile</h2>
+        <ul>
+          <li><strong>Steer &amp; Move:</strong> WASD or Arrow Keys on desktop; Virtual joystick on mobile.</li>
+          <li><strong>Explosive Ram:</strong> Spacebar on desktop; Right action charge button on mobile.</li>
+          <li><strong>Camera Orientation:</strong> Mouse movement on desktop; Right-screen swipe on mobile.</li>
+          <li><strong>Braking &amp; Edge Stop:</strong> S key on desktop; Pull thumbstick back on mobile.</li>
+        </ul>
+
+        <h2>2. A Full Match in 4 Stages</h2>
+        <ol>
+          <li><strong>Stage 1: Spawn &amp; Dispersal (0-15s):</strong> 12-16 sheep spawn together. Turn 90 degrees outward and escape the initial pile-up.</li>
+          <li><strong>Stage 2: Momentum Farming (15-60s):</strong> Use downhill slopes to build speed while aggressive bots eliminate each other.</li>
+          <li><strong>Stage 3: Ring Compression (60-120s):</strong> The boundary shrinks. Move toward the central high ground early.</li>
+          <li><strong>Stage 4: Sudden-Death Showdown (120s+):</strong> Only 2-3 sheep remain. Wait for the rival to charge, dodge sideways, and counter-strike!</li>
+        </ol>
+
+        <h2>3. Match Walkthrough: 4 Core Survival Steps</h2>
+        <ol style="line-height:1.9;padding-left:1.5rem;">
+          <li id="step-1"><strong>Step 1: Early Game: Find Cover &amp; Evacuate Spawn Pack (开局找掩体):</strong> Over 40% of first-time players die within 10 seconds in the central pile-up. Immediately turn 90 degrees outward upon spawning, locate boundary rocks or terrain ridges, and seek temporary cover before bots converge.</li>
+          <li id="step-2"><strong>Step 2: Mid Game: Farm Momentum &amp; Gather Speed on Slopes (吃道具成长与坡道聚势):</strong> Traverse elevated ridges across Ireland, Iceland, and New Zealand to accumulate speed. Use downward momentum to amplify your sheep's collision kinetic energy while remaining cautious of edge drops.</li>
+          <li id="step-3"><strong>Step 3: Attack Timing: Execute 45-Degree Flank Ramming Strikes (把握冲撞时机):</strong> Never engage in head-on collisions. Time your Spacebar charge to strike opponents at an oblique 45-degree angle or from behind while they recover from previous clashes.</li>
+          <li id="step-4"><strong>Step 4: Endgame: Final Circle Center Positioning &amp; Sidestep Counter (决赛圈核心走位):</strong> When the shrinking safe boundary forces surviving sheep into close quarters, hold the dead center high ground. When the last enemy charges, tap A or D to dodge aside at the final moment, letting their momentum plunge them off the edge.</li>
+        </ol>
+
+        <div style="margin-top:2rem;padding:1.5rem;background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;">
+          <h3>Ready for Championship Tactics?</h3>
+          <p>Read our advanced companion guide on <a href="/crazy-cattle-3d-how-to-win" style="color:#2563eb;font-weight:700;">how to win Crazy Cattle 3D</a> with pro 45-degree flank collisions.</p>
+          <a href="/" class="btn primary">Play Crazy Cattle 3D Now</a>
+          <a href="/crazy-cattle-3d-unblocked" class="btn secondary" style="margin-left:8px;">Play Unblocked</a>
+        </div>
+      </div>
+    `;
+  }
+
+  // 注入 FAQPage 结构化数据
+  if (routesData.has('/faq')) {
+    routesData.get('/faq').schema = faqPageSchema;
+  }
+
   console.log(`Prepared pre-rendered data for ${routesData.size} routes.`);
 
   // 6. 为每个路由写入独立的 index.html 文件！
@@ -695,6 +830,16 @@ async function runPrerender() {
     // 替换 Twitter Card
     html = html.replace(/<meta\s+name="twitter:title"\s+content="[\s\S]*?"\s*\/?>/i, `<meta name="twitter:title" content="${escapeHtml(data.title)}" />`);
     html = html.replace(/<meta\s+name="twitter:description"\s+content="[\s\S]*?"\s*\/?>/i, `<meta name="twitter:description" content="${escapeHtml(data.description)}" />`);
+
+    // 替换或注入定制结构化数据 (JSON-LD)
+    if (data.schema) {
+      const schemaScript = `    <script type="application/ld+json">\n${JSON.stringify(data.schema, null, 2)}\n    </script>`;
+      if (html.includes('<script type="application/ld+json">')) {
+        html = html.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/i, schemaScript);
+      } else {
+        html = html.replace('</head>', `${schemaScript}\n  </head>`);
+      }
+    }
 
     // 注入预渲染原生内容到 <div id="root">
     const preContent = `<div id="root">${data.contentHtml}</div>`;
