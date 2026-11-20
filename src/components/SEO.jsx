@@ -22,9 +22,9 @@ const SEO = ({ title, description, keywords }) => {
     switch (location.pathname) {
       case '/':
         return {
-          title: 'Crazy Cattle 3D Unblocked - Play Online Free (2026) | All 3 Maps',
-          description: 'Play Crazy Cattle 3D unblocked online for free in your browser (2026). Master physics-based sheep battle royale across Ireland, Iceland & New Zealand maps with no download needed!',
-          keywords: 'Crazy Cattle 3D, Crazy Cattle 3D Unblocked, Play Crazy Cattle 3D Free, Sheep Battle Royale, Crazy Cattle Online 2026, Ireland Iceland New Zealand maps',
+          title: 'Crazy Cattle 3D – Play Free Online, All 3 Maps & Controls',
+          description: 'Play free online: Crazy Cattle 3D is a browser physics battle royale across Ireland, Iceland, and New Zealand with responsive controls and zero downloads.',
+          keywords: 'Crazy Cattle 3D, Play Crazy Cattle 3D, Sheep Battle Royale, Crazy Cattle Online, Ireland Iceland New Zealand maps, physics browser game',
           canonical: `${baseUrl}/`
         };
       case '/crazy-cattle-3d-unblocked':
@@ -36,44 +36,44 @@ const SEO = ({ title, description, keywords }) => {
         };
       case '/crazy-cattle-3d-online':
         return {
-          title: 'Crazy Cattle 3D Online - Play Free Browser Game (2026)',
-          description: 'Play Crazy Cattle 3D online directly in your browser. Fast WebGL loading, zero downloads, and responsive physics battle royale action on PC and Mac.',
-          keywords: 'Crazy Cattle 3D Online, Play Crazy Cattle 3D Online, Crazy Cattle free online, browser battle royale, sheep battle game',
+          title: 'Crazy Cattle 3D Online – Play in Browser, No Download',
+          description: 'Play Crazy Cattle 3D online directly in your browser with no download required. Experience 60 FPS WebGL sheep battle royale combat across 3 massive terrains.',
+          keywords: 'Crazy Cattle 3D Online, Play in Browser No Download, Crazy Cattle WebGL, browser battle royale, sheep physics online',
           canonical: `${baseUrl}/crazy-cattle-3d-online`
         };
       case '/crazy-cattle-3d-download':
         return {
-          title: 'Crazy Cattle 3D Download - Official PC & Mac Version (itch.io)',
-          description: 'Learn how to download Crazy Cattle 3D for PC. Find the official itch.io page by creator Anna Mayberry, system requirements, and instant browser play alternatives.',
-          keywords: 'Crazy Cattle 3D Download, Crazy Cattle 3D PC download, Crazy Cattle itch.io, Anna Mayberry Crazy Cattle, Crazy Cattle free download, play without downloading',
+          title: 'Crazy Cattle 3D Download – PC, Mobile & Web Version Guide',
+          description: 'Looking to download Crazy Cattle 3D for PC? Find the official itch.io desktop release by indie creator Anna Mayberry, system requirements, and instant browser play alternatives.',
+          keywords: 'Crazy Cattle 3D Download, Crazy Cattle 3D PC download, Crazy Cattle itch.io, Anna Mayberry Crazy Cattle, Crazy Cattle desktop version, play without downloading',
           canonical: `${baseUrl}/crazy-cattle-3d-download`
         };
       case '/crazy-cattle-3d-guide':
         return {
-          title: 'Crazy Cattle 3D Strategy Guide - Controls, Maps & Pro Tips',
-          description: 'Master Crazy Cattle 3D with our comprehensive guide! Detailed breakdown of Ireland, Iceland, and New Zealand maps, physics controls, and winning combat tactics.',
-          keywords: 'Crazy Cattle 3D Guide, Crazy Cattle 3D tips, Crazy Cattle controls, Crazy Cattle 3D maps, Ireland map crazy cattle, Iceland map crazy cattle, New Zealand map crazy cattle',
+          title: 'Crazy Cattle 3D Guide – Maps, Controls & Winning Strategy',
+          description: 'Complete strategy guide for Crazy Cattle 3D. Master keyboard controls, collision physics, and map-specific survival tactics across Ireland, Iceland, and New Zealand.',
+          keywords: 'Crazy Cattle 3D Guide, Crazy Cattle 3D strategy, Crazy Cattle controls, Crazy Cattle 3D maps, Ireland map tactics, Iceland map survival, New Zealand map guide',
           canonical: `${baseUrl}/crazy-cattle-3d-guide`
         };
       case '/cattle-crazy-3d':
         return {
-          title: 'Cattle Crazy 3D - Play Online & Domain Guide (cattlecrazy3d.com)',
-          description: 'Searching for Cattle Crazy 3D? Play the viral physics battle royale online free. Understand the differences between cattlecrazy3d.com and other mirror sites.',
-          keywords: 'Cattle Crazy 3D, cattle crazy, cattlecrazy3d, crazycattle3d.com, cattle crazy game, sheep physics battle royale',
+          title: 'Cattle Crazy 3D – Same Game as Crazy Cattle 3D',
+          description: 'Wondering if Cattle Crazy 3D is different from Crazy Cattle 3D? Both refer to the identical physics battle royale by creator Anna Mayberry. Learn more and play free online.',
+          keywords: 'Cattle Crazy 3D, Cattle Crazy, same game as crazy cattle 3d, cattle crazy domain guide, anna mayberry sheep game',
           canonical: `${baseUrl}/cattle-crazy-3d`
         };
       case '/crazy-cattle-3d-how-to-play':
         return {
-          title: 'Crazy Cattle 3D How to Play - Beginner Guide & Controls (2026)',
-          description: 'Learn how to play Crazy Cattle 3D! Step-by-step beginner guide covering PC & mobile controls, the 4-phase match loop, and crucial first 60 seconds survival.',
-          keywords: 'Crazy Cattle 3D how to play, how to play crazy cattle, crazy cattle 3d controls, crazy cattle beginner guide, sheep battle royale tutorial',
+          title: 'How to Play Crazy Cattle 3D – Controls & First Match Walkthrough',
+          description: 'Learn how to play Crazy Cattle 3D! Step-by-step beginner walkthrough covering PC & mobile controls, the 4-phase match loop, and crucial first 60 seconds survival.',
+          keywords: 'How to play crazy cattle 3d, crazy cattle 3d controls, crazy cattle first match walkthrough, beginner guide sheep game, match loop',
           canonical: `${baseUrl}/crazy-cattle-3d-how-to-play`
         };
       case '/crazy-cattle-3d-how-to-win':
         return {
-          title: 'Crazy Cattle 3D How to Win - Pro Strategy, Collision Angles & Tips (2026)',
-          description: 'Master how to win Crazy Cattle 3D! Pro tactics on 45-degree flank collisions, momentum scaling, final circle positioning, and avoiding common elimination traps.',
-          keywords: 'Crazy Cattle 3D how to win, how to win crazy cattle, crazy cattle 3d tips, crazy cattle pro strategy, sheep battle royale guide',
+          title: 'How to Win Crazy Cattle 3D – 7 Tactics That Actually Work',
+          description: 'Discover 7 proven tactics to win in Crazy Cattle 3D. Master 45-degree flank collisions, downhill momentum scaling, final circle positioning, and survival meta.',
+          keywords: 'How to win crazy cattle 3d, crazy cattle winning tactics, 45 degree collision angle, crazy cattle pro strategy, sheep battle royale tips',
           canonical: `${baseUrl}/crazy-cattle-3d-how-to-win`
         };
       case '/crazy-cattle-3d-online-free':
@@ -115,9 +115,9 @@ const SEO = ({ title, description, keywords }) => {
         };
       case '/crazy-cattle-3d-mobile':
         return {
-          title: 'Crazy Cattle 3D Mobile - Sheep Battle Royale Mobile Touch Edition',
-          description: 'Play Crazy Cattle 3D Mobile free in your smartphone or tablet browser! Touch-screen optimized physics sheep combat adapted from the original PC edition.',
-          keywords: 'Crazy Cattle 3D Mobile, Crazy Cattle mobile version, play crazy cattle on phone, crazy cattle android ios, touch battle royale',
+          title: 'Crazy Cattle 3D Mobile – Play on iPhone & Android Browser',
+          description: 'Play Crazy Cattle 3D Mobile directly on your iPhone, iPad, or Android browser. Touch-screen optimized controls, virtual joystick steering, and fast physics action.',
+          keywords: 'Crazy Cattle 3D Mobile, play crazy cattle on iPhone, crazy cattle android browser, mobile touch sheep game, touch battle royale',
           canonical: `${baseUrl}/crazy-cattle-3d-mobile`
         };
       case '/lovemoney':

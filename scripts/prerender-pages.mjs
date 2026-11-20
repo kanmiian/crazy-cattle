@@ -37,13 +37,14 @@ async function runPrerender() {
 
   // 1. 首页
   routesData.set('/', {
-    title: 'Crazy Cattle 3D Unblocked - Play Online Free (2026) | All 3 Maps',
-    description: 'Play Crazy Cattle 3D unblocked online for free in your browser (2026). Master physics-based sheep battle royale across Ireland, Iceland & New Zealand maps with no download needed!',
+    title: 'Crazy Cattle 3D – Play Free Online, All 3 Maps & Controls',
+    description: 'Play free online: Crazy Cattle 3D is a browser physics battle royale across Ireland, Iceland, and New Zealand with responsive controls and zero downloads.',
     canonical: `${BASE_URL}/`,
-    h1: '🐄 Crazy Cattle 3D - Sheep Battle Royale',
+    h1: 'Crazy Cattle 3D',
     contentHtml: `
       <header class="hero">
-        <h1>🐄 Crazy Cattle 3D - Sheep Battle Royale</h1>
+        <h1>Crazy Cattle 3D</h1>
+        <h2 style="font-size:1.25rem;font-weight:600;color:#475569;margin:0.5rem 0 1rem;">Sheep Battle Royale Across Ireland, Iceland &amp; New Zealand</h2>
         <p class="tagline">Experience the wildest sheep and cattle chaos simulator online! Play Crazy Cattle 3D now and join the ultimate physics-based battle royale where sheep and cattle compete for survival across Ireland, Iceland, and New Zealand!</p>
         <div class="button-group">
           <a href="#game" class="btn"><span>🎮</span> Play Now</a>
@@ -101,25 +102,80 @@ async function runPrerender() {
     contentHtml: `
       <div class="game-page unblocked-page" style="max-width:1200px;margin:0 auto;padding:2rem 1rem;">
         <h1>🔓 Crazy Cattle 3D Unblocked – Play Free at School &amp; Work</h1>
-        <p>Welcome to the unblocked edition of Crazy Cattle 3D! Built using pure client-side WebGL canvas technology, this version bypasses firewall restrictions, administrator password requirements, and application download blocks on school Chromebooks and corporate networks.</p>
-        <h2>Why Play Crazy Cattle 3D Unblocked?</h2>
+        <p>Welcome to the dedicated unblocked portal for <strong>Crazy Cattle 3D</strong>. Designed specifically for students on school Chromebooks, library computers, and casual gamers on restricted office networks, this version bypasses third-party software installation requirements by utilizing pure client-side WebGL canvas technology. Jump directly into physics-driven sheep battle royale matches with zero downloads, zero account registration, and zero administrative privilege requests.</p>
+
+        <h2>Why Is Crazy Cattle 3D Unblocked So Popular on Restricted Networks?</h2>
+        <p>Students, library visitors, and casual gamers in managed academic environments often face strict administrative restrictions, institutional firewalls, and application locks that prevent executing standalone software (.exe, .dmg, or .msi installers). Crazy Cattle 3D Unblocked resolves this barrier by executing the entire 3D momentum simulation directly inside standard web browser canvas memory via WebGL and WebAssembly. As long as your browser supports HTML5 graphics rendering, you can launch immediately into chaotic sheep battle royale matches without leaving traces on local storage.</p>
+
+        <h3>Key Advantages of the WebGL Unblocked Edition</h3>
         <ul>
-          <li><strong>Zero Installation:</strong> Runs instantly inside Chrome, Edge, Safari, and Firefox.</li>
-          <li><strong>Chromebook Optimized:</strong> Lightweight 3D geometry runs smoothly on 4GB RAM devices.</li>
-          <li><strong>All 3 Maps Included:</strong> Access Ireland, Iceland, and New Zealand arenas with full physics simulation intact.</li>
+          <li><strong>Firewall &amp; Chromebook Friendly:</strong> Runs cleanly via standard HTTPS (Port 443) protocol, making it accessible on school Wi-Fi, classroom Chromebooks, and campus networks without triggering proxy blocks or domain filters.</li>
+          <li><strong>Zero Download, Zero Setup:</strong> No extensions, Flash emulators, or .zip extracts necessary. Just open the page, press Play, and battle inside your browser window.</li>
+          <li><strong>Complete 3-Map Roster:</strong> Access Ireland, Iceland, and New Zealand with all ragdoll collision physics, dynamic hills, and hazard zones completely intact from the original engine.</li>
         </ul>
-        <div style="margin-top:2rem;"><a href="/" class="btn primary">Play Crazy Cattle 3D Online Now</a></div>
+
+        <h2>Technical WebGL Architecture: Why It Bypasses School Firewalls Safely</h2>
+        <p>Enterprise campus filtering tools like GoGuardian, Securly, Lightspeed Systems, and Fortinet monitor network traffic for suspicious executable transfers, peer-to-peer protocols, and unauthorized port bindings. Crazy Cattle 3D Unblocked communicates strictly over transport layer security (TLS 1.3) using identical protocols to educational portals like Google Classroom, Canvas, or Khan Academy.</p>
+        <p>When you launch a session, your browser retrieves pre-compiled WebAssembly binaries and 3D mesh geometry into a secure client-side sandbox. The code executes exclusively within the ephemeral memory space allocated to your active browser tab. Once the tab is closed, all allocated memory buffers are instantly released. The game never writes executable files to the host operating system, reads local documents, or requires elevated system permissions.</p>
+
+        <h2>Complete 3-Map Geography Breakdown for Unblocked Sessions</h2>
+        <p>Unlike stripped-down clone mirrors that only offer a single flat arena, this unblocked edition delivers the authentic three-environment geographic roster created by indie developer Anna Mayberry:</p>
+        <h3>1. Ireland – Rolling Grassy Slopes &amp; Kinetic Downhill Rushes</h3>
+        <p>The Ireland arena features gentle rolling pastures, lush emerald grass, and an open perimeter cliff without protective fencing. Ireland serves as the premier training ground for mastering momentum-based collision mechanics. Because gravity multiplies your forward velocity while running downhill, a lightweight sheep descending a slope can easily overpower a stationary or uphill rival. However, excessive downhill speed near the outer ring will frequently carry your own momentum straight into the ocean. Always tap the reverse brake (S key) just prior to impact to arrest your forward vector while sending your opponent flying.</p>
+        <h3>2. Iceland – Slippery Basalt Cliffs &amp; Volcanic Drop-Offs</h3>
+        <p>Iceland introduces treacherous volcanic rock formations, low-friction icy plateaus, and lethal vertical drop-offs. The reduced surface friction on Iceland roughly doubles your braking distance, punishing erratic steering. Winning on Iceland revolves around the 'Matador Sidestep' maneuver: position yourself near a perimeter ledge, wait for an aggressive AI competitor to charge you at full speed, and execute a sharp 90-degree lateral dodge (A or D key) during the final fraction of a second. The rushing bot will carry its unguided kinetic energy directly over the cliff.</p>
+        <h3>3. New Zealand – High-Altitude Ridges &amp; Vertical Recovery</h3>
+        <p>The New Zealand arena is the most challenging battlefield in the rotation, dominated by steep alpine ridges, narrow mountain crests, and jagged lower rock shelves. In New Zealand, anchoring the central high plateau is critical for survival. Animals knocked from the upper tier plunge violently down multi-layered cliff shelves. If your sheep is launched airborne, immediately turn your camera toward the mountain spine and pulse your forward key to attempt an emergency friction catch against lower rock ledges before dropping out of bounds.</p>
+
+        <h2>Controls &amp; Collision Physics Meta: PC Keyboard vs. Chromebook Touchpad</h2>
+        <ul>
+          <li><strong>W or Up Arrow:</strong> Accelerate forward and build linear speed. Essential for generating collision knockback.</li>
+          <li><strong>S or Down Arrow:</strong> Apply immediate friction braking and reverse gear. Crucial for stopping safely near cliff perimeters.</li>
+          <li><strong>A or Left Arrow:</strong> Steer left and bank into turns. Combine with forward momentum for sweeping flank maneuvers.</li>
+          <li><strong>D or Right Arrow:</strong> Steer right and bank into turns.</li>
+          <li><strong>Spacebar:</strong> Deliver an explosive forward ram or jump-recover when bumped into the air.</li>
+          <li><strong>Mouse Movement:</strong> Pan the 360-degree orbital camera to track incoming rushes from peripheral blind spots.</li>
+        </ul>
+        <p><strong>The 45-Degree Flank Striking Rule:</strong> Avoid head-on impacts against oncoming competitors. Symmetrical head-on collisions cause reciprocal recoil, launching both animals backward with equal force. Instead, strike opponents at an oblique 45-degree angle against their rear flank. Oblique collisions introduce sudden rotational torque, spinning the rival model onto its side and completely breaking its wheel traction.</p>
+
+        <h2>Chromebook &amp; Low-End Laptop Performance Optimization Guide</h2>
+        <ol>
+          <li><strong>Close Resource-Heavy Background Tabs:</strong> Cloud applications such as Google Classroom, Google Docs, and YouTube stream data continually in the background. Close non-essential tabs prior to launching the 3D canvas.</li>
+          <li><strong>Verify Hardware Acceleration:</strong> Navigate to your browser settings, search for 'Hardware Acceleration', and verify that 'Use graphics acceleration when available' is switched ON. This delegates 3D vertex processing to your GPU.</li>
+          <li><strong>Utilize Fullscreen Display:</strong> Click the browser fullscreen button (⛶) or press F11. Dedicated fullscreen mode bypasses browser window compositing pipelines, significantly improving frame stability and locking mouse tracking inside the arena.</li>
+          <li><strong>Clear Memory Buffer:</strong> If you notice intermittent stutter after extended gameplay sessions, simply refresh the browser tab to clear the WebGL texture cache.</li>
+        </ol>
+
+        <h2>Frequently Asked Questions About Crazy Cattle 3D Unblocked</h2>
+        <div class="faq-item">
+          <h4>Is Crazy Cattle 3D Unblocked completely free to play?</h4>
+          <p>Yes. The browser edition is 100% free with no microtransactions, paywalls, or premium subscriptions. All maps, physics features, and gameplay mechanics are accessible immediately upon page load.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Can I play Crazy Cattle 3D on school Wi-Fi without a VPN?</h4>
+          <p>Yes. Because the game is hosted on standard web protocols using HTTPS and WebGL without peer-to-peer torrent connections or external proxy redirects, it connects seamlessly through standard classroom, campus, and public Wi-Fi networks.</p>
+        </div>
+        <div class="faq-item">
+          <h4>What is the difference between this unblocked edition and the itch.io version?</h4>
+          <p>The original Crazy Cattle 3D was created by independent developer Anna Mayberry and distributed as an offline downloadable desktop executable on itch.io. This unblocked edition provides an instant in-browser WebGL port enabling players on restricted machines (such as Chromebooks, library PCs, and mobile devices) to enjoy the identical physics experience without needing file extractors or admin rights.</p>
+        </div>
+        <div class="faq-item">
+          <h4>How do I win when the arena circle gets very small?</h4>
+          <p>When the arena boundary compresses to its final radius, avoid sprinting erratically. Drop to low speed, anchor yourself on the exact center of the remaining terrain, and watch the AI bots. Let the remaining bots knock each other out, and deliver a clean side ram to the final surviving rival as they recover from their previous collision.</p>
+        </div>
+
+        <div style="margin-top:2rem;"><a href="/" class="btn primary">Play Crazy Cattle 3D Home Arena</a> <a href="/crazy-cattle-3d-how-to-play" class="btn secondary">How to Play Guide</a> <a href="/crazy-cattle-3d-how-to-win" class="btn secondary">Winning Tactics</a></div>
       </div>
     `
   });
 
   routesData.set('/crazy-cattle-3d-online', {
-    title: 'Crazy Cattle 3D Online - Play Free Browser Game (2026)',
-    description: 'Play Crazy Cattle 3D online directly in your browser. Fast WebGL loading, zero downloads, and responsive physics battle royale action on PC and Mac.',
+    title: 'Crazy Cattle 3D Online – Play in Browser, No Download',
+    description: 'Play Crazy Cattle 3D online directly in your browser with no download required. Experience 60 FPS WebGL sheep battle royale combat across 3 massive terrains.',
     canonical: `${BASE_URL}/crazy-cattle-3d-online`,
     contentHtml: `
       <div class="game-page online-page" style="max-width:1200px;margin:0 auto;padding:2rem 1rem;">
-        <h1>🌐 Crazy Cattle 3D Online – Free Browser Battle Royale</h1>
+        <h1>🌐 Crazy Cattle 3D Online – Play in Browser, No Download</h1>
         <p>Play Crazy Cattle 3D online without downloading executable files. Experience real-time ragdoll physics, momentum downhill strikes, and intense last-animal-standing competition on modern browsers.</p>
         <h2>Instant WebGL Browser Performance</h2>
         <p>Our online portal compiles the physics calculations client-side into your browser memory, offering responsive 60 FPS sheep collisions with zero netcode latency.</p>
@@ -142,12 +198,12 @@ async function runPrerender() {
   });
 
   routesData.set('/crazy-cattle-3d-download', {
-    title: 'Crazy Cattle 3D Download - Official PC & Mac Version (itch.io)',
-    description: 'Learn how to download Crazy Cattle 3D for PC. Find the official itch.io page by creator Anna Mayberry, system requirements, and instant browser play alternatives.',
+    title: 'Crazy Cattle 3D Download – PC, Mobile & Web Version Guide',
+    description: 'Looking to download Crazy Cattle 3D for PC? Find the official itch.io desktop release by indie creator Anna Mayberry, system requirements, and instant browser play alternatives.',
     canonical: `${BASE_URL}/crazy-cattle-3d-download`,
     contentHtml: `
       <div class="game-page download-page" style="max-width:1200px;margin:0 auto;padding:2rem 1rem;">
-        <h1>⬇️ Crazy Cattle 3D Download &amp; PC Installation Guide</h1>
+        <h1>⬇️ Crazy Cattle 3D Download – PC, Mobile &amp; Web Guide</h1>
         <p>Looking for an offline version of Crazy Cattle 3D? We provide honest directions to the official standalone desktop release created by independent game developer Anna Mayberry on itch.io.</p>
         <div style="background:#f0fdf4;border-left:4px solid #16a34a;padding:16px;margin:1.5rem 0;">
           <strong>Official Source:</strong> The genuine Crazy Cattle 3D desktop files are published on <a href="https://annamayberry.itch.io/crazy-cattle-3d" target="_blank" rel="noopener noreferrer">Anna Mayberry's itch.io page</a>. We do not distribute pirated or modified installers.
@@ -158,12 +214,12 @@ async function runPrerender() {
   });
 
   routesData.set('/crazy-cattle-3d-guide', {
-    title: 'Crazy Cattle 3D Strategy Guide - Controls, Maps & Pro Tips',
-    description: 'Master Crazy Cattle 3D with our comprehensive guide! Detailed breakdown of Ireland, Iceland, and New Zealand maps, physics controls, and winning combat tactics.',
+    title: 'Crazy Cattle 3D Guide – Maps, Controls & Winning Strategy',
+    description: 'Complete strategy guide for Crazy Cattle 3D. Master keyboard controls, collision physics, and map-specific survival tactics across Ireland, Iceland, and New Zealand.',
     canonical: `${BASE_URL}/crazy-cattle-3d-guide`,
     contentHtml: `
       <div class="game-page guide-page" style="max-width:1200px;margin:0 auto;padding:2rem 1rem;">
-        <h1>📖 Crazy Cattle 3D Strategy Guide: Maps, Controls &amp; Tactics</h1>
+        <h1>📖 Crazy Cattle 3D Guide – Maps, Controls &amp; Strategy</h1>
         <p>Master the momentum-based physics of Crazy Cattle 3D. Learn how velocity, incline angles, and map hazards can give you the winning edge.</p>
         <h2>Controls &amp; Movement Basics</h2>
         <p>Use WASD or Arrow Keys for steering and building linear speed. Press Spacebar for an explosive forward ram or aerial leap. Use mouse tracking to anticipate AI rush angles.</p>
@@ -179,28 +235,30 @@ async function runPrerender() {
   });
 
   routesData.set('/cattle-crazy-3d', {
-    title: 'Cattle Crazy 3D - Play Online & Domain Guide (cattlecrazy3d.com)',
-    description: 'Searching for Cattle Crazy 3D? Play the viral physics battle royale online free. Understand the differences between cattlecrazy3d.com and other mirror sites.',
+    title: 'Cattle Crazy 3D – Same Game as Crazy Cattle 3D',
+    description: 'Wondering if Cattle Crazy 3D is different from Crazy Cattle 3D? Both refer to the identical physics battle royale by creator Anna Mayberry. Learn more and play free online.',
     canonical: `${BASE_URL}/cattle-crazy-3d`,
     contentHtml: `
       <div class="game-page cattle-crazy-page" style="max-width:1200px;margin:0 auto;padding:2rem 1rem;">
-        <h1>🐄 Cattle Crazy 3D – Play Online &amp; Official Fan Hub</h1>
-        <p>Whether you search for "Cattle Crazy 3D" or "Crazy Cattle 3D", enjoy the viral physics sheep battle royale free in your browser. This portal distinguishes genuine fan guides from clone mirror sites.</p>
+        <h1>🐄 Cattle Crazy 3D – Same Game as Crazy Cattle 3D</h1>
+        <p>Searching for "Cattle Crazy 3D" instead of "Crazy Cattle 3D"? Both terms refer to the exact same viral physics sheep battle royale game created by indie developer Anna Mayberry. There is no separate or altered game under this name—it is simply a natural spelling variant of the original title.</p>
+        <h2>Same Physics, Same Maps, Same Chaotic Action</h2>
+        <p>Whether you typed Cattle Crazy or Crazy Cattle, you get the identical momentum mechanics across all 3 maps: Ireland's rolling slopes, Iceland's volcanic cliffs, and New Zealand's alpine ridges. You can jump directly into the full arena right on our main homepage.</p>
+        <div style="margin:1.5rem 0;"><a href="/" class="btn primary">Play Crazy Cattle 3D on Homepage &rarr;</a></div>
         <h2>Domain Transparency Notice</h2>
-        <p><strong>cattlecrazy3d.com</strong> is an independent fan community providing fast browser play and comprehensive map walkthroughs. The original creator is indie developer Anna Mayberry.</p>
-        <p><a href="/" class="btn primary">Play Cattle Crazy 3D Now</a></p>
+        <p><strong>cattlecrazy3d.com</strong> is an independent fan community providing fast browser play and comprehensive walkthroughs. Original developer attribution belongs to Anna Mayberry on itch.io.</p>
       </div>
     `
   });
 
   routesData.set('/crazy-cattle-3d-how-to-play', {
-    title: 'Crazy Cattle 3D How to Play - Beginner Guide & Controls (2026)',
-    description: 'Learn how to play Crazy Cattle 3D! Step-by-step beginner guide covering PC & mobile controls, the 4-phase match loop, and crucial first 60 seconds survival.',
+    title: 'How to Play Crazy Cattle 3D – Controls & First Match Walkthrough',
+    description: 'Learn how to play Crazy Cattle 3D! Step-by-step beginner walkthrough covering PC & mobile controls, the 4-phase match loop, and crucial first 60 seconds survival.',
     canonical: `${BASE_URL}/crazy-cattle-3d-how-to-play`,
     contentHtml: `
       <div class="game-page how-to-play-page" style="max-width:1200px;margin:0 auto;padding:2rem 1rem;">
         <span style="color:#2563eb;font-weight:700;font-size:0.85rem;text-transform:uppercase;">Beginner Mastery Guide &bull; Updated 2026</span>
-        <h1>🎮 Crazy Cattle 3D How to Play: Complete Beginner Walkthrough</h1>
+        <h1>🎮 How to Play Crazy Cattle 3D – Controls &amp; First Match Walkthrough</h1>
         <p><strong>The Objective in One Sentence:</strong> Be the last sheep standing by knocking rival animals off the edge before the shrinking arena boundary claims you.</p>
 
         <h2>1. Core Controls: PC &amp; Mobile</h2>
@@ -238,13 +296,13 @@ async function runPrerender() {
   });
 
   routesData.set('/crazy-cattle-3d-how-to-win', {
-    title: 'Crazy Cattle 3D How to Win - Pro Strategy, Collision Angles & Tips (2026)',
-    description: 'Master how to win Crazy Cattle 3D! Pro tactics on 45-degree flank collisions, momentum scaling, final circle positioning, and avoiding common elimination traps.',
+    title: 'How to Win Crazy Cattle 3D – 7 Tactics That Actually Work',
+    description: 'Discover 7 proven tactics to win in Crazy Cattle 3D. Master 45-degree flank collisions, downhill momentum scaling, final circle positioning, and survival meta.',
     canonical: `${BASE_URL}/crazy-cattle-3d-how-to-win`,
     contentHtml: `
       <div class="game-page how-to-win-page" style="max-width:1200px;margin:0 auto;padding:2rem 1rem;">
         <span style="color:#16a34a;font-weight:700;font-size:0.85rem;text-transform:uppercase;">Pro Strategy &bull; Tactics &bull; Updated 2026</span>
-        <h1>🏆 Crazy Cattle 3D How to Win: Pro Tactics &amp; Collision Meta</h1>
+        <h1>🏆 How to Win Crazy Cattle 3D: 7 Proven Tactics</h1>
         <p>Winning Crazy Cattle 3D is about angular momentum, timing, and terrain awareness. Learn how to consistently place 1st across Ireland, Iceland, and New Zealand.</p>
 
         <h2>1. The Physics Meta: Collision Angles &amp; Timing</h2>
@@ -347,12 +405,12 @@ async function runPrerender() {
   });
 
   routesData.set('/crazy-cattle-3d-mobile', {
-    title: 'Crazy Cattle 3D Mobile - Sheep Battle Royale Mobile Touch Edition',
-    description: 'Play Crazy Cattle 3D Mobile free in your smartphone or tablet browser! Touch-screen optimized physics sheep combat adapted from the original PC edition.',
+    title: 'Crazy Cattle 3D Mobile – Play on iPhone & Android Browser',
+    description: 'Play Crazy Cattle 3D Mobile directly on your iPhone, iPad, or Android browser. Touch-screen optimized controls, virtual joystick steering, and fast physics action.',
     canonical: `${BASE_URL}/crazy-cattle-3d-mobile`,
     contentHtml: `
       <div class="game-page mobile-edition-page" style="max-width:1200px;margin:0 auto;padding:2rem 1rem;">
-        <h1>🐄 Crazy Cattle 3D Mobile – Sheep Battle Royale (Mobile Touch Edition)</h1>
+        <h1>🐄 Crazy Cattle 3D Mobile – Play on iPhone &amp; Android Browser</h1>
         <p>Crazy Cattle 3D Mobile brings physics-based sheep battle royale to smartphones and tablets. Adapted with touch-screen joystick controls and responsive viewport rendering.</p>
         <p><a href="/" class="btn primary">Switch to Full Desktop PC Edition</a></p>
       </div>

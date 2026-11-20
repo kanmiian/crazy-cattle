@@ -42,13 +42,13 @@ const CrazyCattleOnline = () => {
   return (
     <div className="game-page online-page">
       <SEO
-        title="Crazy Cattle 3D Online - Play Free Browser Game (2026)"
-        description="Play Crazy Cattle 3D online directly in your browser. Fast WebGL loading, zero downloads, and responsive physics battle royale action on PC and Mac."
-        keywords="Crazy Cattle 3D Online, Play Crazy Cattle 3D Online, Crazy Cattle free online, browser battle royale, sheep battle game"
+        title="Crazy Cattle 3D Online – Play in Browser, No Download"
+        description="Play Crazy Cattle 3D online directly in your browser with no download required. Experience 60 FPS WebGL sheep battle royale combat across 3 massive terrains."
+        keywords="Crazy Cattle 3D Online, Play in Browser No Download, Crazy Cattle WebGL, browser battle royale, sheep physics online"
       />
 
       <div className="game-header">
-        <h1>🌐 Crazy Cattle 3D Online – Free Browser Battle Royale</h1>
+        <h1>🌐 Crazy Cattle 3D Online – Play in Browser, No Download</h1>
         <p className="game-description-header">
           Experience <strong>Crazy Cattle 3D Online</strong> without downloading a single byte of executable software. Compete against an unpredictable flock of AI sheep across lush Irish hills, hazardous Icelandic craters, and steep New Zealand ridges directly in Chrome, Firefox, Safari, or Edge.
         </p>

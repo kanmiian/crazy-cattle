@@ -42,12 +42,12 @@ const CrazyCattle3DMobile = () => {
   return (
     <div className="game-page mobile-edition-page">
       <SEO
-        title="Crazy Cattle 3D Mobile - Sheep Battle Royale Mobile Touch Edition"
-        description="Play Crazy Cattle 3D Mobile free in your smartphone or tablet browser! Touch-screen optimized physics sheep combat adapted from the original PC edition."
-        keywords="Crazy Cattle 3D Mobile, Crazy Cattle mobile version, play crazy cattle on phone, crazy cattle android ios, touch battle royale"
+        title="Crazy Cattle 3D Mobile – Play on iPhone & Android Browser"
+        description="Play Crazy Cattle 3D Mobile directly on your iPhone, iPad, or Android browser. Touch-screen optimized controls, virtual joystick steering, and fast physics action."
+        keywords="Crazy Cattle 3D Mobile, play crazy cattle on iPhone, crazy cattle android browser, mobile touch sheep game, touch battle royale"
       />
       <div className="game-header">
-        <h1>🐄 Crazy Cattle 3D Mobile – Sheep Battle Royale (Mobile Version)</h1>
+        <h1>🐄 Crazy Cattle 3D Mobile – Play on iPhone &amp; Android Browser</h1>
         <p className="game-description-header">
           <strong>Crazy Cattle 3D Mobile</strong> is the <strong>mobile version</strong> of Crazy Cattle 3D, adapted from the original <strong>PC version</strong>. Play the same physics-based sheep and cattle battle royale on your phone or tablet—touch-optimized controls, same chaotic arenas. This <strong>mobile game</strong> is free to play in your browser; no download required.
         </p>

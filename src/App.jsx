@@ -868,10 +868,8 @@ const MainContent = () => {
     <>
       <div id="top">
         <header className="hero">
-          <h1>
-            <span role="img" aria-label="cow">🐄</span> 
-            Crazy Cattle 3D - Sheep Battle Royale
-          </h1>
+          <h1>Crazy Cattle 3D</h1>
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 600, color: '#475569', margin: '0.5rem 0 1rem' }}>Sheep Battle Royale Across Ireland, Iceland &amp; New Zealand</h2>
           <p className="tagline">Experience the wildest sheep and cattle chaos simulator online! Play Crazy Cattle 3D now and join the ultimate physics-based battle royale where sheep and cattle compete for survival!</p>
           <div className="button-group">
             <button onClick={() => handleScrollToSection('game')} className="btn">

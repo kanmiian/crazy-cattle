@@ -86,16 +86,16 @@ const CrazyCattleHowToPlay = () => {
   return (
     <div className="game-page how-to-play-page">
       <SEO
-        title="Crazy Cattle 3D How to Play - Beginner Guide & Controls (2026)"
-        description="Learn how to play Crazy Cattle 3D! Step-by-step beginner guide covering PC & mobile controls, the 4-phase match loop, and crucial first 60 seconds survival."
-        keywords="Crazy Cattle 3D how to play, how to play crazy cattle, crazy cattle 3d controls, crazy cattle beginner guide, sheep battle royale tutorial"
+        title="How to Play Crazy Cattle 3D – Controls & First Match Walkthrough"
+        description="Learn how to play Crazy Cattle 3D! Step-by-step beginner walkthrough covering PC & mobile controls, the 4-phase match loop, and crucial first 60 seconds survival."
+        keywords="How to play crazy cattle 3d, crazy cattle 3d controls, crazy cattle first match walkthrough, beginner guide sheep game, match loop"
       />
 
       <div className="game-header">
         <p className="hot-game-kicker" style={{ color: '#2563eb', fontWeight: 700, textTransform: 'uppercase', fontSize: '0.85rem' }}>
           Beginner Mastery Guide &bull; Updated 2026
         </p>
-        <h1>🎮 Crazy Cattle 3D How to Play: Complete Beginner Walkthrough</h1>
+        <h1>🎮 How to Play Crazy Cattle 3D: Controls &amp; First Match Walkthrough</h1>
         <p className="game-description-header">
           <strong>The Game Objective in One Sentence:</strong> Outlast every competitor and be the last sheep standing by knocking rival animals off the edge before the shrinking arena boundary claims you.
         </p>

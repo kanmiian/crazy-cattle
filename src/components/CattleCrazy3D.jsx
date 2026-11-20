@@ -42,20 +42,20 @@ const CattleCrazy3D = () => {
   return (
     <div className="game-page cattle-crazy-page">
       <SEO
-        title="Cattle Crazy 3D - Play Online & Domain Guide (cattlecrazy3d.com)"
-        description="Searching for Cattle Crazy 3D? Play the viral physics battle royale online free. Understand the differences between cattlecrazy3d.com and other mirror sites."
-        keywords="Cattle Crazy 3D, cattle crazy, cattlecrazy3d, crazycattle3d.com, cattle crazy game, sheep physics battle royale"
+        title="Cattle Crazy 3D – Same Game as Crazy Cattle 3D"
+        description="Wondering if Cattle Crazy 3D is different from Crazy Cattle 3D? Both refer to the identical physics battle royale by creator Anna Mayberry. Learn more and play free online."
+        keywords="Cattle Crazy 3D, Cattle Crazy, same game as crazy cattle 3d, cattle crazy domain guide, anna mayberry sheep game"
       />
 
       <div className="game-header">
-        <h1>🐄 Cattle Crazy 3D – Play Online &amp; Official Fan Hub</h1>
+        <h1>🐄 Cattle Crazy 3D – Same Game as Crazy Cattle 3D</h1>
         <p className="game-description-header">
-          Did you search for <strong>Cattle Crazy 3D</strong> instead of Crazy Cattle 3D? You're in the right place! Whether you remember it as Cattle Crazy or Crazy Cattle, launch directly into the physics battle royale below or learn how to distinguish genuine community portals from unofficial clone mirrors.
+          Did you search for <strong>Cattle Crazy 3D</strong> instead of Crazy Cattle 3D? You're in the right place! Both names refer to the exact same viral physics-based sheep battle royale created by indie developer Anna Mayberry. Play free in your browser or head over to our official <Link to="/" style={{ color: '#2563eb', fontWeight: 700 }}>Crazy Cattle 3D Homepage</Link>.
         </p>
         <div className="game-actions">
-          <button onClick={() => setShowGame(true)} className="btn primary">
-            <span>🎮</span> Play Cattle Crazy 3D
-          </button>
+          <Link to="/" className="btn primary">
+            <span>🎮</span> Play Crazy Cattle 3D (Main Arena)
+          </Link>
           <Link to="/crazy-cattle-3d-unblocked" className="btn secondary">
             <span>🔓</span> Unblocked Mode
           </Link>

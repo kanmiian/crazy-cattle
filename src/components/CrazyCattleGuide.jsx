@@ -42,13 +42,13 @@ const CrazyCattleGuide = () => {
   return (
     <div className="game-page guide-page">
       <SEO
-        title="Crazy Cattle 3D Strategy Guide - Controls, Maps & Pro Tips"
-        description="Master Crazy Cattle 3D with our comprehensive guide! Detailed breakdown of Ireland, Iceland, and New Zealand maps, physics controls, and winning combat tactics."
-        keywords="Crazy Cattle 3D Guide, Crazy Cattle 3D tips, Crazy Cattle controls, Crazy Cattle 3D maps, Ireland map crazy cattle, Iceland map crazy cattle, New Zealand map crazy cattle"
+        title="Crazy Cattle 3D Guide – Maps, Controls & Winning Strategy"
+        description="Complete strategy guide for Crazy Cattle 3D. Master keyboard controls, collision physics, and map-specific survival tactics across Ireland, Iceland, and New Zealand."
+        keywords="Crazy Cattle 3D Guide, Crazy Cattle 3D strategy, Crazy Cattle controls, Crazy Cattle 3D maps, Ireland map tactics, Iceland map survival, New Zealand map guide"
       />
 
       <div className="game-header">
-        <h1>📖 Crazy Cattle 3D Strategy Guide: Maps, Controls &amp; Tactics</h1>
+        <h1>📖 Crazy Cattle 3D Guide – Maps, Controls &amp; Strategy</h1>
         <p className="game-description-header">
           Welcome to the ultimate mastery guide for <strong>Crazy Cattle 3D</strong>. In this physics-driven battle royale, chaotic button mashing won't get you to the victory screen. Learn how angular momentum, terrain gradients, and arena hazard manipulation can turn you from an easy knockout into the apex sheep!
         </p>

@@ -6,13 +6,13 @@ const CrazyCattleDownload = () => {
   return (
     <div className="game-page download-page">
       <SEO
-        title="Crazy Cattle 3D Download - Official PC & Mac Version (itch.io)"
-        description="Learn how to download Crazy Cattle 3D for PC. Find the official itch.io page by creator Anna Mayberry, system requirements, and instant browser play alternatives."
-        keywords="Crazy Cattle 3D Download, Crazy Cattle 3D PC download, Crazy Cattle itch.io, Anna Mayberry Crazy Cattle, Crazy Cattle free download, play without downloading"
+        title="Crazy Cattle 3D Download – PC, Mobile & Web Version Guide"
+        description="Looking to download Crazy Cattle 3D for PC? Find the official itch.io desktop release by indie creator Anna Mayberry, system requirements, and instant browser alternatives."
+        keywords="Crazy Cattle 3D Download, Crazy Cattle 3D PC download, Crazy Cattle itch.io, Anna Mayberry Crazy Cattle, Crazy Cattle desktop version, play without downloading"
       />
 
       <div className="game-header">
-        <h1>⬇️ Crazy Cattle 3D Download &amp; PC Installation Guide</h1>
+        <h1>⬇️ Crazy Cattle 3D Download – PC, Mobile &amp; Web Guide</h1>
         <p className="game-description-header">
           Looking to download <strong>Crazy Cattle 3D</strong> for offline play? We provide transparent guidance on finding the official desktop release directly from indie creator Anna Mayberry on itch.io, along with instant no-download online alternatives right here.
         </p>
